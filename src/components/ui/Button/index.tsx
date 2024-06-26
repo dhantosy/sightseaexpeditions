@@ -16,7 +16,7 @@ const buttonVariants = cva(
         outline:
           "font-montserrat border-2 shadow-sm hover:bg-white/60 hover:text-accent-foreground",
         secondary:
-          "font-montserrat bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+          "font-montserrat bg-slate-100 text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "font-montserrat hover:bg-accent hover:text-accent-foreground",
         link: "font-montserrat text-primary underline-offset-4 hover:underline",
       },

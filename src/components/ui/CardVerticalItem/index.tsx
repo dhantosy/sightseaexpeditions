@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { Button } from '@/components/ui/Button'
 import { FaLocationDot, FaCalendar } from 'react-icons/fa6';
 import { CardVerticalItemProp } from './types'
 
@@ -30,7 +31,7 @@ export default function CardVerticalItem({
             />
           </div>
         </div>
-        <div className='py-5 overflow-hidden'>
+        <div className='pt-5 pb-0 overflow-hidden'>
           <h3 className='leading-snug lg:line-clamp-1 text-lg uppercase font-semibold font-montserrat mb-3'>{title}</h3>
           <div className='flex gap-3 items-center mb-2 text-sm opacity-70'>
             <FaLocationDot />
@@ -40,10 +41,17 @@ export default function CardVerticalItem({
             <FaCalendar />
             <span>{date}</span>
           </div>
-          <div className='mt-3'>
-            <span className='text-sm'>From </span>
-            <span className='text-lg font-bold'>{price} </span>
-            <span className='text-sm'>/ pax</span>
+          <div className='mt-5 flex flex-col gap-4 3lg:flex-row justify-between'>
+            <div>
+              <span className='text-sm'>From </span>
+              <span className='text-lg font-bold'>{price} </span>
+              <span className='text-sm'>/ pax</span>
+            </div>
+            <div>
+              <Button variant='secondary' size='sm' className='mt-2 3lg:mt-0 w-full 3lg:w-auto'>
+                Book Now
+              </Button>
+            </div>
           </div>
         </div>
       </div>
