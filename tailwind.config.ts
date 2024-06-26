@@ -12,7 +12,7 @@ const config = {
   theme: {
     screens: {
       'xs': '320px',
-      '2xs': '380px',
+      '2xs': '375px',
       '3xs': '430px',
       'sm': '480px',
       '2sm': '560px',
@@ -34,9 +34,6 @@ const config = {
       }
     },
     extend: {
-      backgroundImage: {
-        'card-bg': "url('/assets/images/bg-blur.png')",
-      },
       fontFamily: {
         'montserrat': ['var(--font-montserrat)'],
         'cabin': ['var(--font-cabin)'],

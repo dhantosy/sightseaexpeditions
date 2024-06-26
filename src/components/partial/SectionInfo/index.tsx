@@ -13,7 +13,7 @@ export default function SectionInfo({
     <section className='my-12 md:my-20 relative'>
       <div className='absolute inset-x-0 -top-24 min-h-0 pl-20 py-24 flex justify-between overflow-hidden z-0'>
         <span className='block -ml-20 bg-orange-200 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-50 lg:w-96 lg:h-96' />
-        <span className='block bg-sky-300 w-72 h-72 -ml-20 mt-72 rounded-full mix-blend-multiply filter blur-3xl opacity-20 lg:w-96 lg:h-96' />
+        <span className='block bg-sky-300 w-72 h-72 -ml-20 mt-96 sm:mt-72 rounded-full mix-blend-multiply filter blur-3xl opacity-20 lg:w-96 lg:h-96' />
       </div>
       <div className='container relative px-4 text-center lg:px-8'>
         <div className='flex flex-col'>
