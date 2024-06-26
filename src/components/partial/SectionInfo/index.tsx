@@ -17,10 +17,12 @@ export default function SectionInfo({
       </div>
       <div className='container relative px-4 text-center lg:px-8'>
         <div className='flex flex-col'>
-          <Title
-            titleTop={titleTop}
-            titleMain={titleMain}
-          />
+          <div className='max-w-[250px] sm:max-w-full m-auto'>
+            <Title
+              titleTop={titleTop}
+              titleMain={titleMain}
+            />
+          </div>
           <div className='flex relative gap-6 md:gap-10 max-w-5xl w-full mx-auto flex-nowrap overflow-x-auto my-7 border border-slate-200 rounded-2xl p-5'>
             {images.map(({ src, srcBlurData, alt }) => {
               return (

@@ -4,7 +4,6 @@ import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link'
 import Image from 'next/image';
 import { usePathname } from 'next/navigation'
-import { RxHamburgerMenu } from 'react-icons/rx';
 import { Button } from '@/components/ui/Button'
 import LogoTransparent from '@public/assets/images/sightsea-expeditions-logo-transparent.png';
 import { mainMenu } from '@/data/menus'
@@ -38,10 +37,11 @@ export default function Header() {
               <Image
                 src={LogoTransparent}
                 alt='trip by the sea logo'
-                width={132}
-                height={83}
+                width={0}
+                height={0}
                 sizes='(max-width: 768px) 208px, 350px'
                 priority
+                className='w-[132px] h-auto'
               />
             </Link>
           </div>

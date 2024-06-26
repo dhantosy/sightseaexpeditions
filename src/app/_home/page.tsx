@@ -3,7 +3,7 @@ import SectionInfo from '@/components/partial/SectionInfo';
 import SectionUpcomingEvents from '@/components/partial/SectionUpcomingEvents';
 import SectionInfoHorizontal from '@/components/partial/SectionInfoHorizontal';
 import SectionTestimonials from '@/components/partial/SectionTestimonials';
-import ImageVideoPoster from '@public/assets/images/video-poster.jpg'
+import ImageVideoPoster from '@public/assets/images/video-poster.webp'
 import ImageVelocean from '@public/assets/images/vessels/velocean.jpg'
 import ImageSharkUnderwater from '@public/assets/images/gallery/gallery-1.jpg'
 import ImageSharkSwimming from '@public/assets/images/gallery/gallery-2.jpg'
