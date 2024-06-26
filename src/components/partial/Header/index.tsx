@@ -55,17 +55,17 @@ export default function Header() {
             })}
           </div>
           <Button asChild size='md' className='hidden lg:block'>
-            <Link href='/contact-us' aria-label='Go to contact page'>Contact Us</Link>
+            <Link href='/' aria-label='Go to contact page'>Contact Us</Link>
           </Button>
           <div className='block lg:hidden p-3 pr-0 cursor-pointer' onClick={handleMobileMenuClick}>
             <span className='uppercase font-montserrat text-md font-bold'>Menu</span>
           </div>
         </div>
       </div>
-      <div className={`${mobileMenuActive ? 'block' : 'hidden'} h-screen bg-white/95 fixed w-full p-5`}>
+      <div className={`${mobileMenuActive ? 'block' : 'hidden'} h-screen bg-white/[.97] fixed w-full p-5`}>
         {mainMenu.map(({ title, url }) => {
           return (
-            <Link key={title} href={url} className='py-4 flex justify-end font-semibold text-xl' aria-label={`Go to ${title} page`}>
+            <Link key={title} href={url} className='py-4 flex justify-end font-montserrat font-semibold text-xl' aria-label={`Go to ${title} page`}>
               {title}
             </Link>
           )

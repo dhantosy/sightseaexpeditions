@@ -58,11 +58,11 @@ export default function Home() {
         cardClass='basis-[100%] 2lg:basis-[50%] p-4 grow-0'
         cardType='horizontal'
       />
-      {/* <div className='relative'>
+      <div className='relative'>
         <div className='absolute inset-x-0 top-64 min-h-0 pl-20 py-24 flex justify-end overflow-hidden z-0'>
           <span className='block -ml-20 bg-orange-200 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-40 lg:w-96 lg:h-96' />
         </div>
-      </div> */}
+      </div>
       <SectionInfoHorizontal
         titleTop='Ocean as Your Home'
         titleMain={`Liveaboard with VELOCEAN
@@ -91,11 +91,11 @@ export default function Home() {
         cardType='vertical'
         cardSlide
       />
-      {/* <div className='relative'>
+      <div className='relative'>
         <div className='absolute inset-x-0 -top-72 min-h-0 pl-20 py-24 flex justify-between overflow-hidden z-0'>
           <span className='block -ml-20 bg-orange-200 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-40 lg:w-96 lg:h-96' />
         </div>
-      </div> */}
+      </div>
       <SectionUpcomingEvents
         titleTop='Discover the Underwater World'
         titleMain='Explore Dive Centers.'

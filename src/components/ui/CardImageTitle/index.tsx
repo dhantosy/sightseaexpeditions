@@ -13,7 +13,7 @@ export default function CardImageTitle({
   return (
     <Link href={url} className='relative top-0 overflow-hidden block rounded-2xl transition-all hover:-top-1 group w-full'>
       <div className='border border-slate-200 rounded-2xl p-3'>
-        <div className='relative rounded-2xl shadow-lg overflow-hidden'>
+        <div className='relative rounded-2xl shadow-xl overflow-hidden'>
           <div className='w-full pb-[65%]'>
             <Image
               src={img}
