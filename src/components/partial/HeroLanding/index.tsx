@@ -18,6 +18,7 @@ export default function HeroLanding({
       <div className='flex justify-center absolute h-full top-0 left-0 w-full rounded-3xl overflow-hidden'>
         <video
           autoPlay
+          playsInline
           loop
           muted
           poster={videoPoster}

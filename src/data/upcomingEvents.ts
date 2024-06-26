@@ -79,7 +79,7 @@ export const upcomingTours = [
     imgAlt: 'Sumba Tour',
     blurDataUrl: ImageSumbasMain.blurDataURL,
     title: 'Sumba Culture & Nature Tour',
-    location: 'Nusa Tenggara, Indonesia',
+    location: 'NTT, Indonesia',
     date: 'Nov 9th, 2024',
     url: '/',
     price: 'USD 300',
