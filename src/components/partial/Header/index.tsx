@@ -4,7 +4,6 @@ import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link'
 import Image from 'next/image';
 import { usePathname } from 'next/navigation'
-import { RxHamburgerMenu } from 'react-icons/rx';
 import { Button } from '@/components/ui/Button'
 import LogoTransparent from '@public/assets/images/sightsea-expeditions-logo-transparent.png';
 import { mainMenu } from '@/data/menus'
