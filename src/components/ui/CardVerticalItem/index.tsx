@@ -32,7 +32,7 @@ export default function CardVerticalItem({
           </div>
         </div>
         <div className='pt-5 pb-0 overflow-hidden'>
-          <h3 className='leading-snug lg:line-clamp-1 text-lg uppercase font-semibold font-montserrat mb-3'>{title}</h3>
+          <h3 className='leading-snug lg:line-clamp-1 text-lg uppercase font-semibold font-montserrat mb-4'>{title}</h3>
           <div className='flex gap-3 items-center mb-2 text-sm opacity-70'>
             <FaLocationDot />
             <span>{location}</span>
