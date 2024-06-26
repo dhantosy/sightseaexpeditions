@@ -55,14 +55,14 @@ export default function Home() {
         events={upcomingDivingTrips}
         btnUrl='/'
         btnText='See All Diving Trips'
-        cardClass='basis-[100%] md:basis-[50%] p-4 grow-0'
+        cardClass='basis-[100%] 2lg:basis-[50%] p-4 grow-0'
         cardType='horizontal'
       />
-      <div className='relative'>
+      {/* <div className='relative'>
         <div className='absolute inset-x-0 top-64 min-h-0 pl-20 py-24 flex justify-end overflow-hidden z-0'>
           <span className='block -ml-20 bg-orange-200 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-40 lg:w-96 lg:h-96' />
         </div>
-      </div>
+      </div> */}
       <SectionInfoHorizontal
         titleTop='Ocean as Your Home'
         titleMain={`Liveaboard with VELOCEAN
@@ -87,22 +87,24 @@ export default function Home() {
         events={upcomingTours}
         btnUrl='/'
         btnText='See All Tours & Experiences'
-        cardClass='basis-[100%] md:basis-[25%] p-4 grow-0'
+        cardClass='flex flex-shrink-0 2xs:flex-shrink-0 flex-[220px] 2xs:flex-[240px] lg:flex-[25%] w-full'
         cardType='vertical'
+        cardSlide
       />
-      <div className='relative'>
+      {/* <div className='relative'>
         <div className='absolute inset-x-0 -top-72 min-h-0 pl-20 py-24 flex justify-between overflow-hidden z-0'>
           <span className='block -ml-20 bg-orange-200 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-40 lg:w-96 lg:h-96' />
         </div>
-      </div>
+      </div> */}
       <SectionUpcomingEvents
         titleTop='Discover the Underwater World'
         titleMain='Explore Dive Centers.'
         events={diveCentersList}
         btnUrl='/'
         btnText='See All Dive Centers'
-        cardClass='basis-[100%] md:basis-[20%] p-4 grow-0'
+        cardClass='flex flex-shrink-0 2xs:flex-shrink-0 flex-[220px] 2xs:flex-[240px] lg:flex-[20%] w-full'
         cardType='imageTitle'
+        cardSlide
       />
       <SectionTestimonials testimonials={testimonials} />
     </main>

@@ -3,6 +3,7 @@
 import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import TestimonialItem from '@/components/ui/TestimonialItem';
+import Title from '@/components/ui/Title';
 import { SectionTestimonialProp } from './types';
 
 export default function SectionTestimonials({
@@ -11,11 +12,12 @@ export default function SectionTestimonials({
 
   return (
     <section className='relative overflow-hidden rounded-2xl border-x-[18px] border-white lg:border-x-[32px]'>
-      <div className='p-20 pb-12 bg-creamPrimary/20 rounded-3xl overflow-hidden'>
+      <div className='px-0 py-8 sm:p-10 3lg:p-20 pb-12 bg-creamPrimary/20 rounded-3xl overflow-hidden'>
         <div className='container px-4 lg:px-8'>
-          <h4 className='text-center font-medium text-lg uppercase tracking-wider font-montserrat mb-2'>Some of the kind words</h4>
-          <h2 className='text-4xl leading-snug font-bold tracking-tight text-center'>Review from Our Clients.</h2>
-          <div className='p-2 mt-10'>
+          <div className='text-center'>
+            <Title titleTop='Some of the kind words' titleMain='Review from Our Clients.' />
+          </div>
+          <div className='p-2 mt-4 md:mt-10'>
             <Swiper
               loop
               modules={[Autoplay, Pagination]}

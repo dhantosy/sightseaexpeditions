@@ -26,4 +26,5 @@ export interface SectionUpcomingEventsProp {
   btnText: string;
   cardClass: string;
   cardType: CardType;
+  cardSlide?: boolean;
 }

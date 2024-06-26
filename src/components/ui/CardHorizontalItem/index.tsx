@@ -20,7 +20,7 @@ export default function CardHorizontalItem({
     <Link href={url} className='relative block top-0 overflow-hidden rounded-2xl transition-all hover:-top-1 group'>
       <div className='flex flex-wrap border border-slate-200 rounded-2xl p-3'>
         <div className='relative basis-[100%] md:basis-[40%] p-7 grow-0 rounded-2xl shadow-lg overflow-hidden'>
-          <div className='w-full pb-[85%]'>
+          <div className='w-full pb-[60%] md:pb-[85%]'>
             <Image
               src={img}
               alt={imgAlt}
@@ -32,13 +32,13 @@ export default function CardHorizontalItem({
             />
           </div>
         </div>
-        <div className='relative py-2 pl-7 pr-1 basis-[100%] md:basis-[60%] grow-0'>
-          <div className='flex gap-3'>
-            <div className='flex px-3 py-1 text-sm items-center gap-2 rounded-full bg-sky-100 text-sky-900'>
+        <div className='relative py-2 mt-4 md:mt-0 md:pl-7 md:pr-1 basis-[100%] md:basis-[60%] grow-0'>
+          <div className='flex flex-col 2xs:flex-row 2lg:flex-col 3lg:flex-row gap-3'>
+            <div className='w-fit flex px-3 py-1 text-sm items-center gap-2 rounded-full bg-sky-100 text-sky-900'>
               <span><MdScubaDiving /></span>
               <span>{highlight?.diveCount}</span>
             </div>
-            <div className='flex px-3 py-1 text-sm items-center gap-2 rounded-full bg-orange-100 text-orange-700'>
+            <div className='w-fit flex px-3 py-1 text-sm items-center gap-2 rounded-full bg-orange-100 text-orange-700'>
               <span><FaRegEye /></span>
               <span>{highlight?.attraction}</span>
             </div>
@@ -52,7 +52,7 @@ export default function CardHorizontalItem({
             <FaCalendar />
             <span>{date}</span>
           </div>
-          <div className='mt-3 absolute bottom-3'>
+          <div className='mt-6 md:mt-3 md:absolute bottom-3'>
             <span className='text-sm'>From </span>
             <span className='text-lg font-bold'>{price} </span>
             <span className='text-sm'>/ pax</span>

@@ -30,7 +30,7 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className={!active ? 'fixed w-full bg-white backdrop-blur-lg left-0 top-0 z-40 transition-all uppercase font-semibold' : 'shadow fixed w-full backdrop-blur-lg bg-white/70 left-0 top-0 z-40 transition-all uppercase font-semibold'}>
+    <header className={!active ? 'fixed z-50 w-full bg-white backdrop-blur-lg left-0 top-0 transition-all uppercase font-semibold' : 'shadow fixed w-full backdrop-blur-lg bg-white/80 left-0 top-0 z-50 transition-all uppercase font-semibold'}>
       <div className='container px-4 lg:px-8'>
         <div className='flex justify-between items-center'>
           <div className='relative flex max-w-28 lg:max-w-full'>
@@ -58,11 +58,11 @@ export default function Header() {
             <Link href='/contact-us' aria-label='Go to contact page'>Contact Us</Link>
           </Button>
           <div className='block lg:hidden p-3 pr-0 cursor-pointer' onClick={handleMobileMenuClick}>
-            <RxHamburgerMenu size={30} />
+            <span className='uppercase font-montserrat text-md font-bold'>Menu</span>
           </div>
         </div>
       </div>
-      <div className={`${mobileMenuActive ? 'block' : 'hidden'} h-screen bg-neutral-800 fixed w-full p-5`}>
+      <div className={`${mobileMenuActive ? 'block' : 'hidden'} h-screen bg-white/95 fixed w-full p-5`}>
         {mainMenu.map(({ title, url }) => {
           return (
             <Link key={title} href={url} className='py-4 flex justify-end font-semibold text-xl' aria-label={`Go to ${title} page`}>
