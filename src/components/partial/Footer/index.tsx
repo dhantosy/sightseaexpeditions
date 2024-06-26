@@ -15,10 +15,10 @@ export default function Footer() {
                 <Image
                   src={LogoBlue}
                   alt='trip by the sea logo'
-                  width={200}
-                  height={83}
+                  width={0}
+                  height={0}
                   sizes='(max-width: 768px) 208px, 350px'
-                  priority
+                  className='w-[200px] h-auto'
                 />
               </Link>
             </div>

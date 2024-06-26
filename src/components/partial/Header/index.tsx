@@ -37,10 +37,11 @@ export default function Header() {
               <Image
                 src={LogoTransparent}
                 alt='trip by the sea logo'
-                width={132}
-                height={83}
+                width={0}
+                height={0}
                 sizes='(max-width: 768px) 208px, 350px'
                 priority
+                className='w-[132px] h-auto'
               />
             </Link>
           </div>

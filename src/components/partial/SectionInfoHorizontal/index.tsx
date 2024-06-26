@@ -27,6 +27,7 @@ export default function SectionInfoHorizontal({
                 src={img}
                 alt={imgAlt}
                 style={{ objectFit: 'cover' }}
+                sizes="(min-width: 1340px) 590px, 100vw"
                 placeholder='blur'
                 blurDataURL={blurDataUrl}
                 fill
