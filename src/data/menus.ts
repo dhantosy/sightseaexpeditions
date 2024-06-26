@@ -1,18 +1,18 @@
 export const mainMenu = [
   {
     title: 'Diving Trips',
-    url: '/diving-trips'
+    url: '/'
   },
   {
     title: 'Liveaboard',
-    url: '/liveaboard'
+    url: '/'
   },
   {
     title: 'Tours & Experiences',
-    url: '/tours-experiences'
+    url: '/'
   },
   {
     title: 'Dive Centers',
-    url: '/dive-centers'
+    url: '/'
   },
 ];
