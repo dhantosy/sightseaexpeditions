@@ -41,9 +41,9 @@ export default function CardVerticalItem({
             <FaCalendar />
             <span>{date}</span>
           </div>
-          <div className='mt-5 flex flex-col gap-4 3lg:flex-row justify-between'>
+          <div className='mt-5 flex flex-col gap-4 3lg:items-end 3lg:flex-row justify-between'>
             <div>
-              <span className='text-sm'>From </span>
+              <span className='text-sm block'>Starts from </span>
               <span className='text-lg font-bold'>{price} </span>
               <span className='text-sm'>/ pax</span>
             </div>

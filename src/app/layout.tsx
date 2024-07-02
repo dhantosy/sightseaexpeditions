@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import Header from '@/components/partial/Header';
 import Footer from '@/components/partial/Footer';
+import WhatsappWidget from '@/components/ui/WhatsappWidget';
 import "../styles/global.css";
 
 const montserrat = Montserrat({
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body className={`${cabin.variable} ${montserrat.variable} text-bluePrimary font-cabin`}>
         <Header />
         {children}
+        <WhatsappWidget />
         <Footer />
       </body>
     </html>

@@ -70,6 +70,14 @@ export default function Header() {
             </Link>
           )
         })}
+        <Link href='/about-us' className='py-4 flex justify-end font-montserrat font-semibold text-xl' aria-label={`Go to about us page`}>
+          About Us
+        </Link>
+        <div className='flex justify-end'>
+          <Button asChild size='md' className='mt-7'>
+            <Link href='/' aria-label='Go to contact page'>Contact Us</Link>
+          </Button>
+        </div>
       </div>
     </header>
   )
