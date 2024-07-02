@@ -3,6 +3,7 @@ import SectionInfo from '@/components/partial/SectionInfo';
 import SectionUpcomingEvents from '@/components/partial/SectionUpcomingEvents';
 import SectionInfoHorizontal from '@/components/partial/SectionInfoHorizontal';
 import SectionTestimonials from '@/components/partial/SectionTestimonials';
+import SectionInstagram from '@/components/partial/SectionInstagram';
 import ImageVideoPoster from '@public/assets/images/video-poster.webp'
 import ImageVelocean from '@public/assets/images/vessels/velocean.jpg'
 import ImageSharkUnderwater from '@public/assets/images/gallery/gallery-1.jpg'
@@ -11,22 +12,23 @@ import ImagePaddling from '@public/assets/images/gallery/gallery-3.jpg'
 import { upcomingDivingTrips, upcomingTours } from '@/data/upcomingEvents';
 import { diveCentersList } from '@/data/diveCenters';
 import { testimonials } from '@/data/testimonials';
+import { instagramImages } from '@/data/gallery';
 
 const aboutImages = [
   {
-    src: ImageSharkUnderwater.src,
-    srcBlurData: ImageSharkUnderwater.blurDataURL,
-    alt: 'Sightsea Underwater Shark',
+    img: ImageSharkUnderwater.src,
+    blurDataUrl: ImageSharkUnderwater.blurDataURL,
+    imgAlt: 'Sightsea Underwater Shark',
   },
   {
-    src: ImageSharkSwimming.src,
-    srcBlurData: ImageSharkSwimming.blurDataURL,
-    alt: 'Sightsea Swimming Shark',
+    img: ImageSharkSwimming.src,
+    blurDataUrl: ImageSharkSwimming.blurDataURL,
+    imgAlt: 'Sightsea Swimming Shark',
   },
   {
-    src: ImagePaddling.src,
-    srcBlurData: ImagePaddling.blurDataURL,
-    alt: 'Sightsea Sunset Paddling',
+    img: ImagePaddling.src,
+    blurDataUrl: ImagePaddling.blurDataURL,
+    imgAlt: 'Sightsea Sunset Paddling',
   },
 ];
 
@@ -107,6 +109,7 @@ export default function Home() {
         cardSlide
       />
       <SectionTestimonials testimonials={testimonials} />
+      <SectionInstagram titleMain='@sightsea' titleTop='Follow Us on Instagram' gallery={instagramImages} />
     </main>
   );
 }

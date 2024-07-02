@@ -53,14 +53,14 @@ export default function CardHorizontalItem({
             <FaCalendar />
             <span>{date}</span>
           </div>
-          <div className='items-end mt-6 md:mt-3 2lg:mt-9 md:absolute 2lg:relative 3lg:absolute bottom-3 left-0 flex justify-between w-full pl-0 md:pl-7 2lg:pl-0 3lg:pl-7 pr-0 md:pr-3 gap-3 flex-col 2xs:flex-row'>
+          <div className='2xs:items-end mt-7 md:mt-4 2lg:mt-10 md:absolute 2lg:relative 3lg:absolute bottom-3 left-0 flex justify-between w-full pl-0 md:pl-7 2lg:pl-0 3lg:pl-7 pr-0 md:pr-3 gap-3 flex-col 2xs:flex-row'>
             <div>
-              <span className='text-sm'>From </span>
+              <span className='text-sm block'>Starts from </span>
               <span className='text-lg font-bold'>{price} </span>
               <span className='text-sm'>/ pax</span>
             </div>
             <div>
-              <Button variant='secondary' size='sm'>
+              <Button variant='secondary' size='sm' className='w-full 2xs:w-auto'>
                 Book Now
               </Button>
             </div>

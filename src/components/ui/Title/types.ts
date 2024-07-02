@@ -1,4 +1,4 @@
 export interface TitleProp {
-  titleTop: string;
+  titleTop?: string;
   titleMain: string;
 }

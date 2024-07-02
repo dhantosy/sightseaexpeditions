@@ -6,7 +6,7 @@ import LogoBlue from '@public/assets/images/sightsea-expeditions-logo-blue.jpg';
 export default function Footer() {
 
   return (
-    <footer className='relative z-10 text-white mt-8 lg:mt-16 overflow-hidden border-x-[18px] border-x-white lg:border-x-[32px]'>
+    <footer className='relative z-10 text-white mt-8 lg:mt-12 overflow-hidden border-x-[18px] border-x-white lg:border-x-[32px]'>
       <div className='bg-bluePrimary px-2 2xs:px-4 md:px-10 pb-5 pt-2 md:pt-8 mt-10 rounded-t-2xl overflow-hidden'>
         <div className='container py-5 px-4 lg:px-8'>
           <div className='flex flex-col lg:flex-row justify-between'>

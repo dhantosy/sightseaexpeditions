@@ -1,7 +1,7 @@
 interface ImagesProp {
-  src: string;
-  srcBlurData?: string;
-  alt: string;
+  img: string;
+  blurDataUrl?: string;
+  imgAlt: string;
 }
 
 export interface SectionInfoProp {

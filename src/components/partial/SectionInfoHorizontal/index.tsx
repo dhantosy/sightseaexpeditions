@@ -18,7 +18,7 @@ export default function SectionInfoHorizontal({
 }: SectionInfoHorizontalProp) {
 
   return (
-    <section className='relative container my-10 lg:my-24 px-4 lg:px-8'>
+    <section className='relative container my-10 lg:my-16 px-4 lg:px-8'>
       <div className='flex flex-wrap items-center -mx-4'>
         <div className='basis-[100%] lg:basis-[50%] px-4 grow-0'>
           <div className='relative border border-slate-200 rounded-2xl p-3 after:content-[""] after:w-full after:top-0 after:left-0 after:bg-white/10 after:blur after:h-full after:absolute'>
