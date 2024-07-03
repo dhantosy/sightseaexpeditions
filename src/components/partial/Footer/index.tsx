@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaInstagram, FaEnvelope, FaPhone } from "react-icons/fa6";
+import { FaInstagram, FaEnvelope, FaPhone } from 'react-icons/fa6';
 import LogoBlue from '@public/assets/images/sightsea-expeditions-logo-blue.jpg';
+import { footerMenu } from '@/data/menus';
 
 export default function Footer() {
 
@@ -25,19 +26,12 @@ export default function Footer() {
             <div className='flex gap-12 3sm:gap-28 flex-col-reverse 3sm:flex-row mt-6 lg:mt-0'>
               <div className='text-sm sm:text-base'>
                 <h6 className='font-bold font-montserrat text-xl uppercase mb-4'>Explore</h6>
-                <div className='flex flex-col gap-3'>
-                  <Link href='/' className='opacity-80'>
-                    Diving Trips
-                  </Link>
-                  <Link href='/' className='opacity-80'>
-                    Liveaboard
-                  </Link>
-                  <Link href='/' className='opacity-80'>
-                    Tours & Experience
-                  </Link>
-                  <Link href='/' className='opacity-80'>
-                    Dive Centers
-                  </Link>
+                <div className='flex flex-col gap-3 opacity-80'>
+                  {footerMenu.map(({ title, url }) => {
+                    return (
+                      <Link key={title} href={url}>{title}</Link>
+                    )
+                  })}
                 </div>
               </div>
               <div>
@@ -70,12 +64,8 @@ export default function Footer() {
             <div className='mt-10 flex flex-col-reverse items-start lg:flex-row lg:items-center justify-between text-sm sm:text-base'>
               <span>Sightsea Expeditions © 2024. All Rights Reserved.</span>
               <div className='flex flex-col 2xs:flex-row gap-6 mb-4 lg:mb-0'>
-                <Link href='/'>
-                  Terms & Conditions
-                </Link>
-                <Link href='/'>
-                  Privacy Policy
-                </Link>
+                <Link href='/'>Terms & Conditions</Link>
+                <Link href='/'>Privacy Policy</Link>
               </div>
             </div>
           </div>

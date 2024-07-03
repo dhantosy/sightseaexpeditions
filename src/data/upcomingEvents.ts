@@ -10,6 +10,9 @@ import ImageTorajaMain from '@public/assets/images/tours/toraja.jpg'
 import ImageUbudMain from '@public/assets/images/tours/ubud.jpg'
 import ImageKintamaniMain from '@public/assets/images/tours/kintamani.jpg'
 
+// LIVEABOARD
+import ImageVelocean from '@public/assets/images/vessels/velocean.jpg'
+
 export const upcomingDivingTrips = [
   {
     img: ImageBelangasMain.src,
@@ -119,3 +122,17 @@ export const upcomingTours = [
     duration: '4 days'
   },
 ];
+
+export const upcomingLiveaboard = [
+  {
+    img: ImageVelocean.src,
+    imgAlt: 'Velocean maldives liveaboard',
+    blurDataUrl: ImageVelocean.blurDataURL,
+    title: 'VELOCEAN',
+    location: 'Maldives',
+    date: 'Dec 25th, 2024 - Jan 1st, 2025',
+    url: '/',
+    price: 'USD 4,950',
+    duration: '8 days',
+  },
+]

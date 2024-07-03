@@ -34,17 +34,19 @@ export default function CardHorizontalItem({
           </div>
         </div>
         <div className='relative pb-0 md:pb-2 pt-2 mt-4 md:mt-0 md:pl-7 md:pr-1 basis-[100%] md:basis-[60%] grow-0'>
-          <div className='flex flex-col 2xs:flex-row 2lg:flex-col 3lg:flex-row gap-3'>
-            <div className='w-fit flex px-3 py-1 text-sm items-center gap-2 rounded-full bg-sky-100 text-sky-900'>
-              <span><MdScubaDiving /></span>
-              <span>{highlight?.diveCount}</span>
+          {highlight?.diveCount ? (
+            <div className='flex flex-col 2xs:flex-row 2lg:flex-col 3lg:flex-row gap-3 mb-4'>
+              <div className='w-fit flex px-3 py-1 text-sm items-center gap-2 rounded-full bg-sky-100 text-sky-900'>
+                <span><MdScubaDiving /></span>
+                <span>{highlight?.diveCount}</span>
+              </div>
+              <div className='w-fit flex px-3 py-1 text-sm items-center gap-2 rounded-full bg-orange-100 text-orange-700'>
+                <span><FaRegEye /></span>
+                <span>{highlight?.attraction}</span>
+              </div>
             </div>
-            <div className='w-fit flex px-3 py-1 text-sm items-center gap-2 rounded-full bg-orange-100 text-orange-700'>
-              <span><FaRegEye /></span>
-              <span>{highlight?.attraction}</span>
-            </div>
-          </div>
-          <h3 className='text-lg uppercase font-semibold font-montserrat my-4'>{title}</h3>
+          ) : null}
+          <h3 className='text-lg uppercase font-semibold font-montserrat mb-4'>{title}</h3>
           <div className='flex gap-3 items-center mb-2 text-sm opacity-70'>
             <FaLocationDot />
             <span>{location}</span>
@@ -53,7 +55,7 @@ export default function CardHorizontalItem({
             <FaCalendar />
             <span>{date}</span>
           </div>
-          <div className='2xs:items-end mt-7 md:mt-4 2lg:mt-10 md:absolute 2lg:relative 3lg:absolute bottom-3 left-0 flex justify-between w-full pl-0 md:pl-7 2lg:pl-0 3lg:pl-7 pr-0 md:pr-3 gap-3 flex-col 2xs:flex-row'>
+          <div className='2xs:items-end mt-7 md:mt-4 2lg:mt-10 md:absolute 2lg:relative 3lg:absolute bottom-1 left-0 flex justify-between w-full pl-0 md:pl-7 2lg:pl-0 3lg:pl-7 pr-0 md:pr-3 gap-3 flex-col 2xs:flex-row'>
             <div>
               <span className='text-sm block'>Starts from </span>
               <span className='text-lg font-bold'>{price} </span>
