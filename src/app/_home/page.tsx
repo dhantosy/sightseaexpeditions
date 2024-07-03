@@ -41,9 +41,9 @@ export default function Home() {
         title='Your Personalized Diving Trips and Liveaboard Experience'
         subtitle='Our adventures are currated by our experts in diving and leisure trips. With us, your trip will be a story that will last a lifetime.'
         btnMainText='Explore Diving Trips'
-        btnMainUrl='/'
+        btnMainUrl='/diving-trips'
         btnSecondaryText='About Us'
-        btnSecondaryUrl='/'
+        btnSecondaryUrl='/about'
       />
       <SectionInfo
         titleTop='About Sightsea Expeditions'
@@ -55,7 +55,7 @@ export default function Home() {
         titleTop='Unveil Deep Sea Wonders'
         titleMain='Our Upcoming Diving Trips.'
         events={upcomingDivingTrips}
-        btnUrl='/'
+        btnUrl='/diving-trips'
         btnText='See All Diving Trips'
         cardClass='basis-[100%] 2lg:basis-[50%] p-4 grow-0'
         cardType='horizontal'
@@ -80,14 +80,14 @@ export default function Home() {
         blurDataUrl={ImageVelocean.blurDataURL}
         btnTopUrl='/'
         btnTopText='Learn More'
-        btnBottomUrl='/'
+        btnBottomUrl='/liveaboard'
         btnBottomText='Other Liveaboard'
       />
       <SectionUpcomingEvents
         titleTop='Unlock the Hidden Gems'
         titleMain='Tours Beyond the Expected.'
         events={upcomingTours}
-        btnUrl='/'
+        btnUrl='/tours-experiences'
         btnText='See All Tours & Experiences'
         cardClass='flex flex-shrink-0 2xs:flex-shrink-0 flex-[220px] 2xs:flex-[240px] lg:flex-[25%] w-full'
         cardType='vertical'
@@ -102,7 +102,7 @@ export default function Home() {
         titleTop='Discover the Underwater World'
         titleMain='Explore Dive Centers.'
         events={diveCentersList}
-        btnUrl='/'
+        btnUrl='/dive-centers'
         btnText='See All Dive Centers'
         cardClass='flex flex-shrink-0 2xs:flex-shrink-0 flex-[220px] 2xs:flex-[240px] lg:flex-[20%] w-full'
         cardType='imageTitle'
