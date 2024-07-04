@@ -55,7 +55,7 @@ export default function Header() {
             })}
           </div>
           <Button asChild size='md' className='hidden lg:block'>
-            <Link href='/' aria-label='Go to contact page'>Contact Us</Link>
+            <Link href='/contact' aria-label='Go to contact page'>Contact Us</Link>
           </Button>
           <div className='block lg:hidden p-3 pr-0 cursor-pointer' onClick={handleMobileMenuClick}>
             <span className='uppercase font-montserrat text-md font-bold'>Menu</span>
@@ -70,12 +70,12 @@ export default function Header() {
             </Link>
           )
         })}
-        <Link href='/about-us' className='py-4 flex justify-end font-montserrat font-semibold text-xl' aria-label={`Go to about us page`}>
+        <Link href='/about' className='py-4 flex justify-end font-montserrat font-semibold text-xl' aria-label={`Go to about us page`}>
           About Us
         </Link>
         <div className='flex justify-end'>
           <Button asChild size='md' className='mt-7'>
-            <Link href='/' aria-label='Go to contact page'>Contact Us</Link>
+            <Link href='/contact' aria-label='Go to contact page'>Contact Us</Link>
           </Button>
         </div>
       </div>
