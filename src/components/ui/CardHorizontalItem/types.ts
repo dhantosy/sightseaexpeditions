@@ -12,6 +12,5 @@ export interface CardHorizontalItemProp {
   location: string;
   date: string;
   price: string;
-  duration: string;
   highlight?: HighlightProp;
 }

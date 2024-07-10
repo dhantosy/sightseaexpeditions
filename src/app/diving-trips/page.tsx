@@ -15,12 +15,12 @@ export default function DivingTripsPage() {
         blurDataUrl={ImageBanner.blurDataURL}
       />
       <div className='container px-4 lg:px-8 my-10'>
-        <h2 className='mb-1 lg:mb-3 whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight'>Upcoming Diving Trips</h2>
+        <h2 className='mb-1 lg:mb-3 whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight'>Upcoming Diving Trips</h2>
         <div className='flex flex-wrap -mx-4'>
-          {upcomingDivingTrips?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, duration, highlight }, index) => {
+          {upcomingDivingTrips?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, highlight }, index) => {
 
             return (
-              <div key={index} className='basis-[100%] 2lg:basis-[50%] p-4 grow-0 flex-shrink-0'>
+              <div key={index} className='basis-[100%] 2lg:basis-1/2 p-4 grow-0 flex-shrink-0'>
                 <CardHorizontalItem
                   img={img}
                   imgAlt={imgAlt}
@@ -30,7 +30,6 @@ export default function DivingTripsPage() {
                   location={location || ''}
                   date={date || ''}
                   price={price || ''}
-                  duration={duration || ''}
                   highlight={highlight}
                 />
               </div>

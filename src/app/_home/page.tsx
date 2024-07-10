@@ -57,7 +57,7 @@ export default function Home() {
         events={upcomingDivingTrips}
         btnUrl='/diving-trips'
         btnText='See All Diving Trips'
-        cardClass='basis-[100%] 2lg:basis-[50%] p-4 grow-0'
+        cardClass='basis-[100%] 2lg:basis-1/2 p-4 grow-0'
         cardType='horizontal'
       />
       <div className='relative'>

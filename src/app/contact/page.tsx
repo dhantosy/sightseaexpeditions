@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { format } from 'date-fns'
-import { FaMapLocationDot, FaEnvelope, FaPhone } from 'react-icons/fa6';
+import { FaMapLocationDot, FaEnvelope, FaPhone, FaClock } from 'react-icons/fa6';
 import SectionInstagram from '@/components/partial/SectionInstagram';
 import { Button } from '@/components/ui/Button';
 import Title from '@/components/ui/Title';
@@ -53,7 +53,7 @@ export default function ContactPage() {
       </div>
       <section className='container my-10 lg:my-12 px-4 lg:px-8'>
         <div className='relative flex flex-wrap flex-col-reverse lg:flex-row -mx-4 items-center'>
-          <div className='basis-[100%] lg:basis-[50%] px-4 grow-0  w-full h-full'>
+          <div className='basis-[100%] lg:basis-1/2 px-4 grow-0  w-full h-full'>
             <div className='border rounded-3xl overflow-hidden p-4'>
               <div className='relative rounded-3xl overflow-hidden pb-[70%] shadow-lg'>
                 <iframe
@@ -67,10 +67,10 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-          <div className='basis-[100%] lg:basis-[50%] px-4 grow-0 mt-6 mb-10 lg:mt-0 w-full'>
+          <div className='basis-[100%] lg:basis-1/2 px-4 grow-0 mt-6 mb-10 lg:mt-0 w-full'>
             <Title titleMain='Our Contact.' />
             <div className='flex flex-col 2sm:flex-row -mx-4 mt-8 sm:mt-12 mb-5'>
-              <div className='basis-[100%] lg:basis-[50%] px-4 grow-0 mb-3 lg:mb-0'>
+              <div className='basis-[100%] lg:basis-1/2 px-4 grow-0 mb-3 lg:mb-0'>
                 <div className='flex gap-4 iitems-center'>
                   <FaMapLocationDot size={20} />
                   <h4 className='uppercase font-medium font-montserrat mb-3 leading-tight'>Address</h4>
@@ -83,9 +83,9 @@ export default function ContactPage() {
                   </address>
                 </div>
               </div>
-              <div className='basis-[100%] lg:basis-[50%] px-4 grow-0 mb-3 lg:mb-0'>
+              <div className='basis-[100%] lg:basis-1/2 px-4 grow-0 mb-3 lg:mb-0'>
                 <div className='flex gap-4 iitems-center'>
-                  <FaEnvelope size={18} />
+                  <FaClock size={18} />
                   <h4 className='uppercase font-medium font-montserrat mb-3 leading-tight'>Opening Hours</h4>
                 </div>
                 <div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
               </div>
             </div>
             <div className='flex flex-col 2sm:flex-row -mx-4'>
-              <div className='basis-[100%] lg:basis-[50%] px-4 grow-0 mb-8 lg:mb-0'>
+              <div className='basis-[100%] lg:basis-1/2 px-4 grow-0 mb-8 lg:mb-0'>
                 <div className='flex gap-4 iitems-center'>
                   <FaEnvelope size={18} />
                   <h4 className='uppercase font-medium font-montserrat mb-3 leading-tight'>Email Address</h4>
@@ -108,7 +108,7 @@ export default function ContactPage() {
                   </a>
                 </div>
               </div>
-              <div className='basis-[100%] lg:basis-[50%] px-4 grow-0'>
+              <div className='basis-[100%] lg:basis-1/2 px-4 grow-0'>
                 <div className='flex gap-4 iitems-center'>
                   <FaPhone size={18} />
                   <h4 className='uppercase font-medium font-montserrat mb-3 leading-tight'>Phone</h4>
@@ -125,12 +125,12 @@ export default function ContactPage() {
       </section>
       <section className='container my-10 lg:my-20 px-4 lg:px-8 relative z-10'>
         <div className='relative flex flex-wrap flex-col lg:flex-row -mx-4 items-center'>
-          <div className='basis-[100%] lg:basis-[50%] px-4 grow-0 mt-4 mb-2 lg:mt-0 w-full'>
+          <div className='basis-[100%] lg:basis-1/2 px-4 grow-0 mt-4 mb-2 lg:mt-0 w-full'>
             <div className='text-left md:text-center'>
               <Title titleMain='Get in Touch.' />
             </div>
           </div>
-          <div className='basis-[100%] lg:basis-[50%] px-4 grow-0  w-full h-full'>
+          <div className='basis-[100%] lg:basis-1/2 px-4 grow-0  w-full h-full'>
             <div className='rounded-3xl overflow-hidden py-4'>
               <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
                 {isFormSubmitted ? (
@@ -147,20 +147,20 @@ export default function ContactPage() {
                   <div>
                     <div className='flex flex-col md:flex-row gap-0 md:gap-6'>
                         <fieldset className='mb-5 basis-1 md:basis-1/2'>
-                          <label htmlFor='name' className='text-slate-600 font-medium'>Full name<span>*</span></label>
+                          <label htmlFor='name' className='text-slate-600 font-medium'>Full name<span className='text-sm text-red-500'>*</span></label>
                           <input className='block mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' type='text' placeholder='Your full name' id='name' {...register('name', {
                             required: true
                           })} />
                         </fieldset>
                         <fieldset className='mb-5 basis-1 md:basis-1/2'>
-                          <label htmlFor='email' className='text-slate-600 font-medium'>Email address<span>*</span></label>
+                          <label htmlFor='email' className='text-slate-600 font-medium'>Email address<span className='text-sm text-red-500'>*</span></label>
                           <input className='block mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' type='email' id='email' placeholder='Your email address' {...register('email', {
                             required: true
                           })} />
                         </fieldset>
                     </div>
                       <fieldset className='mb-5'>
-                        <label htmlFor='message' className='text-slate-600 font-medium'>Message<span>*</span></label>
+                        <label htmlFor='message' className='text-slate-600 font-medium'>Message<span className='text-sm text-red-500'>*</span></label>
                         <textarea className='block min-h-40 mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' id='message' placeholder='Your messages' {...register('message', {
                         required: true
                       })} />

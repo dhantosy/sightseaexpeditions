@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
-import { FaLocationDot, FaCalendar } from 'react-icons/fa6';
+import { FaLocationDot, FaCalendar, FaUsers } from 'react-icons/fa6';
 import { CardVerticalItemProp } from './types'
 
 export default function CardVerticalItem({
@@ -13,6 +13,8 @@ export default function CardVerticalItem({
   date,
   url,
   price,
+  unit,
+  type,
 }: CardVerticalItemProp) {
 
   return (
@@ -41,11 +43,15 @@ export default function CardVerticalItem({
             <FaCalendar />
             <span>{date}</span>
           </div>
+          <div className='flex gap-3 items-center mb-2 text-sm opacity-70'>
+            <FaUsers />
+            <span>{type}</span>
+          </div>
           <div className='mt-5 flex flex-col gap-4 3lg:items-end 3lg:flex-row justify-between'>
             <div>
-              <span className='text-sm block'>Starts from </span>
-              <span className='text-lg font-bold'>{price} </span>
-              <span className='text-sm'>/ pax</span>
+              <span className='text-sm block opacity-70'>Starts from</span>
+              <span className='text-base font-semibold'>{price} </span>
+              <span className='text-sm opacity-70'>{unit}</span>
             </div>
             <div>
               <Button variant='secondary' size='sm' className='mt-2 3lg:mt-0 w-full 3lg:w-auto'>

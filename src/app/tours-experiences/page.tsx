@@ -15,12 +15,12 @@ export default function ToursExperiencesPage() {
         blurDataUrl={ImageSharkUnderwater.blurDataURL}
       />
       <div className='container px-4 lg:px-8 my-10'>
-        <h2 className='mb-1 lg:mb-3 whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight'>Explore Our Tours & Experiences</h2>
+        <h2 className='mb-1 lg:mb-3 whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight'>Explore Our Tours & Experiences</h2>
         <div className='flex flex-wrap -mx-4'>
-          {upcomingTours?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, duration }, index) => {
+          {upcomingTours?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, type, unit }, index) => {
 
             return (
-              <div key={index} className='basis-[100%] md:basis-[50%] lg:basis-[25%] p-4 grow-0 flex-shrink-0'>
+              <div key={index} className='basis-[100%] md:basis-1/2 lg:basis-[25%] p-4 grow-0 flex-shrink-0'>
                 <CardVerticalItem
                   img={img}
                   imgAlt={imgAlt}
@@ -30,7 +30,8 @@ export default function ToursExperiencesPage() {
                   location={location || ''}
                   date={date || ''}
                   price={price || ''}
-                  duration={duration || ''}
+                  type={type}
+                  unit={unit}
                 />
               </div>
             )
