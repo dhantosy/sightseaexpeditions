@@ -15,7 +15,7 @@ const InputCalendar = ({ setDate, showCalendar, handleCloseCalendar }: Prop) => 
     month: '',
     year: '',
   });
-  const calendarRef = useRef();
+  const calendarRef = useRef<HTMLDivElement>(null);
 
   useClickOutside(calendarRef, () => handleCloseCalendar(false));
   
