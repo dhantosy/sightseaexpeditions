@@ -24,7 +24,7 @@ export default function SectionUpcomingEvents({
         titleMain={titleMain}
       />
       <div className={cardSlide ? 'flex gap-6 lg:gap-8 pt-5 md:pt-7 pb-3 mb-2 w-full mx-auto flex-nowrap overflow-x-auto' : 'my-3 flex flex-wrap -mx-4'}>
-        {events?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, duration, highlight }, index) => {
+        {events?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, highlight, type, unit }, index) => {
 
           if (cardType === 'horizontal') {
             return (
@@ -38,7 +38,6 @@ export default function SectionUpcomingEvents({
                   location={location || ''}
                   date={date || ''}
                   price={price || ''}
-                  duration={duration || ''}
                   highlight={highlight}
                 />
               </div>
@@ -70,7 +69,8 @@ export default function SectionUpcomingEvents({
                 location={location || ''}
                 date={date || ''}
                 price={price || ''}
-                duration={duration || ''}
+                type={type || ''}
+                unit={unit || ''}
               />
             </div>
           )

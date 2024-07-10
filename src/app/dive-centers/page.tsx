@@ -15,12 +15,12 @@ export default function DiveCentersPage() {
         blurDataUrl={ImageBanner.blurDataURL}
       />
       <div className='container px-4 lg:px-8 my-10'>
-        <h2 className='mb-1 lg:mb-3 whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight'>Find Dive Centers</h2>
+        <h2 className='mb-1 lg:mb-3 whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight'>Find Dive Centers</h2>
         <div className='flex flex-wrap -mx-4'>
           {diveCentersList?.map(({ img, imgAlt, url, title, blurDataUrl }, index) => {
 
             return (
-              <div key={index} className='basis-[100%] sm:basis-[50%] md:basis-[25%] lg:basis-[20%] p-4 grow-0 flex-shrink-0'>
+              <div key={index} className='basis-[100%] sm:basis-1/2 md:basis-[25%] lg:basis-[20%] p-4 grow-0 flex-shrink-0'>
                 <CardImageTitle img={img} imgAlt={imgAlt} url={url} title={title} blurDataUrl={blurDataUrl} />
               </div>
             )

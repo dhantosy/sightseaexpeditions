@@ -14,8 +14,9 @@ interface CardsProp {
   date?: string;
   url: string;
   price?: string;
-  duration?: string;
   highlight?: HighlightProp;
+  type?: string;
+  unit?: string;
 }
 
 export interface SectionUpcomingEventsProp {

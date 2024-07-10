@@ -43,7 +43,7 @@ export default function AboutPage() {
       <section className='relative container my-10 lg:my-12 px-4 lg:px-8'>
         <div className='max-w-6xl mx-auto'>
           <div className='flex flex-wrap items-center -mx-4'>
-            <div className='basis-[100%] lg:basis-[50%] px-4 grow-0'>
+            <div className='basis-[100%] lg:basis-1/2 px-4 grow-0'>
               <div className='relative border border-slate-200 rounded-2xl p-3 after:content-[""] after:w-full after:top-0 after:left-0 after:bg-white/10 after:blur after:h-full after:absolute'>
                 <div className='relative z-10 rounded-2xl overflow-hidden w-full h-full pb-[60%] shadow-2xl'>
                   <Image
@@ -58,7 +58,7 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-            <div className='basis-[100%] lg:basis-[50%] px-4 grow-0 mt-6 lg:mt-0 w-full'>
+            <div className='basis-[100%] lg:basis-1/2 px-4 grow-0 mt-6 lg:mt-0 w-full'>
               <Title titleMain='👋 From Our Founder.' />
               <p className='whitespace-pre-line	mt-6 text-bluePrimary/70 text-lg'>Sightsea Expeditions was founded by a passionate and experienced dive master “Dimas Cungkring” who has amassed extensive experience in the dive trip industry dating back to 2011. He can be found adventuring on Instagram at <a href='https://www.instagram.com/cungkring/' target='_blank' className='font-semibold underline'>@cungkring</a>.</p>
             </div>
@@ -73,11 +73,11 @@ export default function AboutPage() {
         </div>
         <div className='max-w-6xl mx-auto relative'>
           <div className='flex flex-wrap flex-col-reverse lg:flex-row items-center -mx-4'>
-            <div className='basis-[100%] lg:basis-[50%] px-4 grow-0 mt-6 lg:mt-0 w-full'>
+            <div className='basis-[100%] lg:basis-1/2 px-4 grow-0 mt-6 lg:mt-0 w-full'>
               <Title titleMain='Our Vision.' />
               <p className='whitespace-pre-line	mt-6 text-bluePrimary/70 text-lg'>To be the leading provider of extraordinary island adventures, connecting people with themselves and others through unique natural experiences.</p>
             </div>
-            <div className='basis-[100%] lg:basis-[50%] px-4 grow-0  w-full h-full'>
+            <div className='basis-[100%] lg:basis-1/2 px-4 grow-0  w-full h-full'>
               <div className='relative border border-slate-200 rounded-2xl p-3 after:content-[""] after:w-full after:top-0 after:left-0 after:bg-white/10 after:blur after:h-full after:absolute'>
                 <div className='relative z-10 rounded-2xl overflow-hidden w-full h-full pb-[60%] shadow-2xl'>
                   <Image
@@ -98,7 +98,7 @@ export default function AboutPage() {
       <section className='relative container mb-12 lg:mb-20 mt-10 lg:mt-12 px-4 lg:px-8'>
         <div className='max-w-6xl mx-auto'>
           <div className='flex flex-wrap items-center -mx-4'>
-            <div className='basis-[100%] lg:basis-[50%] px-4 grow-0'>
+            <div className='basis-[100%] lg:basis-1/2 px-4 grow-0'>
               <div className='relative border border-slate-200 rounded-2xl p-3 after:content-[""] after:w-full after:top-0 after:left-0 after:bg-white/10 after:blur after:h-full after:absolute'>
                 <div className='relative z-10 rounded-2xl overflow-hidden w-full h-full pb-[60%] shadow-2xl'>
                   <Image
@@ -113,7 +113,7 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-            <div className='basis-[100%] lg:basis-[50%] px-4 grow-0 mt-6 lg:mt-0 w-full'>
+            <div className='basis-[100%] lg:basis-1/2 px-4 grow-0 mt-6 lg:mt-0 w-full'>
               <Title titleMain='Our Mission.' />
               <p className='whitespace-pre-line	mt-6 text-bluePrimary/70 text-lg'>We are committed to crafting immersive island experiences that foster a deep appreciation for nature, marine life, and the beauty of the untouched world. We aim to create unforgettable memories and inspire our clients to become stewards of the environment.</p>
             </div>

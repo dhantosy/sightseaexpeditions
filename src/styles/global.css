@@ -83,3 +83,12 @@
 .swiper-pagination-bullet-active {
   background-color: #050A30;
 }
+
+.calendar-widget .data-\[disabled\=true\]\:transition-none[data-disabled=true],
+button.z-0.group.relative.inline-flex.items-center.justify-center.box-border.appearance-none.select-none.whitespace-nowrap.font-normal.subpixel-antialiased.overflow-hidden.tap-highlight-transparent.data-\[pressed\=true\]\:scale-\[0\.97\].outline-none.data-\[focus-visible\=true\]\:z-10.data-\[focus-visible\=true\]\:outline-2.data-\[focus-visible\=true\]\:outline-focus.data-\[focus-visible\=true\]\:outline-offset-2.gap-2.rounded-full.opacity-disabled.pointer-events-none.px-0.\!gap-0.transition-transform-colors-opacity.motion-reduce\:transition-none.bg-transparent.data-\[hover\=true\]\:bg-default\/40.min-w-8.w-8.h-8.text-medium.text-default-400 {
+  color: #ddd;
+}
+
+.calendar-widget .data-\[selected\=true\]\:bg-primary[data-selected=true] {
+  background-color: #050A30;
+}

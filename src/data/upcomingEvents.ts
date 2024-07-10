@@ -85,8 +85,10 @@ export const upcomingTours = [
     location: 'NTT, Indonesia',
     date: 'Nov 9th, 2024',
     url: '/',
-    price: 'USD 300',
-    duration: '4 days'
+    price: 'USD 1,100',
+    duration: '4 days',
+    unit: '/ 1-5 guests',
+    type: 'Private Trip',
   },
   {
     img: ImageTorajaMain.src,
@@ -97,7 +99,9 @@ export const upcomingTours = [
     date: 'Nov 12th, 2024',
     url: '/',
     price: 'USD 450',
-    duration: '4 days'
+    duration: '4 days',
+    unit: '/ 1-5 guests',
+    type: 'Private Trip',
   },
   {
     img: ImageUbudMain.src,
@@ -108,7 +112,9 @@ export const upcomingTours = [
     date: 'Nov 14th, 2024',
     url: '/',
     price: 'USD 250',
-    duration: '4 days'
+    duration: '4 days',
+    unit: '/ person',
+    type: 'Open Trip',
   },
   {
     img: ImageKintamaniMain.src,
@@ -119,7 +125,9 @@ export const upcomingTours = [
     date: 'Nov 21st, 2024',
     url: '/',
     price: 'USD 200',
-    duration: '4 days'
+    duration: '4 days',
+    unit: '/ person',
+    type: 'Open Trip',
   },
 ];
 

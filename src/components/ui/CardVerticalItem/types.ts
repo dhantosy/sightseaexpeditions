@@ -7,5 +7,6 @@ export interface CardVerticalItemProp {
   location: string;
   date: string;
   price: string;
-  duration: string;
+  unit: string;
+  type: string;
 }

@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import type { Metadata } from 'next';
 import { Montserrat, Open_Sans } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
+import { Providers } from "./providers";
 import Header from '@/components/partial/Header';
 import Footer from '@/components/partial/Footer';
 import WhatsappWidget from '@/components/ui/WhatsappWidget';
@@ -17,7 +18,6 @@ const montserrat = Montserrat({
 });
 
 const cabin = Open_Sans({
-  weight: ['400', '500', '600'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-cabin',
@@ -36,15 +36,17 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${cabin.variable} ${montserrat.variable} text-bluePrimary font-cabin`}>
-        <NextTopLoader
-          color='#F1AD8E'
-          showSpinner={false}
-          height={5}
-        />
-        <Header />
-        {children}
-        <WhatsappWidget />
-        <Footer />
+        <Providers>
+          <NextTopLoader
+            color='#F1AD8E'
+            showSpinner={false}
+            height={5}
+          />
+          <Header />
+          {children}
+          <WhatsappWidget />
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
