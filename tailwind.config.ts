@@ -38,7 +38,7 @@ const config = {
     extend: {
       fontFamily: {
         'montserrat': ['var(--font-montserrat)'],
-        'cabin': ['var(--font-cabin)'],
+        'openSans': ['var(--font-openSans)'],
       },
       colors: {
         white: "#FFFFFF",
