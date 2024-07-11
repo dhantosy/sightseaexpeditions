@@ -191,7 +191,7 @@ export default function DiveCenterBaliPage() {
                   <FaXmark size={24} />
                 </div>
                 <div className='mb-4 text-xl font-semibold'>
-                  Booking Form
+                  Bali Dive Center
                 </div>
                 <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
                   {isFormSubmitted ? (

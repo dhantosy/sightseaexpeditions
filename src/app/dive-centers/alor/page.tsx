@@ -133,8 +133,7 @@ export default function DiveCenterAlorPage() {
   return (
     <main>
       <HeroDetailPage
-        title='Dive Bali: Explore the Enchanting Coral Reefs'
-        subtopic='Available Daily'
+        title='Dive Alor: Unforgettable Experiences with Top-Rated Dive Center'
         pageType='Dive Center'
         images={images}
       />
@@ -189,7 +188,7 @@ export default function DiveCenterAlorPage() {
                   <FaXmark size={24} />
                 </div>
                 <div className='mb-4 text-xl font-semibold'>
-                  Booking Form
+                  Alor Dive Center
                 </div>
                 <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
                   {isFormSubmitted ? (
