@@ -17,5 +17,5 @@ export interface AccordionTableProp {
   tableItemsClassTitle: string;
   tableItemsClass: string;
   includedList?: string[];
-  handleTableItemClick?: (diveDestination: string, type: string) => void;
+  handleTableItemClick: (diveDestination: string, type: string) => void;
 }
