@@ -9,9 +9,9 @@ import AccordionTable from '@/components/ui/AccordionTable';
 import Counter from '@/components/ui/Counter';
 import HeroDetailPage from '@/components/partial/HeroDetailPage';
 import ImageOne from '@public/assets/images/gallery/about-coral.jpg';
-import ImageTwo from '@public/assets/images/gallery/about-dive.jpg';
-import ImageThree from '@public/assets/images/gallery/about-mission.jpg';
-import ImageFour from '@public/assets/images/gallery/about-vision.jpg';
+import ImageTwo from '@public/assets/images/gallery/about-mission.jpg';
+import ImageThree from '@public/assets/images/gallery/about-dive.jpg';
+import ImageFour from '@public/assets/images/gallery/bali-fish.jpg';
 import {
   certifiedDiverInclude,
   nonCertifiedDiverInclude,
@@ -140,7 +140,7 @@ export default function DiveCenterBaliPage() {
         pageType='Dive Center'
         images={images}
       />
-      <div className={bookFormShow ? 'fixed h-full w-full bg-black/60 z-50 top-0 left-0 lg:hidden ' : 'hidden'} />
+      <div className={bookFormShow ? 'fixed h-full w-full bg-black/60 z-50 top-0 left-0 visible lg:hidden transition-all' : 'fixed h-full w-full bg-black/0 z-50 top-0 left-0 invisible transition-all lg:hidden'} />
       <section className='container px-4 lg:px-8'>
         <div className='flex flex-col lg:flex-row'>
           <div className='basis-full lg:basis-2/3 flex-shrink-0 flex flex-col gap-5 lg:gap-10'>

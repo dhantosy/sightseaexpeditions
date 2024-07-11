@@ -17,10 +17,10 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
-const cabin = Open_Sans({
+const openSans = Open_Sans({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-cabin',
+  variable: '--font-openSans',
 });
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${cabin.variable} ${montserrat.variable} text-bluePrimary font-cabin`}>
+      <body className={`${openSans.variable} ${montserrat.variable} text-bluePrimary font-openSans`}>
         <Providers>
           <NextTopLoader
             color='#F1AD8E'

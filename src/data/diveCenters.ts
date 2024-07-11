@@ -10,7 +10,7 @@ export const diveCentersList = [
     imgAlt: 'bali',
     blurDataUrl: ImageBali.blurDataURL,
     title: 'Bali',
-    url: '/',
+    url: '/dive-centers/bali',
   },
   {
     img: ImageLombok.src,
@@ -31,7 +31,7 @@ export const diveCentersList = [
     imgAlt: 'alor',
     blurDataUrl: ImageAlor.blurDataURL,
     title: 'Alor',
-    url: '/',
+    url: '/dive-centers/alor',
   },
   {
     img: ImageRajaAmpat.src,
