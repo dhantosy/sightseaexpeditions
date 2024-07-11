@@ -185,7 +185,7 @@ export default function DiveCenterBaliPage() {
             />
           </div>
           <div className='basis-full lg:basis-1/3 flex-shrink-0'>
-            <div className={bookFormShow ? 'w-full lg:w-auto left-0 bottom-0 lg:bottom-auto fixed lg:sticky lg:top-28 px-0 lg:pl-5 lg:pr-3 z-50 mt-12 lg:mt-0 transition-all' : 'w-full lg:w-auto left-0 -bottom-full lg:bottom-auto fixed lg:sticky lg:top-28 px-0 lg:pl-5 lg:pr-3 z-50 mt-12 lg:mt-0 transition-all' }>
+            <div className={bookFormShow ? 'w-full lg:w-auto left-0 bottom-0 lg:bottom-auto fixed lg:sticky lg:top-28 px-0 lg:pl-5 lg:pr-3 z-50 lg:z-20 mt-12 lg:mt-0 transition-all' : 'w-full lg:w-auto left-0 -bottom-full lg:bottom-auto fixed lg:sticky lg:top-28 px-0 lg:pl-5 lg:pr-3 z-50 lg:z-20 mt-12 lg:mt-0 transition-all' }>
               <div className='relative bg-white rounded-t-3xl lg:rounded-3xl border border-slate-100 shadow-lg px-5 lg:px-10 py-8'>
                 <div className='opacity-70 absolute right-5 top-5 cursor-pointer block lg:hidden' onClick={() => setBookFormShow(false)}>
                   <FaXmark size={24} />
