@@ -5,6 +5,8 @@ interface TableProp {
   duration?: string;
   minimumPerson?: string;
   price: string;
+  currency?: string;
+  type: string;
 }
 
 export interface AccordionTableProp {
@@ -15,4 +17,5 @@ export interface AccordionTableProp {
   tableItemsClassTitle: string;
   tableItemsClass: string;
   includedList?: string[];
+  handleTableItemClick: (diveDestination: string, type: string) => void;
 }
