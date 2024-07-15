@@ -1,7 +1,7 @@
-import ImageOne from '@public/assets/images/gallery/alor-1.jpg';
-import ImageTwo from '@public/assets/images/gallery/alor-2.jpg';
-import ImageThree from '@public/assets/images/gallery/alor-3.jpg';
-import ImageFour from '@public/assets/images/gallery/alor-4.jpg';
+import ImageOne from '@public/assets/images/gallery/labuan-bajo-1.jpg';
+import ImageTwo from '@public/assets/images/gallery/labuan-bajo-2.jpg';
+import ImageThree from '@public/assets/images/gallery/labuan-bajo-3.jpg';
+import ImageFour from '@public/assets/images/gallery/labuan-bajo-4.jpg';
 
 export const PRICE_PER_PERSON = '1450000';
 
