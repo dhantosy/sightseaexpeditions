@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, useState } from 'react';
-import { FaCheck } from "react-icons/fa6";
+import { FaCircleCheck } from "react-icons/fa6";
 import { Button } from '@/components/ui/Button';
 import { AccordionTableProp } from './types';
 
@@ -25,8 +25,8 @@ export default function AccordionTable({ isExpand, title, tableTitle, tableItems
             <div className='flex flex-wrap opacity-70'>
               {includedList.map((item) => {
                 return (
-                  <div key={item} className='flex items-baseline basis-full lg:basis-1/3 flex-shrink-0 flex-grow-0 gap-2 mb-3 px-3'>
-                    <FaCheck size={12} />
+                  <div key={item} className='flex items-baseline basis-full lg:basis-1/2 flex-shrink-0 flex-grow-0 gap-2 mb-3'>
+                    <FaCircleCheck size={12} className='text-emerald-600' />
                     <div className=''>{item}</div>
                   </div>
                 )

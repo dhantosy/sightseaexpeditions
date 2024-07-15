@@ -89,6 +89,10 @@ button.z-0.group.relative.inline-flex.items-center.justify-center.box-border.app
   color: #ddd;
 }
 
+.calendar-widget .data-\[unavailable\=true\]\:line-through[data-unavailable=true] {
+  color: #c4c4c4;
+}
+
 .calendar-widget .data-\[selected\=true\]\:bg-primary[data-selected=true] {
   background-color: #050A30;
 }

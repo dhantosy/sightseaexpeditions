@@ -16,7 +16,7 @@ export default function SectionInstagram({
         <div className='flex flex-col'>
           <div className='m-auto'>
             <h4 className='text-sm md:text-lg font-medium uppercase tracking-wider font-montserrat mb-1'>{titleTop}</h4>
-            <h2 className='whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight'>
+            <h2 className='whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight'>
               <a href='https://www.instagram.com/sightsea/' target='_blank'>{titleMain}</a>
             </h2>
           </div>

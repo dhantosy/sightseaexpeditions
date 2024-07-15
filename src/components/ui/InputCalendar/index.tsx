@@ -5,7 +5,7 @@ import { today, getLocalTimeZone } from "@internationalized/date";
 import useClickOutside from '@/hooks/useClickOutside';
 import { InputCalendarProp } from './types';
 
-const InputCalendar = ({ setDate, showCalendar, handleCloseCalendar }: InputCalendarProp) => {
+const InputCalendar = ({ setDate, showCalendar, handleCloseCalendar, unavailableDates, errorMessage }: InputCalendarProp) => {
   const [selectedDate, setSelectedDate] = useState('');
   const calendarRef = useRef<HTMLDivElement>(null);
 
@@ -13,7 +13,7 @@ const InputCalendar = ({ setDate, showCalendar, handleCloseCalendar }: InputCale
   
   const handleChange = (value: any) => {
     const parseDate = Date.parse(value.toString());
-    const formatDate = format(parseDate, 'dd MMM yyyy');
+    const formatDate = format(parseDate, 'dd MMMM yyyy');
 
     setSelectedDate(formatDate);
     setDate(value);
@@ -21,7 +21,7 @@ const InputCalendar = ({ setDate, showCalendar, handleCloseCalendar }: InputCale
   };
 
   return (
-    <div className='calendar-widget'>
+    <div className='calendar-widget relative z-40'>
       <div onClick={() => handleCloseCalendar(true)} className='relative cursor-pointer after:content-[""] after:absolute after:w-full after:h-full after:top-0 after:left-0 after:z-20'>
         <label htmlFor='datepicker' className='text-slate-600 font-medium text-sm'>Select Date</label>
         <input
@@ -33,22 +33,26 @@ const InputCalendar = ({ setDate, showCalendar, handleCloseCalendar }: InputCale
           disabled
         />
       </div>
-      <div className='absolute' ref={calendarRef}>
+      <div className='absolute w-full' ref={calendarRef}>
         <div className={showCalendar ? 'block' : 'hidden'}>
           <Calendar
             aria-label="Date (Min Date Value)"
             weekdayStyle='short'
-            defaultValue={today(getLocalTimeZone()).add({ days: 1 })}
+            calendarWidth='100%'
             minValue={today(getLocalTimeZone()).add({ days: 1 })}
+            isDateUnavailable={unavailableDates}
             classNames={{
               base: 'shadow-xl rounded-2xl border border-slate-100 px-2 bg-white',
               title: 'font-bold text-sm',
               gridHeader: 'opacity-50 text-sm',
               gridHeaderCell: 'py-1 px-1',
               gridHeaderRow: 'p-0 justify-around',
+              gridBodyRow: 'flex justify-around items-center first:mt-2',
               cell: 'py-1 px-1',
+              errorMessage: 'text-small text-rose-700 break-words max-w-full'
             }}
             onChange={handleChange}
+            errorMessage={errorMessage}
           />
         </div>
       </div>
