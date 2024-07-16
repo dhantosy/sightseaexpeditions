@@ -13,6 +13,7 @@ import InputCalendar from '@/components/ui/InputCalendar';
 import { PRICE_PER_PERSON, EVENT_TITLE, images, schedule, notes, include } from './data';
 import { upcomingTours } from '@/data/upcomingEvents';
 import SectionUpcomingEvents from '@/components/partial/SectionUpcomingEvents';
+import StickyPriceInfo from '@/components/partial/StickyPriceInfo';
 import { useRandomEvents } from '@/hooks/useRandomEvents';
 
 type Inputs = {
@@ -66,11 +67,13 @@ export default function ToursLabuanBajoPrivateTripPage() {
     const parseDate = Date.parse(val.toString());
     const formatDate = format(parseDate, 'dd MMMM yyyy');
     setSelectedDate(formatDate);
-  }
+  };
 
   const closeCalendar = (val: any) => {
-    setShowCalendar(val);
-  }
+    setTimeout(() => {
+      setShowCalendar(val);
+    }, 10);
+  };
 
   return (
     <main>
@@ -196,25 +199,13 @@ export default function ToursLabuanBajoPrivateTripPage() {
           </div>
         </div>
       </section>
-      <div className='fixed w-full px-4 py-3 top-20 bg-white z-20 rounded-b-3xl shadow-lg block lg:hidden'>
-        <div className='flex justify-between items-center'>
-          <div className='text-sm'>
-            <div className='opacity-70 mb-1'>Labuan Bajo Private Trip</div>
-            <div className='flex gap-2'>
-              <div className='font-semibold'>{`IDR ${totalPrice}`}</div>
-              <div className='opacity-70'> / 1 - 5 guests</div>
-            </div>
-          </div>
-          <Button
-            type='button'
-            size='sm'
-            className='min-w-32'
-            onClick={() => setBookFormShow(true)}
-          >
-            Book Now
-          </Button>
-        </div>
-      </div>
+      <StickyPriceInfo
+        totalPrice={formatCurrency(PRICE_PER_PERSON)}
+        priceUnit=' / 1 - 5 guests'
+        title={EVENT_TITLE}
+        btnText='Book Now'
+        onButtonclick={() => setBookFormShow(true)}
+      />
       <div className='mt-10 lg:mt-24'>
         <SectionUpcomingEvents
           titleTop=''
