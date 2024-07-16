@@ -34,7 +34,7 @@ const InputCalendar = ({ setDate, showCalendar, handleCloseCalendar, unavailable
         />
       </div>
       <div className='absolute w-full' ref={calendarRef}>
-        <div className={showCalendar ? 'visible' : 'invisible'}>
+        <div className={showCalendar ? 'visible block' : 'invisible hidden'}>
           <Calendar
             aria-label="Date (Min Date Value)"
             weekdayStyle='short'
