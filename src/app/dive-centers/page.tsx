@@ -2,6 +2,10 @@ import HeroListPage from '@/components/partial/HeroListPage';
 import CardImageTitle from '@/components/ui/CardImageTitle';
 import ImageBanner from '@public/assets/images/gallery/dive-center-banner-3.jpg'
 import { diveCentersList } from '@/data/diveCenters';
+import SectionInstagram from '@/components/partial/SectionInstagram';
+import SectionTestimonials from '@/components/partial/SectionTestimonials';
+import { instagramImages } from '@/data/gallery';
+import { testimonials } from '@/data/testimonials';
 
 export default function DiveCentersPage() {
 
@@ -20,13 +24,15 @@ export default function DiveCentersPage() {
           {diveCentersList?.map(({ img, imgAlt, url, title, blurDataUrl }, index) => {
 
             return (
-              <div key={index} className='basis-[100%] sm:basis-1/2 md:basis-[25%] lg:basis-[20%] p-4 grow-0 flex-shrink-0'>
+              <div key={index} className='basis-full sm:basis-1/2 md:basis-1/4 lg:basis-1/5 p-4 grow-0 flex-shrink-0'>
                 <CardImageTitle img={img} imgAlt={imgAlt} url={url} title={title} blurDataUrl={blurDataUrl} />
               </div>
             )
           })}
         </div>
       </div>
+      <SectionTestimonials testimonials={testimonials} />
+      <SectionInstagram titleMain='@sightsea' titleTop='Follow Us on Instagram' gallery={instagramImages} />
     </main>
   )
 };

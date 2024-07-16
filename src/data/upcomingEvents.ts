@@ -5,6 +5,8 @@ import ImageMaratuaMain from '@public/assets/images/diving/barracuda-main.jpg'
 import ImageAlorMain from '@public/assets/images/diving/hammerhead-alor.jpg'
 
 // TOUR
+import ImageLabuanBajoPrivate from '@public/assets/images/gallery/labuan-bajo-1.jpg'
+import ImageLabuanBajoOpen from '@public/assets/images/gallery/labuan-bajo-4.jpg'
 import ImageSumbasMain from '@public/assets/images/tours/sumba.jpg'
 import ImageTorajaMain from '@public/assets/images/tours/toraja.jpg'
 import ImageUbudMain from '@public/assets/images/tours/ubud.jpg'
@@ -78,6 +80,32 @@ export const upcomingDivingTrips = [
 
 export const upcomingTours = [
   {
+    img: ImageLabuanBajoPrivate.src,
+    imgAlt: 'Labuan Bajo Private Trip',
+    blurDataUrl: ImageLabuanBajoPrivate.blurDataURL,
+    title: 'Labuan Bajo Private Trip',
+    location: 'NTT, Indonesia',
+    date: 'Upon Request',
+    url: '/tours-experiences/labuan-bajo-private-trip',
+    price: 'IDR 11jt',
+    duration: '4 days',
+    unit: '/ 1-5 guests',
+    type: 'Private Trip',
+  },
+  {
+    img: ImageLabuanBajoOpen.src,
+    imgAlt: 'Labuan Bajo Open Trip',
+    blurDataUrl: ImageLabuanBajoOpen.blurDataURL,
+    title: 'Labuan Bajo Open Trip',
+    location: 'NTT, Indonesia',
+    date: 'Every Fri - Sun',
+    url: '/tours-experiences/labuan-bajo-open-trip',
+    price: 'IDR 1,45jt',
+    duration: '4 days',
+    unit: '/ person',
+    type: 'Open Trip',
+  },
+  {
     img: ImageSumbasMain.src,
     imgAlt: 'Sumba Tour',
     blurDataUrl: ImageSumbasMain.blurDataURL,
@@ -85,7 +113,7 @@ export const upcomingTours = [
     location: 'NTT, Indonesia',
     date: 'Nov 9th, 2024',
     url: '/',
-    price: 'USD 1,100',
+    price: 'IDR 12jt',
     duration: '4 days',
     unit: '/ 1-5 guests',
     type: 'Private Trip',
@@ -98,7 +126,7 @@ export const upcomingTours = [
     location: 'Sulawesi, Indonesia',
     date: 'Nov 12th, 2024',
     url: '/',
-    price: 'USD 450',
+    price: 'IDR 14,9jt',
     duration: '4 days',
     unit: '/ 1-5 guests',
     type: 'Private Trip',
@@ -111,7 +139,7 @@ export const upcomingTours = [
     location: 'Bali, Indonesia',
     date: 'Nov 14th, 2024',
     url: '/',
-    price: 'USD 250',
+    price: 'IDR 650rb',
     duration: '4 days',
     unit: '/ person',
     type: 'Open Trip',
@@ -124,7 +152,7 @@ export const upcomingTours = [
     location: 'Bali, Indonesia',
     date: 'Nov 21st, 2024',
     url: '/',
-    price: 'USD 200',
+    price: 'IDR 600rb',
     duration: '4 days',
     unit: '/ person',
     type: 'Open Trip',

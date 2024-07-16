@@ -3,15 +3,10 @@ import ImageTwo from '@public/assets/images/gallery/labuan-bajo-2.jpg';
 import ImageThree from '@public/assets/images/gallery/labuan-bajo-3.jpg';
 import ImageFour from '@public/assets/images/gallery/labuan-bajo-4.jpg';
 
-export const PRICE_PER_PERSON = '1450000';
-export const EVENT_TITLE = 'Labuan Bajo Open Trip' || '';
+export const PRICE_PER_PERSON = '11000000';
+export const EVENT_TITLE = 'Labuan Bajo Private Trip' || '';
 
 export const images = [
-  {
-    img: ImageFour.src,
-    imgAlt: '',
-    blurDataUrl: ImageFour.blurDataURL,
-  },
   {
     img: ImageOne.src,
     imgAlt: '',
@@ -27,6 +22,11 @@ export const images = [
     imgAlt: '',
     blurDataUrl: ImageThree.blurDataURL,
   },
+  {
+    img: ImageFour.src,
+    imgAlt: '',
+    blurDataUrl: ImageFour.blurDataURL,
+  },
 ];
 
 export const schedule = [
@@ -35,7 +35,7 @@ export const schedule = [
     desc: 'Pick up at your hotel (exact time may vary) and start the trip.'
   },
   {
-    time: '08:00',
+    time: '08:30',
     desc: 'Trekking at Padar Island.'
   },
   {
@@ -43,27 +43,27 @@ export const schedule = [
     desc: 'Arrive at Pink Beach.'
   },
   {
-    time: '12:00',
+    time: '11:00',
     desc: 'Arrive at Komodo Island.'
   },
   {
-    time: '13:00',
+    time: '12:00',
     desc: 'Lunch Box.'
   },
   {
-    time: '13:30',
+    time: '13:00',
     desc: 'Arrive at Taka Makassar.'
   },
   {
-    time: '14:30',
+    time: '14:00',
     desc: 'Arrive at Manta Point.'
   },
   {
-    time: '16:00',
+    time: '15:00',
     desc: 'Arrive at Kanawa Island.'
   },
   {
-    time: '17:00',
+    time: '16:00',
     desc: 'Back to Labuan Bajo (Hotel Transfer).'
   },
 ];
@@ -71,14 +71,15 @@ export const schedule = [
 export const notes = [
   'Komodo entrance fee (Local IDR 200,000/person, Foreigner IDR 500,000/person)',
   'Please prepare some cash for your personal expenses (if any).',
-  'Additional Documentation, IDR 1,800,000/photographer (Drone, Gopro and Camera)'
 ];
 
 export const include = [
   'Hotel Transfer (Pickup & Drop off)',
+  'Private Speedboat',
+  'Documentation (Drone, GoPro, & Camera)',
+  'Snorkeling Gear',
   'Lunch Box',
-  'Coffee Break',
-  'Snorkeling Kit',
   'Life Jacket',
+  'Snacks & Drinks',
   'Guide',
 ];

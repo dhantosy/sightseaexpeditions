@@ -3,8 +3,6 @@
 import { useEffect, useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { format } from 'date-fns';
-import { isWeekday, getDayOfWeek } from "@internationalized/date";
-import { useLocale } from "@react-aria/i18n";
 import { FaXmark, FaCircleCheck, FaCirclePlus } from 'react-icons/fa6';
 import { Button } from '@/components/ui/Button';
 import AccordionContent from '@/components/ui/AccordionContent';
@@ -24,19 +22,14 @@ type Inputs = {
   destination: string
 };
 
-export default function ToursLabuanBajoOpenTripPage() {
+export default function ToursLabuanBajoPrivateTripPage() {
   const [bookFormShow, setBookFormShow] = useState(false);
   const [selectedDate, setSelectedDate] = useState('');
   const [count, setCount] = useState(1);
   const [showCalendar, setShowCalendar] = useState(false);
   const [totalPrice, setTotalPrice] = useState(formatCurrency(PRICE_PER_PERSON));
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const events = useRandomEvents(upcomingTours, EVENT_TITLE);
-  const { locale } = useLocale();
-
-  const isDateUnavailable = (date: any) => {
-    return isWeekday(date, locale) && getDayOfWeek(date, locale) !== 5
-  }
+  const events = useRandomEvents(upcomingTours, EVENT_TITLE)
 
   const {
     register,
@@ -67,7 +60,6 @@ export default function ToursLabuanBajoOpenTripPage() {
 
   const handleCounterChange = (val: number) => {
     setCount(val);
-    setTotalPrice(formatCurrency(Number(PRICE_PER_PERSON) * val));
   };
 
   const handleDateChange = (val: Date) => {
@@ -84,9 +76,9 @@ export default function ToursLabuanBajoOpenTripPage() {
     <main>
       <div className='pt-16 lg:pt-0'>
         <HeroDetailPage
-          title='Labuan Bajo Open Trip: Trekking, Snorkeling & Island Hopping'
+          title='Labuan Bajo Private Trip: Trekking, Snorkeling & Island Hopping'
           pageType='Tours & Experiences'
-          subtopic='Available Friday, Saturday & Sunday'
+          subtopic='Available Upon Request'
           images={images}
         />
       </div>
@@ -95,7 +87,7 @@ export default function ToursLabuanBajoOpenTripPage() {
         <div className='flex flex-col lg:flex-row'>
           <div className='basis-full lg:basis-2/3 flex-shrink-0 flex flex-col gap-5 lg:gap-10'>
             <AccordionContent title='Overview' isExpand>
-              <p className='opacity-70'>Labuan Bajo, a stunning gateway to the Komodo National Park, beckons travelers with its rich biodiversity, dramatic landscapes, and vibrant culture. An open trip to Labuan Bajo offers an affordable and social way to experience this Indonesian paradise. Travel with like-minded adventurers: Open trips bring together a group of travelers seeking an unforgettable adventure in Labuan Bajo. You`ll share the experience with fellow explorers, creating new friendships and memories along the way.</p>
+              <p className='opacity-70'>Labuan Bajo, a stunning gateway to the Komodo National Park, beckons travelers with its rich biodiversity, dramatic landscapes, and vibrant culture. Indulge in an unforgettable adventure with a private trip to Labuan Bajo. Whether you`re a nature enthusiast yearning to witness the majestic Komodo dragons, or simply a traveler yearning for relaxation amidst breathtaking scenery, a private trip to Labuan Bajo promises an unparalleled experience.</p>
             </AccordionContent>
             <AccordionContent title='Itinerary' isExpand>
               <div className='relative pt-2 pb-1 pl-8 after:content[""] after:absolute after:h-full after:left-2 after:top-0 after:border-l after:border-dashed after:border-bluePrimary'>
@@ -144,7 +136,7 @@ export default function ToursLabuanBajoOpenTripPage() {
                   <FaXmark size={24} />
                 </div>
                 <div className='mb-4 text-xl font-semibold'>
-                  Labuan Bajo Open Trip
+                  Labuan Bajo Private Trip
                 </div>
                 <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
                   {isFormSubmitted ? (
@@ -164,7 +156,6 @@ export default function ToursLabuanBajoOpenTripPage() {
                           setDate={handleDateChange}
                           showCalendar={showCalendar}
                           handleCloseCalendar={closeCalendar}
-                          unavailableDates={isDateUnavailable}
                           errorMessage='Available on Fri, Sat & Sun'
                         />
                       </fieldset>
@@ -172,7 +163,7 @@ export default function ToursLabuanBajoOpenTripPage() {
                         <Counter
                           onChange={handleCounterChange}
                           count={count}
-                          maxCount={9}
+                          maxCount={5}
                         />
                       </fieldset>
                       <div className='py-5 border-t mb-6 flex justify-between items-center font-semibold'>
@@ -190,7 +181,7 @@ export default function ToursLabuanBajoOpenTripPage() {
                         Book Now
                       </Button>
                       <a
-                        href={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0ALabuan%20Bajo%20Open%20Trip%20${selectedDate ? 'on ' + selectedDate : ''}%20for%20${count}%20person`}
+                        href={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0ALabuan%20Bajo%20Private%20Trip%20${selectedDate ? 'on ' + selectedDate : ''}%20for%20${count}%20guests`}
                         target='_blank'
                       >
                         <Button type='button' variant='outline' size='md' className='min-w-40 w-full'>
@@ -208,10 +199,10 @@ export default function ToursLabuanBajoOpenTripPage() {
       <div className='fixed w-full px-4 py-3 top-20 bg-white z-20 rounded-b-3xl shadow-lg block lg:hidden'>
         <div className='flex justify-between items-center'>
           <div className='text-sm'>
-            <div className='opacity-70 mb-1'>{EVENT_TITLE}</div>
+            <div className='opacity-70 mb-1'>Labuan Bajo Private Trip</div>
             <div className='flex gap-2'>
               <div className='font-semibold'>{`IDR ${totalPrice}`}</div>
-              <div className='opacity-70'> / person</div>
+              <div className='opacity-70'> / 1 - 5 guests</div>
             </div>
           </div>
           <Button

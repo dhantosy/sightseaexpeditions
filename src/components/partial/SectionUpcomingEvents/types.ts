@@ -23,8 +23,8 @@ export interface SectionUpcomingEventsProp {
   titleTop: string,
   titleMain: string,
   events?: CardsProp[],
-  btnUrl: string;
-  btnText: string;
+  btnUrl?: string;
+  btnText?: string;
   cardClass: string;
   cardType: CardType;
   cardSlide?: boolean;

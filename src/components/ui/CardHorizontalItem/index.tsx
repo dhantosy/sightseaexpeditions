@@ -20,7 +20,7 @@ export default function CardHorizontalItem({
   return (
     <Link href={url} className='relative block top-0 overflow-hidden rounded-2xl transition-all hover:-top-1 group'>
       <div className='flex flex-wrap border border-slate-200 rounded-2xl p-3'>
-        <div className='relative basis-[100%] md:basis-[40%] grow-0 rounded-2xl shadow-xl overflow-hidden'>
+        <div className='relative basis-full md:basis-[40%] grow-0 rounded-2xl shadow-xl overflow-hidden'>
           <div className='relative w-full pb-[60%] md:pb-[85%] 2lg:pb-[125%] 3lg:pb-[85%]'>
             <Image
               src={img}
@@ -33,7 +33,7 @@ export default function CardHorizontalItem({
             />
           </div>
         </div>
-        <div className='relative pb-0 md:pb-2 pt-2 mt-4 md:mt-0 md:pl-6 md:pr-1 basis-[100%] md:basis-[60%] grow-0'>
+        <div className='relative pb-0 md:pb-2 pt-2 mt-4 md:mt-0 md:pl-6 md:pr-1 basis-full md:basis-[60%] grow-0'>
           {highlight?.diveCount ? (
             <div className='flex flex-col 2xs:flex-row 2lg:flex-col 3lg:flex-row gap-3 mb-4'>
               <div className='w-fit flex px-3 py-1 text-sm items-center gap-2 rounded-full bg-sky-100 text-sky-900'>
@@ -58,12 +58,12 @@ export default function CardHorizontalItem({
           <div className='2xs:items-end mt-7 md:mt-4 2lg:mt-10 md:absolute 2lg:relative 3lg:absolute bottom-1 left-0 flex justify-between w-full pl-0 md:pl-6 2lg:pl-0 3lg:pl-6 gap-3 flex-col 2xs:flex-row'>
             <div>
               <span className='text-sm block opacity-70'>Starts from </span>
-              <span className='text-lg font-semibold'>{price} </span>
+              <span className='text-base font-bold'>{price} </span>
               <span className='text-sm opacity-70'>/ person</span>
             </div>
             <div>
               <Button variant='secondary' size='sm' className='w-full 2xs:w-auto'>
-                Book Now
+                See Detail
               </Button>
             </div>
           </div>
