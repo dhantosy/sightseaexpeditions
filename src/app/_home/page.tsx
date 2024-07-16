@@ -57,7 +57,7 @@ export default function Home() {
         events={upcomingDivingTrips}
         btnUrl='/diving-trips'
         btnText='See All Diving Trips'
-        cardClass='basis-[100%] 2lg:basis-1/2 p-4 grow-0'
+        cardClass='basis-full 2lg:basis-1/2 p-3 grow-0'
         cardType='horizontal'
       />
       <div className='relative'>
@@ -86,10 +86,10 @@ export default function Home() {
       <SectionUpcomingEvents
         titleTop='Unlock the Hidden Gems'
         titleMain='Tours Beyond the Expected.'
-        events={upcomingTours}
+        events={upcomingTours.slice(0, 4)}
         btnUrl='/tours-experiences'
         btnText='See All Tours & Experiences'
-        cardClass='flex flex-shrink-0 2xs:flex-shrink-0 flex-[220px] 2xs:flex-[240px] lg:flex-[25%] w-full'
+        cardClass='flex shrink-0 grow-0 basis-[220px] 2xs:basis-[240px] lg:basis-1/4 w-full px-3'
         cardType='vertical'
         cardSlide
       />
@@ -104,7 +104,7 @@ export default function Home() {
         events={diveCentersList}
         btnUrl='/dive-centers'
         btnText='See All Dive Centers'
-        cardClass='flex flex-shrink-0 2xs:flex-shrink-0 flex-[220px] 2xs:flex-[240px] lg:flex-[20%] w-full'
+        cardClass='flex shrink-0 grow-0 basis-[220px] 2xs:basis-[240px] lg:basis-1/5 w-full px-3'
         cardType='imageTitle'
         cardSlide
       />

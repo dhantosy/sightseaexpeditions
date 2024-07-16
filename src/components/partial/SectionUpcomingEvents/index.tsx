@@ -23,13 +23,45 @@ export default function SectionUpcomingEvents({
         titleTop={titleTop}
         titleMain={titleMain}
       />
-      <div className={cardSlide ? 'flex gap-6 lg:gap-8 pt-5 md:pt-7 pb-3 mb-2 w-full mx-auto flex-nowrap overflow-x-auto' : 'my-3 flex flex-wrap -mx-4'}>
-        {events?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, highlight, type, unit }, index) => {
+      <div className='-mx-3'>
+        <div className={cardSlide ? 'flex pt-5 md:pt-7 pb-3 mb-2 w-full mx-auto flex-nowrap overflow-x-auto' : 'my-3 flex flex-wrap'}>
+          {events?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, highlight, type, unit }, index) => {
 
-          if (cardType === 'horizontal') {
+            if (cardType === 'horizontal') {
+              return (
+                <div key={index} className={cardClass}>
+                  <CardHorizontalItem
+                    img={img}
+                    imgAlt={imgAlt}
+                    blurDataUrl={blurDataUrl}
+                    url={url}
+                    title={title}
+                    location={location || ''}
+                    date={date || ''}
+                    price={price || ''}
+                    highlight={highlight}
+                  />
+                </div>
+              )
+            }
+
+            if (cardType === 'imageTitle') {
+              return (
+                <div key={index} className={cardClass}>
+                  <CardImageTitle
+                    img={img}
+                    imgAlt={imgAlt}
+                    blurDataUrl={blurDataUrl}
+                    url={url}
+                    title={title}
+                  />
+                </div>
+              )
+            }
+
             return (
               <div key={index} className={cardClass}>
-                <CardHorizontalItem
+                <CardVerticalItem
                   img={img}
                   imgAlt={imgAlt}
                   blurDataUrl={blurDataUrl}
@@ -38,49 +70,21 @@ export default function SectionUpcomingEvents({
                   location={location || ''}
                   date={date || ''}
                   price={price || ''}
-                  highlight={highlight}
+                  type={type || ''}
+                  unit={unit || ''}
                 />
               </div>
             )
-          }
-
-          if (cardType === 'imageTitle') {
-            return (
-              <div key={index} className={cardClass}>
-                <CardImageTitle
-                  img={img}
-                  imgAlt={imgAlt}
-                  blurDataUrl={blurDataUrl}
-                  url={url}
-                  title={title}
-                />
-              </div>
-            )
-          }
-
-          return (
-            <div key={index} className={cardClass}>
-              <CardVerticalItem
-                img={img}
-                imgAlt={imgAlt}
-                blurDataUrl={blurDataUrl}
-                url={url}
-                title={title}
-                location={location || ''}
-                date={date || ''}
-                price={price || ''}
-                type={type || ''}
-                unit={unit || ''}
-              />
-            </div>
-          )
-        })}
+          })}
+        </div>
       </div>
-      <div className='flex justify-center'>
-        <Button asChild size='md' className='uppercase flex-grow lg:flex-grow-0'>
-          <Link href={btnUrl} aria-label={btnText}>{btnText}</Link>
-        </Button>
-      </div>
+      {btnUrl && (
+        <div className='flex justify-center'>
+          <Button asChild size='md' className='uppercase flex-grow lg:flex-grow-0'>
+            <Link href={btnUrl} aria-label={btnText}>{btnText}</Link>
+          </Button>
+        </div>
+      )}
     </section>
   )
 };

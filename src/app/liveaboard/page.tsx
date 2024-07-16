@@ -2,6 +2,10 @@ import HeroListPage from '@/components/partial/HeroListPage';
 import CardHorizontalItem from '@/components/ui/CardHorizontalItem';
 import ImageBanner from '@public/assets/images/gallery/liveaboard-banner-1.jpg'
 import { upcomingLiveaboard } from '@/data/upcomingEvents';
+import SectionInstagram from '@/components/partial/SectionInstagram';
+import SectionTestimonials from '@/components/partial/SectionTestimonials';
+import { instagramImages } from '@/data/gallery';
+import { testimonials } from '@/data/testimonials';
 
 export default function DivingTripsPage() {
 
@@ -16,11 +20,11 @@ export default function DivingTripsPage() {
       />
       <div className='container px-4 lg:px-8 my-10'>
         <h2 className='mb-1 lg:mb-3 whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight'>Upcoming Liveaboard</h2>
-        <div className='flex flex-wrap -mx-4'>
+        <div className='flex flex-wrap -mx-3'>
           {upcomingLiveaboard?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price }, index) => {
 
             return (
-              <div key={index} className='basis-[100%] 2lg:basis-1/2 p-4 grow-0 flex-shrink-0'>
+              <div key={index} className='basis-full 2lg:basis-1/2 p-3 grow-0 flex-shrink-0'>
                 <CardHorizontalItem
                   img={img}
                   imgAlt={imgAlt}
@@ -36,6 +40,8 @@ export default function DivingTripsPage() {
           })}
         </div>
       </div>
+      <SectionTestimonials testimonials={testimonials} />
+      <SectionInstagram titleMain='@sightsea' titleTop='Follow Us on Instagram' gallery={instagramImages} />
     </main>
   )
 };

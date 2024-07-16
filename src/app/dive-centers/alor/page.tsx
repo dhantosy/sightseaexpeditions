@@ -286,7 +286,7 @@ export default function DiveCenterAlorPage() {
                         </select>
                       </fieldset>
                       <fieldset className='my-5'>
-                        <Counter onChange={handleCounterChange} count={count} />
+                        <Counter onChange={handleCounterChange} count={count} maxCount={9} />
                       </fieldset>
                       <div className='py-5 border-t mb-6 flex justify-between items-center font-semibold'>
                         <div>Total Price:</div>

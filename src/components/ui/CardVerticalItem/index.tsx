@@ -18,7 +18,7 @@ export default function CardVerticalItem({
 }: CardVerticalItemProp) {
 
   return (
-    <Link href={url} className='relative top-0 overflow-hidden block rounded-2xl transition-all hover:-top-1 group'>
+    <Link href={url} className='w-full relative top-0 overflow-hidden block rounded-2xl transition-all hover:-top-1 group'>
       <div className='border border-slate-200 rounded-2xl p-3'>
         <div className='relative rounded-2xl shadow-xl overflow-hidden'>
           <div className='relative w-full pb-[85%]'>
@@ -47,15 +47,14 @@ export default function CardVerticalItem({
             <FaUsers />
             <span>{type}</span>
           </div>
-          <div className='mt-5 flex flex-col gap-4 3lg:items-end 3lg:flex-row justify-between'>
+          <div className='mt-5 flex flex-col gap-2 3lg:items-end 3lg:flex-row justify-between'>
             <div>
-              <span className='text-sm block opacity-70'>Starts from</span>
-              <span className='text-base font-semibold'>{price} </span>
+              <span className='text-base font-bold'>{price} </span>
               <span className='text-sm opacity-70'>{unit}</span>
             </div>
             <div>
               <Button variant='secondary' size='sm' className='mt-2 3lg:mt-0 w-full 3lg:w-auto'>
-                Book Now
+                See Detail
               </Button>
             </div>
           </div>

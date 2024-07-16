@@ -1,7 +1,7 @@
 import { FaCirclePlus, FaCircleMinus } from 'react-icons/fa6';
 import { CounterProp } from './types';
 
-const Counter = ({ count, onChange }: CounterProp) => {
+const Counter = ({ count, onChange, maxCount }: CounterProp) => {
   
   const handleMinusClick = () => {
     if (count < 2) return;
@@ -9,7 +9,7 @@ const Counter = ({ count, onChange }: CounterProp) => {
   };
 
   const handlePlusClick = () => {
-    if (count > 8) return;
+    if (count > (maxCount - 1)) return;
     onChange(count + 1);
   };
 
@@ -23,7 +23,7 @@ const Counter = ({ count, onChange }: CounterProp) => {
           <FaCircleMinus size={24} />
         </span>
         <span className='h-5 w-5 border rounded-md flex items-center justify-center text-lg font-medium p-4'>{count}</span>
-        <span onClick={handlePlusClick} className={count > 8 ? 'cursor-pointer opacity-20' : 'cursor-pointer'}>
+        <span onClick={handlePlusClick} className={count > (maxCount - 1) ? 'cursor-pointer opacity-20' : 'cursor-pointer'}>
           <FaCirclePlus size={24} />
         </span>
       </div>

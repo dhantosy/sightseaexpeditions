@@ -20,7 +20,7 @@ export default function SectionInfoHorizontal({
   return (
     <section className='relative container my-10 lg:my-16 px-4 lg:px-8'>
       <div className='flex flex-wrap items-center -mx-4'>
-        <div className='basis-[100%] lg:basis-1/2 px-4 grow-0'>
+        <div className='basis-full lg:basis-1/2 px-4 grow-0'>
           <div className='relative border border-slate-200 rounded-2xl p-3 after:content-[""] after:w-full after:top-0 after:left-0 after:bg-white/10 after:blur after:h-full after:absolute'>
             <div className='relative z-10 rounded-2xl overflow-hidden w-full h-full pb-[100%] shadow-2xl'>
               <Image
@@ -35,7 +35,7 @@ export default function SectionInfoHorizontal({
             </div>
           </div>
         </div>
-        <div className='basis-[100%] lg:basis-1/2 px-4 grow-0 mt-6 lg:mt-0 w-full'>
+        <div className='basis-full lg:basis-1/2 px-4 grow-0 mt-6 lg:mt-0 w-full'>
           <Title
             titleTop={titleTop}
             titleMain={titleMain}
