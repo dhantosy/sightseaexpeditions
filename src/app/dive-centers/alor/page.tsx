@@ -5,6 +5,7 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { format } from 'date-fns';
 import AccordionTable from '@/components/ui/AccordionTable';
 import Counter from '@/components/ui/Counter';
+import InputCalendar from '@/components/ui/InputCalendar';
 import HeroDetailPage from '@/components/partial/HeroDetailPage';
 import StickyBookingSection from '@/components/partial/StickyBookingSection';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
@@ -25,6 +26,8 @@ type Inputs = {
 
 export default function DiveCenterAlorPage() {
   const [bookFormShow, setBookFormShow] = useState(false);
+  const [selectedDate, setSelectedDate] = useState('');
+  const [showCalendar, setShowCalendar] = useState(false);
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState('0');
   const filterDivePackages = diveCenterAlorData.filter((data) => data.type === 'dive_packages');
@@ -84,6 +87,18 @@ export default function DiveCenterAlorPage() {
     setTotalPrice(formatCurrency(Number(price[0]?.price.replace(/\,/g, '')) * count));
   };
 
+  const handleDateChange = (val: Date) => {
+    const parseDate = Date.parse(val.toString());
+    const formatDate = format(parseDate, 'dd MMMM yyyy');
+    setSelectedDate(formatDate);
+  };
+
+  const closeCalendar = (val: any) => {
+    setTimeout(() => {
+      setShowCalendar(val);
+    }, 10);
+  };
+
   const handleItemClick = (diveDestination: string, type: string) => {
     const getItem = diveCenterAlorData.filter((item) => {
       return item.type === type && item.diveDestination === diveDestination
@@ -108,6 +123,7 @@ export default function DiveCenterAlorPage() {
       <HeroDetailPage
         title='Dive Alor: Unforgettable Experiences with Top-Rated Dive Center'
         pageType='Dive Center'
+        schedule='Available Upon Request'
         images={images}
       />
       <div className={bookFormShow ? 'fixed h-full w-full bg-black/60 z-50 top-0 left-0 visible lg:hidden transition-all' : 'fixed h-full w-full bg-black/0 z-50 top-0 left-0 invisible transition-all lg:hidden'} />
@@ -243,10 +259,18 @@ export default function DiveCenterAlorPage() {
                     )}
                   </select>
                 </fieldset>
+                <fieldset className='mb-4'>
+                  <InputCalendar
+                    setDate={handleDateChange}
+                    showCalendar={showCalendar}
+                    handleCloseCalendar={closeCalendar}
+                    errorMessage=''
+                  />
+                </fieldset>
                 <fieldset className='my-5'>
                   <Counter onChange={handleCounterChange} count={count} maxCount={9} />
                 </fieldset>
-                <div className='py-5 border-t mb-6 flex justify-between items-center font-semibold'>
+                <div className='py-5 border-t mb-3 flex justify-between items-center font-semibold'>
                   <div>Total Price:</div>
                   <div>{`IDR ${totalPrice}`}</div>
                 </div>

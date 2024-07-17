@@ -5,6 +5,7 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { format } from 'date-fns';
 import AccordionTable from '@/components/ui/AccordionTable';
 import Counter from '@/components/ui/Counter';
+import InputCalendar from '@/components/ui/InputCalendar';
 import HeroDetailPage from '@/components/partial/HeroDetailPage';
 import StickyBookingSection from '@/components/partial/StickyBookingSection';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
@@ -27,6 +28,8 @@ type Inputs = {
 
 export default function DiveCenterBaliPage() {
   const [bookFormShow, setBookFormShow] = useState(false);
+  const [selectedDate, setSelectedDate] = useState('');
+  const [showCalendar, setShowCalendar] = useState(false);
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState('0');
   const filterCertifiedDiver = diveCenterBaliData.filter((data) => data.type === 'certified_diver');
@@ -86,6 +89,18 @@ export default function DiveCenterBaliPage() {
     setTotalPrice(formatCurrency(Number(price[0]?.price.replace(/\,/g, '')) * count));
   };
 
+  const handleDateChange = (val: Date) => {
+    const parseDate = Date.parse(val.toString());
+    const formatDate = format(parseDate, 'dd MMMM yyyy');
+    setSelectedDate(formatDate);
+  };
+
+  const closeCalendar = (val: any) => {
+    setTimeout(() => {
+      setShowCalendar(val);
+    }, 10);
+  };
+
   const handleItemClick = (diveDestination: string, type: string) => {
     const getItem = diveCenterBaliData.filter((item) => {
       return item.type === type && item.diveDestination === diveDestination
@@ -109,7 +124,7 @@ export default function DiveCenterBaliPage() {
     <main>
       <HeroDetailPage
         title='Dive Bali: Explore the Enchanting Coral Reefs'
-        subtopic='Available Daily'
+        schedule='Available Daily'
         pageType='Dive Center'
         images={images}
       />
@@ -245,6 +260,14 @@ export default function DiveCenterBaliPage() {
                       })
                     )}
                   </select>
+                </fieldset>
+                <fieldset className='mb-4'>
+                  <InputCalendar
+                    setDate={handleDateChange}
+                    showCalendar={showCalendar}
+                    handleCloseCalendar={closeCalendar}
+                    errorMessage=''
+                  />
                 </fieldset>
                 <fieldset className='my-5'>
                   <Counter onChange={handleCounterChange} count={count} maxCount={9} />

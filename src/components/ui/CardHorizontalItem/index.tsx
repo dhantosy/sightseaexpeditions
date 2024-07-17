@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaLocationDot, FaCalendar, FaRegEye } from 'react-icons/fa6';
+import { FaLocationDot, FaCalendar, FaTents } from 'react-icons/fa6';
 import { MdScubaDiving } from 'react-icons/md';
 import { Button } from '@/components/ui/Button'
 import { CardHorizontalItemProp } from './types'
@@ -41,12 +41,12 @@ export default function CardHorizontalItem({
                 <span>{highlight?.diveCount}</span>
               </div>
               <div className='w-fit flex px-3 py-1 text-sm items-center gap-2 rounded-full bg-orange-100 text-orange-700'>
-                <span><FaRegEye /></span>
-                <span>{highlight?.attraction}</span>
+                <span><FaTents /></span>
+                <span>{highlight?.type}</span>
               </div>
             </div>
           ) : null}
-          <h3 className='text-lg uppercase font-semibold font-montserrat mb-4'>{title}</h3>
+          <h3 className='text-lg uppercase font-semibold font-montserrat mb-4 lg:line-clamp-1 leading-snug'>{title}</h3>
           <div className='flex gap-3 items-center mb-2 text-sm opacity-70'>
             <FaLocationDot />
             <span>{location}</span>

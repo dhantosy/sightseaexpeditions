@@ -30,7 +30,7 @@ export default function ToursLabuanBajoPrivateTripPage() {
   const [count, setCount] = useState(1);
   const [showCalendar, setShowCalendar] = useState(false);
   const [totalPrice, setTotalPrice] = useState(formatCurrency(PRICE_PER_PERSON));
-  const events = useRandomEvents(upcomingTours, EVENT_TITLE)
+  const events = useRandomEvents(upcomingTours, EVENT_TITLE, 4)
 
   const {
     register,
@@ -81,7 +81,7 @@ export default function ToursLabuanBajoPrivateTripPage() {
         <HeroDetailPage
           title='Labuan Bajo Private Trip: Trekking, Snorkeling & Island Hopping'
           pageType='Tours & Experiences'
-          subtopic='Available Upon Request'
+          schedule='Available Upon Request'
           images={images}
         />
       </div>
@@ -144,7 +144,7 @@ export default function ToursLabuanBajoPrivateTripPage() {
                     setDate={handleDateChange}
                     showCalendar={showCalendar}
                     handleCloseCalendar={closeCalendar}
-                    errorMessage='Available on Fri, Sat & Sun'
+                    errorMessage=''
                   />
                 </fieldset>
                 <fieldset className='my-5'>
@@ -154,7 +154,7 @@ export default function ToursLabuanBajoPrivateTripPage() {
                     maxCount={5}
                   />
                 </fieldset>
-                <div className='py-5 border-t mb-6 flex justify-between items-center font-semibold'>
+                <div className='py-5 border-t mb-3 flex justify-between items-center font-semibold'>
                   <div>Total Price:</div>
                   <div>{`IDR ${totalPrice}`}</div>
                 </div>

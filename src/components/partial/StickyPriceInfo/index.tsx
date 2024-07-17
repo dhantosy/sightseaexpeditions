@@ -11,9 +11,9 @@ export default function StickyPriceInfo({
 
   return (
     <div className='fixed w-full px-4 py-3 top-20 bg-white z-20 rounded-b-3xl shadow-lg block lg:hidden'>
-      <div className='flex flex-col 2xs:flex-row justify-between 2xs:items-end'>
+      <div className='flex flex-col 2xs:flex-row justify-between 2xs:items-end gap-2'>
         <div className='text-sm'>
-          <div className='opacity-70 mb-1'>{title}</div>
+          <div className='opacity-70 mb-1 line-clamp-1'>{title}</div>
           <div className='flex gap-2'>
             <div className='font-semibold'>{`IDR ${totalPrice}`}</div>
             <div className='opacity-70'>{priceUnit}</div>
