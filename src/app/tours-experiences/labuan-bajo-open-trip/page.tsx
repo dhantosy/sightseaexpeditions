@@ -5,18 +5,19 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { format } from 'date-fns';
 import { isWeekday, getDayOfWeek } from "@internationalized/date";
 import { useLocale } from "@react-aria/i18n";
-import { FaXmark, FaCircleCheck, FaCirclePlus } from 'react-icons/fa6';
-import { Button } from '@/components/ui/Button';
+import { FaCircleCheck, FaCirclePlus } from 'react-icons/fa6';
 import AccordionContent from '@/components/ui/AccordionContent';
 import Counter from '@/components/ui/Counter';
 import HeroDetailPage from '@/components/partial/HeroDetailPage';
-import { formatCurrency } from '@/lib/number';
 import InputCalendar from '@/components/ui/InputCalendar';
-import { PRICE_PER_PERSON, EVENT_TITLE, images, schedule, notes, include } from './data';
-import { upcomingTours } from '@/data/upcomingEvents';
 import SectionUpcomingEvents from '@/components/partial/SectionUpcomingEvents';
 import StickyPriceInfo from '@/components/partial/StickyPriceInfo';
+import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
 import { useRandomEvents } from '@/hooks/useRandomEvents';
+import StickyBookingSection from '@/components/partial/StickyBookingSection';
+import { PRICE_PER_PERSON, EVENT_TITLE, images, schedule, notes, include } from './data';
+import { upcomingTours } from '@/data/upcomingEvents';
+import { formatCurrency } from '@/lib/number';
 
 type Inputs = {
   name: string
@@ -31,7 +32,6 @@ export default function ToursLabuanBajoOpenTripPage() {
   const [count, setCount] = useState(1);
   const [showCalendar, setShowCalendar] = useState(false);
   const [totalPrice, setTotalPrice] = useState(formatCurrency(PRICE_PER_PERSON));
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const events = useRandomEvents(upcomingTours, EVENT_TITLE);
   const { locale } = useLocale();
 
@@ -96,7 +96,7 @@ export default function ToursLabuanBajoOpenTripPage() {
       <div className={bookFormShow ? 'fixed h-full w-full bg-black/60 z-50 top-0 left-0 visible lg:hidden transition-all' : 'fixed h-full w-full bg-black/0 z-50 top-0 left-0 invisible transition-all lg:hidden'} />
       <section className='container px-4 lg:px-8'>
         <div className='flex flex-col lg:flex-row'>
-          <div className='basis-full lg:basis-2/3 flex-shrink-0 flex flex-col gap-5 lg:gap-10'>
+          <div className='basis-full lg:basis-2/3 flex-shrink-0 flex flex-col gap-5'>
             <AccordionContent title='Overview' isExpand>
               <p className='opacity-70'>Labuan Bajo, a stunning gateway to the Komodo National Park, beckons travelers with its rich biodiversity, dramatic landscapes, and vibrant culture. An open trip to Labuan Bajo offers an affordable and social way to experience this Indonesian paradise. Travel with like-minded adventurers: Open trips bring together a group of travelers seeking an unforgettable adventure in Labuan Bajo. You`ll share the experience with fellow explorers, creating new friendships and memories along the way.</p>
             </AccordionContent>
@@ -120,8 +120,8 @@ export default function ToursLabuanBajoOpenTripPage() {
                 {include.map((item) => {
                   return (
                     <div key={item} className='flex items-baseline basis-full lg:basis-1/2 flex-shrink-0 flex-grow-0 gap-2 mb-3'>
-                      <FaCircleCheck size={12} className='text-emerald-600' />
-                      <div>{item}</div>
+                      <FaCircleCheck size={12} className='text-emerald-600 flex-shrink-0 flex-grow-0' />
+                      <div className='flex-wrap flex-grow-0'>{item}</div>
                     </div>
                   )
                 })}
@@ -131,81 +131,48 @@ export default function ToursLabuanBajoOpenTripPage() {
               <div className='flex flex-wrap opacity-70'>
                 {notes.map((item) => {
                   return (
-                    <div key={item} className='flex items-baseline basis-full flex-shrink-0 flex-grow-0 gap-2 mb-3'>
-                      <FaCirclePlus size={12} className='text-amber-500' />
-                      <div>{item}</div>
+                    <div key={item} className='flex items-baseline basis-full gap-2 mb-3'>
+                      <FaCirclePlus size={12} className='text-amber-500 flex-shrink-0 flex-grow-0' />
+                      <div className='flex-wrap flex-grow-0'>{item}</div>
                     </div>
                   )
                 })}
               </div>
             </AccordionContent>
           </div>
-          <div className='basis-full lg:basis-1/3 flex-shrink-0'>
-            <div className={bookFormShow ? 'w-full lg:w-auto left-0 bottom-0 lg:bottom-auto fixed lg:sticky lg:top-28 px-0 lg:pl-5 lg:pr-3 z-50 lg:z-20 mt-12 lg:mt-0 transition-all' : 'w-full lg:w-auto left-0 -bottom-full lg:bottom-auto fixed lg:sticky lg:top-28 px-0 lg:pl-5 lg:pr-3 z-50 lg:z-20 mt-12 lg:mt-0 transition-all'}>
-              <div className='relative bg-white rounded-t-3xl lg:rounded-3xl border border-slate-100 shadow-lg px-5 lg:px-10 py-8'>
-                <div className='opacity-70 absolute right-3 top-3 cursor-pointer block lg:hidden' onClick={() => setBookFormShow(false)}>
-                  <FaXmark size={24} />
+          <StickyBookingSection
+            title={EVENT_TITLE}
+            isBookFormShow={bookFormShow}
+            onCloseClick={() => setBookFormShow(false)}
+          >
+            <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
+              <div>
+                <fieldset className='mb-4'>
+                  <InputCalendar
+                    setDate={handleDateChange}
+                    showCalendar={showCalendar}
+                    handleCloseCalendar={closeCalendar}
+                    unavailableDates={isDateUnavailable}
+                    errorMessage='Available on Fri, Sat & Sun'
+                  />
+                </fieldset>
+                <fieldset className='my-5'>
+                  <Counter
+                    onChange={handleCounterChange}
+                    count={count}
+                    maxCount={9}
+                  />
+                </fieldset>
+                <div className='py-5 border-t mb-6 flex justify-between items-center font-semibold'>
+                  <div>Total Price:</div>
+                  <div>{`IDR ${totalPrice}`}</div>
                 </div>
-                <div className='mb-4 text-xl font-semibold'>
-                  Labuan Bajo Open Trip
-                </div>
-                <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
-                  {isFormSubmitted ? (
-                    <div>
-                      <div className='icon'>
-
-                      </div>
-                      <div>
-                        <div className='title'>Thank you for submitting your message!</div>
-                        <div>Our team will get back to you as soon as possible.</div>
-                      </div>
-                    </div>
-                  ) : (
-                    <div>
-                      <fieldset className='mb-4'>
-                        <InputCalendar
-                          setDate={handleDateChange}
-                          showCalendar={showCalendar}
-                          handleCloseCalendar={closeCalendar}
-                          unavailableDates={isDateUnavailable}
-                          errorMessage='Available on Fri, Sat & Sun'
-                        />
-                      </fieldset>
-                      <fieldset className='my-5'>
-                        <Counter
-                          onChange={handleCounterChange}
-                          count={count}
-                          maxCount={9}
-                        />
-                      </fieldset>
-                      <div className='py-5 border-t mb-6 flex justify-between items-center font-semibold'>
-                        <div>Total Price:</div>
-                        <div>{`IDR ${totalPrice}`}</div>
-                      </div>
-                      {/* <ReCAPTCHA ref={reCaptchaRef} size='invisible' sitekey='6LfoGjIpAAAAAEoGhNvN1iuM6EiezWFPVH3TqKcN' />
-                    {recaptchaError && (
-                      <ErrorMessage>{recaptchaError}</ErrorMessage>
-                    )}
-                    <div style={{ textAlign: 'center' }}>
-                      {isLoading ? <Loader /> : <button type='submit' className='submit' disabled={!isDirty || !isValid}>Submit</button>}
-                    </div> */}
-                      <Button type='submit' size='md' className='min-w-40 w-full mb-4'>
-                        Book Now
-                      </Button>
-                      <a
-                        href={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0ALabuan%20Bajo%20Open%20Trip%20${selectedDate ? 'on ' + selectedDate : ''}%20for%20${count}%20person`}
-                        target='_blank'
-                      >
-                        <Button type='button' variant='outline' size='md' className='min-w-40 w-full'>
-                          Book via WhatsApp
-                        </Button>
-                      </a>
-                    </div>
-                  )}
-                </form>
+                <StickyBookingBtnSubmit
+                  whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0ALabuan%20Bajo%20Open%20Trip%20${selectedDate ? 'on ' + selectedDate : ''}%20for%20${count}%20person`}
+                />
               </div>
-            </div>
-          </div>
+            </form>
+          </StickyBookingSection>
         </div>
       </section>
       <StickyPriceInfo

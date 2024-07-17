@@ -14,7 +14,7 @@ export default function AccordionTable({ isExpand, title, tableTitle, tableItems
 
   return (
     <div className='bg-slate-100 rounded-3xl overflow-hidden'>
-      <div onClick={handleClick} className='cursor-pointer items-center flex justify-between text-base lg:text-2xl font-semibold p-5 gap-4'>
+      <div onClick={handleClick} className='cursor-pointer items-baseline flex justify-between text-base lg:text-2xl font-semibold p-5 gap-4'>
         <h3 className='font-montserrat uppercase tracking-wide font-bold lg:font-semibold'>{title}</h3>
         <div className='text-sm lg:text-base opacity-70'>{isOpen ? <span>collapse</span> : <span>expand</span>}</div>
       </div>
