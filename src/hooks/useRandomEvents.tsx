@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 interface HighlightProp {
   diveCount?: string;
-  attraction?: string;
+  type?: string;
 }
 
 interface ArrayProp {
@@ -19,15 +19,15 @@ interface ArrayProp {
   highlight?: HighlightProp;
 }
 
-export const useRandomEvents = (arrayVal?: ArrayProp[], string?: string) => {
+export const useRandomEvents = (arrayVal?: ArrayProp[], string?: string, count?: number) => {
   const [events, setEvents] = useState(arrayVal);
 
   useEffect(() => {
     const filteredUpcomingTours = arrayVal?.filter(function (el) { return el.title !== string });
     const shuffled = filteredUpcomingTours?.sort(() => 0.5 - Math.random());
-    const sliceArray = shuffled?.slice(0, 4);
+    const sliceArray = shuffled?.slice(0, count);
     setEvents(sliceArray);
-  }, [arrayVal, string]);
+  }, [arrayVal, count, string]);
 
   return events;
 };

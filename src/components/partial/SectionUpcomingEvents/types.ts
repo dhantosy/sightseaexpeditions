@@ -2,7 +2,7 @@ type CardType = 'horizontal' | 'vertical' | 'imageTitle';
 
 interface HighlightProp {
   diveCount?: string;
-  attraction?: string;
+  type?: string;
 }
 
 interface CardsProp {

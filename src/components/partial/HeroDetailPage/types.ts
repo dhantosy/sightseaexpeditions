@@ -6,7 +6,8 @@ interface HeroDetailImagesProp {
 
 export interface HeroDetailPageProp {
   title: string;
-  subtopic?: string;
+  schedule?: string;
   pageType?: string;
+  tripType?: string;
   images: HeroDetailImagesProp[];
 }

@@ -20,15 +20,15 @@ export const upcomingDivingTrips = [
     img: ImageBelangasMain.src,
     imgAlt: 'Belongas Diving Hammershark',
     blurDataUrl: ImageBelangasMain.blurDataURL,
-    title: 'Belongas Diving Trip',
-    location: 'Lombok, Indonesia',
-    date: 'Jun 28th - Jul 1st, 2024',
-    url: '/',
-    price: 'USD 480',
+    title: 'Alor Dive Trip with Moko Alor Dive Resort',
+    location: 'NTT, Indonesia',
+    date: 'Jul 19th - Jul 23rd, 2024',
+    url: '/diving-trips/alor-dive-trip-moko-alor-resort',
+    price: 'IDR 16,5jt',
     duration: '4 days',
     highlight: {
-      diveCount: '6 dives',
-      attraction: 'Hammerhead Sharks'
+      diveCount: '10 dives',
+      type: 'Land Based'
     }
   },
   {
@@ -43,7 +43,7 @@ export const upcomingDivingTrips = [
     duration: '4 days',
     highlight: {
       diveCount: '6 dives',
-      attraction: 'Tornado Barracudas'
+      type: 'LOB'
     }
   },
   {
@@ -58,7 +58,7 @@ export const upcomingDivingTrips = [
     duration: '4 days',
     highlight: {
       diveCount: '5 dives',
-      attraction: 'Wobbegong Sharks'
+      type: 'LOB'
     }
   },
   {
@@ -73,7 +73,7 @@ export const upcomingDivingTrips = [
     duration: '4 days',
     highlight: {
       diveCount: '6 dives',
-      attraction: 'Hammerhead Sharks'
+      type: 'Land Based'
     }
   },
 ];

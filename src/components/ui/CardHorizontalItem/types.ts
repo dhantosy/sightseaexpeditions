@@ -1,6 +1,6 @@
 interface HighlightProp {
   diveCount?: string;
-  attraction?: string;
+  type?: string;
 }
 
 export interface CardHorizontalItemProp {
