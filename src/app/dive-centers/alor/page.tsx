@@ -18,8 +18,6 @@ import { formatCurrency } from '@/lib/number';
 import { EVENT_TITLE, images } from './data';
 
 type Inputs = {
-  name: string
-  email: string
   category: string
   destination: string
 };
@@ -173,12 +171,12 @@ export default function DiveCenterAlorPage() {
           <StickyBookingSection
             title={EVENT_TITLE}
             isBookFormShow={bookFormShow}
-            onCloseClick={() => setBookFormShow(false)}
+            onCloseClick={() => { setBookFormShow(false); reset(); setCount(1) }}
           >
             <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <fieldset className='mb-4'>
-                  <label htmlFor='email' className='text-slate-600 font-medium opacity-70 text-sm'>Category</label>
+                  <label htmlFor='category' className='text-slate-600 font-medium opacity-70 text-sm'>Category</label>
                   <select
                     defaultValue={categoryListOption[0].value}
                     className='block appearance-none cursor-pointer mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400'
@@ -201,7 +199,7 @@ export default function DiveCenterAlorPage() {
                   </select>
                 </fieldset>
                 <fieldset className='mb-4'>
-                  <label htmlFor='email' className='text-slate-600 font-medium opacity-70 text-sm'>Destination / Course</label>
+                  <label htmlFor='destination' className='text-slate-600 font-medium opacity-70 text-sm'>Destination / Course</label>
                   <select disabled={!watchCategory} defaultValue='' className='block appearance-none cursor-pointer mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' id='destination' {...register('destination', {
                     required: true,
                     onChange: (e) => { handleTypeChange(e) },

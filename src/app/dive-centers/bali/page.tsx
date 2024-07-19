@@ -175,7 +175,7 @@ export default function DiveCenterBaliPage() {
           <StickyBookingSection
             title={EVENT_TITLE}
             isBookFormShow={bookFormShow}
-            onCloseClick={() => setBookFormShow(false)}
+            onCloseClick={() => { setBookFormShow(false); reset(); setCount(1) }}
           >
             <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
               <div>

@@ -10,7 +10,7 @@ export default function TestimonialItem({
 }: TestimonialItemProp) {
 
   return (
-    <div className='border border-slate-200 rounded-2xl p-3'>
+    <div className='border border-slate-200 rounded-2xl p-3 mb-12 sm:mb-16'>
       <div className='relative shadow-xl p-6 bg-white overflow-hidden rounded-2xl'>
         <div className='absolute top-6 right-6 opacity-30'><FaQuoteLeft size={16} /></div>
         <div className='relative flex gap-1 text-orange-400 mb-3'>

@@ -1,8 +1,8 @@
 // DIVING
 import ImageBelangasMain from '@public/assets/images/diving/hammerhead-belongas.jpg'
 import ImageMisoolMain from '@public/assets/images/diving/wobbegong-shark.jpg'
-import ImageMaratuaMain from '@public/assets/images/diving/barracuda-main.jpg'
-import ImageAlorMain from '@public/assets/images/diving/hammerhead-alor.jpg'
+import ImageAlorMain from '@public/assets/images/diving/dive-alor-1.jpg'
+import ImageBimaMain from '@public/assets/images/diving/bima-1.jpg';
 
 // TOUR
 import ImageLabuanBajoPrivate from '@public/assets/images/gallery/labuan-bajo-1.jpg'
@@ -17,11 +17,11 @@ import ImageVelocean from '@public/assets/images/vessels/velocean.jpg'
 
 export const upcomingDivingTrips = [
   {
-    img: ImageBelangasMain.src,
-    imgAlt: 'Belongas Diving Hammershark',
-    blurDataUrl: ImageBelangasMain.blurDataURL,
-    title: 'Alor Dive Trip with Moko Alor Dive Resort',
-    location: 'NTT, Indonesia',
+    img: ImageAlorMain.src,
+    imgAlt: 'Alor Diving Hammershark',
+    blurDataUrl: ImageAlorMain.blurDataURL,
+    title: 'Alor Dive Trip - Moko Alor Resort',
+    location: 'Nusa Tenggara, Indonesia',
     date: 'Jul 19th - Jul 23rd, 2024',
     url: '/diving-trips/alor-dive-trip-moko-alor-resort',
     price: 'IDR 16,5jt',
@@ -32,17 +32,17 @@ export const upcomingDivingTrips = [
     }
   },
   {
-    img: ImageMaratuaMain.src,
-    imgAlt: 'Maratua Diving Trip',
-    blurDataUrl: ImageMaratuaMain.blurDataURL,
-    title: 'Maratua Diving Trip',
-    location: 'Kalimantan, Indonesia',
-    date: 'Oct 15th - Oct 19th, 2024',
-    url: '/',
-    price: 'USD 360',
+    img: ImageBimaMain.src,
+    imgAlt: 'Bima Trip',
+    blurDataUrl: ImageBimaMain.blurDataURL,
+    title: 'Bima Dive Trip - Majestic Voyager',
+    location: 'West Komodo, Indonesia',
+    date: 'Aug 17th - 21st, 2024',
+    url: '/diving-trips/bima-west-komodo-majestic-voyager',
+    price: 'IDR 19jt',
     duration: '4 days',
     highlight: {
-      diveCount: '6 dives',
+      diveCount: '11 dives',
       type: 'LOB'
     }
   },
@@ -62,10 +62,10 @@ export const upcomingDivingTrips = [
     }
   },
   {
-    img: ImageAlorMain.src,
-    imgAlt: 'Alor Diving Trip',
-    blurDataUrl: ImageAlorMain.blurDataURL,
-    title: 'Alor Diving Trip',
+    img: ImageBelangasMain.src,
+    imgAlt: 'Belongas Diving Trip',
+    blurDataUrl: ImageBelangasMain.blurDataURL,
+    title: 'Belongas Diving Trip',
     location: 'Nusa Tenggara, Indonesia',
     date: 'Nov 25th - Nov 29th, 2024',
     url: '/',
