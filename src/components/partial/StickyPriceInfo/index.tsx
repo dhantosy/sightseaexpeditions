@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/Button';
 import { StickyPriceInfoProp } from './types';
 
 export default function StickyPriceInfo({
+  priceStartFrom,
   totalPrice,
   priceUnit,
   title,
@@ -14,9 +15,10 @@ export default function StickyPriceInfo({
       <div className='flex flex-col 2xs:flex-row justify-between 2xs:items-end gap-2'>
         <div className='text-sm'>
           <div className='opacity-70 mb-1 line-clamp-1'>{title}</div>
-          <div className='flex gap-2'>
-            <div className='font-semibold'>{`IDR ${totalPrice}`}</div>
-            <div className='opacity-70'>{priceUnit}</div>
+          <div className='flex gap-1'>
+            {priceStartFrom && <div className='opacity-70 shrink-0 grow-0'>from</div>}
+            <div className='font-semibold shrink-0 grow-0'>{`IDR ${totalPrice}`}</div>
+            <div className='opacity-70 shrink-0 grow-0'>{priceUnit}</div>
           </div>
         </div>
         <Button

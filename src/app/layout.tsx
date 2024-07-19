@@ -1,6 +1,7 @@
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 import type { Metadata } from 'next';
 import { Montserrat, Open_Sans } from 'next/font/google';

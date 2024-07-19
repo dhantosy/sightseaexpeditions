@@ -45,7 +45,7 @@ export default function ToursLabuanBajoOpenTripPage() {
         <div className='flex flex-col lg:flex-row'>
           <div className='basis-full lg:basis-2/3 flex-shrink-0 flex flex-col gap-5'>
             <AccordionContent title='Overview' isExpand>
-              <p className='opacity-70'>Labuan Bajo, a stunning gateway to the Komodo National Park, beckons travelers with its rich biodiversity, dramatic landscapes, and vibrant culture. An open trip to Labuan Bajo offers an affordable and social way to experience this Indonesian paradise. Travel with like-minded adventurers: Open trips bring together a group of travelers seeking an unforgettable adventure in Labuan Bajo. You`ll share the experience with fellow explorers, creating new friendships and memories along the way.</p>
+              <p className='opacity-70'>Alor, a volcanic island rising from the heart of Indonesia`s Coral Triangle, beckons experienced divers with a kaleidoscope of underwater treasures. Dive into the extraordinary with a dive trip to Alor.  Experience unparalleled underwater adventures, immerse yourself in a vibrant culture, and create memories that will last a lifetime.</p>
             </AccordionContent>
             <AccordionContent title='Itinerary' isExpand>
               <div className='relative pt-2 pb-1 pl-8 after:content[""] after:absolute after:h-full after:left-2 after:top-0 after:border-l after:border-dashed after:border-bluePrimary'>
@@ -96,7 +96,7 @@ export default function ToursLabuanBajoOpenTripPage() {
           <StickyBookingSection
             title={EVENT_TITLE}
             isBookFormShow={bookFormShow}
-            onCloseClick={() => setBookFormShow(false)}
+            onCloseClick={() => { setBookFormShow(false); setCount(1) }}
           >
             <form id='form-contact' onSubmit={handleSubmit}>
               <div>

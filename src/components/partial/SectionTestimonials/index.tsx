@@ -12,8 +12,8 @@ export default function SectionTestimonials({
 
   return (
     <section className='relative overflow-hidden rounded-2xl border-x-[18px] border-white lg:border-x-[32px]'>
-      <div className='px-0 py-7 sm:p-10 3lg:p-16 pb-12 bg-creamPrimary/20 rounded-3xl overflow-hidden'>
-        <div className='container px-4 lg:px-8'>
+      <div className='px-0 py-7 sm:p-10 3lg:p-16 pb-8 bg-creamPrimary/20 rounded-3xl overflow-hidden'>
+        <div className='container px-4 lg:px-12'>
           <div className='text-center'>
             <Title titleTop='Some of the kind words' titleMain='Review from Our Clients.' />
           </div>
@@ -22,7 +22,7 @@ export default function SectionTestimonials({
               loop
               modules={[Autoplay, Pagination]}
               pagination={{ clickable: true }}
-              spaceBetween={50}
+              spaceBetween={30}
               autoplay={{
                 delay: 5000,
                 disableOnInteraction: false,

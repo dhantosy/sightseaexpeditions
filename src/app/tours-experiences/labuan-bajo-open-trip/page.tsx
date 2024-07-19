@@ -83,6 +83,13 @@ export default function ToursLabuanBajoOpenTripPage() {
     }, 10);
   };
 
+  const handleStickyFormClose = () => {
+    reset();
+    setBookFormShow(false);
+    setCount(1);
+    setTotalPrice(formatCurrency(PRICE_PER_PERSON));
+  };
+
   return (
     <main>
       <div className='pt-16 lg:pt-0'>
@@ -143,7 +150,7 @@ export default function ToursLabuanBajoOpenTripPage() {
           <StickyBookingSection
             title={EVENT_TITLE}
             isBookFormShow={bookFormShow}
-            onCloseClick={() => setBookFormShow(false)}
+            onCloseClick={handleStickyFormClose}
           >
             <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
               <div>
