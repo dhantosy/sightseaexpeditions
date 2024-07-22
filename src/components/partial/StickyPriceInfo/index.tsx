@@ -4,6 +4,7 @@ import { StickyPriceInfoProp } from './types';
 export default function StickyPriceInfo({
   priceStartFrom,
   totalPrice,
+  currency,
   priceUnit,
   title,
   onButtonclick,
@@ -17,7 +18,7 @@ export default function StickyPriceInfo({
           <div className='opacity-70 mb-1 line-clamp-1'>{title}</div>
           <div className='flex gap-1'>
             {priceStartFrom && <div className='opacity-70 shrink-0 grow-0'>from</div>}
-            <div className='font-semibold shrink-0 grow-0'>{`IDR ${totalPrice}`}</div>
+            <div className='font-semibold shrink-0 grow-0'>{`${currency ? currency : 'IDR'} ${totalPrice}`}</div>
             <div className='opacity-70 shrink-0 grow-0'>{priceUnit}</div>
           </div>
         </div>

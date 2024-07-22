@@ -5,4 +5,5 @@ export interface StickyPriceInfoProp {
   title: string;
   btnText: string;
   onButtonclick: () => void;
+  currency?: string;
 }
