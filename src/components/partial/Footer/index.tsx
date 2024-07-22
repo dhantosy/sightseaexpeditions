@@ -19,7 +19,7 @@ export default function Footer() {
                   width={0}
                   height={0}
                   sizes='(max-width: 768px) 208px, 350px'
-                  className='w-[200px] h-auto'
+                  className='w-48 h-auto'
                 />
               </Link>
             </div>
@@ -61,11 +61,11 @@ export default function Footer() {
             </div>
           </div>
           <div className='mt-10 3sm:mt-28 border-t border-creamPrimary'>
-            <div className='mt-10 flex flex-col-reverse items-start lg:flex-row lg:items-center justify-between text-sm sm:text-base'>
+            <div className='mt-10 flex flex-col-reverse items-start lg:flex-row lg:items-center text-sm sm:text-base gap-6'>
               <span>Sightsea Expeditions © 2024. All Rights Reserved.</span>
               <div className='flex flex-col 2xs:flex-row gap-6 mb-4 lg:mb-0'>
-                <Link href='/'>Terms & Conditions</Link>
-                <Link href='/'>Privacy Policy</Link>
+                <Link href='/terms-conditions'>Terms & Conditions</Link>
+                <Link href='/privacy-policy'>Privacy Policy</Link>
               </div>
             </div>
           </div>

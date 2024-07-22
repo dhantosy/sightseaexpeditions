@@ -167,7 +167,7 @@ export const upcomingLiveaboard = [
     title: 'VELOCEAN',
     location: 'Maldives',
     date: 'Dec 25th, 2024 - Jan 1st, 2025',
-    url: '/',
+    url: '/liveaboard/velocean-maldives',
     price: 'USD 4,950',
     duration: '8 days',
   },
