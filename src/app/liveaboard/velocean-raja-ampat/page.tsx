@@ -14,8 +14,8 @@ import StickyPriceInfo from '@/components/partial/StickyPriceInfo';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
 import { useRandomEvents } from '@/hooks/useRandomEvents';
 import StickyBookingSection from '@/components/partial/StickyBookingSection';
-import { PRICE_PER_PERSON, EVENT_TITLE, categoryListOption, roomTypeListOption, roomGallery, dataMain, images, schedule, notes, include } from './data';
-import { upcomingDivingTrips } from '@/data/upcomingEvents';
+import { PRICE_PER_PERSON, EVENT_TITLE, EVENT_TITLE_FULL, EVENT_DATE, PAGE_TYPE, EVENT_AVAILABILITY, roomTypeListOption, roomGallery, dataMain, images, schedule, notes, include } from './data';
+import { upcomingLiveaboard } from '@/data/upcomingEvents';
 import { formatCurrency } from '@/lib/number';
 import { Button } from '@/components/ui/Button';
 
@@ -29,7 +29,7 @@ export default function VeloceanMaldivesPage() {
   const [selectedCurrency, setSelectedCurrency] = useState('USD');
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(formatCurrency(0));
-  const events = useRandomEvents(upcomingDivingTrips, EVENT_TITLE, 2);
+  const events = useRandomEvents(upcomingLiveaboard, EVENT_TITLE_FULL, 2);
 
   const {
     register,
@@ -90,9 +90,9 @@ export default function VeloceanMaldivesPage() {
     <main>
       <div className='pt-16 lg:pt-0'>
         <HeroDetailPage
-          title='VELOCEAN - The Best of Maldives Liveaboard'
-          pageType='Liveaboard'
-          schedule='Dec 25th, 2024  - Jan 1st, 2025'
+          title={EVENT_TITLE_FULL}
+          pageType={PAGE_TYPE}
+          schedule={EVENT_DATE}
           images={images}
         />
       </div>
@@ -149,11 +149,13 @@ export default function VeloceanMaldivesPage() {
                           )
                         })}
                       </div>
-                      <div className='mt-2 block lg:hidden'>
-                        <Button type='button' variant='secondary' size='sm' className='w-full' onClick={() => setBookFormShow(true)}>
-                          Book Now
-                        </Button>
-                      </div>
+                      {EVENT_AVAILABILITY && (
+                        <div className='mt-2 block lg:hidden'>
+                          <Button type='button' variant='secondary' size='sm' className='w-full' onClick={() => setBookFormShow(true)}>
+                            Book Now
+                          </Button>
+                        </div>
+                      )}
                     </div>
                   )
                 })}
@@ -271,6 +273,7 @@ export default function VeloceanMaldivesPage() {
                 </div>
                 <StickyBookingBtnSubmit
                   whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0AVelocean%20Maldives%20Trip%20for${watchRoomType ? '%20' + watchRoomType : '%20'}%20for%20${count}%20person`}
+                  available={EVENT_AVAILABILITY}
                 />
               </div>
             </form>
@@ -279,22 +282,25 @@ export default function VeloceanMaldivesPage() {
       </section>
       <StickyPriceInfo
         priceStartFrom
-        totalPrice={formatCurrency(PRICE_PER_PERSON)}
+        totalPrice={formatCurrency(PRICE_PER_PERSON || 0)}
         currency='USD'
         priceUnit=' / person'
         title={EVENT_TITLE}
         btnText='Book Now'
         onButtonclick={() => setBookFormShow(true)}
+        available={EVENT_AVAILABILITY}
       />
-      {/* <div className='mt-10 lg:mt-24'>
-        <SectionUpcomingEvents
-          titleTop=''
-          titleMain='Explore Other Diving Trips.'
-          events={events}
-          cardClass='basis-full 2lg:basis-1/2 p-3 grow-0'
-          cardType='horizontal'
-        />
-      </div> */}
+      {events?.length ? (
+        <div className='mt-10 lg:mt-24'>
+          <SectionUpcomingEvents
+            titleTop=''
+            titleMain='Explore Other Liveaboard.'
+            events={events}
+            cardClass='basis-full 2lg:basis-1/2 p-3 grow-0'
+            cardType='horizontal'
+          />
+        </div>
+      ) : null}
     </main>
   )
 };

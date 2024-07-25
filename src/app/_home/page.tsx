@@ -54,7 +54,7 @@ export default function Home() {
       <SectionUpcomingEvents
         titleTop='Unveil Deep Sea Wonders'
         titleMain='Our Upcoming Diving Trips.'
-        events={upcomingDivingTrips}
+        events={upcomingDivingTrips.slice(0, 4)}
         btnUrl='/diving-trips'
         btnText='See All Diving Trips'
         cardClass='basis-full 2lg:basis-1/2 p-3 grow-0'
@@ -67,18 +67,17 @@ export default function Home() {
       </div>
       <SectionInfoHorizontal
         titleTop='Ocean as Your Home'
-        titleMain={`Liveaboard with VELOCEAN
-          to the Pristine Maldives.`}
+        titleMain={`Liveaboard with VELOCEAN.`}
         description={`VELOCEAN is the brand new 52 Meters scuba purpose-built liveaboard with all Aluminium hull, deck superstructure and powerful twin marine engines providing 20 knots cruising speed making her the fastest diving liveaboard in Indonesia.
 
           With VELOCEAN, we will craft a personalized itinerary that whisks you away to hidden reefs teeming with life, pristine beaches where time slows down, and luxurious liveaboards that put comfort at the forefront. Dive into paradise and create memories that will leave you breathless.
 
-          Our Maldives adventures will take you beyond the postcard, crafting a personalized liveaboard experience you will never forget.
+          Our adventures will take you beyond the postcard, crafting a personalized liveaboard experience you will never forget.
         `}
         img={ImageVelocean.src}
         imgAlt='Liveaboard with VELOCEAN'
         blurDataUrl={ImageVelocean.blurDataURL}
-        btnTopUrl='/liveaboard/velocean-maldives'
+        btnTopUrl='/liveaboard/velocean-lebaran-escape-misool'
         btnTopText='Learn More'
         btnBottomUrl='/liveaboard'
         btnBottomText='Other Liveaboard'
@@ -101,7 +100,7 @@ export default function Home() {
       <SectionUpcomingEvents
         titleTop='Discover the Underwater World'
         titleMain='Explore Dive Centers.'
-        events={diveCentersList}
+        events={diveCentersList.slice(0, 5)}
         btnUrl='/dive-centers'
         btnText='See All Dive Centers'
         cardClass='flex shrink-0 grow-0 basis-[220px] 2xs:basis-[240px] lg:basis-1/5 w-full px-3'

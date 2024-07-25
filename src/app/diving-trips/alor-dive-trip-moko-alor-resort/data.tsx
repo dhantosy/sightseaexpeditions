@@ -5,6 +5,9 @@ import ImageFour from '@public/assets/images/diving/dive-alor-4.jpg';
 
 export const PRICE_PER_PERSON = '16500000';
 export const EVENT_TITLE = 'Alor Dive Trip - Moko Alor Resort' || '';
+export const EVENT_DATE = 'July 19th – 23rd, 2024';
+export const EVENT_TYPE = 'Land Based';
+export const PAGE_TYPE = 'Diving Trips';
 
 export const images = [
   {

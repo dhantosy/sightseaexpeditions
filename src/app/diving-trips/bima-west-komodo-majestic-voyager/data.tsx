@@ -24,9 +24,21 @@ import ImageDeluxeSix from '@public/assets/images/cabin/majestic-voyager-deluxe-
 import ImageDeluxeSeven from '@public/assets/images/cabin/majestic-voyager-deluxe-7.jpg';
 import ImageDeluxeEight from '@public/assets/images/cabin/majestic-voyager-deluxe-8.jpg';
 import ImageDeluxeNine from '@public/assets/images/cabin/majestic-voyager-deluxe-9.jpg';
+import { upcomingDivingTrips } from '@/data/upcomingEvents';
 
-export const PRICE_PER_PERSON = '19000000';
+export const EVENT_TITLE_FULL = 'Bima Dive Trip with Majestic Voyager';
+
+const findEventData = upcomingDivingTrips.find((item) => {
+  return item.title === EVENT_TITLE_FULL;
+});
+
+export const PRICE_PER_PERSON = findEventData?.priceNum;
 export const EVENT_TITLE = 'Bima Dive Trip - Majestic Voyager' || '';
+export const EVENT_DATE = findEventData?.date;
+export const EVENT_TYPE = 'LOB';
+export const PAGE_TYPE = 'Diving Trips';
+export const EVENT_AVAILABILITY = findEventData?.available;
+export const EVENT_OVERVIEW = 'Bima, One of the Indonesia`s hidden gem. Sightsea Expeditions offers a liveaboard diving experience unlike any other. Venture beyond the crowds and discover a world teeming with fascinating critters and unique marine life on a luxurious liveaboard vessel.';
 
 export const categoryListOption = [
   {
