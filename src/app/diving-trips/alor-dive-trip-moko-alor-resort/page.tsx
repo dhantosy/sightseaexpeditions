@@ -10,7 +10,7 @@ import StickyPriceInfo from '@/components/partial/StickyPriceInfo';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
 import { useRandomEvents } from '@/hooks/useRandomEvents';
 import StickyBookingSection from '@/components/partial/StickyBookingSection';
-import { PRICE_PER_PERSON, EVENT_TITLE, images, schedule, notes, include } from './data';
+import { PRICE_PER_PERSON, EVENT_TITLE, EVENT_DATE, EVENT_TYPE, PAGE_TYPE, images, schedule, notes, include } from './data';
 import { upcomingDivingTrips } from '@/data/upcomingEvents';
 import { formatCurrency } from '@/lib/number';
 
@@ -34,9 +34,9 @@ export default function ToursLabuanBajoOpenTripPage() {
       <div className='pt-16 lg:pt-0'>
         <HeroDetailPage
           title='Alor Dive Trip with Moko Alor Dive Resort'
-          pageType='Diving Trips'
-          schedule='July 19th – 23rd, 2024'
-          tripType='Land Based'
+          pageType={PAGE_TYPE}
+          schedule={EVENT_DATE}
+          tripType={EVENT_TYPE}
           images={images}
         />
       </div>

@@ -21,7 +21,7 @@ export default function ToursExperiencesPage() {
       <div className='container px-4 lg:px-8 my-10'>
         <h2 className='mb-1 lg:mb-3 whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight'>Explore Our Tours & Experiences</h2>
         <div className='flex flex-wrap -mx-3'>
-          {upcomingTours?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, type, unit }, index) => {
+          {upcomingTours?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, type, unit, currency }, index) => {
 
             return (
               <div key={index} className='basis-full md:basis-1/2 lg:basis-1/4 p-3 grow-0 flex-shrink-0'>
@@ -36,6 +36,7 @@ export default function ToursExperiencesPage() {
                   price={price || ''}
                   type={type}
                   unit={unit}
+                  currency={currency}
                 />
               </div>
             )

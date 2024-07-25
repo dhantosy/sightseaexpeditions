@@ -13,4 +13,7 @@ export interface CardHorizontalItemProp {
   date: string;
   price: string;
   highlight?: HighlightProp;
+  available: boolean;
+  shipName?: string;
+  currency: string;
 }

@@ -9,4 +9,5 @@ export interface CardVerticalItemProp {
   price: string;
   unit: string;
   type: string;
+  currency: string;
 }

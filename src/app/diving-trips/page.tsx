@@ -21,7 +21,7 @@ export default function DivingTripsPage() {
       <div className='container px-4 lg:px-8 my-10'>
         <h2 className='mb-1 lg:mb-3 whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight'>Upcoming Diving Trips</h2>
         <div className='flex flex-wrap -mx-3'>
-          {upcomingDivingTrips?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, highlight }, index) => {
+          {upcomingDivingTrips?.map(({ img, imgAlt, blurDataUrl, title, location, date, url, price, highlight, available, currency }, index) => {
 
             return (
               <div key={index} className='basis-full 2lg:basis-1/2 p-3 grow-0 flex-shrink-0'>
@@ -35,6 +35,8 @@ export default function DivingTripsPage() {
                   date={date || ''}
                   price={price || ''}
                   highlight={highlight}
+                  available={available}
+                  currency={currency}
                 />
               </div>
             )

@@ -15,6 +15,7 @@ export default function CardVerticalItem({
   price,
   unit,
   type,
+  currency
 }: CardVerticalItemProp) {
 
   return (
@@ -49,7 +50,7 @@ export default function CardVerticalItem({
           </div>
           <div className='mt-5 flex flex-col gap-2 3lg:items-end 3lg:flex-row justify-between'>
             <div>
-              <span className='text-base font-bold'>{price} </span>
+              <span className='text-base font-bold'>{`${currency} ${price} `} </span>
               <span className='text-sm opacity-70'>{unit}</span>
             </div>
             <div>

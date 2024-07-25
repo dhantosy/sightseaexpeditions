@@ -17,6 +17,8 @@ interface CardsProp {
   highlight?: HighlightProp;
   type?: string;
   unit?: string;
+  available?: boolean;
+  currency?: string;
 }
 
 export interface SectionUpcomingEventsProp {

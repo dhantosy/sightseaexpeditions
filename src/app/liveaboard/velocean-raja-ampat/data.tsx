@@ -1,4 +1,4 @@
-import ImageGalleryOne from '@public/assets/images/liveaboard/velocean/maldives.jpg';
+import ImageGalleryOne from '@public/assets/images/gallery/raja-ampat-1.jpg';
 import ImageGalleryTwo from '@public/assets/images/vessels/velocean.jpg';
 import ImageGalleryThree from '@public/assets/images/liveaboard/velocean/gallery-5.jpg';
 import ImageGalleryFour from '@public/assets/images/liveaboard/velocean/gallery-3.jpg';
@@ -6,9 +6,19 @@ import ImageGalleryFour from '@public/assets/images/liveaboard/velocean/gallery-
 import ImageSuiteOne from '@public/assets/images/liveaboard/velocean/suite-1.jpg';
 import ImageExecutiveOne from '@public/assets/images/liveaboard/velocean/suite-2.jpg';
 import ImageDeluxeOne from '@public/assets/images/liveaboard/velocean/suite-3.jpg';
+import { upcomingLiveaboard } from '@/data/upcomingEvents';
 
-export const PRICE_PER_PERSON = '4950';
-export const EVENT_TITLE = 'VELOCEAN - Maldives' || '';
+export const EVENT_TITLE_FULL = 'Raja Ampat - Misool Dive Trip with Velocean Liveaboard';
+
+const findEventData = upcomingLiveaboard.find((item) => {
+  return item.title === EVENT_TITLE_FULL;
+});
+
+export const PRICE_PER_PERSON = findEventData?.priceNum;
+export const EVENT_TITLE = 'VELOCEAN - Raja Ampat Misool' || '';
+export const EVENT_DATE = findEventData?.date;
+export const PAGE_TYPE = 'Liveaboard';
+export const EVENT_AVAILABILITY = findEventData?.available;
 
 export const categoryListOption = [
   {

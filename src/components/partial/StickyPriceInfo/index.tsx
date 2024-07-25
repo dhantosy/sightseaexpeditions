@@ -9,6 +9,7 @@ export default function StickyPriceInfo({
   title,
   onButtonclick,
   btnText,
+  available,
 }: StickyPriceInfoProp) {
 
   return (
@@ -22,14 +23,25 @@ export default function StickyPriceInfo({
             <div className='opacity-70 shrink-0 grow-0'>{priceUnit}</div>
           </div>
         </div>
-        <Button
-          type='button'
-          size='sm'
-          className='mt-2 2xs:mt-0 2xs:min-w-28 2sm:min-w-32'
-          onClick={onButtonclick}
-        >
-          {btnText}
-        </Button>
+        {available ? (
+          <Button
+            type='button'
+            size='sm'
+            className='mt-2 2xs:mt-0 2xs:min-w-28 2sm:min-w-32'
+            onClick={onButtonclick}
+          >
+            {btnText}
+          </Button>
+        ) : (
+            <Button
+              variant='destructive'
+              disabled
+              size='sm'
+              className='mt-2 2xs:mt-0 2xs:min-w-28 2sm:min-w-32'
+            >
+              Fully Booked
+            </Button>
+        )}
       </div>
     </div>
   )
