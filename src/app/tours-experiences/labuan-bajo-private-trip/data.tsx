@@ -2,9 +2,20 @@ import ImageOne from '@public/assets/images/gallery/labuan-bajo-1.jpg';
 import ImageTwo from '@public/assets/images/gallery/labuan-bajo-2.jpg';
 import ImageThree from '@public/assets/images/gallery/labuan-bajo-3.jpg';
 import ImageFour from '@public/assets/images/gallery/labuan-bajo-4.jpg';
+import { upcomingTours } from '@/data/upcomingEvents';
+
+export const EVENT_TITLE_FULL = 'Labuan Bajo Private Trip';
+
+const findEventData = upcomingTours.find((item) => {
+  return item.title === EVENT_TITLE_FULL;
+});
 
 export const PRICE_PER_PERSON = '11000000';
-export const EVENT_TITLE = 'Labuan Bajo Private Trip' || '';
+export const EVENT_TITLE = 'Labuan Bajo Private Trip: Trekking, Snorkeling & Island Hopping' || '';
+export const EVENT_DATE = findEventData?.date;
+export const PAGE_TYPE = 'Tours & Experiences';
+export const EVENT_AVAILABILITY = findEventData?.available;
+export const EVENT_OVERVIEW = 'Labuan Bajo, a stunning gateway to the Komodo National Park, beckons travelers with its rich biodiversity, dramatic landscapes, and vibrant culture. Indulge in an unforgettable adventure with a private trip to Labuan Bajo. Whether you`re a nature enthusiast yearning to witness the majestic Komodo dragons, or simply a traveler yearning for relaxation amidst breathtaking scenery, a private trip to Labuan Bajo promises an unparalleled experience.';
 
 export const images = [
   {

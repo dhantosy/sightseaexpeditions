@@ -2,9 +2,20 @@ import ImageOne from '@public/assets/images/gallery/labuan-bajo-1.jpg';
 import ImageTwo from '@public/assets/images/gallery/labuan-bajo-2.jpg';
 import ImageThree from '@public/assets/images/gallery/labuan-bajo-3.jpg';
 import ImageFour from '@public/assets/images/gallery/labuan-bajo-4.jpg';
+import { upcomingTours } from '@/data/upcomingEvents';
+
+export const EVENT_TITLE_FULL = 'Labuan Bajo Open Trip';
+
+const findEventData = upcomingTours.find((item) => {
+  return item.title === EVENT_TITLE_FULL;
+});
 
 export const PRICE_PER_PERSON = '1450000';
-export const EVENT_TITLE = 'Labuan Bajo Open Trip' || '';
+export const EVENT_TITLE = 'Labuan Bajo Open Trip: Trekking, Snorkeling & Island Hopping' || '';
+export const EVENT_DATE = findEventData?.date;
+export const PAGE_TYPE = 'Tours & Experiences';
+export const EVENT_AVAILABILITY = findEventData?.available;
+export const EVENT_OVERVIEW = 'Labuan Bajo, a stunning gateway to the Komodo National Park, beckons travelers with its rich biodiversity, dramatic landscapes, and vibrant culture. An open trip to Labuan Bajo offers an affordable and social way to experience this Indonesian paradise. Travel with like-minded adventurers: Open trips bring together a group of travelers seeking an unforgettable adventure in Labuan Bajo. You`ll share the experience with fellow explorers, creating new friendships and memories along the way.';
 
 export const images = [
   {

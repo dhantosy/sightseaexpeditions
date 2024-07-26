@@ -272,7 +272,7 @@ export default function VeloceanMaldivesPage() {
                   <div>{`${selectedCurrency} ${totalPrice}`}</div>
                 </div>
                 <StickyBookingBtnSubmit
-                  whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0AVelocean%20Maldives%20Trip%20for${watchRoomType ? '%20' + watchRoomType : '%20'}%20for%20${count}%20person`}
+                  whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0A${EVENT_TITLE_FULL}%20${watchRoomType ? '%20for%20' + watchRoomType : '%20'}%20for%20${count}%20person`}
                   available={EVENT_AVAILABILITY}
                 />
               </div>

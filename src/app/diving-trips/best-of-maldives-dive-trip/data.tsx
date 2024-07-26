@@ -38,7 +38,7 @@ export const EVENT_DATE = findEventData?.date;
 export const EVENT_TYPE = 'LOB';
 export const PAGE_TYPE = 'Diving Trips';
 export const EVENT_AVAILABILITY = findEventData?.available;
-export const EVENT_OVERVIEW = 'Bima, One of the Indonesia`s hidden gem. Sightsea Expeditions offers a liveaboard diving experience unlike any other. Venture beyond the crowds and discover a world teeming with fascinating critters and unique marine life on a luxurious liveaboard vessel.';
+export const EVENT_OVERVIEW = 'Embark on a voyage of discovery unlike any other on a liveaboard diving trip to the Maldives.  This island paradise, famed for its turquoise waters and pristine coral reefs, offers an unparalleled underwater experience from the comfort and luxury of a liveaboard vessel.';
 
 export const categoryListOption = [
   {
