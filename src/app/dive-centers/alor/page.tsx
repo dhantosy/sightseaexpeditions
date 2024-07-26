@@ -279,7 +279,7 @@ export default function DiveCenterAlorPage() {
                   <div>{`IDR ${totalPrice}`}</div>
                 </div>
                 <StickyBookingBtnSubmit
-                  whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0AAlor%20${watchCategory ? watchCategory.replace(/_/g, " ") + '%2C' : ''}%20${watchDestination ? watchDestination + '%2C' : ''}%20for%20${count}%20person`}
+                  whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0A${EVENT_TITLE}%20${watchCategory ? watchCategory.replace(/_/g, " ") + '%2C' : ''}%20${watchDestination ? 'at%20' + watchDestination + '%2C' : ''}%20for%20${count}%20person`}
                   available={EVENT_AVAILABILITY}
                 />
               </div>
