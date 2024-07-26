@@ -17,11 +17,9 @@ import {
   categoryListOption
 } from '@/data/diveCenterBaliPricing';
 import { formatCurrency } from '@/lib/number';
-import { EVENT_TITLE, images } from './data';
+import { EVENT_TITLE, EVENT_DATE, PAGE_TYPE, EVENT_AVAILABILITY, images, EVENT_TITLE_FULL } from './data';
 
 type Inputs = {
-  name: string
-  email: string
   category: string
   destination: string
 };
@@ -120,12 +118,18 @@ export default function DiveCenterBaliPage() {
     setBookFormShow(true);
   };
 
+  const handleStickyFormClose = () => {
+    reset();
+    setBookFormShow(false);
+    setCount(1);
+  };
+
   return (
     <main>
       <HeroDetailPage
-        title='Dive Bali: Explore the Enchanting Coral Reefs'
-        schedule='Available Daily'
-        pageType='Dive Center'
+        title={EVENT_TITLE_FULL}
+        schedule={EVENT_DATE}
+        pageType={PAGE_TYPE}
         images={images}
       />
       <div className={bookFormShow ? 'fixed h-full w-full bg-black/60 z-50 top-0 left-0 visible lg:hidden transition-all' : 'fixed h-full w-full bg-black/0 z-50 top-0 left-0 invisible transition-all lg:hidden'} />
@@ -175,7 +179,7 @@ export default function DiveCenterBaliPage() {
           <StickyBookingSection
             title={EVENT_TITLE}
             isBookFormShow={bookFormShow}
-            onCloseClick={() => { setBookFormShow(false); reset(); setCount(1) }}
+            onCloseClick={handleStickyFormClose}
           >
             <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
               <div>
@@ -278,6 +282,7 @@ export default function DiveCenterBaliPage() {
                 </div>
                 <StickyBookingBtnSubmit
                   whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0A${watchCategory ? watchCategory.replace(/_/g, " ") + '%2C' : ''}%20${watchDestination ? watchDestination + '%2C' : ''}%20for%20${count}%20person`}
+                  available={EVENT_AVAILABILITY}
                 />
               </div>
             </form>

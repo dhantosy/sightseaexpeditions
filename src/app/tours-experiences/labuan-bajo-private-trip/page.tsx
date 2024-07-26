@@ -13,7 +13,7 @@ import StickyPriceInfo from '@/components/partial/StickyPriceInfo';
 import StickyBookingSection from '@/components/partial/StickyBookingSection';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
 import { useRandomEvents } from '@/hooks/useRandomEvents';
-import { PRICE_PER_PERSON, EVENT_TITLE, images, schedule, notes, include } from './data';
+import { PRICE_PER_PERSON, EVENT_TITLE, EVENT_TITLE_FULL, EVENT_OVERVIEW, EVENT_DATE, PAGE_TYPE, EVENT_AVAILABILITY, images, schedule, notes, include } from './data';
 import { upcomingTours } from '@/data/upcomingEvents';
 import { formatCurrency } from '@/lib/number';
 
@@ -79,9 +79,9 @@ export default function ToursLabuanBajoPrivateTripPage() {
     <main>
       <div className='pt-16 lg:pt-0'>
         <HeroDetailPage
-          title='Labuan Bajo Private Trip: Trekking, Snorkeling & Island Hopping'
-          pageType='Tours & Experiences'
-          schedule='Available Upon Request'
+          title={EVENT_TITLE}
+          pageType={PAGE_TYPE}
+          schedule={EVENT_DATE}
           images={images}
         />
       </div>
@@ -90,7 +90,7 @@ export default function ToursLabuanBajoPrivateTripPage() {
         <div className='flex flex-col lg:flex-row'>
           <div className='basis-full lg:basis-2/3 flex-shrink-0 flex flex-col gap-5'>
             <AccordionContent title='Overview' isExpand>
-              <p className='opacity-70'>Labuan Bajo, a stunning gateway to the Komodo National Park, beckons travelers with its rich biodiversity, dramatic landscapes, and vibrant culture. Indulge in an unforgettable adventure with a private trip to Labuan Bajo. Whether you`re a nature enthusiast yearning to witness the majestic Komodo dragons, or simply a traveler yearning for relaxation amidst breathtaking scenery, a private trip to Labuan Bajo promises an unparalleled experience.</p>
+              <p className='opacity-70'>{EVENT_OVERVIEW}</p>
             </AccordionContent>
             <AccordionContent title='Itinerary' isExpand>
               <div className='relative pt-2 pb-1 pl-8 after:content[""] after:absolute after:h-full after:left-2 after:top-0 after:border-l after:border-dashed after:border-bluePrimary'>
@@ -133,7 +133,7 @@ export default function ToursLabuanBajoPrivateTripPage() {
             </AccordionContent>
           </div>
           <StickyBookingSection
-            title={EVENT_TITLE}
+            title={EVENT_TITLE_FULL}
             isBookFormShow={bookFormShow}
             onCloseClick={() => { setBookFormShow(false); reset(); setCount(1) }}
           >
@@ -159,7 +159,8 @@ export default function ToursLabuanBajoPrivateTripPage() {
                   <div>{`IDR ${totalPrice}`}</div>
                 </div>
                 <StickyBookingBtnSubmit
-                  whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0ALabuan%20Bajo%20Private%20Trip%20${selectedDate ? 'on ' + selectedDate : ''}%20for%20${count}%20guests`}
+                  whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0A${EVENT_TITLE_FULL}%20${selectedDate ? 'on ' + selectedDate : ''}%20for%20${count}%20guests`}
+                  available={EVENT_AVAILABILITY}
                 />
               </div>
             </form>
@@ -169,9 +170,10 @@ export default function ToursLabuanBajoPrivateTripPage() {
       <StickyPriceInfo
         totalPrice={formatCurrency(PRICE_PER_PERSON)}
         priceUnit=' / 1 - 5 guests'
-        title={EVENT_TITLE}
+        title={EVENT_TITLE_FULL}
         btnText='Book Now'
         onButtonclick={() => setBookFormShow(true)}
+        available={EVENT_AVAILABILITY}
       />
       <div className='mt-10 lg:mt-24'>
         <SectionUpcomingEvents

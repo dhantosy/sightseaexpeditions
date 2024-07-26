@@ -3,7 +3,11 @@ import ImageTwo from '@public/assets/images/gallery/alor-2.jpg';
 import ImageThree from '@public/assets/images/gallery/alor-3.jpg';
 import ImageFour from '@public/assets/images/gallery/alor-4.jpg';
 
+export const EVENT_TITLE_FULL = 'Dive Alor: Unforgettable Experiences with Top-Rated Dive Center';
 export const EVENT_TITLE = 'Alor Dive Center';
+export const EVENT_DATE = 'Available Upon Request';
+export const PAGE_TYPE = 'Dive Centers';
+export const EVENT_AVAILABILITY = true;
 
 export const images = [
   {

@@ -3,7 +3,11 @@ import ImageTwo from '@public/assets/images/gallery/about-mission.jpg';
 import ImageThree from '@public/assets/images/gallery/about-dive.jpg';
 import ImageFour from '@public/assets/images/gallery/bali-fish.jpg';
 
+export const EVENT_TITLE_FULL = 'Dive Bali: Explore the Enchanting Coral Reefs';
 export const EVENT_TITLE = 'Bali Dive Center';
+export const EVENT_DATE = 'Available Daily';
+export const PAGE_TYPE = 'Dive Centers';
+export const EVENT_AVAILABILITY = true;
 
 export const images = [
   {

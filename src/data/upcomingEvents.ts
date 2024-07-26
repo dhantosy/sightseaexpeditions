@@ -345,7 +345,7 @@ export const upcomingTours = [
     blurDataUrl: ImageLabuanBajoPrivate.blurDataURL,
     title: 'Labuan Bajo Private Trip',
     location: 'NTT, Indonesia',
-    date: 'Upon Request',
+    date: 'Available Upon Request',
     url: '/tours-experiences/labuan-bajo-private-trip',
     price: '11jt',
     priceNum: '11000000',
@@ -353,6 +353,7 @@ export const upcomingTours = [
     duration: '4 days',
     unit: '/ 1-5 guests',
     type: 'Private Trip',
+    available: true,
   },
   {
     img: ImageLabuanBajoOpen.src,
@@ -360,7 +361,7 @@ export const upcomingTours = [
     blurDataUrl: ImageLabuanBajoOpen.blurDataURL,
     title: 'Labuan Bajo Open Trip',
     location: 'NTT, Indonesia',
-    date: 'Every Fri - Sun',
+    date: 'Every Friday - Sunday',
     url: '/tours-experiences/labuan-bajo-open-trip',
     price: '1,45jt',
     priceNum: '1450000',
@@ -368,6 +369,7 @@ export const upcomingTours = [
     duration: '4 days',
     unit: '/ person',
     type: 'Open Trip',
+    available: true,
   },
   {
     img: ImageSumbasMain.src,
@@ -383,6 +385,7 @@ export const upcomingTours = [
     duration: '4 days',
     unit: '/ 1-5 guests',
     type: 'Private Trip',
+    available: true,
   },
   {
     img: ImageTorajaMain.src,
@@ -398,6 +401,7 @@ export const upcomingTours = [
     duration: '4 days',
     unit: '/ 1-5 guests',
     type: 'Private Trip',
+    available: true,
   },
   {
     img: ImageUbudMain.src,
@@ -413,6 +417,7 @@ export const upcomingTours = [
     duration: '4 days',
     unit: '/ person',
     type: 'Open Trip',
+    available: true,
   },
   {
     img: ImageKintamaniMain.src,
@@ -428,6 +433,7 @@ export const upcomingTours = [
     duration: '4 days',
     unit: '/ person',
     type: 'Open Trip',
+    available: true,
   },
 ];
 
