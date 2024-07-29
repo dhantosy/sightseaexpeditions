@@ -22,9 +22,9 @@ export default function TestimonialItem({
         </div>
         <p className='mb-3 text-bluePrimary/60'>{review}</p>
         <div>
-          <h5 className='text-lg font-montserrat font-semibold mb-2'>{name}</h5>
-          <h6 className='text-bluePrimary/60 text-sm'>{date}</h6>
-          <span className='text-bluePrimary/50 text-sm'>Source: {source}</span>
+          <h3 className='text-lg font-montserrat font-semibold mb-2'>{name}</h3>
+          <p className='text-bluePrimary/60 text-sm'>{date}</p>
+          <p className='text-bluePrimary/50 text-sm'>Source: {source}</p>
         </div>
       </div>
     </div>
