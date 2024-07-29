@@ -6,7 +6,7 @@ export default function TermsConditionsPage() {
     <main className='mt-28 lg:mt-40'>
       <section className='relative container my-10 lg:my-12 px-4 lg:px-8'>
         <div className='max-w-4xl mx-auto'>
-          <Title titleMain='Terms & Conditions.' />
+          <Title titleMain='Terms & Conditions.' tagMain />
           <div className='opacity-70'>
             <p className='uppercase mt-8'>
               Syarat dan ketentuan di bawah ini harus dibaca sebelum menggunakan situs ini. penggunaan anda atas situs ini menunjukkan penerimaan anda terhadap syarat dan ketentuan ini.

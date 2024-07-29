@@ -35,6 +35,7 @@ export default function AboutPage() {
   return (
     <main className='mt-28 lg:mt-40'>
       <SectionInfo
+        tagMain
         titleTop='About Sightsea Expeditions'
         titleMain='Your Premium Trip Currator.'
         images={aboutImages}
