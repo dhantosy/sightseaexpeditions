@@ -13,7 +13,7 @@ export default function HeroDetailPage({
 
   return (
     <section className='container px-4 lg:px-8 relative mt-40 2xs:mt-28 lg:mt-40'>
-      <Title titleTop={pageType} titleMain={title} />
+      <Title titleTop={pageType} titleMain={title} tagMain />
       <div className='flex gap-0 3xs:gap-4 flex-col 3xs:flex-row'>
         {schedule && (
           <div className='mt-3 w-fit flex px-5 py-2 text-sm lg:text-base items-center gap-3 rounded-full bg-emerald-100 text-emerald-600 font-semibold'>
