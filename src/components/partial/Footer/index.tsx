@@ -25,7 +25,7 @@ export default function Footer() {
             </div>
             <div className='flex gap-12 3sm:gap-28 flex-col-reverse 3sm:flex-row mt-6 lg:mt-0'>
               <div className='text-sm sm:text-base'>
-                <h6 className='font-bold font-montserrat text-xl uppercase mb-4'>Explore</h6>
+                <p className='font-bold font-montserrat text-xl uppercase mb-4'>Explore</p>
                 <div className='flex flex-col gap-3 opacity-80'>
                   {footerMenu.map(({ title, url }) => {
                     return (
@@ -35,7 +35,7 @@ export default function Footer() {
                 </div>
               </div>
               <div>
-                <h6 className='font-bold font-montserrat text-xl uppercase mb-4'>Contact</h6>
+                <p className='font-bold font-montserrat text-xl uppercase mb-4'>Contact</p>
                 <div className='text-sm sm:text-base'>
                   <address className='opacity-80 not-italic mb-6 whitespace-pre-line'>
                     {`Jl. Plawa, Gg. Melati No.18, Seminyak,

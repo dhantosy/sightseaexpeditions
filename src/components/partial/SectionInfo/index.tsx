@@ -7,6 +7,7 @@ export default function SectionInfo({
   titleMain,
   images,
   description,
+  tagMain,
 }: SectionInfoProp) {
 
   return (
@@ -21,6 +22,7 @@ export default function SectionInfo({
             <Title
               titleTop={titleTop}
               titleMain={titleMain}
+              tagMain={tagMain}
             />
           </div>
           <div className='flex relative gap-6 md:gap-10 max-w-5xl w-full mx-auto flex-nowrap overflow-x-auto my-7 border border-slate-200 rounded-2xl p-4'>

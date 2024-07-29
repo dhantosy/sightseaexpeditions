@@ -35,6 +35,7 @@ export default function SectionInstagram({
                             placeholder='blur'
                             blurDataURL={blurDataUrl}
                             fill
+                            sizes={'200px'}
                           />
                         </div>
                       </a>
@@ -55,6 +56,7 @@ export default function SectionInstagram({
                             placeholder='blur'
                             blurDataURL={blurDataUrl}
                             fill
+                            sizes={'200px'}
                           />
                         </div>
                       </a>

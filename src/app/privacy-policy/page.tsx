@@ -6,7 +6,7 @@ export default function TermsConditionsPage() {
     <main className='mt-28 lg:mt-40'>
       <section className='relative container my-10 lg:my-12 px-4 lg:px-8'>
         <div className='max-w-4xl mx-auto'>
-          <Title titleMain='Privacy Policy.' />
+          <Title titleMain='Privacy Policy.' tagMain />
           <div className='opacity-70'>
             <p className='uppercase mt-8 underline'>PERSYARATAN PRIVASI PENGGUNAAN DATA PRIBADI</p>
             <p className='mt-8'>Anda diharapkan dapat membuat keputusan terkait data pribadi Anda. Pemberitahuan Privasi ini menjelaskan bagaimana  Sightsea Expeditions, anak perusahaan, afiliasi, dan entitas bersama yang dikendalikan bersama (“SightSea“, “kami“, “kita“, atau “milik kami“) memproses Data Pribadi Anda. Proses mencakup pengumpulan, pencatatan, pemegang, organisasi, struktur, penyimpanan, retensi, adaptasi, perubahan, pengambilan, konsultasi, penggunaan, pengungkapan, penghapusan, atau penghancuran Data Pribadi (“Pemrosesan“), baik melalui situs web kami https://sightseaexpeditions.com/.</p>

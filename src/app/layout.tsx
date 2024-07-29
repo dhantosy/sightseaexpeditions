@@ -4,6 +4,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Montserrat, Open_Sans } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
 import { Providers } from './providers';
@@ -73,6 +74,16 @@ export default function RootLayout({
           <WhatsappWidget />
           <Footer />
         </Providers>
+        <Script async src='https://www.googletagmanager.com/gtag/js?id=G-8CKH38ZP4C' strategy='afterInteractive' />
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-8CKH38ZP4C');
+        `}
+        </Script>
       </body>
     </html>
   );

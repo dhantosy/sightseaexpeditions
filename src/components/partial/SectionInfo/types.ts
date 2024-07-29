@@ -9,4 +9,5 @@ export interface SectionInfoProp {
   titleMain: string,
   images: ImagesProp[],
   description: string,
+  tagMain?: boolean,
 }

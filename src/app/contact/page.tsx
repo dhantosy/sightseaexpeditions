@@ -76,7 +76,7 @@ export default function ContactPage() {
                   <h4 className='uppercase font-medium font-montserrat mb-3 leading-tight'>Address</h4>
                 </div>
                 <div>
-                  <address className='opacity-80 not-italic mb-6 whitespace-pre-line'>
+                  <address className='opacity-70 not-italic mb-6 whitespace-pre-line'>
                     {`Jl. Plawa, Gg. Melati No.18, Seminyak,
                       Kec. Kuta, Kabupaten Badung, Bali 80361
                     `}
@@ -89,7 +89,7 @@ export default function ContactPage() {
                   <h4 className='uppercase font-medium font-montserrat mb-3 leading-tight'>Opening Hours</h4>
                 </div>
                 <div>
-                  <div className='opacity-80'>
+                  <div className='opacity-70'>
                     <div><span className='font-semibold'>Office</span>, Mon - Fri : 09.00 - 17.00</div>
                     <div><span className='font-semibold'>Online</span>, Mon - Sun : 09.00 - 21.00</div>
                   </div>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                   <h4 className='uppercase font-medium font-montserrat mb-3 leading-tight'>Email Address</h4>
                 </div>
                 <div>
-                  <a href='mailto:admin@sightseaexpeditions.com' className='opacity-80 flex items-center gap-2'>
+                  <a href='mailto:admin@sightseaexpeditions.com' className='opacity-70 flex items-center gap-2'>
                     <span>admin@sightseaexpeditions.com</span>
                   </a>
                 </div>
@@ -114,7 +114,7 @@ export default function ContactPage() {
                   <h4 className='uppercase font-medium font-montserrat mb-3 leading-tight'>Phone</h4>
                 </div>
                 <div>
-                  <a href='tel:+62811301031' className='opacity-80 flex items-center gap-2'>
+                  <a href='tel:+62811301031' className='opacity-70 flex items-center gap-2'>
                     <span>+62 811 301 031</span>
                   </a>
                 </div>
@@ -127,11 +127,11 @@ export default function ContactPage() {
         <div className='relative flex flex-wrap flex-col lg:flex-row -mx-4 items-center'>
           <div className='basis-full lg:basis-1/2 px-4 grow-0 mt-4 mb-2 lg:mt-0 w-full'>
             <div className='text-left md:text-center'>
-              <Title titleMain='Get in Touch.' />
+              <Title titleMain='Get in Touch.' tagMain />
             </div>
           </div>
           <div className='basis-full lg:basis-1/2 px-4 grow-0  w-full h-full'>
-            <div className='rounded-3xl overflow-hidden py-4'>
+            <div className='rounded-3xl bg-creamPrimary/10 overflow-hidden p-6 lg:p-10 mt-4 lg:mt-0'>
               <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
                 {isFormSubmitted ? (
                   <div>

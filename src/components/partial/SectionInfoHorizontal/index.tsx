@@ -43,7 +43,7 @@ export default function SectionInfoHorizontal({
           <p className='whitespace-pre-line	mt-6 mb-10 text-bluePrimary/60'>{description}</p>
           <div className='flex flex-col lg:flex-row gap-4'>
             <Button asChild size='md' className='uppercase'>
-              <Link href={btnTopUrl} aria-label={btnTopText}>{btnTopText}</Link>
+              <Link href={btnTopUrl} aria-label={`Link to ${titleMain}`}>{btnTopText}</Link>
             </Button>
             <Button asChild variant='ghost' size='md' className='uppercase'>
               <Link href={btnBottomUrl} aria-label={btnBottomText}>{btnBottomText}</Link>
