@@ -38,8 +38,6 @@ export default function BookingPage() {
   const paramCurrency = searchParams.get('curr');
   const paramTotalPrice = searchParams.get('total');
 
-  console.log(paramType)
-
   const {
     register,
     handleSubmit,
@@ -197,8 +195,8 @@ export default function BookingPage() {
                               />
                           </fieldset>
                             <ReCAPTCHA ref={reCaptchaRef} size='invisible' sitekey={CAPTCHA_KEY} />
-                            {recaptchaError && (
-                              <div>{recaptchaError}</div>
+                            {!recaptchaError && (
+                              <div className='text-red-600'>{recaptchaError}</div>
                             )}
                           {
                             isLoading ? (

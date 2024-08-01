@@ -4,6 +4,7 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Montserrat, Open_Sans } from 'next/font/google';
@@ -63,17 +64,19 @@ export default function RootLayout({
         <meta name='theme-color' content='#ffffff' />
       </head>
       <body className={`${openSans.variable} ${montserrat.variable} text-bluePrimary font-openSans`}>
-        <Providers>
-          <NextTopLoader
-            color='#F1AD8E'
-            showSpinner={false}
-            height={5}
-          />
-          <Header />
-          {children}
-          <WhatsappWidget />
-          <Footer />
-        </Providers>
+        <Suspense>
+          <Providers>
+            <NextTopLoader
+              color='#F1AD8E'
+              showSpinner={false}
+              height={5}
+            />
+            <Header />
+            {children}
+            <WhatsappWidget />
+            <Footer />
+          </Providers>
+        </Suspense>
         <Script async src='https://www.googletagmanager.com/gtag/js?id=G-8CKH38ZP4C' strategy='afterInteractive' />
         <Script id='google-analytics' strategy='afterInteractive'>
           {`
