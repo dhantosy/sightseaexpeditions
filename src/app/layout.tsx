@@ -1,3 +1,4 @@
+import 'react-phone-number-input/style.css';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
@@ -83,6 +84,7 @@ export default function RootLayout({
           gtag('config', 'G-8CKH38ZP4C');
         `}
         </Script>
+        <Script src='https://www.google.com/recaptcha/api.js' strategy='afterInteractive' />
       </body>
     </html>
   );

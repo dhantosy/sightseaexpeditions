@@ -1,6 +1,6 @@
 'use client';
 
-import { ChangeEvent, useEffect, useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 import Image from 'next/image';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { FaCircleCheck, FaCirclePlus, FaTag } from 'react-icons/fa6';
@@ -37,7 +37,6 @@ export default function VeloceanMaldivesPage() {
     setValue,
     reset,
     watch,
-    formState: { isDirty, isValid },
   } = useForm<Inputs>();
   const watchCategory = watch('category', '');
   const watchRoomType = watch('roomType', '');
@@ -46,15 +45,19 @@ export default function VeloceanMaldivesPage() {
   });
   const convertPrice = Number(getSelectedPrice[0]?.price.replace(/\,/g, ''));
 
-  const getFormData = (object: any) => {
-    const formData = new FormData();
-    Object.keys(object).forEach(key => formData.append(key, object[key]));
-
-    return formData;
-  };
-
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    console.log(data)
+    const params = new URLSearchParams([
+      ['name', EVENT_TITLE_FULL],
+      ['type', PAGE_TYPE],
+      ['date', EVENT_DATE || ''],
+      ['cat', data.category ?? ''],
+      ['cabin', data.roomType],
+      ['pax', count.toString()],
+      ['curr', selectedCurrency],
+      ['total', totalPrice],
+    ]);
+
+    window.open(`/booking/?${params.toString()}`, '_blank', 'noopener,noreferrer');
   };
 
   const handleCategoryChange = (e: ChangeEvent<HTMLSelectElement>) => {

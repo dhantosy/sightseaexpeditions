@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { format } from 'date-fns';
 import { isWeekday, getDayOfWeek } from "@internationalized/date";
@@ -22,8 +22,6 @@ import { formatCurrency } from '@/lib/number';
 type Inputs = {
   name: string
   email: string
-  category: string
-  destination: string
 };
 
 export default function ToursLabuanBajoOpenTripPage() {
@@ -40,30 +38,21 @@ export default function ToursLabuanBajoOpenTripPage() {
   }
 
   const {
-    register,
     handleSubmit,
-    setValue,
     reset,
-    watch,
-    formState: { isDirty, isValid },
   } = useForm<Inputs>();
 
-  // useEffect(() => {
-  //   if (!isSafeToReset) return;
+  const onSubmit: SubmitHandler<Inputs> = async () => {
+    const params = new URLSearchParams([
+      ['name', EVENT_TITLE_FULL],
+      ['type', PAGE_TYPE],
+      ['date', selectedDate],
+      ['pax', count.toString()],
+      ['curr', 'IDR'],
+      ['total', totalPrice],
+    ]);
 
-  //   reset(); // asynchronously reset your form values
-  // }, [isSafeToReset, reset]);
-
-  const getFormData = (object: any) => {
-    const formData = new FormData();
-    formData.append('time', format(new Date(), 'yyyy MMMM dd, HH:mm'));
-    Object.keys(object).forEach(key => formData.append(key, object[key]));
-
-    return formData;
-  };
-
-  const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    console.log(data)
+    window.open(`/booking/?${params.toString()}`, '_blank', 'noopener,noreferrer');
   };
 
   const handleCounterChange = (val: number) => {

@@ -22,7 +22,6 @@ export default function ContactPage() {
     register,
     handleSubmit,
     reset,
-    formState: { isDirty, isValid },
   } = useForm<Inputs>();
 
   // useEffect(() => {
@@ -40,7 +39,7 @@ export default function ContactPage() {
   }
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    console.log(data)
+    console.log(data);
   };
 
   return (

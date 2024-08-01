@@ -10,7 +10,7 @@ export default function StickyBookingBtnSubmit({
     <div>
       {available ? (
         <>
-          <Button type='submit' size='md' className='min-w-40 w-full mb-4'>
+          <Button size='md' className='min-w-40 w-full mb-4'>
             Book Now
           </Button>
           <a href={whatsappLink} target='_blank'>

@@ -26,7 +26,7 @@ export const categoryListOption = [
     label: 'Select Category'
   },
   {
-    value: 'domestic_kitas',
+    value: 'Domestic / KITAS',
     label: 'Domestic / KITAS Holder'
   },
   {

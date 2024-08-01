@@ -117,3 +117,28 @@ button.z-0.group.relative.inline-flex.items-center.justify-center.box-border.app
 .calendar-widget .data-\[selected\=true\]\:bg-primary[data-selected=true] {
   background-color: #050A30;
 }
+
+.phoneNo .PhoneInput {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid rgb(226, 232, 240);
+  border-radius: 0.75rem;
+  gap: 8px;
+}
+
+.phoneNo .PhoneInput--focus input {
+  outline: none;
+}
+
+.phoneNo .PhoneInputCountryIcon--border {
+  margin-right: 3px;
+  border: none;
+}
+
+.grecaptcha-badge {
+  display: none !important;
+  opacity: 0;
+  visibility: hidden;
+}
