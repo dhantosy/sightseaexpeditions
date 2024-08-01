@@ -120,29 +120,29 @@ export default function BookingPage() {
                       <h3 className='text-lg lg:text-xl font-semibold text-center mb-6 border-b pb-6'>{paramName}</h3>
                       <div className='mb-6 border-b pb-6'>
                         <div className='max-w-96 mx-auto flex flex-col gap-2'>
-                          <div className='flex justify-between items-baseline text-sm lg:text-base'>
+                          <div className='flex justify-between items-baseline text-sm lg:text-base gap-4'>
                             <div>Date:</div>
-                            <div>{paramDate}</div>
+                            <div className='text-right'>{paramDate || 'Date is not selected'}</div>
                           </div>
                           {paramCat && (
-                            <div className='flex justify-between items-baseline text-sm lg:text-base'>
+                            <div className='flex justify-between items-baseline text-sm lg:text-base gap-4'>
                               <div>Category:</div>
-                              <div className='capitalize'>{paramCat?.replace(/_/g, " ")}</div>
+                              <div className='capitalize text-right'>{paramCat?.replace(/_/g, " ")}</div>
                             </div>
                           )}
                           {paramDestination && (
-                            <div className='flex justify-between items-baseline text-sm lg:text-base'>
+                            <div className='flex justify-between items-baseline text-sm lg:text-base gap-4'>
                               <div>Course/destination:</div>
-                              <div>{paramDestination}</div>
+                              <div className='text-right'>{paramDestination}</div>
                             </div>
                           )}
                           {paramCabinType && (
-                            <div className='flex justify-between items-baseline text-sm lg:text-base'>
+                            <div className='flex justify-between items-baseline text-sm lg:text-base gap-4'>
                               <div>Cabin Type:</div>
-                              <div>{paramCabinType}</div>
+                              <div className='text-right'>{paramCabinType}</div>
                             </div>
                           )}
-                          <div className='flex justify-between items-baseline text-sm lg:text-base'>
+                          <div className='flex justify-between items-baseline text-sm lg:text-base gap-4'>
                             <div>No. of Guests:</div>
                             <div>{paramPersonCount}</div>
                           </div>
@@ -164,7 +164,7 @@ export default function BookingPage() {
                         <div className='flex flex-col max-w-96 mx-auto text-sm lg:text-base'>
                           <fieldset className='mb-5 basis-full'>
                             <label htmlFor='fullname' className='text-slate-600 font-medium'>Full name<span className='text-sm text-red-500'>*</span></label>
-                            <input className='block mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' type='text' placeholder='Your full name' id='name' {...register('fullname', {
+                            <input className='block mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' type='text' placeholder='Your full name' id='fullname' {...register('fullname', {
                               required: true
                             })} />
                           </fieldset>
@@ -195,7 +195,7 @@ export default function BookingPage() {
                               />
                           </fieldset>
                             <ReCAPTCHA ref={reCaptchaRef} size='invisible' sitekey={CAPTCHA_KEY} />
-                            {!recaptchaError && (
+                            {recaptchaError && (
                               <div className='text-red-600'>{recaptchaError}</div>
                             )}
                           {

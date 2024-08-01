@@ -1,34 +1,45 @@
 'use client'
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form'
+import ReCAPTCHA from 'react-google-recaptcha';
 import { format } from 'date-fns'
-import { FaMapLocationDot, FaEnvelope, FaPhone, FaClock } from 'react-icons/fa6';
+import { FaMapLocationDot, FaEnvelope, FaPhone, FaClock, FaCircleCheck } from 'react-icons/fa6';
 import SectionInstagram from '@/components/partial/SectionInstagram';
 import { Button } from '@/components/ui/Button';
 import Title from '@/components/ui/Title';
+import Loader from '@/components/ui/Loader';
 import { instagramImages } from '@/data/gallery';
 
+const CAPTCHA_KEY = '6Lfc_xwqAAAAAAGkvSZBOI4TaYIz6JOkeXFvq6jJ';
+
+const AppScriptUrl = 'https://script.google.com/macros/s/AKfycbzE0Zneu-2xxDQcx1Q1xStI77IR4YpTl35dusYhH8DD2Zxq5sct3KQiEsUz5PiXv0b1/exec';
+
 type Inputs = {
-  name: string
+  fullname: string
   email: string
   message: string
 }
 
 export default function ContactPage() {
+  const [isSafeToReset, setIsSafeToReset] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [recaptchaError, setRecaptchaError] = useState('' as string);
+  const reCaptchaRef = useRef<ReCAPTCHA>(null);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const {
     register,
     handleSubmit,
     reset,
+    formState: { isDirty, isValid }
   } = useForm<Inputs>();
 
-  // useEffect(() => {
-  //   if (!isSafeToReset) return;
+  useEffect(() => {
+    if (!isSafeToReset) return;
 
-  //   reset(); // asynchronously reset your form values
-  // }, [isSafeToReset, reset]);
+    reset(); // asynchronously reset your form values
+  }, [isSafeToReset, reset]);
 
   const getFormData = (object: any) => {
     const formData = new FormData();
@@ -39,7 +50,34 @@ export default function ContactPage() {
   }
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    console.log(data);
+    reCaptchaRef?.current?.reset();
+    setRecaptchaError('');
+    setIsLoading(true);
+
+    const token = await reCaptchaRef?.current?.executeAsync();
+
+    if (!token) {
+      const message = 'Opps! Something is wrong.';
+      setRecaptchaError(message);
+      setIsLoading(false);
+      return;
+    }
+
+    if (token) {
+      try {
+        await fetch(AppScriptUrl, {
+          redirect: 'follow',
+          method: 'POST',
+          body: getFormData(data),
+        });
+        setIsSafeToReset(true);
+        setIsLoading(false);
+        setIsFormSubmitted(true);
+      } catch (e) {
+        setIsLoading(false);
+        console.log(e);
+      }
+    }
   };
 
   return (
@@ -133,21 +171,21 @@ export default function ContactPage() {
             <div className='rounded-3xl bg-creamPrimary/10 overflow-hidden p-6 lg:p-10 mt-4 lg:mt-0'>
               <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
                 {isFormSubmitted ? (
-                  <div>
-                    <div className='icon'>
-
-                    </div>
-                    <div>
-                      <div className='title'>Thank you for submitting your message!</div>
-                      <div>Our team will get back to you as soon as possible.</div>
+                  <div className='text-center'>
+                    <FaCircleCheck size={40} className='m-auto' />
+                    <h1 className='text-lg lg:text-xl mb-4 mt-6 font-semibold'>Your Enquiry was Submitted Successfully!</h1>
+                    <div className='flex'>
+                      <div className='flex flex-col gap-2 basis-full lg:basis-10/12 m-auto'>
+                        <p>Our team will get back to you as soon as possible.</p>
+                      </div>
                     </div>
                   </div>
                 ) : (
                   <div>
                     <div className='flex flex-col md:flex-row gap-0 md:gap-6'>
                         <fieldset className='mb-5 basis-1 md:basis-1/2'>
-                          <label htmlFor='name' className='text-slate-600 font-medium'>Full name<span className='text-sm text-red-500'>*</span></label>
-                          <input className='block mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' type='text' placeholder='Your full name' id='name' {...register('name', {
+                          <label htmlFor='fullname' className='text-slate-600 font-medium'>Full name<span className='text-sm text-red-500'>*</span></label>
+                          <input className='block mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' type='text' placeholder='Your full name' id='fullname' {...register('fullname', {
                             required: true
                           })} />
                         </fieldset>
@@ -164,16 +202,19 @@ export default function ContactPage() {
                         required: true
                       })} />
                     </fieldset>
-                    {/* <ReCAPTCHA ref={reCaptchaRef} size='invisible' sitekey='6LfoGjIpAAAAAEoGhNvN1iuM6EiezWFPVH3TqKcN' />
-                    {recaptchaError && (
-                      <ErrorMessage>{recaptchaError}</ErrorMessage>
-                    )}
-                    <div style={{ textAlign: 'center' }}>
-                      {isLoading ? <Loader /> : <button type='submit' className='submit' disabled={!isDirty || !isValid}>Submit</button>}
-                    </div> */}
-                      <Button type='submit' size='md' className='min-w-40 w-full md:w-auto'>
-                        Submit
-                      </Button>
+                      <ReCAPTCHA ref={reCaptchaRef} size='invisible' sitekey={CAPTCHA_KEY} />
+                      {recaptchaError && (
+                        <div className='text-red-600'>{recaptchaError}</div>
+                      )}
+                      {
+                        isLoading ? (
+                          <Loader />
+                        ) : (
+                          <Button type='submit' size='md' disabled={!isDirty || !isValid} className='min-w-40 w-full md:w-auto'>
+                            Submit
+                          </Button>
+                        )
+                      }
                   </div>
                 )}
               </form>
