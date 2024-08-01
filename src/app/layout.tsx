@@ -1,8 +1,10 @@
+import 'react-phone-number-input/style.css';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Montserrat, Open_Sans } from 'next/font/google';
@@ -55,7 +57,6 @@ export default function RootLayout({
         <link rel='apple-touch-icon' sizes='180x180' href='/assets/favicons/apple-touch-icon.png' />
         <link rel='icon' type='image/png' sizes='32x32' href='/assets/favicons/favicon-32x32.png' />
         <link rel='icon' type='image/png' sizes='16x16' href='/assets/favicons/favicon-16x16.png' />
-        <link rel='manifest' href='/assets/favicons/site.webmanifest' />
         <link rel='mask-icon' href='/assets/favicons/safari-pinned-tab.svg' color='#050a30' />
         <link rel='shortcut icon' href='/assets/favicons/favicon.ico' />
         <meta name='msapplication-TileColor' content='#050a30' />
@@ -63,17 +64,19 @@ export default function RootLayout({
         <meta name='theme-color' content='#ffffff' />
       </head>
       <body className={`${openSans.variable} ${montserrat.variable} text-bluePrimary font-openSans`}>
-        <Providers>
-          <NextTopLoader
-            color='#F1AD8E'
-            showSpinner={false}
-            height={5}
-          />
-          <Header />
-          {children}
-          <WhatsappWidget />
-          <Footer />
-        </Providers>
+        <Suspense>
+          <Providers>
+            <NextTopLoader
+              color='#F1AD8E'
+              showSpinner={false}
+              height={5}
+            />
+            <Header />
+            {children}
+            <WhatsappWidget />
+            <Footer />
+          </Providers>
+        </Suspense>
         <Script async src='https://www.googletagmanager.com/gtag/js?id=G-8CKH38ZP4C' strategy='afterInteractive' />
         <Script id='google-analytics' strategy='afterInteractive'>
           {`
@@ -84,6 +87,7 @@ export default function RootLayout({
           gtag('config', 'G-8CKH38ZP4C');
         `}
         </Script>
+        <Script src='https://www.google.com/recaptcha/api.js' strategy='afterInteractive' />
       </body>
     </html>
   );

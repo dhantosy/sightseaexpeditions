@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, ChangeEvent } from 'react';
+import { useState, ChangeEvent } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { format } from 'date-fns';
 import AccordionTable from '@/components/ui/AccordionTable';
@@ -41,7 +41,6 @@ export default function DiveCenterBaliPage() {
     setValue,
     reset,
     watch,
-    formState: { isDirty, isValid },
   } = useForm<Inputs>();
   const watchCategory = watch('category', '');
   const watchDestination = watch('destination', '');
@@ -50,23 +49,19 @@ export default function DiveCenterBaliPage() {
   });
   const convertPrice = Number(getSelectedPrice[0]?.price.replace(/\,/g, ''));
 
-
-  // useEffect(() => {
-  //   if (!isSafeToReset) return;
-
-  //   reset(); // asynchronously reset your form values
-  // }, [isSafeToReset, reset]);
-
-  const getFormData = (object: any) => {
-    const formData = new FormData();
-    formData.append('time', format(new Date(), 'yyyy MMMM dd, HH:mm'));
-    Object.keys(object).forEach(key => formData.append(key, object[key]));
-
-    return formData;
-  };
-
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    console.log(data)
+    const params = new URLSearchParams([
+      ['name', EVENT_TITLE_FULL],
+      ['type', PAGE_TYPE],
+      ['date', selectedDate],
+      ['cat', data.category],
+      ['destination', data.destination],
+      ['pax', count.toString()],
+      ['curr', 'IDR'],
+      ['total', totalPrice],
+    ]);
+
+    window.open(`/booking/?${params.toString()}`, '_blank', 'noopener,noreferrer');
   };
 
   const handleCounterChange = (val: number) => {

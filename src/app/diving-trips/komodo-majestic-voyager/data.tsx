@@ -46,7 +46,7 @@ export const categoryListOption = [
     label: 'Select Category'
   },
   {
-    value: 'domestic_kitas',
+    value: 'Domestic / KITAS',
     label: 'Domestic / KITAS Holder'
   },
   {
@@ -223,19 +223,19 @@ export const dataMain = [
     price: '19,000,000',
     currency: 'IDR',
     roomType: 'Deluxe - Lower Deck',
-    category: 'domestic_kitas',
+    category: 'Domestic / KITAS',
   },
   {
     price: '22,000,000',
     currency: 'IDR',
     roomType: 'Executive - Upper Deck',
-    category: 'domestic_kitas',
+    category: 'Domestic / KITAS',
   },
   {
     price: '25,000,000',
     currency: 'IDR',
     roomType: 'Suite - Main Deck',
-    category: 'domestic_kitas',
+    category: 'Domestic / KITAS',
   },
   {
     price: '1,500',
