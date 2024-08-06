@@ -26,7 +26,7 @@ type Inputs = {
 
 export default function BimaDivingTripMajescticVoyagerPage() {
   const [bookFormShow, setBookFormShow] = useState(false);
-  const [selectedCurrency, setSelectedCurrency] = useState('IDR');
+  const [selectedCurrency, setSelectedCurrency] = useState('USD');
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(formatCurrency(0));
   const events = useRandomEvents(upcomingDivingTrips, EVENT_TITLE, 4);
@@ -62,8 +62,6 @@ export default function BimaDivingTripMajescticVoyagerPage() {
   };
 
   const handleCategoryChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    if (e.target.value === 'Domestic / KITAS') setSelectedCurrency('IDR');
-    if (e.target.value === 'foreigner') setSelectedCurrency('USD');
     setTotalPrice('0');
     setCount(1);
     setValue('roomType', '', {
@@ -111,59 +109,7 @@ export default function BimaDivingTripMajescticVoyagerPage() {
             </AccordionContent>
             <AccordionContent title='Cabin Type' isExpand>
               <div className='container'>
-                {roomGallery.map(({ roomType, gallery, include }) => {
-                  return (
-                    <div key={roomType} className='mb-10 p-4 rounded-3xl bg-white overflow-hidden'>
-                      <Swiper
-                        loop
-                        navigation={true}
-                        modules={[Navigation]}
-                        pagination={{ clickable: true }}
-                        slidesPerView={1}
-                        spaceBetween={20}
-                      >
-                        {gallery.map((image, index) => {
-                          return (
-                            <SwiperSlide key={index}>
-                              <div className='relative pb-[60%] lg:pb-[50%]'>
-                                <Image
-                                  src={image.img}
-                                  alt={image.imgAlt}
-                                  sizes='100vw, 33vw'
-                                  style={{ objectFit: 'cover' }}
-                                  fill
-                                  priority
-                                  placeholder='blur'
-                                  blurDataURL={image.blurDataUrl}
-                                  className='rounded-3xl overflow-hidden'
-                                />
-                              </div>
-                            </SwiperSlide>
-                          )
-                        })}
-                      </Swiper>
-                      <div className='text-lg lg:text-xl font-semibold mt-5 uppercase'>{roomType}</div>
-                      <div className='mt-5 mb-3'>Cabin Highlights:</div>
-                      <div className='flex flex-col lg:flex-row w-full flex-wrap'>
-                        {include.map((item) => {
-                          return (
-                            <div key={item} className='flex items-baseline shrink-0 grow-0 basis-full lg:basis-1/3 gap-2 mb-3 opacity-70'>
-                              <FaCirclePlus size={12} className='text-sky-500 flex-shrink-0 flex-grow-0' />
-                              <div className='flex-wrap flex-grow-0'>{item}</div>
-                            </div>
-                          )
-                        })}
-                      </div>
-                      {EVENT_AVAILABILITY && (
-                        <div className='mt-2 block lg:hidden'>
-                          <Button type='button' variant='secondary' size='sm' className='w-full' onClick={() => setBookFormShow(true)}>
-                            Book Now
-                          </Button>
-                        </div>
-                      )}
-                    </div>
-                  )
-                })}
+                <div className='uppercase'>Ask us for cabin photos</div>
               </div>
             </AccordionContent>
             <AccordionContent title='Itinerary' isExpand>

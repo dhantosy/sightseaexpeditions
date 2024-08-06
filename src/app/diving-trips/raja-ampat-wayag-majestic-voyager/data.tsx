@@ -299,7 +299,7 @@ export const notes = [
 
 export const include = [
   'Airport Transfer.',
-  '4 Nights in AC Cabin or Twin Share.',
+  '4 Nights in AC Cabin on Twin Share Basis.',
   'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
   '14 Dives with Tanks, Weight, & Belt.',
   'English Speaking Cruise Director.',

@@ -61,16 +61,52 @@ export const roomTypeListOption = [
     label: 'Select Cabin Type'
   },
   {
-    value: 'Suite - Main Deck',
-    label: 'Suite - Main Deck'
+    value: 'R6 (Triple Bed) - Lower Deck',
+    label: 'R6 (Triple Bed) - Lower Deck'
   },
   {
-    value: 'Executive - Upper Deck',
-    label: 'Executive - Upper Deck'
+    value: 'R5 (Triple Bed) - Lower Deck',
+    label: 'R5 (Triple Bed) - Lower Deck'
   },
   {
-    value: 'Deluxe - Lower Deck',
-    label: 'Deluxe - Lower Deck'
+    value: 'R4 (Double Bed) - Lower Deck',
+    label: 'R4 (Double Bed) - Lower Deck'
+  },
+  {
+    value: 'R3 (Bunk Bed) - Lower Deck',
+    label: 'R3 (Bunk Bed) - Lower Deck'
+  },
+  {
+    value: 'R2 (Bunk Bed) - Lower Deck',
+    label: 'R2 (Bunk Bed) - Lower Deck'
+  },
+  {
+    value: 'R1 (Double Bed) - Lower Deck',
+    label: 'R1 (Double Bed) - Lower Deck'
+  },
+  {
+    value: 'R7 (Double Bed) - Upper Deck with Balcony',
+    label: 'R7 (Double Bed) - Upper Deck with Balcony'
+  },
+  {
+    value: 'R8 (Double Bed) - Upper Deck with Balcony',
+    label: 'R8 (Double Bed) - Upper Deck with Balcony'
+  },
+  {
+    value: 'R9 (Twin Bed) - Upper Deck with Balcony',
+    label: 'R9 (Twin Bed) - Upper Deck with Balcony'
+  },
+  {
+    value: 'R10 (Twin Bed) - Upper Deck with Balcony',
+    label: 'R10 (Twin Bed) - Upper Deck with Balcony'
+  },
+  {
+    value: 'R11 (Sky Light Suite) - Upper Deck with Balcony',
+    label: 'R11 (Sky Light Suite) - Upper Deck with Balcony'
+  },
+  {
+    value: 'R12 - Upper Deck without Balcony',
+    label: 'R12 - Upper Deck without Balcony'
   },
 ];
 
@@ -220,39 +256,147 @@ export const roomGallery = [
 
 export const dataMain = [
   {
-    price: '19,000,000',
-    currency: 'IDR',
-    roomType: 'Deluxe - Lower Deck',
-    category: 'Domestic / KITAS',
-  },
-  {
-    price: '22,000,000',
-    currency: 'IDR',
-    roomType: 'Executive - Upper Deck',
-    category: 'Domestic / KITAS',
-  },
-  {
-    price: '25,000,000',
-    currency: 'IDR',
-    roomType: 'Suite - Main Deck',
-    category: 'Domestic / KITAS',
-  },
-  {
-    price: '1,500',
+    price: '1,450',
     currency: 'USD',
-    roomType: 'Deluxe - Lower Deck',
+    roomType: 'R6 (Triple Bed) - Lower Deck',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '1,450',
+    currency: 'USD',
+    roomType: 'R5 (Triple Bed) - Lower Deck',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '1,650',
+    currency: 'USD',
+    roomType: 'R4 (Double Bed) - Lower Deck',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '1,450',
+    currency: 'USD',
+    roomType: 'R3 (Bunk Bed) - Lower Deck',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '1,450',
+    currency: 'USD',
+    roomType: 'R2 (Bunk Bed) - Lower Deck',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '1,650',
+    currency: 'USD',
+    roomType: 'R1 (Double Bed) - Lower Deck',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '1,950',
+    currency: 'USD',
+    roomType: 'R7 (Double Bed) - Upper Deck with Balcony',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '1,950',
+    currency: 'USD',
+    roomType: 'R8 (Double Bed) - Upper Deck with Balcony',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '1,950',
+    currency: 'USD',
+    roomType: 'R9 (Twin Bed) - Upper Deck with Balcony',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '1,950',
+    currency: 'USD',
+    roomType: 'R10 (Twin Bed) - Upper Deck with Balcony',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '2,150',
+    currency: 'USD',
+    roomType: 'R11 (Sky Light Suite) - Upper Deck with Balcony',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '1,950',
+    currency: 'USD',
+    roomType: 'R12 - Upper Deck without Balcony',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '1,450',
+    currency: 'USD',
+    roomType: 'R6 (Triple Bed) - Lower Deck',
     category: 'foreigner',
   },
   {
-    price: '1,700',
+    price: '1,450',
     currency: 'USD',
-    roomType: 'Executive - Upper Deck',
+    roomType: 'R5 (Triple Bed) - Lower Deck',
     category: 'foreigner',
   },
   {
-    price: '1,900',
+    price: '1,650',
     currency: 'USD',
-    roomType: 'Suite - Main Deck',
+    roomType: 'R4 (Double Bed) - Lower Deck',
+    category: 'foreigner',
+  },
+  {
+    price: '1,450',
+    currency: 'USD',
+    roomType: 'R3 (Bunk Bed) - Lower Deck',
+    category: 'foreigner',
+  },
+  {
+    price: '1,450',
+    currency: 'USD',
+    roomType: 'R2 (Bunk Bed) - Lower Deck',
+    category: 'foreigner',
+  },
+  {
+    price: '1,650',
+    currency: 'USD',
+    roomType: 'R1 (Double Bed) - Lower Deck',
+    category: 'foreigner',
+  },
+  {
+    price: '1,950',
+    currency: 'USD',
+    roomType: 'R7 (Double Bed) - Upper Deck with Balcony',
+    category: 'foreigner',
+  },
+  {
+    price: '1,950',
+    currency: 'USD',
+    roomType: 'R8 (Double Bed) - Upper Deck with Balcony',
+    category: 'foreigner',
+  },
+  {
+    price: '1,950',
+    currency: 'USD',
+    roomType: 'R9 (Twin Bed) - Upper Deck with Balcony',
+    category: 'foreigner',
+  },
+  {
+    price: '1,950',
+    currency: 'USD',
+    roomType: 'R10 (Twin Bed) - Upper Deck with Balcony',
+    category: 'foreigner',
+  },
+  {
+    price: '2,150',
+    currency: 'USD',
+    roomType: 'R11 (Sky Light Suite) - Upper Deck with Balcony',
+    category: 'foreigner',
+  },
+  {
+    price: '1,950',
+    currency: 'USD',
+    roomType: 'R12 - Upper Deck without Balcony',
     category: 'foreigner',
   },
 ];
@@ -282,77 +426,41 @@ export const images = [
 
 export const schedule = [
   {
-    time: 'Day 1 - Labuan Bajo',
-    descList: [
-      'Airport or Hotel Pickup.',
-      'Lunch.',
-      'Dive 1 (Check Dive at Sebayur).',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 2 - North Komodo',
-    descList: [
-      'Light Breakfast.',
-      'Dive 2.',
-      'Breakfast.',
-      'Dive 3.',
-      'Lunch.',
-      'Dive 4.',
-      'Cross to Bima.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 3 - Gili Banta',
-    descList: [
-      'Light Breakfast.',
-      'Dive 5.',
-      'Breakfast.',
-      'Dive 6.',
-      'Lunch.',
-      'Dive 7.',
-      'Snack Time.',
-      'Night Dive 8.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 4 - Pulau Kelapa',
-    descList: [
-      'Light Breakfast.',
-      'Dive 9.',
-      'Breakfast.',
-      'Dive 10.',
-      'Lunch.',
-      'Cross to Labuan Bajo.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 5 - Labuan Bajo',
-    descList: [
-      'Breakfast.',
-      'Airport / Hotel Transfer.',
-    ]
+    time: '',
+    descList: []
   },
 ];
 
 export const notes = [
-  'Port Clearance Fee (IDR 400rb / day for domestic).',
-  'Port Clearance Fee (USD 25 / day for foreigner).',
-  'Dive equipment rental is available for IDR 400,000 / day.',
-  'Boat Crew Tips IDR 200rb / day',
-  'The price excludes airflight tickets.',
+  'Exclude All flight and taxes',
+  'Green Tax - USD 42,-',
+  'BBQ Dinner at Desert Island - USD 10,- /pax.',
+  'Deep South Fuel surcharge USD 100,-.',
+  'Tiger shark zoo fee USD 35,- (optional)',
+  'Equipment Rental.',
+  'Exclude dive guide ratio 1:6',
+  'BCD USD$8 / day',
+  'REG USD$10 / day',
+  'Wetsuit USD$6 / day',
+  'Fin USD$6 / day',
+  'Mask & Snorkel USD$6 / day',
+  'Reef Hook USD$5 / day',
+  'Dive Computer USD$12 / day',
+  'Upgrade to 15 ltr tank USD$105 / trip',
+  'Torch USD$10 per day',
+  'Travel and dive insurance (recommended)',
+  'Porter services',
+  'Tips for boat crew (USD 100,- / pax Mandatory)',
+  'Private dive guide USD 100,- / day.',
+  'Exclude drink from the bar',
+  'For Nitrox Air usage 12ltr tank(certified Nitrox Diver only) ADD another USD 90,- / trip',
 ];
 
 export const include = [
-  'Airport Transfer.',
-  '4 Nights in AC Cabin or Twin Share.',
-  'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
-  '11 Dives with Tanks, Weight, & Belt.',
-  'English Speaking Cruise Director.',
-  'Divemaster with 1:4 Ratio.',
-  'Underwater Documentation.',
-  'Free Nitrox for whom certified (earlybird).',
+  'Daily Breakfast, Lunch and Dinner on board.',
+  'Free Coffee, Tea & Snack on board.',
+  'Up to 17 dives with experience local guide (tanks, weights & belts).',
+  'Male Airport Transfer.',
+  'GST 12% Taxes.',
+  'Underwater & aerial (drone) documentation.',
 ];
