@@ -107,7 +107,7 @@ export default function DiveCenterBaliPage() {
       setValue('destination', diveDestination, {
         shouldValidate: true
       });
-    }, 50);
+    }, 10);
 
     setTotalPrice(formatCurrency(Number(getItem[0]?.price.replace(/\,/g, '')) * count));
     setBookFormShow(true);

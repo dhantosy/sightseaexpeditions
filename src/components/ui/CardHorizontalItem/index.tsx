@@ -72,17 +72,19 @@ export default function CardHorizontalItem({
             <span>{date}</span>
           </div>
           <div className='2xs:items-end mt-7 md:mt-4 2lg:mt-10 md:absolute 2lg:relative 3lg:absolute bottom-1 left-0 flex justify-between w-full pl-0 md:pl-6 2lg:pl-0 3lg:pl-6 gap-3 flex-col 2xs:flex-row'>
-            <div>
-              <span className='text-sm block opacity-70'>Starts from </span>
-              {price ? (
-                <>
-                  <span className='text-base font-bold'>{`${currency} ${price}`} </span>
-                  <span className='text-sm opacity-70'>/ person</span>
-                </>
-              ) : (
+            {available ? (
+              <div>
+                <span className='text-sm block opacity-70'>Starts from </span>
+                {price ? (
+                  <>
+                    <span className='text-base font-bold'>{`${currency} ${price}`} </span>
+                    <span className='text-sm opacity-70'>/ person</span>
+                  </>
+                ) : (
                   <span className='text-base font-bold'>To be announced</span>
-              )}
-            </div>
+                )}
+              </div>
+            ) : <div />}
             <div>
               <Button variant='secondary' size='sm' className='w-full 2xs:w-auto'>
                 See Detail

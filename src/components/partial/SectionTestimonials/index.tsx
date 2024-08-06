@@ -1,9 +1,11 @@
 'use client'
 
+import Link from 'next/link';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import TestimonialItem from '@/components/ui/TestimonialItem';
 import Title from '@/components/ui/Title';
+import { Button } from '@/components/ui/Button';
 import { SectionTestimonialProp } from './types';
 
 export default function SectionTestimonials({
@@ -50,6 +52,11 @@ export default function SectionTestimonials({
                 )
               })}
             </Swiper>
+          </div>
+          <div className='flex justify-center relative z-20'>
+            <Button asChild size='md' className='uppercase flex-grow lg:flex-grow-0'>
+              <Link href='https://www.google.com/maps/place/SIGHTSEA+EXPEDITIONS/@-8.6923586,115.1684778,17z/data=!4m8!3m7!1s0x2dd24784539cb89d:0x60da2258ff6548b1!8m2!3d-8.6923586!4d115.1710527!9m1!1b1!16s%2Fg%2F11vrkzrq3l?entry=ttu' target='_blank' rel='noopen noreferrer'>See All Google Reviews</Link>
+            </Button>
           </div>
         </div>
       </div>

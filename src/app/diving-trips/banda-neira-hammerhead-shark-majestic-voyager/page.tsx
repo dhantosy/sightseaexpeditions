@@ -57,7 +57,7 @@ export default function BimaDivingTripMajescticVoyagerPage() {
       ['total', totalPrice],
     ]);
 
-    console.log(params);
+    console.log(params)
 
     window.open(`/booking/?${params.toString()}`, '_blank', 'noopener,noreferrer');
   };
@@ -220,64 +220,68 @@ export default function BimaDivingTripMajescticVoyagerPage() {
           >
             <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
               <div>
-                <fieldset className='mb-4'>
-                  <label htmlFor='category' className='text-slate-600 font-medium opacity-70 text-sm'>Category</label>
-                  <select
-                    defaultValue={categoryListOption[0].value}
-                    className='block appearance-none cursor-pointer mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400'
-                    id='category'
-                    {...register('category', {
-                      required: true,
-                      onChange: (e) => { handleCategoryChange(e) },
-                    })}>
-                    {categoryListOption.map(({ value, label }, index) => {
-                      return (
-                        <option
-                          key={value}
-                          value={value}
-                          disabled={index === 0 && true}
-                        >
-                          {label}
-                        </option>
-                      )
-                    })}
-                  </select>
-                </fieldset>
-                <fieldset className='mb-4'>
-                  <label htmlFor='roomType' className='text-slate-600 font-medium opacity-70 text-sm'>Cabin Type</label>
-                  <select
-                    disabled={!watchCategory}
-                    defaultValue={roomTypeListOption[0].value}
-                    className='block appearance-none cursor-pointer mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400'
-                    id='roomType'
-                    {...register('roomType', {
-                      required: true,
-                      onChange: (e) => { handleRoomTypeChange(e) },
-                    })}>
-                    {roomTypeListOption.map(({ value, label }, index) => {
-                      return (
-                        <option
-                          key={value}
-                          value={value}
-                          disabled={index === 0 && true}
-                        >
-                          {label}
-                        </option>
-                      )
-                    })}
-                  </select>
-                </fieldset>
-                <fieldset className='my-5'>
-                  <Counter
-                    onChange={handleCounterChange}
-                    count={count}
-                    maxCount={9}
-                  />
-                </fieldset>
-                <div className='py-5 border-t mb-3 flex justify-between items-center font-semibold'>
-                  <div>Total Price:</div>
-                  <div>{`${selectedCurrency} ${totalPrice}`}</div>
-                </div>
+                {EVENT_AVAILABILITY && (
+                  <div>
+                    <fieldset className='mb-4'>
+                      <label htmlFor='category' className='text-slate-600 font-medium opacity-70 text-sm'>Category</label>
+                      <select
+                        defaultValue={categoryListOption[0].value}
+                        className='block appearance-none cursor-pointer mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400'
+                        id='category'
+                        {...register('category', {
+                          required: true,
+                          onChange: (e) => { handleCategoryChange(e) },
+                        })}>
+                        {categoryListOption.map(({ value, label }, index) => {
+                          return (
+                            <option
+                              key={value}
+                              value={value}
+                              disabled={index === 0 && true}
+                            >
+                              {label}
+                            </option>
+                          )
+                        })}
+                      </select>
+                    </fieldset>
+                    <fieldset className='mb-4'>
+                      <label htmlFor='roomType' className='text-slate-600 font-medium opacity-70 text-sm'>Cabin Type</label>
+                      <select
+                        disabled={!watchCategory}
+                        defaultValue={roomTypeListOption[0].value}
+                        className='block appearance-none cursor-pointer mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400'
+                        id='roomType'
+                        {...register('roomType', {
+                          required: true,
+                          onChange: (e) => { handleRoomTypeChange(e) },
+                        })}>
+                        {roomTypeListOption.map(({ value, label }, index) => {
+                          return (
+                            <option
+                              key={value}
+                              value={value}
+                              disabled={index === 0 && true}
+                            >
+                              {label}
+                            </option>
+                          )
+                        })}
+                      </select>
+                    </fieldset>
+                    <fieldset className='my-5'>
+                      <Counter
+                        onChange={handleCounterChange}
+                        count={count}
+                        maxCount={9}
+                      />
+                    </fieldset>
+                    <div className='py-5 border-t mb-3 flex justify-between items-center font-semibold'>
+                      <div>Total Price:</div>
+                      <div>{`${selectedCurrency} ${totalPrice}`}</div>
+                    </div>
+                  </div>
+                )}
                 <StickyBookingBtnSubmit
                   whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0A${EVENT_TITLE_FULL}%20${watchCategory ? 'for%20' + watchCategory.replace(/_/g, " ") : '%20'}${watchRoomType ? '%20' + watchRoomType : '%20'}%20for%20${count}%20person`}
                   available={EVENT_AVAILABILITY}

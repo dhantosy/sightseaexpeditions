@@ -33,7 +33,7 @@ export default function HeroLanding({
       <div className='max-w-5xl px-4 absolute text-center text-white top-0 right-0 bottom-0 left-0 m-auto flex justify-center items-center z-10'>
         <div className='flex flex-col gap-5 w-full'>
           <h1 className='mx-auto text-2xl uppercase font-montserrat font-bold 2sm:text-3xl lg:font-semibold lg:leading-tight lg:text-5xl'>{title}</h1>
-          <p className='max-w-2xl text-white/90 text-xl mx-auto'>{subtitle}</p>
+          <p className='max-w-xl text-white/90 text-xl mx-auto'>{subtitle}</p>
           <div className='flex flex-col w-fit mx-auto 2sm:flex-row justify-center gap-6 mt-4'>
             <Button asChild size='md' className='uppercase'>
               <Link href={btnMainUrl} aria-label={`Go to ${btnMainText} page`}>{btnMainText}</Link>

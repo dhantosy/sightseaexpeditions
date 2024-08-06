@@ -19,7 +19,11 @@ export default function CardVerticalItem({
 }: CardVerticalItemProp) {
 
   return (
-    <Link href={url} className='w-full relative top-0 overflow-hidden block rounded-2xl transition-all hover:-top-1 group'>
+    <Link
+      href={url}
+      className={price ? 'w-full relative top-0 overflow-hidden block rounded-2xl transition-all hover:-top-1 group' : 'w-full relative top-0 overflow-hidden block rounded-2xl transition-all pointer-events-none'}
+      tabIndex={price ? -1 : undefined}
+    >
       <div className='border border-slate-200 rounded-2xl p-3'>
         <div className='relative rounded-2xl shadow-xl overflow-hidden'>
           <div className='relative w-full pb-[85%]'>
@@ -49,15 +53,23 @@ export default function CardVerticalItem({
             <span>{type}</span>
           </div>
           <div className='mt-5 flex flex-col gap-2 3lg:items-end 3lg:flex-row justify-between'>
-            <div>
-              <span className='text-base font-bold'>{`${currency} ${price} `} </span>
-              <span className='text-sm opacity-70'>{unit}</span>
-            </div>
-            <div>
-              <Button variant='secondary' size='sm' className='mt-2 3lg:mt-0 w-full 3lg:w-auto'>
-                See Detail
-              </Button>
-            </div>
+            {price ? (
+              <div>
+                <span className='text-base font-bold'>{`${currency} ${price} `} </span>
+                <span className='text-sm opacity-70'>{unit}</span>
+              </div>
+            ) : (
+                <div>
+                  <span className='text-base font-bold min-h-9 flex items-end'>To be announced</span>
+                </div>
+            )}
+            {price ? (
+              <div>
+                <Button variant='secondary' size='sm' className='mt-2 3lg:mt-0 w-full 3lg:w-auto'>
+                  See Detail
+                </Button>
+              </div>
+            ) : <div />}
           </div>
         </div>
       </div>
