@@ -220,37 +220,37 @@ export const roomGallery = [
 
 export const dataMain = [
   {
-    price: '19,000,000',
+    price: '26,000,000',
     currency: 'IDR',
     roomType: 'Deluxe - Lower Deck',
     category: 'Domestic / KITAS',
   },
   {
-    price: '22,000,000',
+    price: '28,000,000',
     currency: 'IDR',
     roomType: 'Executive - Upper Deck',
     category: 'Domestic / KITAS',
   },
   {
-    price: '25,000,000',
+    price: '32,000,000',
     currency: 'IDR',
     roomType: 'Suite - Main Deck',
     category: 'Domestic / KITAS',
   },
   {
-    price: '1,500',
+    price: '1,950',
     currency: 'USD',
     roomType: 'Deluxe - Lower Deck',
     category: 'foreigner',
   },
   {
-    price: '1,700',
+    price: '2,150',
     currency: 'USD',
     roomType: 'Executive - Upper Deck',
     category: 'foreigner',
   },
   {
-    price: '1,900',
+    price: '2,350',
     currency: 'USD',
     roomType: 'Suite - Main Deck',
     category: 'foreigner',
@@ -282,75 +282,26 @@ export const images = [
 
 export const schedule = [
   {
-    time: 'Day 1 - Labuan Bajo',
-    descList: [
-      'Airport or Hotel Pickup.',
-      'Lunch.',
-      'Dive 1 (Check Dive at Sebayur).',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 2 - North Komodo',
-    descList: [
-      'Light Breakfast.',
-      'Dive 2.',
-      'Breakfast.',
-      'Dive 3.',
-      'Lunch.',
-      'Dive 4.',
-      'Cross to Bima.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 3 - Gili Banta',
-    descList: [
-      'Light Breakfast.',
-      'Dive 5.',
-      'Breakfast.',
-      'Dive 6.',
-      'Lunch.',
-      'Dive 7.',
-      'Snack Time.',
-      'Night Dive 8.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 4 - Pulau Kelapa',
-    descList: [
-      'Light Breakfast.',
-      'Dive 9.',
-      'Breakfast.',
-      'Dive 10.',
-      'Lunch.',
-      'Cross to Labuan Bajo.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 5 - Labuan Bajo',
-    descList: [
-      'Breakfast.',
-      'Airport / Hotel Transfer.',
-    ]
+    time: '',
+    descList: []
   },
 ];
 
 export const notes = [
-  'Port Clearance Fee (IDR 400rb / day for domestic).',
+  'Port Clearance Fee (IDR 200rb / day for domestic).',
   'Port Clearance Fee (USD 25 / day for foreigner).',
   'Dive equipment rental is available for IDR 400,000 / day.',
+  'R4 PIN IDR 500rb for domestic.',
+  'R4 PIN USD 75 for foreigner.',
   'Boat Crew Tips IDR 200rb / day',
   'The price excludes airflight tickets.',
 ];
 
 export const include = [
   'Airport Transfer.',
-  '4 Nights in AC Cabin or Twin Share.',
+  '4 Nights in AC Cabin on Twin Share Basis.',
   'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
-  '11 Dives with Tanks, Weight, & Belt.',
+  '14 Dives with Tanks, Weight, & Belt.',
   'English Speaking Cruise Director.',
   'Divemaster with 1:4 Ratio.',
   'Underwater Documentation.',

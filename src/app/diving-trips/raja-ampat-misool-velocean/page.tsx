@@ -14,7 +14,7 @@ import StickyPriceInfo from '@/components/partial/StickyPriceInfo';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
 import { useRandomEvents } from '@/hooks/useRandomEvents';
 import StickyBookingSection from '@/components/partial/StickyBookingSection';
-import { PRICE_PER_PERSON, EVENT_TITLE, EVENT_TITLE_FULL, EVENT_DATE, PAGE_TYPE, EVENT_AVAILABILITY, roomTypeListOption, roomGallery, dataMain, images, categoryListOption, notes, include } from './data';
+import { PRICE_PER_PERSON, EVENT_TITLE, EVENT_TITLE_FULL, EVENT_DATE, PAGE_TYPE, EVENT_AVAILABILITY, roomTypeListOption, roomGallery, dataMain, images, categoryListOption, notes, include, schedule } from './data';
 import { upcomingDivingTrips } from '@/data/upcomingEvents';
 import { formatCurrency } from '@/lib/number';
 import { Button } from '@/components/ui/Button';
@@ -164,27 +164,31 @@ export default function VeloceanMaldivesPage() {
                 })}
               </div>
             </AccordionContent>
-            {/* <AccordionContent title='Itinerary' isExpand>
-              <div className='relative pt-2 pb-1 pl-8 after:content[""] after:absolute after:h-full after:left-2 after:top-0 after:border-l after:border-dashed after:border-bluePrimary'>
-                {schedule.map(({ time, descList }) => {
-                  return (
-                    <div key={time} className='relative after:content[""] after:absolute after:z-10 after:-left-[29px] after:top-[6px] after:w-3 after:h-3 after:bg-sky-600 after:rounded-full mb-4'>
-                      <div className='opacity-70 flex flex-col lg:flex-row gap-1 lg:gap-4'>
-                        <div className='font-bold basis-0 lg:basis-[180px]'>{time}</div>
-                        <div className='hidden lg:block'>-</div>
-                        <div className='flex flex-col gap-1'>
-                          {descList.map((item) => {
-                            return (
-                              <div key={item}>{item}</div>
-                            ) 
-                          })}
+            <AccordionContent title='Itinerary' isExpand>
+              {schedule.length > 1 ? (
+                <div className='relative pt-2 pb-1 pl-8 after:content[""] after:absolute after:h-full after:left-2 after:top-0 after:border-l after:border-dashed after:border-bluePrimary'>
+                  {schedule.map(({ time, descList }) => {
+                    return (
+                      <div key={time} className='relative after:content[""] after:absolute after:z-10 after:-left-[29px] after:top-[6px] after:w-3 after:h-3 after:bg-sky-600 after:rounded-full mb-4'>
+                        <div className='opacity-70 flex flex-col lg:flex-row gap-1 lg:gap-4'>
+                          <div className='font-bold basis-0 lg:basis-[180px]'>{time}</div>
+                          <div className='hidden lg:block'>-</div>
+                          <div className='flex flex-col gap-1'>
+                            {descList?.map((item) => {
+                              return (
+                                <div key={item}>{item}</div>
+                              )
+                            })}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  )
-                })}
-              </div>
-            </AccordionContent> */}
+                    )
+                  })}
+                </div>
+              ) : (
+                <div className='uppercase'>To be announced</div>
+              )}
+            </AccordionContent>
             <AccordionContent title='What`s Included' isExpand>
               <div className='flex flex-wrap opacity-70 -mx-2'>
                 {include.map((item) => {

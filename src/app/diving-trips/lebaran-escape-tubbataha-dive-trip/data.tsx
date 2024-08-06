@@ -26,7 +26,7 @@ import ImageDeluxeEight from '@public/assets/images/cabin/majestic-voyager-delux
 import ImageDeluxeNine from '@public/assets/images/cabin/majestic-voyager-deluxe-9.jpg';
 import { upcomingDivingTrips } from '@/data/upcomingEvents';
 
-export const EVENT_TITLE_FULL = 'Lebaran Escape Tubbataha Reef Dive Trip';
+export const EVENT_TITLE_FULL = 'Lebaran Escape Tubbataha Reef Dive Trip with MY Resolute';
 
 const findEventData = upcomingDivingTrips.find((item) => {
   return item.title === EVENT_TITLE_FULL;
@@ -61,16 +61,12 @@ export const roomTypeListOption = [
     label: 'Select Cabin Type'
   },
   {
-    value: 'Suite - Main Deck',
-    label: 'Suite - Main Deck'
+    value: 'Superior Cabin',
+    label: 'Superior Cabin'
   },
   {
-    value: 'Executive - Upper Deck',
-    label: 'Executive - Upper Deck'
-  },
-  {
-    value: 'Deluxe - Lower Deck',
-    label: 'Deluxe - Lower Deck'
+    value: 'Deluxe Cabin',
+    label: 'Deluxe Cabin'
   },
 ];
 
@@ -220,39 +216,27 @@ export const roomGallery = [
 
 export const dataMain = [
   {
-    price: '19,000,000',
-    currency: 'IDR',
-    roomType: 'Deluxe - Lower Deck',
-    category: 'Domestic / KITAS',
-  },
-  {
-    price: '22,000,000',
-    currency: 'IDR',
-    roomType: 'Executive - Upper Deck',
-    category: 'Domestic / KITAS',
-  },
-  {
-    price: '25,000,000',
-    currency: 'IDR',
-    roomType: 'Suite - Main Deck',
-    category: 'Domestic / KITAS',
-  },
-  {
-    price: '1,500',
+    price: '2,590',
     currency: 'USD',
-    roomType: 'Deluxe - Lower Deck',
+    roomType: 'Superior Cabin',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '2,790',
+    currency: 'USD',
+    roomType: 'Deluxe Cabin',
+    category: 'Domestic / KITAS',
+  },
+  {
+    price: '2,590',
+    currency: 'USD',
+    roomType: 'Superior Cabin',
     category: 'foreigner',
   },
   {
-    price: '1,700',
+    price: '2,790',
     currency: 'USD',
-    roomType: 'Executive - Upper Deck',
-    category: 'foreigner',
-  },
-  {
-    price: '1,900',
-    currency: 'USD',
-    roomType: 'Suite - Main Deck',
+    roomType: 'Deluxe Cabin',
     category: 'foreigner',
   },
 ];
@@ -282,77 +266,26 @@ export const images = [
 
 export const schedule = [
   {
-    time: 'Day 1 - Labuan Bajo',
-    descList: [
-      'Airport or Hotel Pickup.',
-      'Lunch.',
-      'Dive 1 (Check Dive at Sebayur).',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 2 - North Komodo',
-    descList: [
-      'Light Breakfast.',
-      'Dive 2.',
-      'Breakfast.',
-      'Dive 3.',
-      'Lunch.',
-      'Dive 4.',
-      'Cross to Bima.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 3 - Gili Banta',
-    descList: [
-      'Light Breakfast.',
-      'Dive 5.',
-      'Breakfast.',
-      'Dive 6.',
-      'Lunch.',
-      'Dive 7.',
-      'Snack Time.',
-      'Night Dive 8.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 4 - Pulau Kelapa',
-    descList: [
-      'Light Breakfast.',
-      'Dive 9.',
-      'Breakfast.',
-      'Dive 10.',
-      'Lunch.',
-      'Cross to Labuan Bajo.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 5 - Labuan Bajo',
-    descList: [
-      'Breakfast.',
-      'Airport / Hotel Transfer.',
-    ]
+    time: '',
+    descList: []
   },
 ];
 
 export const notes = [
-  'Port Clearance Fee (IDR 400rb / day for domestic).',
-  'Port Clearance Fee (USD 25 / day for foreigner).',
-  'Dive equipment rental is available for IDR 400,000 / day.',
-  'Boat Crew Tips IDR 200rb / day',
-  'The price excludes airflight tickets.',
+  'Exclude International or domestic air transportation, hotels and meals before and after the cruise.',
+  'Exclude Dive, travel and medical insurances.',
+  'Exclude Soft drinks, beer, wine or spirits.',
+  'Exclude Diving equipment rental.',
+  'Exclude Nitrox fills.',
+  'Exclude Park entrance fee.',
+  'Exclude Dive Permit USD.100,-/person.',
+  'Exclude Fuel surcharge – USD 100,-/person.',
+  'Exclude Tips, laundry.',
 ];
 
 export const include = [
-  'Airport Transfer.',
-  '4 Nights in AC Cabin or Twin Share.',
-  'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
-  '11 Dives with Tanks, Weight, & Belt.',
-  'English Speaking Cruise Director.',
-  'Divemaster with 1:4 Ratio.',
-  'Underwater Documentation.',
-  'Free Nitrox for whom certified (earlybird).',
+  'Full board accommodation in a twin sharing cabin.',
+  'Meals, snacks, tea, coffee, juice and drinking water.',
+  'Diving (4 non deco dives a day), service of a dive master, full dive tanks and weights belts.',
+  'Land transfer to/from the ship.',
 ];

@@ -220,37 +220,37 @@ export const roomGallery = [
 
 export const dataMain = [
   {
-    price: '19,000,000',
+    price: '28,500,000',
     currency: 'IDR',
     roomType: 'Deluxe - Lower Deck',
     category: 'Domestic / KITAS',
   },
   {
-    price: '22,000,000',
+    price: '31,000,000',
     currency: 'IDR',
     roomType: 'Executive - Upper Deck',
     category: 'Domestic / KITAS',
   },
   {
-    price: '25,000,000',
+    price: '35,000,000',
     currency: 'IDR',
     roomType: 'Suite - Main Deck',
     category: 'Domestic / KITAS',
   },
   {
-    price: '1,500',
+    price: '2,290',
     currency: 'USD',
     roomType: 'Deluxe - Lower Deck',
     category: 'foreigner',
   },
   {
-    price: '1,700',
+    price: '2,490',
     currency: 'USD',
     roomType: 'Executive - Upper Deck',
     category: 'foreigner',
   },
   {
-    price: '1,900',
+    price: '2,690',
     currency: 'USD',
     roomType: 'Suite - Main Deck',
     category: 'foreigner',
@@ -282,77 +282,81 @@ export const images = [
 
 export const schedule = [
   {
-    time: 'Day 1 - Labuan Bajo',
+    time: 'Day 1 - Check In',
     descList: [
-      'Airport or Hotel Pickup.',
-      'Lunch.',
-      'Dive 1 (Check Dive at Sebayur).',
-      'Dinner.',
+      'Check Dive at Ambon Bay'
     ]
   },
   {
-    time: 'Day 2 - North Komodo',
+    time: 'Day 2 - Suanggi',
     descList: [
-      'Light Breakfast.',
-      'Dive 2.',
-      'Breakfast.',
-      'Dive 3.',
-      'Lunch.',
-      'Dive 4.',
-      'Cross to Bima.',
-      'Dinner.',
+      '4 Dives',
+      'Hammerhead Hunting'
     ]
   },
   {
-    time: 'Day 3 - Gili Banta',
+    time: 'Day 3 - Manuk',
     descList: [
-      'Light Breakfast.',
-      'Dive 5.',
-      'Breakfast.',
-      'Dive 6.',
+      '4 Dives',
+      'Coconut Reef',
+      'Bubble Reef',
+      'Sea Snake',
       'Lunch.',
-      'Dive 7.',
-      'Snack Time.',
-      'Night Dive 8.',
-      'Dinner.',
+      'Manuk Corner',
+      'Chance to see Hammie and many sea snakes',
     ]
   },
   {
-    time: 'Day 4 - Pulau Kelapa',
+    time: 'Day 4 - Karang Hatta & Banda Neira',
     descList: [
-      'Light Breakfast.',
-      'Dive 9.',
-      'Breakfast.',
-      'Dive 10.',
-      'Lunch.',
-      'Cross to Labuan Bajo.',
-      'Dinner.',
+      '4 Dives',
+      'Karang Hatta',
+      'Lava Flow',
+      'Batu Kapal',
+      'Visit Banda Neira /or/ dive Mandarin',
     ]
   },
   {
-    time: 'Day 5 - Labuan Bajo',
+    time: 'Day 5 - Ai & Run',
     descList: [
-      'Breakfast.',
-      'Airport / Hotel Transfer.',
+      '3 Dives',
+      'Batu Udang',
+      'Batu Payong',
+      'Run',
+      'Chance to see hammie'
+    ]
+  },
+  {
+    time: 'Day 6 - Suanggi',
+    descList: [
+      '2 Dives',
+      'Hammerhead Hunting',
+    ]
+  },
+  {
+    time: 'Day 7 - Checkout',
+    descList: [
+      'Checkout'
     ]
   },
 ];
 
 export const notes = [
-  'Port Clearance Fee (IDR 400rb / day for domestic).',
+  'Port Clearance Fee (IDR 200rb / day for domestic).',
   'Port Clearance Fee (USD 25 / day for foreigner).',
   'Dive equipment rental is available for IDR 400,000 / day.',
-  'Boat Crew Tips IDR 200rb / day',
+  'Boat Crew Gratitudes IDR 200rb / day / pax.',
   'The price excludes airflight tickets.',
 ];
 
 export const include = [
-  'Airport Transfer.',
-  '4 Nights in AC Cabin or Twin Share.',
+  'Airport Transfer in Ambon.',
+  '6 Nights in AC Cabins Aboard on Sharing Basis.',
   'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
-  '11 Dives with Tanks, Weight, & Belt.',
+  'Historical & Heritage Land Tour at Banda Neira.',
+  'unlimited tea, coffee, softdrinks and mineral water.',
+  '17 Dives with Tanks, Weight, & Belt.',
   'English Speaking Cruise Director.',
-  'Divemaster with 1:4 Ratio.',
+  'Divemaster & Local Dive Guide.',
   'Underwater Documentation.',
-  'Free Nitrox for whom certified (earlybird).',
 ];
