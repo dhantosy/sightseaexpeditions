@@ -61,7 +61,7 @@ export const upcomingDivingTrips = [
     currency: 'IDR',
     duration: '4 days',
     highlight: {
-      diveCount: '11 dives',
+      diveCount: '17 dives',
       type: 'LOB'
     },
     available: false,
@@ -97,7 +97,7 @@ export const upcomingDivingTrips = [
     currency: 'USD',
     duration: '8 days',
     highlight: {
-      diveCount: '11 dives',
+      diveCount: 'TBA',
       type: 'LOB'
     },
     available: false,
@@ -110,12 +110,12 @@ export const upcomingDivingTrips = [
     location: 'Raja Ampat, Indonesia',
     date: 'Dec 18th - 24th, 2024',
     url: '/diving-trips/raja-ampat-misool-majestic-voyager',
-    price: '28,5jt',
-    priceNum: '28500000',
+    price: '29,5jt',
+    priceNum: '29500000',
     currency: 'IDR',
     duration: '4 days',
     highlight: {
-      diveCount: '11 dives',
+      diveCount: '17 dives',
       type: 'LOB'
     },
     available: true,
@@ -128,12 +128,12 @@ export const upcomingDivingTrips = [
     location: 'Raja Ampat, Indonesia',
     date: 'Dec 28th, 2024 - Jan 2nd, 2025',
     url: '/diving-trips/raja-ampat-wayag-majestic-voyager',
-    price: '25,5jt',
-    priceNum: '25500000',
+    price: '26jt',
+    priceNum: '26000000',
     currency: 'IDR',
     duration: '4 days',
     highlight: {
-      diveCount: '11 dives',
+      diveCount: '14 dives',
       type: 'LOB'
     },
     available: true,
@@ -142,16 +142,16 @@ export const upcomingDivingTrips = [
     img: ImageMaldivesTwo.src,
     imgAlt: 'Maldives Trip',
     blurDataUrl: ImageMaldivesTwo.blurDataURL,
-    title: 'Best of Maldives Dive Trip',
+    title: 'Best of Maldives Dive Trip with Maldives Mosaique',
     location: 'Maldives',
-    date: 'Feb 2nd - 9th, 2025',
+    date: 'Jan 26th - Feb 2nd, 2025',
     url: '/diving-trips/best-of-maldives-dive-trip',
-    price: '1,400',
-    priceNum: '1400',
+    price: '1,450',
+    priceNum: '1450',
     currency: 'USD',
     duration: '4 days',
     highlight: {
-      diveCount: '11 dives',
+      diveCount: '17 dives',
       type: 'LOB'
     },
     available: true,
@@ -160,7 +160,7 @@ export const upcomingDivingTrips = [
     img: ImageMaldivesOne.src,
     imgAlt: 'Maldives Trip',
     blurDataUrl: ImageMaldivesOne.blurDataURL,
-    title: 'Deep South Maldives Dive Trip',
+    title: 'Deep South Maldives Dive Trip with Maldives Mosaique',
     location: 'Maldives',
     date: 'Feb 16th - 23rd, 2025',
     url: '/diving-trips/deep-south-maldives-dive-trip',

@@ -152,59 +152,8 @@ export const images = [
 
 export const schedule = [
   {
-    time: 'Day 1 - Labuan Bajo',
-    descList: [
-      'Airport or Hotel Pickup.',
-      'Lunch.',
-      'Dive 1 (Check Dive at Sebayur).',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 2 - North Komodo',
-    descList: [
-      'Light Breakfast.',
-      'Dive 2.',
-      'Breakfast.',
-      'Dive 3.',
-      'Lunch.',
-      'Dive 4.',
-      'Cross to Bima.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 3 - Gili Banta',
-    descList: [
-      'Light Breakfast.',
-      'Dive 5.',
-      'Breakfast.',
-      'Dive 6.',
-      'Lunch.',
-      'Dive 7.',
-      'Snack Time.',
-      'Night Dive 8.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 4 - Pulau Kelapa',
-    descList: [
-      'Light Breakfast.',
-      'Dive 9.',
-      'Breakfast.',
-      'Dive 10.',
-      'Lunch.',
-      'Cross to Labuan Bajo.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 5 - Labuan Bajo',
-    descList: [
-      'Breakfast.',
-      'Airport / Hotel Transfer.',
-    ]
+    time: '',
+    descList: []
   },
 ];
 

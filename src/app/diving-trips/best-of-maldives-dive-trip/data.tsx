@@ -26,7 +26,7 @@ import ImageDeluxeEight from '@public/assets/images/cabin/majestic-voyager-delux
 import ImageDeluxeNine from '@public/assets/images/cabin/majestic-voyager-deluxe-9.jpg';
 import { upcomingDivingTrips } from '@/data/upcomingEvents';
 
-export const EVENT_TITLE_FULL = 'Best of Maldives Dive Trip';
+export const EVENT_TITLE_FULL = 'Best of Maldives Dive Trip with Maldives Mosaique';
 
 const findEventData = upcomingDivingTrips.find((item) => {
   return item.title === EVENT_TITLE_FULL;
