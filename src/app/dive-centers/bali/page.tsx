@@ -9,15 +9,8 @@ import InputCalendar from '@/components/ui/InputCalendar';
 import HeroDetailPage from '@/components/partial/HeroDetailPage';
 import StickyBookingSection from '@/components/partial/StickyBookingSection';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
-import {
-  certifiedDiverInclude,
-  nonCertifiedDiverInclude,
-  snorkelingInclude,
-  diveCenterBaliData,
-  categoryListOption
-} from '@/data/diveCenterBaliPricing';
 import { formatCurrency } from '@/lib/number';
-import { EVENT_TITLE, EVENT_DATE, PAGE_TYPE, EVENT_AVAILABILITY, images, EVENT_TITLE_FULL } from './data';
+import { EVENT_TITLE, EVENT_DATE, PAGE_TYPE, EVENT_AVAILABILITY, images, EVENT_TITLE_FULL, certifiedDiverInclude, nonCertifiedDiverInclude, snorkelingInclude, diveCenterBaliData, categoryListOption } from './data';
 
 type Inputs = {
   category: string

@@ -77,8 +77,8 @@ export default function Home() {
         img={ImageVelocean.src}
         imgAlt='Liveaboard with VELOCEAN'
         blurDataUrl={ImageVelocean.blurDataURL}
-        btnTopUrl='/liveaboard/velocean-lebaran-escape-misool'
-        btnTopText='See Misool Liveaboard'
+        btnTopUrl='/liveaboard/velocean'
+        btnTopText='See Velocean'
         btnBottomUrl='/liveaboard'
         btnBottomText='Other Liveaboard'
       />
