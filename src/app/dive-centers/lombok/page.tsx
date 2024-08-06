@@ -10,7 +10,7 @@ import HeroDetailPage from '@/components/partial/HeroDetailPage';
 import StickyBookingSection from '@/components/partial/StickyBookingSection';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
 import { formatCurrency } from '@/lib/number';
-import { EVENT_TITLE, EVENT_DATE, PAGE_TYPE, EVENT_AVAILABILITY, images, EVENT_TITLE_FULL, diveCenterAlorData, packagesInclude, categoryListOption } from './data';
+import { EVENT_TITLE, EVENT_DATE, PAGE_TYPE, EVENT_AVAILABILITY, images, EVENT_TITLE_FULL, diveCenterLombokData, packagesInclude, categoryListOption } from './data';
 
 type Inputs = {
   category: string
@@ -23,10 +23,8 @@ export default function DiveCenterAlorPage() {
   const [showCalendar, setShowCalendar] = useState(false);
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState('0');
-  const filterDivePackages = diveCenterAlorData.filter((data) => data.type === 'dive_packages');
-  const filterFreediveSnorkeling = diveCenterAlorData.filter((data) => data.type === 'freedive_and_snorkeling_packages');
-  const filterIslandHopping = diveCenterAlorData.filter((data) => data.type === 'island_hopping');
-  const filterPadiDiveCourse = diveCenterAlorData.filter((data) => data.type === 'padi_dive_course');
+  const filterDivePackages = diveCenterLombokData.filter((data) => data.type === 'fun_dives');
+  const filterPadiDiveCourse = diveCenterLombokData.filter((data) => data.type === 'padi_dive_course');
 
   const {
     register,
@@ -37,7 +35,7 @@ export default function DiveCenterAlorPage() {
   } = useForm<Inputs>();
   const watchCategory = watch('category', '');
   const watchDestination = watch('destination', '');
-  const getSelectedPrice = diveCenterAlorData.filter((item) => {
+  const getSelectedPrice = diveCenterLombokData.filter((item) => {
     return item.type === watchCategory && item.diveDestination === watchDestination
   });
   const convertPrice = Number(getSelectedPrice[0]?.price.replace(/\,/g, ''));
@@ -68,7 +66,7 @@ export default function DiveCenterAlorPage() {
   };
 
   const handleTypeChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const price = diveCenterAlorData.filter((item) => {
+    const price = diveCenterLombokData.filter((item) => {
       return item.type === watchCategory && e.target.value === item.diveDestination
     });
 
@@ -88,7 +86,7 @@ export default function DiveCenterAlorPage() {
   };
 
   const handleItemClick = (diveDestination: string, type: string) => {
-    const getItem = diveCenterAlorData.filter((item) => {
+    const getItem = diveCenterLombokData.filter((item) => {
       return item.type === type && item.diveDestination === diveDestination
     });
 
@@ -126,40 +124,20 @@ export default function DiveCenterAlorPage() {
           <div className='basis-full lg:basis-2/3 flex-shrink-0 flex flex-col gap-5'>
             <AccordionTable
               isExpand
-              title='Dive Packages'
-              tableTitle={['Duration', 'Total Dive', 'Price per Person']}
+              title='Fun Dives'
+              tableTitle={['Destination', 'Price per Person']}
               tableItems={filterDivePackages}
               includedList={packagesInclude}
-              tableItemsClassTitle='font-semibold basis-full lg:basis-2/4 flex-shrink-0 px-3'
+              tableItemsClassTitle='font-semibold basis-full lg:basis-3/4 flex-shrink-0 px-3'
               tableItemsClass='basis-full lg:basis-1/4 flex-shrink-0 px-3'
-              handleTableItemClick={handleItemClick}
-            />
-            <AccordionTable
-              isExpand={false}
-              title='Freedive & Snorkeling'
-              tableTitle={['Duration', 'Total Dive', 'Price per Person']}
-              tableItems={filterFreediveSnorkeling}
-              includedList={packagesInclude}
-              tableItemsClassTitle='font-semibold basis-full lg:basis-2/4 flex-shrink-0 px-3'
-              tableItemsClass='basis-full lg:basis-1/4 flex-shrink-0 px-3'
-              handleTableItemClick={handleItemClick}
-            />
-            <AccordionTable
-              isExpand={false}
-              title='Island Hopping'
-              tableTitle={['Destination', 'No. of Guests', 'Price per Person']}
-              tableItems={filterIslandHopping}
-              includedList={packagesInclude}
-              tableItemsClassTitle='font-semibold basis-full lg:basis-1/3 flex-shrink-0 px-3'
-              tableItemsClass='basis-full lg:basis-1/3 flex-shrink-0 px-3'
               handleTableItemClick={handleItemClick}
             />
             <AccordionTable
               isExpand={false}
               title='PADI Dive Course'
-              tableTitle={['Course', 'Program', 'Duration', 'Price per Person']}
+              tableTitle={['Course', 'Price per Person']}
               tableItems={filterPadiDiveCourse}
-              tableItemsClassTitle='font-semibold basis-full lg:basis-1/4 flex-shrink-0 px-3'
+              tableItemsClassTitle='font-semibold basis-full lg:basis-3/4 flex-shrink-0 px-3'
               tableItemsClass='basis-full lg:basis-1/4 flex-shrink-0 px-3'
               handleTableItemClick={handleItemClick}
             />
@@ -203,32 +181,8 @@ export default function DiveCenterAlorPage() {
                     <option value=''>
                       Select Destination / Course
                     </option>
-                    {watchCategory === 'dive_packages' && (
+                    {watchCategory === 'fun_dives' && (
                       filterDivePackages.map(({ diveDestination }, index) => {
-                        return (
-                          <option
-                            key={index}
-                            value={diveDestination}
-                          >
-                            {diveDestination}
-                          </option>
-                        )
-                      })
-                    )}
-                    {watchCategory === 'freedive_and_snorkeling_packages' && (
-                      filterFreediveSnorkeling.map(({ diveDestination }, index) => {
-                        return (
-                          <option
-                            key={index}
-                            value={diveDestination}
-                          >
-                            {diveDestination}
-                          </option>
-                        )
-                      })
-                    )}
-                    {watchCategory === 'island_hopping' && (
-                      filterIslandHopping.map(({ diveDestination }, index) => {
                         return (
                           <option
                             key={index}

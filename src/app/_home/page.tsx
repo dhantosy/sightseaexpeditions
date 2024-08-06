@@ -38,8 +38,8 @@ export default function Home() {
       <HeroLanding
         videoSrc='/assets/images/video-sightsea.mp4'
         videoPoster={ImageVideoPoster.src}
-        title='Your Personalized Diving Trips and Liveaboard Experience'
-        subtitle='Our adventures are currated by our experts in diving and leisure trips. With us, your trip will be a story that will last a lifetime.'
+        title='Personalized exotic Diving Trips and Liveaboard Experience'
+        subtitle='We specialize in providing unforgettable experiences in exotic and untouched islands and dive sites.'
         btnMainText='Explore Diving Trips'
         btnMainUrl='/diving-trips'
         btnSecondaryText='About Us'
@@ -77,8 +77,8 @@ export default function Home() {
         img={ImageVelocean.src}
         imgAlt='Liveaboard with VELOCEAN'
         blurDataUrl={ImageVelocean.blurDataURL}
-        btnTopUrl='/liveaboard/velocean-lebaran-escape-misool'
-        btnTopText='See Misool Liveaboard'
+        btnTopUrl='/liveaboard/velocean'
+        btnTopText='See Velocean'
         btnBottomUrl='/liveaboard'
         btnBottomText='Other Liveaboard'
       />

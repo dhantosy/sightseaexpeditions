@@ -17,14 +17,14 @@ export const diveCentersList = [
     imgAlt: 'lombok photo banner',
     blurDataUrl: ImageLombok.blurDataURL,
     title: 'Lombok',
-    url: '/',
+    url: '/dive-centers/lombok',
   },
   {
     img: ImageGorontalo.src,
     imgAlt: 'gorontalo photo banner',
     blurDataUrl: ImageGorontalo.blurDataURL,
     title: 'Gorontalo',
-    url: '/',
+    url: '/dive-centers/gorontalo',
   },
   {
     img: ImageAlor.src,
@@ -38,6 +38,6 @@ export const diveCentersList = [
     imgAlt: 'raja ampat photo banner',
     blurDataUrl: ImageRajaAmpat.blurDataURL,
     title: 'Raja Ampat',
-    url: '/',
+    url: '/dive-centers/raja-ampat',
   },
 ]

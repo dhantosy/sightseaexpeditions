@@ -3,7 +3,7 @@
 import { ChangeEvent, useState } from 'react';
 import Image from 'next/image';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { FaCircleCheck, FaCirclePlus } from 'react-icons/fa6';
+import { FaCircleCheck, FaCirclePlus, FaTag } from 'react-icons/fa6';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import AccordionContent from '@/components/ui/AccordionContent';
@@ -14,7 +14,7 @@ import StickyPriceInfo from '@/components/partial/StickyPriceInfo';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
 import { useRandomEvents } from '@/hooks/useRandomEvents';
 import StickyBookingSection from '@/components/partial/StickyBookingSection';
-import { PRICE_PER_PERSON, EVENT_TITLE, EVENT_OVERVIEW, EVENT_TITLE_FULL, EVENT_DATE, EVENT_TYPE, PAGE_TYPE, EVENT_AVAILABILITY, categoryListOption, roomTypeListOption, roomGallery, dataMain, images, schedule, notes, include } from './data';
+import { PRICE_PER_PERSON, EVENT_TITLE, EVENT_TITLE_FULL, EVENT_DATE, PAGE_TYPE, EVENT_AVAILABILITY, roomTypeListOption, roomGallery, dataMain, images, categoryListOption, notes, include } from './data';
 import { upcomingDivingTrips } from '@/data/upcomingEvents';
 import { formatCurrency } from '@/lib/number';
 import { Button } from '@/components/ui/Button';
@@ -24,12 +24,12 @@ type Inputs = {
   roomType: string
 };
 
-export default function BimaDivingTripMajescticVoyagerPage() {
+export default function VeloceanMaldivesPage() {
   const [bookFormShow, setBookFormShow] = useState(false);
-  const [selectedCurrency, setSelectedCurrency] = useState('IDR');
+  const [selectedCurrency, setSelectedCurrency] = useState('USD');
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(formatCurrency(0));
-  const events = useRandomEvents(upcomingDivingTrips, EVENT_TITLE, 4);
+  const events = useRandomEvents(upcomingDivingTrips, EVENT_TITLE_FULL, 4);
 
   const {
     register,
@@ -41,7 +41,7 @@ export default function BimaDivingTripMajescticVoyagerPage() {
   const watchCategory = watch('category', '');
   const watchRoomType = watch('roomType', '');
   const getSelectedPrice = dataMain.filter((item) => {
-    return item.category === watchCategory && item.roomType === watchRoomType
+    return item.roomType === watchRoomType
   });
   const convertPrice = Number(getSelectedPrice[0]?.price.replace(/\,/g, ''));
 
@@ -50,20 +50,17 @@ export default function BimaDivingTripMajescticVoyagerPage() {
       ['name', EVENT_TITLE_FULL],
       ['type', PAGE_TYPE],
       ['date', EVENT_DATE || ''],
-      ['cat', data.category],
+      ['cat', data.category ?? ''],
       ['cabin', data.roomType],
       ['pax', count.toString()],
       ['curr', selectedCurrency],
       ['total', totalPrice],
     ]);
 
-    console.log(params)
-
     window.open(`/booking/?${params.toString()}`, '_blank', 'noopener,noreferrer');
   };
 
   const handleCategoryChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    if (e.target.value === 'Domestic / KITAS') setSelectedCurrency('IDR');
     if (e.target.value === 'foreigner') setSelectedCurrency('USD');
     setTotalPrice('0');
     setCount(1);
@@ -74,7 +71,7 @@ export default function BimaDivingTripMajescticVoyagerPage() {
 
   const handleRoomTypeChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const price = dataMain.filter((item) => {
-      return item.category === watchCategory && e.target.value === item.roomType
+      return e.target.value === item.roomType
     });
 
     setTotalPrice(formatCurrency(Number(price[0]?.price.replace(/\,/g, '')) * count));
@@ -99,7 +96,6 @@ export default function BimaDivingTripMajescticVoyagerPage() {
           title={EVENT_TITLE_FULL}
           pageType={PAGE_TYPE}
           schedule={EVENT_DATE}
-          tripType={EVENT_TYPE}
           images={images}
         />
       </div>
@@ -108,7 +104,8 @@ export default function BimaDivingTripMajescticVoyagerPage() {
         <div className='flex flex-col lg:flex-row'>
           <div className='basis-full lg:basis-2/3 shrink-0 grow-0 flex flex-col gap-5 relative'>
             <AccordionContent title='Overview' isExpand>
-              <p className='opacity-70'>{EVENT_OVERVIEW}</p>
+              <p className='opacity-70'>With VELOCEAN, Sightsea Expeditions is crafting a personalized itinerary that whisks you away to hidden reefs teeming with life, pristine beaches where time slows down, and luxurious liveaboards that put comfort at the forefront. Dive into paradise and create memories that will leave you breathless.</p>
+              <p className='opacity-70 mt-4'>Our Maldives adventures will take you beyond the postcard, crafting a personalized liveaboard experience you will never forget.</p>
             </AccordionContent>
             <AccordionContent title='Cabin Type' isExpand>
               <div className='container'>
@@ -167,7 +164,7 @@ export default function BimaDivingTripMajescticVoyagerPage() {
                 })}
               </div>
             </AccordionContent>
-            <AccordionContent title='Itinerary' isExpand>
+            {/* <AccordionContent title='Itinerary' isExpand>
               <div className='relative pt-2 pb-1 pl-8 after:content[""] after:absolute after:h-full after:left-2 after:top-0 after:border-l after:border-dashed after:border-bluePrimary'>
                 {schedule.map(({ time, descList }) => {
                   return (
@@ -187,12 +184,12 @@ export default function BimaDivingTripMajescticVoyagerPage() {
                   )
                 })}
               </div>
-            </AccordionContent>
+            </AccordionContent> */}
             <AccordionContent title='What`s Included' isExpand>
-              <div className='flex flex-wrap opacity-70'>
+              <div className='flex flex-wrap opacity-70 -mx-2'>
                 {include.map((item) => {
                   return (
-                    <div key={item} className='flex items-baseline basis-full lg:basis-1/2 flex-shrink-0 flex-grow-0 gap-2 mb-3'>
+                    <div key={item} className='flex items-baseline basis-full lg:basis-1/2 flex-shrink-0 flex-grow-0 gap-2 mb-3 px-2'>
                       <FaCircleCheck size={12} className='text-emerald-600 flex-shrink-0 flex-grow-0' />
                       <div className='flex-wrap flex-grow-0'>{item}</div>
                     </div>
@@ -248,7 +245,6 @@ export default function BimaDivingTripMajescticVoyagerPage() {
                     <fieldset className='mb-4'>
                       <label htmlFor='roomType' className='text-slate-600 font-medium opacity-70 text-sm'>Cabin Type</label>
                       <select
-                        disabled={!watchCategory}
                         defaultValue={roomTypeListOption[0].value}
                         className='block appearance-none cursor-pointer mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400'
                         id='roomType'
@@ -283,7 +279,7 @@ export default function BimaDivingTripMajescticVoyagerPage() {
                   </div>
                 )}
                 <StickyBookingBtnSubmit
-                  whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0A${EVENT_TITLE_FULL}%20${watchCategory ? 'for%20' + watchCategory.replace(/_/g, " ") : '%20'}${watchRoomType ? '%20' + watchRoomType : '%20'}%20for%20${count}%20person`}
+                  whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0AVelocean%20Maldives%20Trip%20for${watchRoomType ? '%20' + watchRoomType : '%20'}%20for%20${count}%20person`}
                   available={EVENT_AVAILABILITY}
                 />
               </div>
@@ -294,21 +290,24 @@ export default function BimaDivingTripMajescticVoyagerPage() {
       <StickyPriceInfo
         priceStartFrom
         totalPrice={formatCurrency(PRICE_PER_PERSON || 0)}
+        currency='USD'
         priceUnit=' / person'
         title={EVENT_TITLE}
         btnText='Book Now'
         onButtonclick={() => setBookFormShow(true)}
         available={EVENT_AVAILABILITY}
       />
-      <div className='mt-10 lg:mt-24'>
-        <SectionUpcomingEvents
-          titleTop=''
-          titleMain='Explore Other Diving Trips.'
-          events={events}
-          cardClass='basis-full 2lg:basis-1/2 p-3 grow-0'
-          cardType='horizontal'
-        />
-      </div>
+      {events?.length ? (
+        <div className='mt-10 lg:mt-24'>
+          <SectionUpcomingEvents
+            titleTop=''
+            titleMain='Explore Other Liveaboard.'
+            events={events}
+            cardClass='basis-full 2lg:basis-1/2 p-3 grow-0'
+            cardType='horizontal'
+          />
+        </div>
+      ) : null}
     </main>
   )
 };

@@ -350,7 +350,7 @@ export const include = [
   'Airport Transfer.',
   '4 Nights in AC Cabin or Twin Share.',
   'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
-  '11 Dives with Tanks, Weight, & Belt.',
+  '10 Dives with Tanks, Weight, & Belt.',
   'English Speaking Cruise Director.',
   'Divemaster with 1:4 Ratio.',
   'Underwater Documentation.',
