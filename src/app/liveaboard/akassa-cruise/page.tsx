@@ -93,7 +93,7 @@ export default function VeloceanMaldivesPage() {
   const closeCalendar = (val: any) => {
     setTimeout(() => {
       setShowCalendar(val);
-    }, 10);
+    }, 50);
   };
 
   const handleDestinationChange = (e: ChangeEvent<HTMLSelectElement>) => {
@@ -118,8 +118,7 @@ export default function VeloceanMaldivesPage() {
         <div className='flex flex-col lg:flex-row'>
           <div className='basis-full lg:basis-2/3 shrink-0 grow-0 flex flex-col gap-5 relative'>
             <AccordionContent title='Overview' isExpand>
-              <p className='opacity-70 mb-4'>VELOCEAN is the brand new 52 Meters scuba purpose-built liveaboard with all Aluminium hull, deck superstructure and powerful twin marine engines providing 20 knots cruising speed making her the fastest diving liveaboard in Indonesia.</p>
-              <p className='opacity-70'>With VELOCEAN, Sightsea Expeditions is crafting a personalized itinerary that whisks you away to hidden reefs teeming with life, pristine beaches where time slows down, and luxurious liveaboards that put comfort at the forefront. Dive into paradise and create memories that will leave you breathless.</p>
+              <p className='opacity-70 mb-4'>Akassa Cruise is a luxury wooden phinishi boat that offers fantastic sailing trips in Komodo National Park. Our experienced crew will provide all the necessary amenities and services to make your vacation a memorable experience.</p>
             </AccordionContent>
             <AccordionContent title='Cabin Type' isExpand>
               <div className='container'>
@@ -178,7 +177,7 @@ export default function VeloceanMaldivesPage() {
                 })}
               </div>
             </AccordionContent>
-            {/* <AccordionContent title='What`s Included' isExpand>
+            <AccordionContent title='What`s Included' isExpand>
               <div className='flex flex-wrap opacity-70 -mx-2'>
                 {include.map((item) => {
                   return (
@@ -189,7 +188,7 @@ export default function VeloceanMaldivesPage() {
                   )
                 })}
               </div>
-            </AccordionContent> */}
+            </AccordionContent>
             <AccordionContent title='Notes' isExpand>
               <div className='flex flex-wrap opacity-70'>
                 {notes.map((item) => {
