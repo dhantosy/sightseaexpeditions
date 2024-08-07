@@ -52,8 +52,8 @@ export default function Home() {
         description='Sightsea Expeditions specializes in providing unforgettable experiences in exotic, untouched islands and dive sites with dedication to create unique moments and rare sightings for our clients. With over a decade of experience, we are experts in offering dive trips, non-diver trips, and boat charters that showcase astonishing biomarine diversity.'
       />
       <SectionUpcomingEvents
-        titleTop='Unveil Deep Sea Wonders'
-        titleMain='Our Upcoming Diving Trips.'
+        titleTop=''
+        titleMain='Upcoming Diving Trips.'
         events={upcomingDivingTrips.slice(0, 4)}
         btnUrl='/diving-trips'
         btnText='See All Diving Trips'
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
       </div>
       <SectionInfoHorizontal
-        titleTop='Ocean as Your Home'
+        titleTop=''
         titleMain={`Liveaboard with VELOCEAN.`}
         description={`VELOCEAN is the brand new 52 Meters scuba purpose-built liveaboard with all Aluminium hull, deck superstructure and powerful twin marine engines providing 20 knots cruising speed making her the fastest diving liveaboard in Indonesia.
 
@@ -83,8 +83,8 @@ export default function Home() {
         btnBottomText='Other Liveaboards'
       />
       <SectionUpcomingEvents
-        titleTop='Unlock the Hidden Gems'
-        titleMain='Tours Beyond the Expected.'
+        titleTop=''
+        titleMain='Tours & Experiences.'
         events={upcomingTours.slice(0, 4)}
         btnUrl='/tours-experiences'
         btnText='See All Tours & Experiences'
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
       </div>
       <SectionUpcomingEvents
-        titleTop='Discover the Underwater World'
+        titleTop=''
         titleMain='Explore Dive Centers.'
         events={diveCentersList.slice(0, 5)}
         btnUrl='/dive-centers'
