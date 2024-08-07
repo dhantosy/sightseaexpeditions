@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaLocationDot, FaCalendar, FaTents, FaShip } from 'react-icons/fa6';
+import { FaLocationDot, FaCalendar, FaTents } from 'react-icons/fa6';
 import { MdScubaDiving } from 'react-icons/md';
 import { Button } from '@/components/ui/Button'
 import { CardHorizontalItemProp } from './types'
@@ -16,7 +16,8 @@ export default function CardHorizontalItem({
   price,
   highlight,
   available,
-  shipName,
+  liveaboard,
+  description,
   currency,
 }: CardHorizontalItemProp) {
 
@@ -34,13 +35,15 @@ export default function CardHorizontalItem({
               blurDataURL={blurDataUrl}
               fill
             />
-            <div className='absolute font-semibold top-2 left-2 text-sm'>
-              {available ? (
-                <span className='border-emerald-300 rounded-full overflow-hidden bg-emerald-100 text-emerald-600 px-4 py-1 inline-block'>Spots Open</span>
-              ) : (
+            {!liveaboard && (
+              <div className='absolute font-semibold top-2 left-2 text-sm'>
+                {available ? (
+                  <span className='border-emerald-300 rounded-full overflow-hidden bg-emerald-100 text-emerald-600 px-4 py-1 inline-block'>Spots Open</span>
+                ) : (
                   <span className='border-red-300 rounded-full overflow-hidden bg-red-100 text-red-600 px-4 py-1 inline-block'>Fully Booked</span>
-              )}
-            </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
         <div className='relative pb-0 md:pb-2 pt-2 mt-4 md:mt-0 md:pl-6 md:pr-1 basis-full md:basis-[60%] grow-0'>
@@ -57,20 +60,23 @@ export default function CardHorizontalItem({
             </div>
           ) : null}
           <h3 className='text-lg uppercase font-semibold font-montserrat mb-4 lg:line-clamp-1 leading-snug'>{title}</h3>
-          {shipName && (
+          {description && (
+            <p className='text-sm opacity-70'>
+              {description}
+            </p>
+          )}
+          {location && (
             <div className='flex gap-3 items-center mb-2 text-sm opacity-70'>
-              <FaShip />
-              <span>{shipName}</span>
+              <FaLocationDot />
+              <span>{location}</span>
             </div>
           )}
-          <div className='flex gap-3 items-center mb-2 text-sm opacity-70'>
-            <FaLocationDot />
-            <span>{location}</span>
-          </div>
-          <div className='flex gap-3 items-center mb-2 text-sm opacity-70'>
-            <FaCalendar />
-            <span>{date}</span>
-          </div>
+          {date && (
+            <div className='flex gap-3 items-center mb-2 text-sm opacity-70'>
+              <FaCalendar />
+              <span>{date}</span>
+            </div>
+          )}
           <div className='2xs:items-end mt-7 md:mt-4 2lg:mt-10 md:absolute 2lg:relative 3lg:absolute bottom-1 left-0 flex justify-between w-full pl-0 md:pl-6 2lg:pl-0 3lg:pl-6 gap-3 flex-col 2xs:flex-row'>
             {available ? (
               <div>

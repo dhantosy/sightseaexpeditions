@@ -78,9 +78,9 @@ export default function Home() {
         imgAlt='Liveaboard with VELOCEAN'
         blurDataUrl={ImageVelocean.blurDataURL}
         btnTopUrl='/liveaboard/velocean'
-        btnTopText='See Velocean'
+        btnTopText='See Velocean Liveaboard'
         btnBottomUrl='/liveaboard'
-        btnBottomText='Other Liveaboard'
+        btnBottomText='Other Liveaboards'
       />
       <SectionUpcomingEvents
         titleTop='Unlock the Hidden Gems'

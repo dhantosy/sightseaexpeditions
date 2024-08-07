@@ -9,11 +9,12 @@ export interface CardHorizontalItemProp {
   blurDataUrl?: string;
   url: string;
   title: string;
-  location: string;
-  date: string;
-  price: string;
+  location?: string;
+  date?: string;
+  price?: string;
   highlight?: HighlightProp;
-  available: boolean;
-  shipName?: string;
-  currency: string;
+  available?: boolean;
+  liveaboard?: boolean;
+  currency?: string;
+  description?: string;
 }

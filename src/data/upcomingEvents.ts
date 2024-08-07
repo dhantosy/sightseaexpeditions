@@ -15,6 +15,8 @@ import ImagePalawanOne from '@public/assets/images/gallery/palawan-1.jpg';
 import ImagePalawanTwo from '@public/assets/images/gallery/palawan-2.jpg';
 import ImageRingOfFire from '@public/assets/images/gallery/ring-of-fire.jpg';
 import ImageLucipara from '@public/assets/images/gallery/lucipara-1.jpg';
+import ImageVeloceanMisoolOne from '@public/assets/images/gallery/raja-ampat-1.jpg'
+import ImageVeloceanMisoolTwo from '@public/assets/images/gallery/raja-ampat-2.jpg'
 
 // TOUR
 import ImageLabuanBajoPrivate from '@public/assets/images/gallery/labuan-bajo-1.jpg'
@@ -25,9 +27,8 @@ import ImageUbudMain from '@public/assets/images/tours/ubud.jpg'
 import ImageKintamaniMain from '@public/assets/images/tours/kintamani.jpg'
 
 // LIVEABOARD
-import ImageVelocean from '@public/assets/images/vessels/velocean.jpg'
-import ImageVeloceanMisoolOne from '@public/assets/images/gallery/raja-ampat-1.jpg'
-import ImageVeloceanMisoolTwo from '@public/assets/images/gallery/raja-ampat-2.jpg'
+import ImageSalaciaLogo from '@public/assets/images/liveaboard/salacia/logo-salacia.jpg'
+import ImageVeloceanLogo from '@public/assets/images/liveaboard/velocean/logo-velocean.jpg'
 
 export const upcomingDivingTrips = [
   {
@@ -475,33 +476,21 @@ export const upcomingTours = [
 
 export const upcomingLiveaboard = [
   {
-    img: ImageVeloceanMisoolOne.src,
-    imgAlt: 'Velocean raja ampat liveaboard',
-    blurDataUrl: ImageVeloceanMisoolOne.blurDataURL,
-    title: 'Raja Ampat - Misool Dive Trip with Velocean Liveaboard',
-    location: 'Raja Ampat, Indonesia',
-    date: 'Dec 8th - 16th, 2024',
-    url: '/liveaboard/velocean-raja-ampat',
-    price: '5,500',
-    priceNum: '5500',
-    currency: 'USD',
-    duration: '8 days',
-    available: false,
-    shipName: 'Velocean Liveaboard',
+    img: ImageSalaciaLogo.src,
+    imgAlt: 'Salacia Cruises Liveaboard',
+    blurDataUrl: ImageSalaciaLogo.blurDataURL,
+    title: 'Salacia Cruises',
+    liveaboard: true,
+    description: 'Cruising soon, Salacia Cruises provides the unmatched hospitality of liveaboard experience in a way they can indulge in the beauty of Indonesia above and under the sea, leaving them fulfilled.',
+    url: '/liveaboard/salacia-cruises',
   },
   {
-    img: ImageVeloceanMisoolTwo.src,
-    imgAlt: 'Lebaran Escape to Misool with Velocean Liveaboard',
-    blurDataUrl: ImageVeloceanMisoolTwo.blurDataURL,
-    title: 'Lebaran Escape to Misool with Velocean Liveaboard',
-    location: 'Raja Ampat, Indonesia',
-    date: 'Mar 28th - Apr 5th, 2025',
-    url: '/liveaboard/velocean-lebaran-escape-misool',
-    price: '5,414',
-    priceNum: '5414',
-    currency: 'USD',
-    duration: '8 days',
-    available: true,
-    shipName: 'Velocean Liveaboard',
+    img: ImageVeloceanLogo.src,
+    imgAlt: 'Velocean Liveaboard',
+    blurDataUrl: ImageVeloceanLogo.blurDataURL,
+    title: 'Velocean Liveaboard',
+    liveaboard: true,
+    description: 'VELOCEAN is the brand new 52 Meters scuba purpose-built liveaboard with all Aluminium hull, deck superstructure and powerful twin marine engines providing 20 knots cruising speed making her the fastest diving liveaboard in Indonesia.',
+    url: '/liveaboard/velocean',
   },
 ]
