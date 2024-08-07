@@ -80,7 +80,7 @@ export const upcomingDivingTrips = [
     currency: 'IDR',
     duration: '4 days',
     highlight: {
-      diveCount: '11 dives',
+      diveCount: '17 dives',
       type: 'LOB'
     },
     available: true,

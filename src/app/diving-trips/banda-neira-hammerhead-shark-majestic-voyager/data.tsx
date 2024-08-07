@@ -354,7 +354,7 @@ export const include = [
   '6 Nights in AC Cabins Aboard on Sharing Basis.',
   'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
   'Historical & Heritage Land Tour at Banda Neira.',
-  'unlimited tea, coffee, softdrinks and mineral water.',
+  'Unlimited tea, coffee, softdrinks and mineral water.',
   '17 Dives with Tanks, Weight, & Belt.',
   'English Speaking Cruise Director.',
   'Divemaster & Local Dive Guide.',
