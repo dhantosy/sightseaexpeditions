@@ -19,6 +19,8 @@ interface CardsProp {
   unit?: string;
   available?: boolean;
   currency?: string;
+  liveaboard?: boolean;
+  description?: string;
 }
 
 export interface SectionUpcomingEventsProp {

@@ -1,39 +1,18 @@
-import ImageGalleryOne from '@public/assets/images/gallery/raja-ampat-1.jpg';
-import ImageGalleryTwo from '@public/assets/images/vessels/velocean.jpg';
-import ImageGalleryThree from '@public/assets/images/liveaboard/velocean/gallery-5.jpg';
-import ImageGalleryFour from '@public/assets/images/liveaboard/velocean/gallery-3.jpg';
+import ImageGalleryOne from '@public/assets/images/liveaboard/salacia/logo-salacia.jpg'
+import ImageGalleryTwo from '@public/assets/images/gallery/lombok-dive-2.jpg';
+import ImageGalleryThree from '@public/assets/images/liveaboard/salacia/salacia-image-1.jpg'
+import ImageGalleryFour from '@public/assets/images/liveaboard/salacia/salacia-image-2.jpg'
 
 import ImageSuiteOne from '@public/assets/images/liveaboard/velocean/suite-1.jpg';
 import ImageExecutiveOne from '@public/assets/images/liveaboard/velocean/suite-2.jpg';
 import ImageDeluxeOne from '@public/assets/images/liveaboard/velocean/suite-3.jpg';
-import { upcomingLiveaboard } from '@/data/upcomingEvents';
 
-export const EVENT_TITLE_FULL = 'Raja Ampat - Misool Dive Trip with Velocean Liveaboard';
+export const EVENT_TITLE_FULL = 'Salacia Cruises';
 
-const findEventData = upcomingLiveaboard.find((item) => {
-  return item.title === EVENT_TITLE_FULL;
-});
-
-export const PRICE_PER_PERSON = findEventData?.priceNum;
-export const EVENT_TITLE = 'VELOCEAN - Raja Ampat Misool' || '';
-export const EVENT_DATE = findEventData?.date;
+export const PRICE_PER_PERSON = '';
+export const EVENT_TITLE = 'Salacia Cruises' || '';
 export const PAGE_TYPE = 'Liveaboard';
-export const EVENT_AVAILABILITY = findEventData?.available;
-
-export const categoryListOption = [
-  {
-    value: '',
-    label: 'Select Category'
-  },
-  {
-    value: 'Domestic / KITAS',
-    label: 'Domestic / KITAS Holder'
-  },
-  {
-    value: 'foreigner',
-    label: 'Foreigner'
-  },
-];
+export const EVENT_AVAILABILITY = false;
 
 export const roomTypeListOption = [
   {
@@ -121,7 +100,7 @@ export const dataMain = [
     roomType: 'Elite Ocean Suites',
   },
   {
-    price: '4,950',
+    price: '4,068',
     currency: 'USD',
     roomType: 'Signature Single Suites',
   },
@@ -150,70 +129,10 @@ export const images = [
   },
 ];
 
-export const schedule = [
-  {
-    time: 'Day 1 - Labuan Bajo',
-    descList: [
-      'Airport or Hotel Pickup.',
-      'Lunch.',
-      'Dive 1 (Check Dive at Sebayur).',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 2 - North Komodo',
-    descList: [
-      'Light Breakfast.',
-      'Dive 2.',
-      'Breakfast.',
-      'Dive 3.',
-      'Lunch.',
-      'Dive 4.',
-      'Cross to Bima.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 3 - Gili Banta',
-    descList: [
-      'Light Breakfast.',
-      'Dive 5.',
-      'Breakfast.',
-      'Dive 6.',
-      'Lunch.',
-      'Dive 7.',
-      'Snack Time.',
-      'Night Dive 8.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 4 - Pulau Kelapa',
-    descList: [
-      'Light Breakfast.',
-      'Dive 9.',
-      'Breakfast.',
-      'Dive 10.',
-      'Lunch.',
-      'Cross to Labuan Bajo.',
-      'Dinner.',
-    ]
-  },
-  {
-    time: 'Day 5 - Labuan Bajo',
-    descList: [
-      'Breakfast.',
-      'Airport / Hotel Transfer.',
-    ]
-  },
-];
-
 export const notes = [
-  'The price excludes airflight tickets.',
-  'Alcoholic beverages is available for extra charge.',
-  'Scuba diving gear is available for rental.',
-  'Personal Insurance is not covered.',
-  'Crew tip gratitude is suggested.',
+  'The price displayed may be subjected to change based on the specific operator`s rates and availability.',
+  'The availability of the cabin at the selected date may be subjected to change based on the liveaboard operator availability.',
+  'Once you made your booking, we will get back to you as soon as possible to provide updates of your booking.',
 ];
 
 export const include = [

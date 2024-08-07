@@ -61,6 +61,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.sightseaexpeditions.com/diving-trips/raja-ampat-misool-velocean</loc>
+    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sightseaexpeditions.com/diving-trips/raja-ampat-misool-majestic-voyager</loc>
+    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.sightseaexpeditions.com/diving-trips/raja-ampat-wayag-majestic-voyager</loc>
     <lastmod>2024-08-01T07:28:58.209Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -74,12 +86,6 @@
   </url>
   <url>
     <loc>https://www.sightseaexpeditions.com/diving-trips/deep-south-maldives-dive-trip</loc>
-    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.sightseaexpeditions.com/diving-trips/lebaran-escape-best-of-maldives-dive-trip</loc>
     <lastmod>2024-08-01T07:28:58.209Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -103,49 +109,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.sightseaexpeditions.com/diving-trips/alor-majestic-voyager</loc>
+    <loc>https://www.sightseaexpeditions.com/liveaboard/velocean</loc>
     <lastmod>2024-08-01T07:28:58.209Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.sightseaexpeditions.com/diving-trips/komodo-majestic-voyager</loc>
-    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.sightseaexpeditions.com/diving-trips/banda-neira-majestic-voyager</loc>
-    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.sightseaexpeditions.com/diving-trips/ring-of-fire-oceanix-voyager-september</loc>
-    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.sightseaexpeditions.com/diving-trips/ring-of-fire-oceanix-voyager-october</loc>
-    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.sightseaexpeditions.com/diving-trips/lucipara-suanggi-majestic-voyager</loc>
-    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.sightseaexpeditions.com/liveaboard/velocean-raja-ampat</loc>
-    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.sightseaexpeditions.com/liveaboard/velocean-lebaran-escape-misool</loc>
+    <loc>https://www.sightseaexpeditions.com/liveaboard/salacia-cruises</loc>
     <lastmod>2024-08-01T07:28:58.209Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -170,6 +140,24 @@
   </url>
   <url>
     <loc>https://www.sightseaexpeditions.com/dive-centers/alor</loc>
+    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sightseaexpeditions.com/dive-centers/gorontalo</loc>
+    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sightseaexpeditions.com/dive-centers/raja-ampat</loc>
+    <lastmod>2024-08-01T07:28:58.209Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sightseaexpeditions.com/dive-centers/lombok</loc>
     <lastmod>2024-08-01T07:28:58.209Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -4,6 +4,7 @@ import { ChangeEvent, useState } from 'react';
 import Image from 'next/image';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { FaCircleCheck, FaCirclePlus } from 'react-icons/fa6';
+import InputCalendar from '@/components/ui/InputCalendar';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import AccordionContent from '@/components/ui/AccordionContent';
@@ -14,10 +15,11 @@ import StickyPriceInfo from '@/components/partial/StickyPriceInfo';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
 import { useRandomEvents } from '@/hooks/useRandomEvents';
 import StickyBookingSection from '@/components/partial/StickyBookingSection';
-import { PRICE_PER_PERSON, EVENT_TITLE, EVENT_TITLE_FULL, EVENT_DATE, PAGE_TYPE, EVENT_AVAILABILITY, categoryListOption, roomTypeListOption, roomGallery, dataMain, images, schedule, notes, include } from './data';
+import { PRICE_PER_PERSON, EVENT_TITLE, EVENT_TITLE_FULL, PAGE_TYPE, EVENT_AVAILABILITY, roomTypeListOption, roomGallery, dataMain, images, notes, include } from './data';
 import { upcomingLiveaboard } from '@/data/upcomingEvents';
 import { formatCurrency } from '@/lib/number';
 import { Button } from '@/components/ui/Button';
+import { format } from 'date-fns';
 
 type Inputs = {
   category: string
@@ -26,6 +28,8 @@ type Inputs = {
 
 export default function VeloceanMaldivesPage() {
   const [bookFormShow, setBookFormShow] = useState(false);
+  const [selectedDate, setSelectedDate] = useState('');
+  const [showCalendar, setShowCalendar] = useState(false);
   const [selectedCurrency, setSelectedCurrency] = useState('USD');
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(formatCurrency(0));
@@ -38,7 +42,6 @@ export default function VeloceanMaldivesPage() {
     reset,
     watch,
   } = useForm<Inputs>();
-  const watchCategory = watch('category', '');
   const watchRoomType = watch('roomType', '');
   const getSelectedPrice = dataMain.filter((item) => {
     return item.roomType === watchRoomType
@@ -49,7 +52,7 @@ export default function VeloceanMaldivesPage() {
     const params = new URLSearchParams([
       ['name', EVENT_TITLE_FULL],
       ['type', PAGE_TYPE],
-      ['date', EVENT_DATE || ''],
+      ['date', selectedDate],
       ['cat', data.category ?? ''],
       ['cabin', data.roomType],
       ['pax', count.toString()],
@@ -58,15 +61,6 @@ export default function VeloceanMaldivesPage() {
     ]);
 
     window.open(`/booking/?${params.toString()}`, '_blank', 'noopener,noreferrer');
-  };
-
-  const handleCategoryChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    if (e.target.value === 'foreigner') setSelectedCurrency('USD');
-    setTotalPrice('0');
-    setCount(1);
-    setValue('roomType', '', {
-      shouldValidate: true
-    });
   };
 
   const handleRoomTypeChange = (e: ChangeEvent<HTMLSelectElement>) => {
@@ -89,13 +83,24 @@ export default function VeloceanMaldivesPage() {
     setTotalPrice('0');
   };
 
+  const handleDateChange = (val: Date) => {
+    const parseDate = Date.parse(val.toString());
+    const formatDate = format(parseDate, 'dd MMMM yyyy');
+    setSelectedDate(formatDate);
+  };
+
+  const closeCalendar = (val: any) => {
+    setTimeout(() => {
+      setShowCalendar(val);
+    }, 10);
+  };
+
   return (
     <main>
-      <div className='pt-16 lg:pt-0'>
+      <div className='pt-0'>
         <HeroDetailPage
           title={EVENT_TITLE_FULL}
           pageType={PAGE_TYPE}
-          schedule={EVENT_DATE}
           images={images}
         />
       </div>
@@ -104,10 +109,9 @@ export default function VeloceanMaldivesPage() {
         <div className='flex flex-col lg:flex-row'>
           <div className='basis-full lg:basis-2/3 shrink-0 grow-0 flex flex-col gap-5 relative'>
             <AccordionContent title='Overview' isExpand>
-              <p className='opacity-70'>With VELOCEAN, Sightsea Expeditions is crafting a personalized itinerary that whisks you away to hidden reefs teeming with life, pristine beaches where time slows down, and luxurious liveaboards that put comfort at the forefront. Dive into paradise and create memories that will leave you breathless.</p>
-              <p className='opacity-70 mt-4'>Our Maldives adventures will take you beyond the postcard, crafting a personalized liveaboard experience you will never forget.</p>
+              <p className='opacity-70 mb-4'>Cruising soon, Salacia Cruises provides the unmatched hospitality of liveaboard experience in a way they can indulge in the beauty of Indonesia above and under the sea, leaving them fulfilled.</p>
             </AccordionContent>
-            <AccordionContent title='Cabin Type' isExpand>
+            {/* <AccordionContent title='Cabin Type' isExpand>
               <div className='container'>
                 {roomGallery.map(({ roomType, gallery, include }) => {
                   return (
@@ -163,33 +167,8 @@ export default function VeloceanMaldivesPage() {
                   )
                 })}
               </div>
-            </AccordionContent>
-            {/* <AccordionContent title='Itinerary' isExpand>
-              {schedule.length > 1 ? (
-                <div className='relative pt-2 pb-1 pl-8 after:content[""] after:absolute after:h-full after:left-2 after:top-0 after:border-l after:border-dashed after:border-bluePrimary'>
-                  {schedule.map(({ time, descList }) => {
-                    return (
-                      <div key={time} className='relative after:content[""] after:absolute after:z-10 after:-left-[29px] after:top-[6px] after:w-3 after:h-3 after:bg-sky-600 after:rounded-full mb-4'>
-                        <div className='opacity-70 flex flex-col lg:flex-row gap-1 lg:gap-4'>
-                          <div className='font-bold basis-0 lg:basis-[180px]'>{time}</div>
-                          <div className='hidden lg:block'>-</div>
-                          <div className='flex flex-col gap-1'>
-                            {descList?.map((item) => {
-                              return (
-                                <div key={item}>{item}</div>
-                              )
-                            })}
-                          </div>
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
-              ) : (
-                <div className='uppercase'>To be announced</div>
-              )}
             </AccordionContent> */}
-            <AccordionContent title='What`s Included' isExpand>
+            {/* <AccordionContent title='What`s Included' isExpand>
               <div className='flex flex-wrap opacity-70 -mx-2'>
                 {include.map((item) => {
                   return (
@@ -200,8 +179,8 @@ export default function VeloceanMaldivesPage() {
                   )
                 })}
               </div>
-            </AccordionContent>
-            <AccordionContent title='Notes' isExpand>
+            </AccordionContent> */}
+            {/* <AccordionContent title='Notes' isExpand>
               <div className='flex flex-wrap opacity-70'>
                 {notes.map((item) => {
                   return (
@@ -212,82 +191,18 @@ export default function VeloceanMaldivesPage() {
                   )
                 })}
               </div>
-            </AccordionContent>
+            </AccordionContent> */}
           </div>
           <StickyBookingSection
             title={EVENT_TITLE}
             isBookFormShow={bookFormShow}
             onCloseClick={handleStickyFormClose}
           >
-            <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
-              <div>
-                {/* <fieldset className='mb-4'>
-                  <label htmlFor='category' className='text-slate-600 font-medium opacity-70 text-sm'>Category</label>
-                  <select
-                    defaultValue={categoryListOption[0].value}
-                    className='block appearance-none cursor-pointer mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400'
-                    id='category'
-                    {...register('category', {
-                      required: true,
-                      onChange: (e) => { handleCategoryChange(e) },
-                    })}>
-                    {categoryListOption.map(({ value, label }, index) => {
-                      return (
-                        <option
-                          key={value}
-                          value={value}
-                          disabled={index === 0 && true}
-                        >
-                          {label}
-                        </option>
-                      )
-                    })}
-                  </select>
-                </fieldset> */}
-                <fieldset className='mb-4'>
-                  <label htmlFor='roomType' className='text-slate-600 font-medium opacity-70 text-sm'>Cabin Type</label>
-                  <select
-                    defaultValue={roomTypeListOption[0].value}
-                    className='block appearance-none cursor-pointer mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400'
-                    id='roomType'
-                    {...register('roomType', {
-                      required: true,
-                      onChange: (e) => { handleRoomTypeChange(e) },
-                    })}>
-                    {roomTypeListOption.map(({ value, label }, index) => {
-                      return (
-                        <option
-                          key={value}
-                          value={value}
-                          disabled={index === 0 && true}
-                        >
-                          {label}
-                        </option>
-                      )
-                    })}
-                  </select>
-                </fieldset>
-                <fieldset className='my-5'>
-                  <Counter
-                    onChange={handleCounterChange}
-                    count={count}
-                    maxCount={9}
-                  />
-                </fieldset>
-                <div className='py-5 border-t mb-3 flex justify-between items-center font-semibold'>
-                  <div>Total Price:</div>
-                  <div>{`${selectedCurrency} ${totalPrice}`}</div>
-                </div>
-                <StickyBookingBtnSubmit
-                  whatsappLink={`https://wa.me/62811301031?text=Hi%20Sightsea%20Expeditions%21%20I%20would%20like%20to%20make%20a%20booking%20with%20the%20following%20detail%3A%0A${EVENT_TITLE_FULL}%20${watchRoomType ? '%20for%20' + watchRoomType : '%20'}%20for%20${count}%20person`}
-                  available={EVENT_AVAILABILITY}
-                />
-              </div>
-            </form>
+            Cruising Soon!
           </StickyBookingSection>
         </div>
       </section>
-      <StickyPriceInfo
+      {/* <StickyPriceInfo
         priceStartFrom
         totalPrice={formatCurrency(PRICE_PER_PERSON)}
         currency='USD'
@@ -296,7 +211,7 @@ export default function VeloceanMaldivesPage() {
         btnText='Book Now'
         onButtonclick={() => setBookFormShow(true)}
         available={EVENT_AVAILABILITY}
-      />
+      /> */}
       {events?.length ? (
         <div className='mt-10 lg:mt-24'>
           <SectionUpcomingEvents
