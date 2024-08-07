@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   robots: 'index, follow',
-  title: 'Sightsea Expeditions: Personalized Diving Trips and Liveaboard Experience',
+  title: 'Sightsea Expeditions - Personalized Diving Trips and Liveaboard Experience',
   description: 'Discover the ultimate diving experience with our expertly curated liveaboard adventures. Explore pristine underwater worlds, encounter breathtaking marine life, and indulge in unparalleled luxury. From Raja Ampat to Maldives, we offer personalized itineraries and exceptional service for discerning divers and travellers alike.',
   keywords: 'sightsea, curated diving trips, luxury dive vacations, liveaboard diving, dive travel, premium dive experiences, underwater adventures, dive destinations, diving holidays, bespoke dive itineraries, diving luxury, exclusive dive trips, diving travel agency, dive vacation planner, dive trip consultant',
   openGraph: {
-    title: 'Sightsea Expeditions: Personalized Diving Trips and Liveaboard Experience',
+    title: 'Sightsea Expeditions - Personalized Diving Trips and Liveaboard Experience',
     description: 'Discover the ultimate diving experience with our expertly curated liveaboard adventures. Explore pristine underwater worlds, encounter breathtaking marine life, and indulge in unparalleled luxury. From Raja Ampat to Maldives, we offer personalized itineraries and exceptional service for discerning divers and travellers alike.',
     type: 'website',
     images: '/assets/images/banner-photo.jpg'

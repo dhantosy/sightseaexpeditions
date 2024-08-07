@@ -14,7 +14,7 @@ export default function HeroLanding({
 }: HeroLandingProp) {
 
   return (
-    <section className='relative overflow-hidden border-[18px] border-white h-[calc(100vh-60px)] mt-[66px] lg:border-[32px] 2lg:pb-0 after:content-[""] after:w-full after:bg-black after:opacity-20 after:h-full after:absolute after:rounded-3xl'>
+    <section className='relative overflow-hidden border-[18px] border-white h-[calc(100vh-60px)] 2xs:h-[calc(100vh-110px)] md:h-[calc(100vh-60px)] mt-[66px] lg:border-[32px] 2lg:pb-0 after:content-[""] after:w-full after:bg-black after:opacity-20 after:h-full after:absolute after:rounded-3xl'>
       <div className='flex justify-center absolute h-full top-0 left-0 w-full rounded-3xl overflow-hidden'>
         <video
           autoPlay
@@ -22,7 +22,7 @@ export default function HeroLanding({
           loop
           muted
           poster={videoPoster}
-          className='absolute min-w-full min-h-full max-w-none 3lg:w-full'
+          className='absolute min-w-full min-h-full max-w-none 2xs:max-w-[370%] 3xs:max-w-[390%] 3lg:w-full'
         >
           <source
             src={videoSrc}
