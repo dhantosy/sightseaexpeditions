@@ -15,14 +15,14 @@ import StickyPriceInfo from '@/components/partial/StickyPriceInfo';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
 import { useRandomEvents } from '@/hooks/useRandomEvents';
 import StickyBookingSection from '@/components/partial/StickyBookingSection';
-import { PRICE_PER_PERSON, EVENT_TITLE, EVENT_TITLE_FULL, PAGE_TYPE, EVENT_AVAILABILITY, roomTypeListOption, roomGallery, dataMain, images, notes, include } from './data';
+import { PRICE_PER_PERSON, EVENT_TITLE, EVENT_TITLE_FULL, PAGE_TYPE, EVENT_AVAILABILITY, roomTypeListOption, roomGallery, dataMain, images, notes, include, destinationsListOption } from './data';
 import { upcomingLiveaboard } from '@/data/upcomingEvents';
 import { formatCurrency } from '@/lib/number';
 import { Button } from '@/components/ui/Button';
 import { format } from 'date-fns';
 
 type Inputs = {
-  category: string
+  destination: string
   roomType: string
 };
 
@@ -42,6 +42,7 @@ export default function VeloceanMaldivesPage() {
     reset,
     watch,
   } = useForm<Inputs>();
+  const watchDestination = watch('destination', '');
   const watchRoomType = watch('roomType', '');
   const getSelectedPrice = dataMain.filter((item) => {
     return item.roomType === watchRoomType
@@ -53,7 +54,7 @@ export default function VeloceanMaldivesPage() {
       ['name', EVENT_TITLE_FULL],
       ['type', PAGE_TYPE],
       ['date', selectedDate],
-      ['cat', data.category ?? ''],
+      ['destination', data.destination ?? ''],
       ['cabin', data.roomType],
       ['pax', count.toString()],
       ['curr', selectedCurrency],
@@ -65,7 +66,7 @@ export default function VeloceanMaldivesPage() {
 
   const handleRoomTypeChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const price = dataMain.filter((item) => {
-      return e.target.value === item.roomType
+      return e.target.value === item.roomType && watchDestination === item.destination;
     });
 
     setTotalPrice(formatCurrency(Number(price[0]?.price.replace(/\,/g, '')) * count));
@@ -93,6 +94,14 @@ export default function VeloceanMaldivesPage() {
     setTimeout(() => {
       setShowCalendar(val);
     }, 10);
+  };
+
+  const handleDestinationChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    setTotalPrice('0');
+    setCount(1);
+    setValue('roomType', '', {
+      shouldValidate: true
+    });
   };
 
   return (
@@ -202,8 +211,32 @@ export default function VeloceanMaldivesPage() {
             <form id='form-contact' onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <fieldset className='mb-4'>
+                  <label htmlFor='destination' className='text-slate-600 font-medium opacity-70 text-sm'>Destination</label>
+                  <select
+                    defaultValue={destinationsListOption[0].value}
+                    className='block appearance-none cursor-pointer mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400'
+                    id='category'
+                    {...register('destination', {
+                      required: true,
+                      onChange: (e) => { handleDestinationChange(e) },
+                    })}>
+                    {destinationsListOption.map(({ value, label }, index) => {
+                      return (
+                        <option
+                          key={value}
+                          value={value}
+                          disabled={index === 0 && true}
+                        >
+                          {label}
+                        </option>
+                      )
+                    })}
+                  </select>
+                </fieldset>
+                <fieldset className='mb-4'>
                   <label htmlFor='roomType' className='text-slate-600 font-medium opacity-70 text-sm'>Cabin Type</label>
                   <select
+                    disabled={!watchDestination}
                     defaultValue={roomTypeListOption[0].value}
                     className='block appearance-none cursor-pointer mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400'
                     id='roomType'

@@ -28,7 +28,7 @@ import ImageKintamaniMain from '@public/assets/images/tours/kintamani.jpg'
 
 // LIVEABOARD
 import ImageSalaciaLogo from '@public/assets/images/liveaboard/salacia/logo-salacia.jpg'
-import ImageVeloceanLogo from '@public/assets/images/liveaboard/velocean/logo-velocean.jpg'
+import ImageVeloceanLogo from '@public/assets/images/vessels/velocean.jpg'
 
 export const upcomingDivingTrips = [
   {

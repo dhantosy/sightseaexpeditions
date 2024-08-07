@@ -9,10 +9,33 @@ import ImageDeluxeOne from '@public/assets/images/liveaboard/velocean/suite-3.jp
 
 export const EVENT_TITLE_FULL = 'Velocean Liveaboard';
 
-export const PRICE_PER_PERSON = '4068';
+export const PRICE_PER_PERSON = '0';
 export const EVENT_TITLE = 'VELOCEAN Liveaboard' || '';
 export const PAGE_TYPE = 'Liveaboard';
 export const EVENT_AVAILABILITY = true;
+
+export const destinationsListOption = [
+  {
+    value: '',
+    label: 'Select Destination'
+  },
+  {
+    value: 'Raja Ampat',
+    label: 'Raja Ampat'
+  },
+  {
+    value: 'Komodo',
+    label: 'Komodo'
+  },
+  {
+    value: 'Banda Sea',
+    label: 'Banda Sea'
+  },
+  {
+    value: 'Alor',
+    label: 'Alor'
+  },
+];
 
 export const roomTypeListOption = [
   {
@@ -90,19 +113,76 @@ export const roomGallery = [
 
 export const dataMain = [
   {
-    price: '5,900',
+    price: '0',
     currency: 'USD',
     roomType: 'Platinum Oceanfront Suites',
+    destination: 'Raja Ampat',
   },
   {
-    price: '5,190',
+    price: '0',
     currency: 'USD',
     roomType: 'Elite Ocean Suites',
+    destination: 'Raja Ampat',
   },
   {
-    price: '4,068',
+    price: '0',
     currency: 'USD',
     roomType: 'Signature Single Suites',
+    destination: 'Raja Ampat',
+  },
+  {
+    price: '0',
+    currency: 'USD',
+    roomType: 'Platinum Oceanfront Suites',
+    destination: 'Komodo',
+  },
+  {
+    price: '0',
+    currency: 'USD',
+    roomType: 'Elite Ocean Suites',
+    destination: 'Komodo',
+  },
+  {
+    price: '0',
+    currency: 'USD',
+    roomType: 'Signature Single Suites',
+    destination: 'Komodo',
+  },
+  {
+    price: '0',
+    currency: 'USD',
+    roomType: 'Platinum Oceanfront Suites',
+    destination: 'Banda Sea',
+  },
+  {
+    price: '0',
+    currency: 'USD',
+    roomType: 'Elite Ocean Suites',
+    destination: 'Banda Sea',
+  },
+  {
+    price: '0',
+    currency: 'USD',
+    roomType: 'Signature Single Suites',
+    destination: 'Banda Sea',
+  },
+  {
+    price: '0',
+    currency: 'USD',
+    roomType: 'Platinum Oceanfront Suites',
+    destination: 'Alor',
+  },
+  {
+    price: '0',
+    currency: 'USD',
+    roomType: 'Elite Ocean Suites',
+    destination: 'Alor',
+  },
+  {
+    price: '0',
+    currency: 'USD',
+    roomType: 'Signature Single Suites',
+    destination: 'Alor',
   },
 ];
 
