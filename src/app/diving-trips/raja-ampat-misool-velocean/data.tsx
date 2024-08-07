@@ -6,11 +6,11 @@ import ImageGalleryFour from '@public/assets/images/liveaboard/velocean/gallery-
 import ImageSuiteOne from '@public/assets/images/liveaboard/velocean/suite-1.jpg';
 import ImageExecutiveOne from '@public/assets/images/liveaboard/velocean/suite-2.jpg';
 import ImageDeluxeOne from '@public/assets/images/liveaboard/velocean/suite-3.jpg';
-import { upcomingLiveaboard } from '@/data/upcomingEvents';
+import { upcomingDivingTrips } from '@/data/upcomingEvents';
 
-export const EVENT_TITLE_FULL = 'Raja Ampat - Misool Dive Trip with Velocean Liveaboard';
+export const EVENT_TITLE_FULL = 'Misool Dive Trip with Velocean Liveaboard';
 
-const findEventData = upcomingLiveaboard.find((item) => {
+const findEventData = upcomingDivingTrips.find((item) => {
   return item.title === EVENT_TITLE_FULL;
 });
 
