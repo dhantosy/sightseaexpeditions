@@ -28,7 +28,11 @@ import ImageKintamaniMain from '@public/assets/images/tours/kintamani.jpg'
 
 // LIVEABOARD
 import ImageSalaciaLogo from '@public/assets/images/liveaboard/salacia/logo-salacia.jpg'
-import ImageVeloceanLogo from '@public/assets/images/liveaboard/velocean/logo-velocean.jpg'
+import ImageVeloceanLogo from '@public/assets/images/vessels/velocean.jpg'
+import ImageSemestaLogo from '@public/assets/images/liveaboard/semesta-voyages/semesta-1.jpg';
+import ImageAkassaLogo from '@public/assets/images/liveaboard/akassa-cruise/akassa-1.jpg';
+import ImageDeryaLogo from '@public/assets/images/liveaboard/derya-liveaboard/derya-1.jpg';
+import ImageGionaLogo from '@public/assets/images/liveaboard/giona-liveaboard/giona-1.jpg';
 
 export const upcomingDivingTrips = [
   {
@@ -492,5 +496,41 @@ export const upcomingLiveaboard = [
     liveaboard: true,
     description: 'VELOCEAN is the brand new 52 Meters scuba purpose-built liveaboard with all Aluminium hull, deck superstructure and powerful twin marine engines providing 20 knots cruising speed making her the fastest diving liveaboard in Indonesia.',
     url: '/liveaboard/velocean',
+  },
+  {
+    img: ImageSemestaLogo.src,
+    imgAlt: 'Semesta Voyages',
+    blurDataUrl: ImageSemestaLogo.blurDataURL,
+    title: 'Semesta Voyages',
+    liveaboard: true,
+    description: 'Designed with meticulous attention to detail, this ship embodies the pinnacle of modern maritime engineering and luxury. Semesta Voyages promises an unparalleled journey across the seas, offering passengers an unforgettable experience of comfort, elegance, and adventure.',
+    url: '/liveaboard/semesta-voyages',
+  },
+  {
+    img: ImageAkassaLogo.src,
+    imgAlt: 'Akassa Cruise',
+    blurDataUrl: ImageAkassaLogo.blurDataURL,
+    title: 'Akassa Cruise',
+    liveaboard: true,
+    description: 'Akassa Cruise is a luxury wooden phinishi boat that offers fantastic sailing trips in Komodo National Park. Our experienced crew will provide all the necessary amenities and services to make your vacation a memorable experience.',
+    url: '/liveaboard/akassa-cruise',
+  },
+  {
+    img: ImageDeryaLogo.src,
+    imgAlt: 'Derya Liveaboard',
+    blurDataUrl: ImageDeryaLogo.blurDataURL,
+    title: 'Derya Liveaboard',
+    liveaboard: true,
+    description: 'Derya is derivied from the persian (Daryã) meaning ocean and sea. Traditional phinishi boat with modern concept for leisure. Designed for 10 person with 4 cabins and many spaces to relax or gather with your family and friends. Let’s enjoy the mesmerizing island of komodo with us.',
+    url: '/liveaboard/derya-liveaboard',
+  },
+  {
+    img: ImageGionaLogo.src,
+    imgAlt: 'Giona Liveaboard',
+    blurDataUrl: ImageGionaLogo.blurDataURL,
+    title: 'Giona Liveaboard',
+    liveaboard: true,
+    description: 'Giona liveaboard is wooden phinisi boat that Offering you the best experience for you to new Ocean adventures and memories with your loved Ones. Our experienced crew will provide all the necessary amenities and services to make your vacation a memorable experience.',
+    url: '/liveaboard/giona-liveaboard',
   },
 ]
