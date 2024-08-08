@@ -82,7 +82,7 @@ export default function DiveCenterAlorPage() {
   const closeCalendar = (val: any) => {
     setTimeout(() => {
       setShowCalendar(val);
-    }, 10);
+    }, 100);
   };
 
   const handleItemClick = (diveDestination: string, type: string) => {

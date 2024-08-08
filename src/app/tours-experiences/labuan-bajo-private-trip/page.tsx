@@ -61,7 +61,7 @@ export default function ToursLabuanBajoPrivateTripPage() {
   const closeCalendar = (val: any) => {
     setTimeout(() => {
       setShowCalendar(val);
-    }, 10);
+    }, 100);
   };
 
   return (

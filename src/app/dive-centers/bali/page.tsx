@@ -84,7 +84,7 @@ export default function DiveCenterBaliPage() {
   const closeCalendar = (val: any) => {
     setTimeout(() => {
       setShowCalendar(val);
-    }, 10);
+    }, 100);
   };
 
   const handleItemClick = (diveDestination: string, type: string) => {
