@@ -302,6 +302,7 @@ export default function BimaDivingTripMajescticVoyagerPage() {
         btnText='Book Now'
         onButtonclick={() => setBookFormShow(true)}
         available={EVENT_AVAILABILITY}
+        currency={selectedCurrency}
       />
       <div className='mt-10 lg:mt-24'>
         <SectionUpcomingEvents
