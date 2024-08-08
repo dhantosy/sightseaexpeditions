@@ -108,7 +108,7 @@ export default function BookingPage() {
       </div>
       <section className='container my-4 lg:my-20 px-4 lg:px-8 relative z-10'>
         <div className='relative flex flex-wrap flex-col lg:flex-row -mx-4 items-center'>
-          <div className='basis-full lg:basis-7/12 px-4 grow-0 mt-4 mb-2 lg:mt-0 mx-auto'>
+          <div className='basis-full lg:basis-7/12 px-4 shrink-0 grow-0 mt-4 mb-2 lg:mt-0 mx-auto'>
             <div className='rounded-3xl bg-white border overflow-hidden px-4 py-6 lg:p-8 mt-4 lg:mt-6'>
               {paramName ? (
                 <>
