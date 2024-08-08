@@ -26,7 +26,7 @@ import ImageDeluxeEight from '@public/assets/images/cabin/majestic-voyager-delux
 import ImageDeluxeNine from '@public/assets/images/cabin/majestic-voyager-deluxe-9.jpg';
 import { upcomingDivingTrips } from '@/data/upcomingEvents';
 
-export const EVENT_TITLE_FULL = 'Banda Neira Hammerhead Shark Dive Trip with Majestic Voyager';
+export const EVENT_TITLE_FULL = 'Banda Neira Dive Trip with Majestic Voyager - October';
 
 const findEventData = upcomingDivingTrips.find((item) => {
   return item.title === EVENT_TITLE_FULL;
