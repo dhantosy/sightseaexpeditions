@@ -62,6 +62,7 @@ export default function RootLayout({
         <meta name='msapplication-TileColor' content='#050a30' />
         <meta name='msapplication-config' content='/assets/favicons/browserconfig.xml' />
         <meta name='theme-color' content='#ffffff' />
+        <meta name="google-site-verification" content="SeBf1WGlyQM-cY9xe_7fHELwtkOFduB9wdD0H8Ol8RE" />
       </head>
       <body className={`${openSans.variable} ${montserrat.variable} text-bluePrimary font-openSans`}>
         <Suspense>
