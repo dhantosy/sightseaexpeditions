@@ -92,7 +92,7 @@ export default function VeloceanMaldivesPage() {
   const closeCalendar = (val: any) => {
     setTimeout(() => {
       setShowCalendar(val);
-    }, 10);
+    }, 100);
   };
 
   return (

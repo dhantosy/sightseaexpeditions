@@ -69,7 +69,7 @@ export default function ToursLabuanBajoOpenTripPage() {
   const closeCalendar = (val: any) => {
     setTimeout(() => {
       setShowCalendar(val);
-    }, 10);
+    }, 100);
   };
 
   const handleStickyFormClose = () => {
