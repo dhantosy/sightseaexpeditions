@@ -33,7 +33,7 @@ const findEventData = upcomingDivingTrips.find((item) => {
 });
 
 export const PRICE_PER_PERSON = findEventData?.priceNum;
-export const EVENT_TITLE = 'Bandar Neira Shark Dive - Majestic Voyager' || '';
+export const EVENT_TITLE = 'Bandar Neira Dive - Majestic Voyager' || '';
 export const EVENT_DATE = findEventData?.date;
 export const EVENT_TYPE = 'LOB';
 export const PAGE_TYPE = 'Diving Trips';
