@@ -13,8 +13,8 @@ export default function BookingSuccessPage() {
         <span className='block ml-0 bg-sky-200 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-30 lg:w-96 lg:h-96' />
       </div>
       <section className='container my-4 lg:my-20 px-4 lg:px-8 relative z-10'>
-        <div className='relative flex flex-wrap flex-col lg:flex-row -mx-4 items-center'>
-          <div className='basis-full lg:basis-7/12 px-4 grow-0 mt-4 mb-2 lg:mt-0 mx-auto'>
+        <div className='relative flex items-center'>
+          <div className='basis-full lg:basis-7/12 grow-0 mt-4 mb-2 lg:mt-0 mx-auto'>
             <div className='text-center rounded-3xl bg-white border overflow-hidden px-4 lg:px-8 py-10 lg:py-16 mt-4 lg:mt-6'>
               <FaCircleCheck size={50} className='m-auto' />
               <h1 className='text-xl lg:text-2xl mb-4 mt-6 font-semibold'>Your Booking was Submitted Successfully!</h1>
