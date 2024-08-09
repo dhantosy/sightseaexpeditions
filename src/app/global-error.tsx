@@ -7,10 +7,8 @@ import LogoTransparent from '@public/assets/images/sightsea-expeditions-logo-tra
 
 export default function GlobalError({
   error,
-  reset,
 }: {
   error: Error & { message?: string }
-  reset: () => void
 }) {
   return (
     <html>
