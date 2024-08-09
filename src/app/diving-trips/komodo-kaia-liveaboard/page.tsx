@@ -29,7 +29,7 @@ export default function BimaDivingTripMajescticVoyagerPage() {
   const [selectedCurrency, setSelectedCurrency] = useState('IDR');
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(formatCurrency(0));
-  const events = useRandomEvents(upcomingDivingTrips, EVENT_TITLE, 4);
+  const events = useRandomEvents(upcomingDivingTrips, EVENT_TITLE_FULL, 4);
 
   const {
     register,
@@ -57,14 +57,10 @@ export default function BimaDivingTripMajescticVoyagerPage() {
       ['total', totalPrice],
     ]);
 
-    
-
     window.open(`/booking/?${params.toString()}`, '_blank', 'noopener,noreferrer');
   };
 
   const handleCategoryChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    if (e.target.value === 'Domestic / KITAS') setSelectedCurrency('IDR');
-    if (e.target.value === 'foreigner') setSelectedCurrency('USD');
     setTotalPrice('0');
     setCount(1);
     setValue('roomType', '', {

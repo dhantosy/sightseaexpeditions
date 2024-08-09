@@ -54,6 +54,24 @@ export const upcomingDivingTrips = [
     available: false,
   },
   {
+    img: ImageLabuanBajoOpen.src,
+    imgAlt: 'Komodo Trip',
+    blurDataUrl: ImageLabuanBajoOpen.blurDataURL,
+    title: 'Komodo Dive Trip with Kaia Liveaboard',
+    location: 'Maluku, Indonesia',
+    date: 'Sep 4th - 8th, 2024',
+    url: '/diving-trips/komodo-kaia-liveaboard',
+    price: '18,5jt',
+    priceNum: '18500000',
+    currency: 'IDR',
+    duration: '4 days',
+    highlight: {
+      diveCount: '10+ dives',
+      type: 'LOB'
+    },
+    available: true,
+  },
+  {
     img: ImageBandarNeiraOne.src,
     imgAlt: 'Banda Neira Trip',
     blurDataUrl: ImageBandarNeiraOne.blurDataURL,
