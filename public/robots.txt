@@ -5,6 +5,5 @@ Allow: /
 # Host
 Host: https://www.sightseaexpeditions.com/
 
-# Sitemap
+# Sitemaps
 Sitemap: https://www.sightseaexpeditions.com/sitemap.xml
-

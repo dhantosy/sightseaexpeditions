@@ -88,7 +88,6 @@ export default function RootLayout({
           gtag('config', 'G-8CKH38ZP4C');
         `}
         </Script>
-        <Script src='https://www.google.com/recaptcha/api.js' strategy='afterInteractive' />
       </body>
     </html>
   );
