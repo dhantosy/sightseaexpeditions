@@ -51,11 +51,8 @@ export const roomGallery = [
   {
     roomType: 'Main Deck',
     include: [
-      'Private Jacuzzi',
-      'Sea View Balcony',
-      'Twin Bed',
-      'Air Conditioner',
-      'Water Heater',
+      'Ocean View',
+      'Double Bed',
       'Private Bathroom',
     ],
     gallery: [
