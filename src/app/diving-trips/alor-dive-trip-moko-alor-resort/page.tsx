@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { FaCircleCheck, FaCirclePlus } from 'react-icons/fa6';
 import AccordionContent from '@/components/ui/AccordionContent';
 import Counter from '@/components/ui/Counter';

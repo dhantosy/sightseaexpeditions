@@ -38,9 +38,9 @@ export default function CardHorizontalItem({
             {!liveaboard && (
               <div className='absolute font-semibold top-2 left-2 text-sm'>
                 {available ? (
-                  <span className='border-emerald-300 rounded-full overflow-hidden bg-emerald-100 text-emerald-600 px-4 py-1 inline-block'>Spots Open</span>
+                  <span className='border-emerald-300 rounded-full overflow-hidden bg-emerald-100 text-emerald-700 px-4 py-1 inline-block'>Spots Open</span>
                 ) : (
-                  <span className='border-red-300 rounded-full overflow-hidden bg-red-100 text-red-600 px-4 py-1 inline-block'>Fully Booked</span>
+                  <span className='border-red-300 rounded-full overflow-hidden bg-red-100 text-red-700 px-4 py-1 inline-block'>Fully Booked</span>
                 )}
               </div>
             )}
