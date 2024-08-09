@@ -24,7 +24,6 @@ type Inputs = {
 export default function BookingPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const [isSafeToReset, setIsSafeToReset] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [recaptchaError, setRecaptchaError] = useState('' as string);
   const reCaptchaRef = useRef<ReCAPTCHA>(null);
@@ -41,16 +40,9 @@ export default function BookingPage() {
   const {
     register,
     handleSubmit,
-    reset,
     control,
-    formState: { isDirty, isValid }
+    formState: { isDirty, isValid, isSubmitting }
   } = useForm<Inputs>();
-
-  useEffect(() => {
-    if (!isSafeToReset) return;
-
-    reset(); // asynchronously reset your form values
-  }, [isSafeToReset, reset]);
 
   const getFormData = (object: any) => {
     const formData = new FormData();
@@ -88,8 +80,6 @@ export default function BookingPage() {
           method: 'POST',
           body: getFormData(data),
         });
-        setIsSafeToReset(true);
-        setIsLoading(false);
         router.push('/booking-success');
       } catch (e) {
         setIsLoading(false);
@@ -164,13 +154,13 @@ export default function BookingPage() {
                         <div className='flex flex-col max-w-96 mx-auto text-sm lg:text-base'>
                           <fieldset className='mb-5 basis-full'>
                             <label htmlFor='fullname' className='text-slate-600 font-medium'>Full name<span className='text-sm text-red-500'>*</span></label>
-                            <input className='block mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' type='text' placeholder='Your full name' id='fullname' {...register('fullname', {
+                            <input disabled={isSubmitting} className='block mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' type='text' placeholder='Your full name' id='fullname' {...register('fullname', {
                               required: true
                             })} />
                           </fieldset>
                           <fieldset className='mb-5 basis-full'>
                             <label htmlFor='email' className='text-slate-600 font-medium'>Email address<span className='text-sm text-red-500'>*</span></label>
-                            <input className='block mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' type='email' id='email' placeholder='Your email address' {...register('email', {
+                            <input disabled={isSubmitting} className='block mt-1 px-4 py-2 w-full border border-slate-200 rounded-xl focus:border-slate-200 focus:shadow-sm focus-visible:outline-0 focus-visible:border-slate-400' type='email' id='email' placeholder='Your email address' {...register('email', {
                               required: true
                             })} />
                           </fieldset>
@@ -190,6 +180,7 @@ export default function BookingPage() {
                                     placeholder='Your WhatsApp / mobile no.'
                                     value={value}
                                     onChange={onChange}
+                                    disabled={isSubmitting}
                                   />
                                 )}
                               />
