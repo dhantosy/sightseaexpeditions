@@ -3,5 +3,5 @@ module.exports = {
   generateRobotsTxt: true, 
   changefreq: 'monthly',
   generateIndexSitemap: false,
-  exclude: ['/manifest.webmanifest'],
+  exclude: ['/manifest.webmanifest', '/booking-success', '/booking'],
 }
