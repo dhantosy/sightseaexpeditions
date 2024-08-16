@@ -17,7 +17,7 @@ import Counter from '@/components/ui/Counter';
 import StickyBookingBtnSubmit from '@/components/partial/StickyBookingBtnSubmit';
 import StickyPriceInfo from '@/components/partial/StickyPriceInfo';
 import SectionUpcomingEvents from '@/components/partial/SectionUpcomingEvents';
-import { PageDivingTripsProps, categoryListProps, pricePerRoomProps, roomGalleryProps, roomTypeListProps, scheduleProps } from './types';
+import { PageDivingTripsProps, CategoryListProps, PricePerRoomProps, RoomGalleryProps, RoomTypeListProps, ScheduleProps } from './types';
 
 type Inputs = {
   category: string
@@ -43,7 +43,7 @@ export default function PageDivingTrips({ project }: PageDivingTripsProps) {
   } = useForm<Inputs>();
   const watchCategory = watch('category', '');
   const watchRoomType = watch('roomType', '');
-  const getSelectedPrice = project.pricePerRoom.filter((item: pricePerRoomProps) => {
+  const getSelectedPrice = project.pricePerRoom.filter((item: PricePerRoomProps) => {
     return item.category === watchCategory && item.roomType === watchRoomType
   });
   const convertPrice = Number(getSelectedPrice[0]?.price.replace(/\,/g, ''));
@@ -74,7 +74,7 @@ export default function PageDivingTrips({ project }: PageDivingTripsProps) {
   };
 
   const handleRoomTypeChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const price = project.pricePerRoom.filter((item: pricePerRoomProps) => {
+    const price = project.pricePerRoom.filter((item: PricePerRoomProps) => {
       return item.category === watchCategory && e.target.value === item.roomType
     });
 
@@ -113,7 +113,7 @@ export default function PageDivingTrips({ project }: PageDivingTripsProps) {
             </AccordionContent>
             <AccordionContent title='Cabin Type' isExpand>
               <div className='container'>
-                {project.roomGallery.map(({ roomType, roomImages, include }: roomGalleryProps) => {
+                {project.roomGallery.map(({ roomType, roomImages, include }: RoomGalleryProps) => {
                   return (
                     <div key={roomType} className='mb-10 p-4 rounded-3xl bg-white overflow-hidden'>
                       <Swiper
@@ -171,7 +171,7 @@ export default function PageDivingTrips({ project }: PageDivingTripsProps) {
             <AccordionContent title='Itinerary' isExpand>
               {project.schedule.length > 1 ? (
                 <div className='relative pt-2 pb-1 pl-8 after:content[""] after:absolute after:h-full after:left-2 after:top-0 after:border-l after:border-dashed after:border-bluePrimary'>
-                  {project.schedule.map(({ time, descList }: scheduleProps) => {
+                  {project.schedule.map(({ time, descList }: ScheduleProps) => {
                     return (
                       <div key={time} className='relative after:content[""] after:absolute after:z-10 after:-left-[29px] after:top-[6px] after:w-3 after:h-3 after:bg-sky-600 after:rounded-full mb-4'>
                         <div className='opacity-70 flex flex-col lg:flex-row gap-1 lg:gap-4'>
@@ -237,7 +237,7 @@ export default function PageDivingTrips({ project }: PageDivingTripsProps) {
                           required: true,
                           onChange: (e) => { handleCategoryChange(e) },
                         })}>
-                        {project.categoryListOption.map(({ value, label }: categoryListProps, index) => {
+                        {project.categoryListOption.map(({ value, label }: CategoryListProps, index) => {
                           return (
                             <option
                               key={value}
@@ -261,7 +261,7 @@ export default function PageDivingTrips({ project }: PageDivingTripsProps) {
                           required: true,
                           onChange: (e) => { handleRoomTypeChange(e) },
                         })}>
-                        {project.roomTypeListOption.map(({ value, label }: roomTypeListProps, index) => {
+                        {project.roomTypeListOption.map(({ value, label }: RoomTypeListProps, index) => {
                           return (
                             <option
                               key={value}
