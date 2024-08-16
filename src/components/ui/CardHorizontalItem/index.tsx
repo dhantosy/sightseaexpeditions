@@ -19,6 +19,7 @@ export default function CardHorizontalItem({
   liveaboard,
   description,
   currency,
+  category,
 }: CardHorizontalItemProp) {
 
   return (

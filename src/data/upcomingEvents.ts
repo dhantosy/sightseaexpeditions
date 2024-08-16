@@ -42,7 +42,7 @@ export const upcomingDivingTrips = [
     title: 'Bima Dive Trip with Majestic Voyager',
     location: 'West Komodo, Indonesia',
     date: 'Aug 17th - 21st, 2024',
-    url: '/diving-trips/bima-west-komodo-majestic-voyager',
+    url: 'bima-west-komodo-majestic-voyager',
     price: '19jt',
     priceNum: '19000000',
     currency: 'IDR',
@@ -52,6 +52,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: false,
+    category: 'diving-trips',
   },
   {
     img: ImageLabuanBajoOpen.src,
@@ -60,7 +61,7 @@ export const upcomingDivingTrips = [
     title: 'Komodo Dive Trip with Kaia Liveaboard',
     location: 'Maluku, Indonesia',
     date: 'Sep 4th - 8th, 2024',
-    url: '/diving-trips/komodo-kaia-liveaboard',
+    url: 'komodo-kaia-liveaboard',
     price: '18,5jt',
     priceNum: '18500000',
     currency: 'IDR',
@@ -70,6 +71,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: true,
+    category: 'diving-trips',
   },
   {
     img: ImageBandarNeiraOne.src,
@@ -78,7 +80,7 @@ export const upcomingDivingTrips = [
     title: 'Banda Neira Dive Trip with Majestic Voyager - September',
     location: 'Maluku, Indonesia',
     date: 'Sep 25th - Oct 1st, 2024',
-    url: '/diving-trips/banda-neira-majestic-voyager-september',
+    url: 'banda-neira-majestic-voyager-september',
     price: '28,5jt',
     priceNum: '28500000',
     currency: 'IDR',
@@ -88,6 +90,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: false,
+    category: 'diving-trips',
   },
   {
     img: ImageBandarNeiraTwo.src,
@@ -96,7 +99,7 @@ export const upcomingDivingTrips = [
     title: 'Banda Neira Dive Trip with Majestic Voyager - October',
     location: 'Maluku, Indonesia',
     date: 'Oct 26th - Nov 1st, 2024',
-    url: '/diving-trips/banda-neira-majestic-voyager-october',
+    url: 'banda-neira-majestic-voyager-october',
     price: '28,5jt',
     priceNum: '28500000',
     currency: 'IDR',
@@ -106,6 +109,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: true,
+    category: 'diving-trips',
   },
   {
     img: ImageVeloceanMisoolOne.src,
@@ -114,7 +118,7 @@ export const upcomingDivingTrips = [
     title: 'Misool Dive Trip with Velocean',
     location: 'Raja Ampat, Indonesia',
     date: 'Dec 8th - 16th, 2024',
-    url: '/diving-trips/raja-ampat-misool-velocean',
+    url: 'raja-ampat-misool-velocean',
     price: '5,500',
     priceNum: '5500',
     currency: 'USD',
@@ -124,6 +128,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: false,
+    category: 'diving-trips',
   },
   {
     img: ImageVeloceanMisoolOne.src,
@@ -132,7 +137,7 @@ export const upcomingDivingTrips = [
     title: 'Misool Dive Trip with Majestic Voyager',
     location: 'Raja Ampat, Indonesia',
     date: 'Dec 18th - 24th, 2024',
-    url: '/diving-trips/raja-ampat-misool-majestic-voyager',
+    url: 'raja-ampat-misool-majestic-voyager',
     price: '29,5jt',
     priceNum: '29500000',
     currency: 'IDR',
@@ -142,6 +147,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: true,
+    category: 'diving-trips',
   },
   {
     img: ImageWayag.src,
@@ -150,7 +156,7 @@ export const upcomingDivingTrips = [
     title: 'Wayag Dive Trip with Majestic Voyager',
     location: 'Raja Ampat, Indonesia',
     date: 'Dec 28th, 2024 - Jan 2nd, 2025',
-    url: '/diving-trips/raja-ampat-wayag-majestic-voyager',
+    url: 'raja-ampat-wayag-majestic-voyager',
     price: '26jt',
     priceNum: '26000000',
     currency: 'IDR',
@@ -160,6 +166,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: true,
+    category: 'diving-trips',
   },
   {
     img: ImageMaldivesTwo.src,
@@ -168,7 +175,7 @@ export const upcomingDivingTrips = [
     title: 'Best of Maldives Dive Trip with Maldives Mosaique',
     location: 'Maldives',
     date: 'Jan 26th - Feb 2nd, 2025',
-    url: '/diving-trips/best-of-maldives-dive-trip',
+    url: 'best-of-maldives-dive-trip',
     price: '1,450',
     priceNum: '1450',
     currency: 'USD',
@@ -178,6 +185,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: true,
+    category: 'diving-trips',
   },
   {
     img: ImageMaldivesOne.src,
@@ -186,7 +194,7 @@ export const upcomingDivingTrips = [
     title: 'Deep South Maldives Dive Trip with Maldives Mosaique',
     location: 'Maldives',
     date: 'Feb 16th - 23rd, 2025',
-    url: '/diving-trips/deep-south-maldives-dive-trip',
+    url: 'deep-south-maldives-dive-trip',
     price: '1,550',
     priceNum: '1550',
     currency: 'USD',
@@ -196,6 +204,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: true,
+    category: 'diving-trips',
   },
   // {
   //   img: ImageMaldivesThree.src,
@@ -204,7 +213,7 @@ export const upcomingDivingTrips = [
   //   title: 'Lebaran Escape Best of Maldives Dive Trip with MYNA-1',
   //   location: 'Maldives',
   //   date: 'Mar 23rd - 30th, 2025',
-  //   url: '/diving-trips/lebaran-escape-best-of-maldives-dive-trip',
+  //   url: 'lebaran-escape-best-of-maldives-dive-trip',
   //   price: '1,650',
   //   priceNum: '1650',
   //   currency: 'USD',
@@ -222,7 +231,7 @@ export const upcomingDivingTrips = [
     title: 'Lebaran Escape Tubbataha Reef Dive Trip with MY Resolute',
     location: 'Palawan, Philippines',
     date: 'Mar 26th - Apr 1st, 2025',
-    url: '/diving-trips/lebaran-escape-tubbataha-dive-trip',
+    url: 'lebaran-escape-tubbataha-dive-trip',
     price: '2,590',
     priceNum: '2590',
     currency: 'USD',
@@ -232,6 +241,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: true,
+    category: 'diving-trips',
   },
   // {
   //   img: ImageVeloceanMisoolTwo.src,
@@ -240,7 +250,7 @@ export const upcomingDivingTrips = [
   //   title: 'Lebaran Escape to Misool with Velocean Liveaboard',
   //   location: 'Raja Ampat, Indonesia',
   //   date: 'Mar 28th - Apr 5th, 2025',
-  //   url: '/diving-trips/lebaran-escape-misool-dive-trip-velocean',
+  //   url: 'lebaran-escape-misool-dive-trip-velocean',
   //   price: '5,414',
   //   priceNum: '5414',
   //   currency: 'USD',
@@ -258,7 +268,7 @@ export const upcomingDivingTrips = [
     title: 'Lebaran Escape Misool Dive Trip with Majestic Voyager',
     location: 'Raja Ampat, Indonesia',
     date: 'Mar 28rd - Apr 3rd, 2025',
-    url: '/diving-trips/lebaran-escape-misool-dive-trip',
+    url: 'lebaran-escape-misool-dive-trip',
     price: '29,5jt',
     priceNum: '29500000',
     currency: 'IDR',
@@ -268,6 +278,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: true,
+    category: 'diving-trips',
   },
   {
     img: ImagePalawanTwo.src,
@@ -276,7 +287,7 @@ export const upcomingDivingTrips = [
     title: 'Tubbataha Dive Trip with MY Resolute',
     location: 'Palawan, Philippines',
     date: 'May 7th - 13th, 2025',
-    url: '/diving-trips/tubbataha-dive-trip',
+    url: 'tubbataha-dive-trip',
     price: '2,590',
     priceNum: '2590',
     currency: 'USD',
@@ -286,6 +297,7 @@ export const upcomingDivingTrips = [
       type: 'LOB'
     },
     available: true,
+    category: 'diving-trips',
   },
   // {
   //   img: ImageAlorOne.src,
@@ -294,7 +306,7 @@ export const upcomingDivingTrips = [
   //   title: 'Alor Dive Trip with Majestic Voyager',
   //   location: 'Nusa Tenggara, Indonesia',
   //   date: 'May 27th - 31st, 2025',
-  //   url: '/diving-trips/alor-majestic-voyager',
+  //   url: 'alor-majestic-voyager',
   //   price: '20jt',
   //   priceNum: '20000000',
   //   currency: 'IDR',
@@ -312,7 +324,7 @@ export const upcomingDivingTrips = [
   //   title: 'Komodo Dive Trip with Majestic Voyager',
   //   location: 'Komodo, Indonesia',
   //   date: 'Jun 25th - 29th, 2025',
-  //   url: '/diving-trips/komodo-majestic-voyager',
+  //   url: 'komodo-majestic-voyager',
   //   price: '17,5jt',
   //   priceNum: '17500000',
   //   currency: 'IDR',
@@ -330,7 +342,7 @@ export const upcomingDivingTrips = [
   //   title: 'Banda Neira Dive Trip with Majestic Voyager',
   //   location: 'Maluku, Indonesia',
   //   date: 'Sep 20th - 26th, 2025',
-  //   url: '/diving-trips/banda-neira-majestic-voyager',
+  //   url: 'banda-neira-majestic-voyager',
   //   price: '',
   //   priceNum: '',
   //   currency: 'IDR',
@@ -348,7 +360,7 @@ export const upcomingDivingTrips = [
   //   title: 'Ring of Fire - Forgotten Island Dive Trip with Oceanix Voyager',
   //   location: 'Indonesia',
   //   date: 'Sep 29th - Oct 5th, 2025',
-  //   url: '/diving-trips/ring-of-fire-oceanix-voyager-september',
+  //   url: 'ring-of-fire-oceanix-voyager-september',
   //   price: '',
   //   priceNum: '',
   //   currency: 'IDR',
@@ -366,7 +378,7 @@ export const upcomingDivingTrips = [
   //   title: 'Ring of Fire - Forgotten Island Dive Trip with Oceanix Voyager',
   //   location: 'Indonesia',
   //   date: 'Oct 6th - 12th, 2025',
-  //   url: '/diving-trips/ring-of-fire-oceanix-voyager-october',
+  //   url: 'ring-of-fire-oceanix-voyager-october',
   //   price: '',
   //   priceNum: '',
   //   currency: 'IDR',
@@ -384,7 +396,7 @@ export const upcomingDivingTrips = [
   //   title: 'Lucipara Suanggi Dive Trip with Majestic Voyager',
   //   location: 'Maluku, Indonesia',
   //   date: 'Oct 12th - 17th, 2025',
-  //   url: '/diving-trips/lucipara-suanggi-majestic-voyager',
+  //   url: 'lucipara-suanggi-majestic-voyager',
   //   price: '',
   //   priceNum: '',
   //   currency: 'IDR',
@@ -413,6 +425,7 @@ export const upcomingTours = [
     unit: '/ 1-5 guests',
     type: 'Private Trip',
     available: true,
+    category: 'tours-experiences',
   },
   {
     img: ImageLabuanBajoOpen.src,
@@ -429,6 +442,7 @@ export const upcomingTours = [
     unit: '/ person',
     type: 'Open Trip',
     available: true,
+    category: 'tours-experiences',
   },
   {
     img: ImageSumbasMain.src,
@@ -445,6 +459,7 @@ export const upcomingTours = [
     unit: '',
     type: 'Private Trip',
     available: true,
+    category: 'tours-experiences',
   },
   {
     img: ImageTorajaMain.src,
@@ -461,6 +476,7 @@ export const upcomingTours = [
     unit: '',
     type: 'Private Trip',
     available: true,
+    category: 'tours-experiences',
   },
   {
     img: ImageUbudMain.src,
@@ -477,6 +493,7 @@ export const upcomingTours = [
     unit: '',
     type: 'Open Trip',
     available: true,
+    category: 'tours-experiences',
   },
   {
     img: ImageKintamaniMain.src,
@@ -493,6 +510,7 @@ export const upcomingTours = [
     unit: '',
     type: 'Open Trip',
     available: true,
+    category: 'tours-experiences',
   },
 ];
 
@@ -505,6 +523,7 @@ export const upcomingLiveaboard = [
     liveaboard: true,
     description: 'Cruising soon, Salacia Cruises provides the unmatched hospitality of liveaboard experience in a way they can indulge in the beauty of Indonesia above and under the sea, leaving them fulfilled.',
     url: '/liveaboard/salacia-cruises',
+    category: 'liveaboard',
   },
   {
     img: ImageVeloceanLogo.src,
@@ -514,6 +533,7 @@ export const upcomingLiveaboard = [
     liveaboard: true,
     description: 'VELOCEAN is the brand new 52 Meters scuba purpose-built liveaboard with all Aluminium hull, deck superstructure and powerful twin marine engines providing 20 knots cruising speed making her the fastest diving liveaboard in Indonesia.',
     url: '/liveaboard/velocean',
+    category: 'liveaboard',
   },
   {
     img: ImageSemestaLogo.src,
@@ -523,6 +543,7 @@ export const upcomingLiveaboard = [
     liveaboard: true,
     description: 'Designed with meticulous attention to detail, this ship embodies the pinnacle of modern maritime engineering and luxury. Semesta Voyages promises an unparalleled journey across the seas, offering passengers an unforgettable experience of comfort, elegance, and adventure.',
     url: '/liveaboard/semesta-voyages',
+    category: 'liveaboard',
   },
   {
     img: ImageAkassaLogo.src,
@@ -532,6 +553,7 @@ export const upcomingLiveaboard = [
     liveaboard: true,
     description: 'Akassa Cruise is a luxury wooden phinishi boat that offers fantastic sailing trips in Komodo National Park. Our experienced crew will provide all the necessary amenities and services to make your vacation a memorable experience.',
     url: '/liveaboard/akassa-cruise',
+    category: 'liveaboard',
   },
   {
     img: ImageDeryaLogo.src,
@@ -541,6 +563,7 @@ export const upcomingLiveaboard = [
     liveaboard: true,
     description: 'Derya is derivied from the persian (Daryã) meaning ocean and sea. Traditional phinishi boat with modern concept for leisure. Designed for 10 person with 4 cabins and many spaces to relax or gather with your family and friends. Let’s enjoy the mesmerizing island of komodo with us.',
     url: '/liveaboard/derya-liveaboard',
+    category: 'liveaboard',
   },
   {
     img: ImageGionaLogo.src,
@@ -550,5 +573,6 @@ export const upcomingLiveaboard = [
     liveaboard: true,
     description: 'Giona liveaboard is wooden phinisi boat that Offering you the best experience for you to new Ocean adventures and memories with your loved Ones. Our experienced crew will provide all the necessary amenities and services to make your vacation a memorable experience.',
     url: '/liveaboard/giona-liveaboard',
+    category: 'liveaboard',
   },
 ]

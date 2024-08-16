@@ -21,6 +21,7 @@ interface CardsProp {
   currency?: string;
   liveaboard?: boolean;
   description?: string;
+  category?: string;
 }
 
 export interface SectionUpcomingEventsProp {
