@@ -29,7 +29,7 @@ export default function DivingTripsPage() {
                   img={img}
                   imgAlt={imgAlt}
                   blurDataUrl={blurDataUrl}
-                  url={`/${category}/${url}`}
+                  url={url}
                   title={title}
                   location={location || ''}
                   date={date || ''}
@@ -37,6 +37,7 @@ export default function DivingTripsPage() {
                   highlight={highlight}
                   available={available}
                   currency={currency}
+                  category={category}
                 />
               </div>
             )
