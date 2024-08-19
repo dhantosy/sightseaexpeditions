@@ -31,9 +31,6 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  alternates: {
-    canonical: '/',
-  },
   robots: 'index, follow',
   title: 'Sightsea Expeditions - Personalized Diving Trips and Liveaboard Experience',
   description: 'Discover the ultimate diving experience with our expertly curated liveaboard adventures. Explore pristine underwater worlds, encounter breathtaking marine life, and indulge in unparalleled luxury. From Raja Ampat to Maldives, we offer personalized itineraries and exceptional service for discerning divers and travellers alike.',

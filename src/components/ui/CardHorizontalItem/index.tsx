@@ -19,10 +19,11 @@ export default function CardHorizontalItem({
   liveaboard,
   description,
   currency,
+  category,
 }: CardHorizontalItemProp) {
 
   return (
-    <Link href={url} className='relative block top-0 overflow-hidden rounded-2xl transition-all hover:-top-1 group'>
+    <Link href={`${category}/${url}`} className='relative block top-0 overflow-hidden rounded-2xl transition-all hover:-top-1 group'>
       <div className='flex flex-wrap border border-slate-200 rounded-2xl p-3'>
         <div className='relative basis-full md:basis-[40%] grow-0 rounded-2xl shadow-xl overflow-hidden'>
           <div className='relative w-full pb-[60%] md:pb-[85%] 2lg:pb-[125%] 3lg:pb-[85%]'>

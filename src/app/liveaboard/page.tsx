@@ -21,7 +21,7 @@ export default function DivingTripsPage() {
       <div className='container px-4 lg:px-8 my-10'>
         <h2 className='mb-1 lg:mb-3 whitespace-pre-line leading-tight md:leading-snug text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight'>Available Liveaboards</h2>
         <div className='flex flex-wrap -mx-3'>
-          {upcomingLiveaboard?.map(({ img, imgAlt, blurDataUrl, title, url, liveaboard, description }, index) => {
+          {upcomingLiveaboard?.map(({ img, imgAlt, blurDataUrl, title, url, liveaboard, description, category }, index) => {
 
             return (
               <div key={index} className='basis-full 2lg:basis-1/2 p-3 grow-0 flex-shrink-0'>
@@ -33,6 +33,7 @@ export default function DivingTripsPage() {
                   title={title}
                   liveaboard={liveaboard}
                   description={description}
+                  category={category}
                 />
               </div>
             )

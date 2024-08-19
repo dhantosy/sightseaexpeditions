@@ -20,7 +20,7 @@ export default function StickyPriceInfo({
           {available && (
             <div className='flex gap-1'>
               {priceStartFrom && <div className='opacity-70 shrink-0 grow-0'>from</div>}
-              <div className='font-semibold shrink-0 grow-0'>{`${currency ? currency : 'IDR'} ${totalPrice}`}</div>
+              <div className='font-semibold shrink-0 grow-0'>{`${currency ? currency : ''} ${totalPrice}`}</div>
               <div className='opacity-70 shrink-0 grow-0'>{priceUnit}</div>
             </div>
           )}

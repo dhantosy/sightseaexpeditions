@@ -17,4 +17,5 @@ export interface CardHorizontalItemProp {
   liveaboard?: boolean;
   currency?: string;
   description?: string;
+  category?: string;
 }
