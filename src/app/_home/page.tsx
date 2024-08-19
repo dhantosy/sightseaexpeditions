@@ -9,7 +9,8 @@ import ImageVelocean from '@public/assets/images/vessels/velocean.jpg'
 import ImageSharkUnderwater from '@public/assets/images/gallery/gallery-1.jpg'
 import ImageSharkSwimming from '@public/assets/images/gallery/gallery-2.jpg'
 import ImagePaddling from '@public/assets/images/gallery/gallery-3.jpg'
-import { upcomingDivingTrips, upcomingTours } from '@/data/upcomingEvents';
+import { upcomingTours } from '@/data/upcomingEvents';
+import { divingTripsData } from '@/data/divingTrips';
 import { diveCentersList } from '@/data/diveCenters';
 import { testimonials } from '@/data/testimonials';
 import { instagramImages } from '@/data/gallery';
@@ -54,7 +55,7 @@ export default function Home() {
       <SectionUpcomingEvents
         titleTop=''
         titleMain='Upcoming Diving Trips.'
-        events={upcomingDivingTrips.slice(0, 4)}
+        events={divingTripsData.slice(0, 4)}
         btnUrl='/diving-trips'
         btnText='See All Diving Trips'
         cardClass='basis-full 2lg:basis-1/2 p-3 grow-0'
