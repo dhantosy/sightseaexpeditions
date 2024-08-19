@@ -59,7 +59,7 @@ export interface PageDivingTripsProps {
     highlight: {
       diveCount: string;
       type: string;
-    },
+    };
     available: boolean;
     multiCurrencies: boolean;
     category: string;
