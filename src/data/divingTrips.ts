@@ -56,343 +56,343 @@ import {
 } from './ships/veloceanLiveaboard';
 
 export const divingTripsData = [
-  {
-    img: ImageBimaMain.src,
-    imgAlt: 'Bima Trip',
-    blurDataUrl: ImageBimaMain.blurDataURL,
-    title: 'Bima Dive Trip with Majestic Voyager',
-    location: 'West Komodo, Indonesia',
-    date: 'Aug 17th - 21st, 2024',
-    endDate: {
-      day: 21,
-      month: 8,
-      year: 2024
-    },
-    url: 'bima-west-komodo-majestic-voyager',
-    price: '19jt',
-    priceNum: '19000000',
-    currency: 'IDR',
-    duration: '4 days',
-    highlight: {
-      diveCount: '11 dives',
-      type: 'LOB'
-    },
-    available: false,
-    multiCurrencies: true,
-    category: 'diving-trips',
-    metaDescription: 'Embark on an extraordinary underwater journey with our curated collection of luxury dive trips. Explore pristine dive sites, encounter incredible marine life, and indulge in unparalleled comfort aboard our hand-picked liveaboard vessels. Discover your perfect dive vacation today.',
-    metaKeywords: 'luxury dive trips, liveaboard diving, dive vacations, curated dive experiences, dive destinations, diving holidays, premium dive trips, exclusive dive travel, dive trip planner, best dive trips, diving adventures, underwater exploration',
-    overview: 'Bima, One of the Indonesia`s hidden gem. Sightsea Expeditions offers a liveaboard diving experience unlike any other. Venture beyond the crowds and discover a world teeming with fascinating critters and unique marine life on a luxurious liveaboard vessel.',
-    categoryListOption: [
-      {
-        value: '',
-        label: 'Select Category'
-      },
-      {
-        value: 'Domestic / KITAS',
-        label: 'Domestic / KITAS Holder'
-      },
-      {
-        value: 'foreigner',
-        label: 'Foreigner'
-      },
-    ],
-    roomTypeListOption: [
-      {
-        value: '',
-        label: 'Select Cabin Type'
-      },
-      {
-        value: 'Suite - Main Deck',
-        label: 'Suite - Main Deck'
-      },
-      {
-        value: 'Executive - Upper Deck',
-        label: 'Executive - Upper Deck'
-      },
-      {
-        value: 'Deluxe - Lower Deck',
-        label: 'Deluxe - Lower Deck'
-      },
-    ],
-    pricePerRoom: [
-      {
-        price: '19,000,000',
-        currency: 'IDR',
-        roomType: 'Deluxe - Lower Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '22,000,000',
-        currency: 'IDR',
-        roomType: 'Executive - Upper Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '25,000,000',
-        currency: 'IDR',
-        roomType: 'Suite - Main Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,500',
-        currency: 'USD',
-        roomType: 'Deluxe - Lower Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '1,700',
-        currency: 'USD',
-        roomType: 'Executive - Upper Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '1,900',
-        currency: 'USD',
-        roomType: 'Suite - Main Deck',
-        category: 'foreigner',
-      },
-    ],
-    schedule: [
-      {
-        time: 'Day 1 - Labuan Bajo',
-        descList: [
-          'Airport or Hotel Pickup.',
-          'Lunch.',
-          'Dive 1 (Check Dive at Sebayur).',
-          'Dinner.',
-        ]
-      },
-      {
-        time: 'Day 2 - North Komodo',
-        descList: [
-          'Light Breakfast.',
-          'Dive 2.',
-          'Breakfast.',
-          'Dive 3.',
-          'Lunch.',
-          'Dive 4.',
-          'Cross to Bima.',
-          'Dinner.',
-        ]
-      },
-      {
-        time: 'Day 3 - Gili Banta',
-        descList: [
-          'Light Breakfast.',
-          'Dive 5.',
-          'Breakfast.',
-          'Dive 6.',
-          'Lunch.',
-          'Dive 7.',
-          'Snack Time.',
-          'Night Dive 8.',
-          'Dinner.',
-        ]
-      },
-      {
-        time: 'Day 4 - Pulau Kelapa',
-        descList: [
-          'Light Breakfast.',
-          'Dive 9.',
-          'Breakfast.',
-          'Dive 10.',
-          'Lunch.',
-          'Cross to Labuan Bajo.',
-          'Dinner.',
-        ]
-      },
-      {
-        time: 'Day 5 - Labuan Bajo',
-        descList: [
-          'Breakfast.',
-          'Airport / Hotel Transfer.',
-        ]
-      },
-    ],
-    include: [
-      'Airport Transfer.',
-      '4 Nights in AC Cabin on Twin Share Basis.',
-      'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
-      '10 Dives with Tanks, Weight, & Belt.',
-      'English Speaking Cruise Director.',
-      'Divemaster with 1:4 Ratio.',
-      'Underwater Documentation.',
-      'Free Nitrox for whom certified (earlybird).',
-    ],
-    notes: [
-      'Port Clearance Fee (IDR 400rb / day for domestic).',
-      'Port Clearance Fee (USD 25 / day for foreigner).',
-      'Dive equipment rental is available for IDR 400,000 / day.',
-      'Boat Crew Tips IDR 200rb / day',
-      'The price excludes airflight tickets.',
-    ],
-    roomGallery: [
-      {
-        roomType: 'Suite - Main Deck',
-        include: [
-          'Private Jacuzzi',
-          'Sea View Balcony',
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerSuiteOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
-          },
-        ],
-      },
-      {
-        roomType: 'Executive - Upper Deck',
-        include: [
-          'Sea View Balcony',
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerExecutiveOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveSix.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveSeven.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
-          },
-        ],
-      },
-      {
-        roomType: 'Deluxe - Lower Deck',
-        include: [
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerDeluxeOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeSix.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeSeven.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeEight.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeNine.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
-          },
-        ],
-      },
-    ],
-    gallery: [
-      {
-        img: ImageBimaMain.src,
-        imgAlt: '',
-        blurDataUrl: ImageBimaMain.blurDataURL,
-      },
-      {
-        img: ImageBimaTwo.src,
-        imgAlt: '',
-        blurDataUrl: ImageBimaTwo.blurDataURL,
-      },
-      {
-        img: ImageBimaThree.src,
-        imgAlt: '',
-        blurDataUrl: ImageBimaThree.blurDataURL,
-      },
-      {
-        img: ImageBimaFour.src,
-        imgAlt: '',
-        blurDataUrl: ImageBimaFour.blurDataURL,
-      },
-    ],
-  },
+  // {
+  //   img: ImageBimaMain.src,
+  //   imgAlt: 'Bima Trip',
+  //   blurDataUrl: ImageBimaMain.blurDataURL,
+  //   title: 'Bima Dive Trip with Majestic Voyager',
+  //   location: 'West Komodo, Indonesia',
+  //   date: 'Aug 17th - 21st, 2024',
+  //   endDate: {
+  //     day: 21,
+  //     month: 8,
+  //     year: 2024
+  //   },
+  //   url: 'bima-west-komodo-majestic-voyager',
+  //   price: '19jt',
+  //   priceNum: '19000000',
+  //   currency: 'IDR',
+  //   duration: '4 days',
+  //   highlight: {
+  //     diveCount: '11 dives',
+  //     type: 'LOB'
+  //   },
+  //   available: false,
+  //   multiCurrencies: true,
+  //   category: 'diving-trips',
+  //   metaDescription: 'Embark on an extraordinary underwater journey with our curated collection of luxury dive trips. Explore pristine dive sites, encounter incredible marine life, and indulge in unparalleled comfort aboard our hand-picked liveaboard vessels. Discover your perfect dive vacation today.',
+  //   metaKeywords: 'luxury dive trips, liveaboard diving, dive vacations, curated dive experiences, dive destinations, diving holidays, premium dive trips, exclusive dive travel, dive trip planner, best dive trips, diving adventures, underwater exploration',
+  //   overview: 'Bima, One of the Indonesia`s hidden gem. Sightsea Expeditions offers a liveaboard diving experience unlike any other. Venture beyond the crowds and discover a world teeming with fascinating critters and unique marine life on a luxurious liveaboard vessel.',
+  //   categoryListOption: [
+  //     {
+  //       value: '',
+  //       label: 'Select Category'
+  //     },
+  //     {
+  //       value: 'Domestic / KITAS',
+  //       label: 'Domestic / KITAS Holder'
+  //     },
+  //     {
+  //       value: 'foreigner',
+  //       label: 'Foreigner'
+  //     },
+  //   ],
+  //   roomTypeListOption: [
+  //     {
+  //       value: '',
+  //       label: 'Select Cabin Type'
+  //     },
+  //     {
+  //       value: 'Suite - Main Deck',
+  //       label: 'Suite - Main Deck'
+  //     },
+  //     {
+  //       value: 'Executive - Upper Deck',
+  //       label: 'Executive - Upper Deck'
+  //     },
+  //     {
+  //       value: 'Deluxe - Lower Deck',
+  //       label: 'Deluxe - Lower Deck'
+  //     },
+  //   ],
+  //   pricePerRoom: [
+  //     {
+  //       price: '19,000,000',
+  //       currency: 'IDR',
+  //       roomType: 'Deluxe - Lower Deck',
+  //       category: 'Domestic / KITAS',
+  //     },
+  //     {
+  //       price: '22,000,000',
+  //       currency: 'IDR',
+  //       roomType: 'Executive - Upper Deck',
+  //       category: 'Domestic / KITAS',
+  //     },
+  //     {
+  //       price: '25,000,000',
+  //       currency: 'IDR',
+  //       roomType: 'Suite - Main Deck',
+  //       category: 'Domestic / KITAS',
+  //     },
+  //     {
+  //       price: '1,500',
+  //       currency: 'USD',
+  //       roomType: 'Deluxe - Lower Deck',
+  //       category: 'foreigner',
+  //     },
+  //     {
+  //       price: '1,700',
+  //       currency: 'USD',
+  //       roomType: 'Executive - Upper Deck',
+  //       category: 'foreigner',
+  //     },
+  //     {
+  //       price: '1,900',
+  //       currency: 'USD',
+  //       roomType: 'Suite - Main Deck',
+  //       category: 'foreigner',
+  //     },
+  //   ],
+  //   schedule: [
+  //     {
+  //       time: 'Day 1 - Labuan Bajo',
+  //       descList: [
+  //         'Airport or Hotel Pickup.',
+  //         'Lunch.',
+  //         'Dive 1 (Check Dive at Sebayur).',
+  //         'Dinner.',
+  //       ]
+  //     },
+  //     {
+  //       time: 'Day 2 - North Komodo',
+  //       descList: [
+  //         'Light Breakfast.',
+  //         'Dive 2.',
+  //         'Breakfast.',
+  //         'Dive 3.',
+  //         'Lunch.',
+  //         'Dive 4.',
+  //         'Cross to Bima.',
+  //         'Dinner.',
+  //       ]
+  //     },
+  //     {
+  //       time: 'Day 3 - Gili Banta',
+  //       descList: [
+  //         'Light Breakfast.',
+  //         'Dive 5.',
+  //         'Breakfast.',
+  //         'Dive 6.',
+  //         'Lunch.',
+  //         'Dive 7.',
+  //         'Snack Time.',
+  //         'Night Dive 8.',
+  //         'Dinner.',
+  //       ]
+  //     },
+  //     {
+  //       time: 'Day 4 - Pulau Kelapa',
+  //       descList: [
+  //         'Light Breakfast.',
+  //         'Dive 9.',
+  //         'Breakfast.',
+  //         'Dive 10.',
+  //         'Lunch.',
+  //         'Cross to Labuan Bajo.',
+  //         'Dinner.',
+  //       ]
+  //     },
+  //     {
+  //       time: 'Day 5 - Labuan Bajo',
+  //       descList: [
+  //         'Breakfast.',
+  //         'Airport / Hotel Transfer.',
+  //       ]
+  //     },
+  //   ],
+  //   include: [
+  //     'Airport Transfer.',
+  //     '4 Nights in AC Cabin on Twin Share Basis.',
+  //     'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
+  //     '10 Dives with Tanks, Weight, & Belt.',
+  //     'English Speaking Cruise Director.',
+  //     'Divemaster with 1:4 Ratio.',
+  //     'Underwater Documentation.',
+  //     'Free Nitrox for whom certified (earlybird).',
+  //   ],
+  //   notes: [
+  //     'Port Clearance Fee (IDR 400rb / day for domestic).',
+  //     'Port Clearance Fee (USD 25 / day for foreigner).',
+  //     'Dive equipment rental is available for IDR 400,000 / day.',
+  //     'Boat Crew Tips IDR 200rb / day',
+  //     'The price excludes airflight tickets.',
+  //   ],
+  //   roomGallery: [
+  //     {
+  //       roomType: 'Suite - Main Deck',
+  //       include: [
+  //         'Private Jacuzzi',
+  //         'Sea View Balcony',
+  //         'Twin Bed',
+  //         'Air Conditioner',
+  //         'Water Heater',
+  //         'Private Bathroom',
+  //       ],
+  //       roomImages: [
+  //         {
+  //           img: MajesticVoyagerSuiteOne.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerSuiteTwo.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerSuiteThree.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerSuiteFour.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerSuiteFive.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       roomType: 'Executive - Upper Deck',
+  //       include: [
+  //         'Sea View Balcony',
+  //         'Twin Bed',
+  //         'Air Conditioner',
+  //         'Water Heater',
+  //         'Private Bathroom',
+  //       ],
+  //       roomImages: [
+  //         {
+  //           img: MajesticVoyagerExecutiveOne.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveTwo.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveThree.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveFour.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveFive.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveSix.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveSeven.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       roomType: 'Deluxe - Lower Deck',
+  //       include: [
+  //         'Twin Bed',
+  //         'Air Conditioner',
+  //         'Water Heater',
+  //         'Private Bathroom',
+  //       ],
+  //       roomImages: [
+  //         {
+  //           img: MajesticVoyagerDeluxeOne.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeTwo.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeThree.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeFour.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeFive.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeSix.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeSeven.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeEight.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeNine.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  //   gallery: [
+  //     {
+  //       img: ImageBimaMain.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBimaMain.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBimaTwo.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBimaTwo.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBimaThree.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBimaThree.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBimaFour.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBimaFour.blurDataURL,
+  //     },
+  //   ],
+  // },
   {
     img: ImageLabuanBajoFour.src,
     imgAlt: 'Komodo Trip',
