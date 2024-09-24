@@ -3,6 +3,7 @@ import ImageBimaMain from '@public/assets/images/gallery/bima-1.jpg';
 import ImageBimaTwo from '@public/assets/images/diving/bima-2.jpg';
 import ImageBimaThree from '@public/assets/images/diving/bima-3.jpg';
 import ImageBimaFour from '@public/assets/images/diving/bima-4.jpg';
+import ImageBimaFive from '@public/assets/images/diving/bima-1.jpg';
 
 
 //BANDAR NEIRA
@@ -32,11 +33,20 @@ import ImagePalawanTwo from '@public/assets/images/gallery/palawan-2.jpg';
 // KOMODO - LABUAN BAJO
 import ImageLabuanBajoFour from '@public/assets/images/gallery/labuan-bajo-4.jpg'
 
+// TIMOR LESTE
+import ImageTimorLesteOne from '@public/assets/images/diving/timor-leste-1.jpg';
+import ImageTimorLesteTwo from '@public/assets/images/diving/timor-leste-2.jpg';
+import ImageTimorLesteThree from '@public/assets/images/diving/timor-leste-3.jpg';
+
+// LOMBOK
+import ImageLombokTwo from '@public/assets/images/gallery/lombok-dive-2.jpg';
+
 export {
   ImageBimaMain,
   ImageBimaTwo,
   ImageBimaThree,
   ImageBimaFour,
+  ImageBimaFive,
   ImageBandarNeiraOne,
   ImageBandarNeiraTwo,
   ImageWayagMain,
@@ -46,5 +56,9 @@ export {
   ImageMisoolRajaAmpatThree,
   ImagePalawanOne,
   ImagePalawanTwo,
-  ImageLabuanBajoFour
+  ImageLabuanBajoFour,
+  ImageTimorLesteOne,
+  ImageTimorLesteTwo,
+  ImageTimorLesteThree,
+  ImageLombokTwo
 };
