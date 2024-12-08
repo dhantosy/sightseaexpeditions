@@ -204,26 +204,34 @@ export default function PageDivingTrips({ project }: PageDivingTripsProps) {
             </AccordionContent>
             <AccordionContent title='What`s Included' isExpand>
               <div className='flex flex-wrap opacity-70'>
-                {project.include.map((item) => {
-                  return (
-                    <div key={item} className='flex items-baseline basis-full lg:basis-1/2 flex-shrink-0 flex-grow-0 gap-2 mb-3'>
-                      <FaCircleCheck size={12} className='text-emerald-600 flex-shrink-0 flex-grow-0' />
-                      <div className='flex-wrap flex-grow-0'>{item}</div>
-                    </div>
-                  )
-                })}
+                {project.include.length ? (
+                  project.include.map((item) => {
+                    return (
+                      <div key={item} className='flex items-baseline basis-full lg:basis-1/2 flex-shrink-0 flex-grow-0 gap-2 mb-3'>
+                        <FaCircleCheck size={12} className='text-emerald-600 flex-shrink-0 flex-grow-0' />
+                        <div className='flex-wrap flex-grow-0'>{item}</div>
+                      </div>
+                    )
+                  })
+                ) : (
+                  <div className='uppercase'>To be announced</div>
+                )}
               </div>
             </AccordionContent>
             <AccordionContent title='Notes' isExpand>
               <div className='flex flex-wrap opacity-70'>
-                {project.notes.map((item) => {
-                  return (
-                    <div key={item} className='flex items-baseline basis-full gap-2 mb-3'>
-                      <FaCirclePlus size={12} className='text-amber-500 flex-shrink-0 flex-grow-0' />
-                      <div className='flex-wrap flex-grow-0'>{item}</div>
-                    </div>
-                  )
-                })}
+                {project.notes.length ? (
+                  project.notes.map((item) => {
+                    return (
+                      <div key={item} className='flex items-baseline basis-full gap-2 mb-3'>
+                        <FaCirclePlus size={12} className='text-amber-500 flex-shrink-0 flex-grow-0' />
+                        <div className='flex-wrap flex-grow-0'>{item}</div>
+                      </div>
+                    )
+                  })
+                ) : (
+                  <div className='uppercase'>To be announced</div>
+                )}
               </div>
             </AccordionContent>
           </div>
