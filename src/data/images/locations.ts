@@ -9,6 +9,9 @@ import ImageBimaFive from '@public/assets/images/diving/bima-1.jpg';
 //BANDAR NEIRA
 import ImageBandarNeiraOne from '@public/assets/images/gallery/banda-neira-1.jpg';
 import ImageBandarNeiraTwo from '@public/assets/images/gallery/banda-neira-2.jpg';
+import ImageBandarNeiraThree from '@public/assets/images/gallery/banda-neira-3.jpg';
+import ImageBandarNeiraFour from '@public/assets/images/gallery/banda-neira-4.jpg';
+import ImageBandarNeiraFive from '@public/assets/images/gallery/banda-neira-5.jpg';
 
 
 // RAJA AMPAT WAYAG
@@ -49,6 +52,9 @@ export {
   ImageBimaFive,
   ImageBandarNeiraOne,
   ImageBandarNeiraTwo,
+  ImageBandarNeiraThree,
+  ImageBandarNeiraFour,
+  ImageBandarNeiraFive,
   ImageWayagMain,
   ImageMaldivesOne,
   ImageMaldivesTwo,
