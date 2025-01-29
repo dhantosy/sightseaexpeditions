@@ -1,4 +1,7 @@
 //BIMA
+import ImageMalapascuaMain from '@public/assets/images/gallery/malapascua-1.jpg';
+
+//BIMA
 import ImageBimaMain from '@public/assets/images/gallery/bima-1.jpg';
 import ImageBimaTwo from '@public/assets/images/diving/bima-2.jpg';
 import ImageBimaThree from '@public/assets/images/diving/bima-3.jpg';
@@ -66,5 +69,6 @@ export {
   ImageTimorLesteOne,
   ImageTimorLesteTwo,
   ImageTimorLesteThree,
-  ImageLombokTwo
+  ImageLombokTwo,
+  ImageMalapascuaMain,
 };

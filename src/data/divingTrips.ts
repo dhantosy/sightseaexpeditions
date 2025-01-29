@@ -20,7 +20,8 @@ import {
   ImageTimorLesteOne,
   ImageTimorLesteTwo,
   ImageTimorLesteThree,
-  ImageLombokTwo
+  ImageLombokTwo,
+  ImageMalapascuaMain,
 } from './images/locations';
 
 import {
@@ -64,2098 +65,33 @@ import {
 } from './ships/veloceanLiveaboard';
 
 export const divingTripsData = [
-  // {
-  //   img: ImageBimaMain.src,
-  //   imgAlt: 'Bima Trip',
-  //   blurDataUrl: ImageBimaMain.blurDataURL,
-  //   title: 'Bima Dive Trip with Majestic Voyager',
-  //   location: 'West Komodo, Indonesia',
-  //   date: 'Aug 17th - 21st, 2024',
-  //   endDate: {
-  //     day: 21,
-  //     month: 8,
-  //     year: 2024
-  //   },
-  //   url: 'bima-west-komodo-majestic-voyager',
-  //   price: '19jt',
-  //   priceNum: '19000000',
-  //   currency: 'IDR',
-  //   duration: '4 days',
-  //   highlight: {
-  //     diveCount: '11 dives',
-  //     type: 'LOB'
-  //   },
-  //   available: false,
-  //   multiCurrencies: true,
-  //   category: 'diving-trips',
-  //   metaDescription: 'Embark on an extraordinary underwater journey with our curated collection of luxury dive trips. Explore pristine dive sites, encounter incredible marine life, and indulge in unparalleled comfort aboard our hand-picked liveaboard vessels. Discover your perfect dive vacation today.',
-  //   metaKeywords: 'luxury dive trips, liveaboard diving, dive vacations, curated dive experiences, dive destinations, diving holidays, premium dive trips, exclusive dive travel, dive trip planner, best dive trips, diving adventures, underwater exploration',
-  //   overview: 'Bima, One of the Indonesia`s hidden gem. Sightsea Expeditions offers a liveaboard diving experience unlike any other. Venture beyond the crowds and discover a world teeming with fascinating critters and unique marine life on a luxurious liveaboard vessel.',
-  //   categoryListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Category'
-  //     },
-  //     {
-  //       value: 'Domestic / KITAS',
-  //       label: 'Domestic / KITAS Holder'
-  //     },
-  //     {
-  //       value: 'foreigner',
-  //       label: 'Foreigner'
-  //     },
-  //   ],
-  //   roomTypeListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Cabin Type'
-  //     },
-  //     {
-  //       value: 'Suite - Main Deck',
-  //       label: 'Suite - Main Deck'
-  //     },
-  //     {
-  //       value: 'Executive - Upper Deck',
-  //       label: 'Executive - Upper Deck'
-  //     },
-  //     {
-  //       value: 'Deluxe - Lower Deck',
-  //       label: 'Deluxe - Lower Deck'
-  //     },
-  //   ],
-  //   pricePerRoom: [
-  //     {
-  //       price: '19,000,000',
-  //       currency: 'IDR',
-  //       roomType: 'Deluxe - Lower Deck',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '22,000,000',
-  //       currency: 'IDR',
-  //       roomType: 'Executive - Upper Deck',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '25,000,000',
-  //       currency: 'IDR',
-  //       roomType: 'Suite - Main Deck',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '1,500',
-  //       currency: 'USD',
-  //       roomType: 'Deluxe - Lower Deck',
-  //       category: 'foreigner',
-  //     },
-  //     {
-  //       price: '1,700',
-  //       currency: 'USD',
-  //       roomType: 'Executive - Upper Deck',
-  //       category: 'foreigner',
-  //     },
-  //     {
-  //       price: '1,900',
-  //       currency: 'USD',
-  //       roomType: 'Suite - Main Deck',
-  //       category: 'foreigner',
-  //     },
-  //   ],
-  //   schedule: [
-  //     {
-  //       time: 'Day 1 - Labuan Bajo',
-  //       descList: [
-  //         'Airport or Hotel Pickup.',
-  //         'Lunch.',
-  //         'Dive 1 (Check Dive at Sebayur).',
-  //         'Dinner.',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 2 - North Komodo',
-  //       descList: [
-  //         'Light Breakfast.',
-  //         'Dive 2.',
-  //         'Breakfast.',
-  //         'Dive 3.',
-  //         'Lunch.',
-  //         'Dive 4.',
-  //         'Cross to Bima.',
-  //         'Dinner.',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 3 - Gili Banta',
-  //       descList: [
-  //         'Light Breakfast.',
-  //         'Dive 5.',
-  //         'Breakfast.',
-  //         'Dive 6.',
-  //         'Lunch.',
-  //         'Dive 7.',
-  //         'Snack Time.',
-  //         'Night Dive 8.',
-  //         'Dinner.',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 4 - Pulau Kelapa',
-  //       descList: [
-  //         'Light Breakfast.',
-  //         'Dive 9.',
-  //         'Breakfast.',
-  //         'Dive 10.',
-  //         'Lunch.',
-  //         'Cross to Labuan Bajo.',
-  //         'Dinner.',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 5 - Labuan Bajo',
-  //       descList: [
-  //         'Breakfast.',
-  //         'Airport / Hotel Transfer.',
-  //       ]
-  //     },
-  //   ],
-  //   include: [
-  //     'Airport Transfer.',
-  //     '4 Nights in AC Cabin on Twin Share Basis.',
-  //     'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
-  //     '10 Dives with Tanks, Weight, & Belt.',
-  //     'English Speaking Cruise Director.',
-  //     'Divemaster with 1:4 Ratio.',
-  //     'Underwater Documentation.',
-  //     'Free Nitrox for whom certified (earlybird).',
-  //   ],
-  //   notes: [
-  //     'Port Clearance Fee (IDR 400rb / day for domestic).',
-  //     'Port Clearance Fee (USD 25 / day for foreigner).',
-  //     'Dive equipment rental is available for IDR 400,000 / day.',
-  //     'Boat Crew Tips IDR 200rb / day',
-  //     'The price excludes airflight tickets.',
-  //   ],
-  //   roomGallery: [
-  //     {
-  //       roomType: 'Suite - Main Deck',
-  //       include: [
-  //         'Private Jacuzzi',
-  //         'Sea View Balcony',
-  //         'Twin Bed',
-  //         'Air Conditioner',
-  //         'Water Heater',
-  //         'Private Bathroom',
-  //       ],
-  //       roomImages: [
-  //         {
-  //           img: MajesticVoyagerSuiteOne.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteTwo.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteThree.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteFour.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteFive.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       roomType: 'Executive - Upper Deck',
-  //       include: [
-  //         'Sea View Balcony',
-  //         'Twin Bed',
-  //         'Air Conditioner',
-  //         'Water Heater',
-  //         'Private Bathroom',
-  //       ],
-  //       roomImages: [
-  //         {
-  //           img: MajesticVoyagerExecutiveOne.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveTwo.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveThree.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveFour.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveFive.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveSix.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveSeven.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       roomType: 'Deluxe - Lower Deck',
-  //       include: [
-  //         'Twin Bed',
-  //         'Air Conditioner',
-  //         'Water Heater',
-  //         'Private Bathroom',
-  //       ],
-  //       roomImages: [
-  //         {
-  //           img: MajesticVoyagerDeluxeOne.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeTwo.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeThree.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeFour.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeFive.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeSix.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeSeven.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeEight.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeNine.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   gallery: [
-  //     {
-  //       img: ImageBimaMain.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaMain.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaTwo.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaTwo.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaThree.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaThree.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaFour.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaFour.blurDataURL,
-  //     },
-  //   ],
-  // },
-  // {
-  //   img: ImageLabuanBajoFour.src,
-  //   imgAlt: 'Komodo Trip',
-  //   blurDataUrl: ImageLabuanBajoFour.blurDataURL,
-  //   title: 'Komodo Dive Trip with Kaia Liveaboard',
-  //   location: 'Maluku, Indonesia',
-  //   date: 'Sep 4th - 8th, 2024',
-  //   endDate: {
-  //     day: 8,
-  //     month: 9,
-  //     year: 2024
-  //   },
-  //   url: 'komodo-kaia-liveaboard',
-  //   price: '18,5jt',
-  //   priceNum: '18500000',
-  //   currency: 'IDR',
-  //   duration: '4 days',
-  //   highlight: {
-  //     diveCount: '10+ dives',
-  //     type: 'LOB'
-  //   },
-  //   available: true,
-  //   multiCurrencies: false,
-  //   category: 'diving-trips',
-  //   metaDescription: 'Experience the magic of Komodo with our exclusive liveaboard cruises. Discover pristine dive sites teeming with marine life, encounter iconic Komodo dragons, and indulge in luxury. Our carefully curated itineraries offer the ultimate Komodo adventure.',
-  //   metaKeywords: 'Komodo dive trips, Komodo liveaboard, Komodo diving, luxury Komodo cruises, Komodo National Park, Komodo dragons, Komodo dive vacation, dive Komodo, Komodo dive sites, Komodo dive itinerary, Komodo diving holidays, Komodo dive travel, Komodo dive packages',
-  //   overview: 'Experience the magic of Komodo with our exclusive liveaboard cruises. Discover pristine dive sites teeming with marine life, encounter iconic Komodo dragons, and indulge in luxury. Our carefully curated itineraries offer the ultimate Komodo adventure.',
-  //   categoryListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Category'
-  //     },
-  //     {
-  //       value: 'Domestic / KITAS',
-  //       label: 'Domestic / KITAS Holder'
-  //     },
-  //     {
-  //       value: 'foreigner',
-  //       label: 'Foreigner'
-  //     },
-  //   ],
-  //   roomTypeListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Cabin Type'
-  //     },
-  //     {
-  //       value: 'Main Deck',
-  //       label: 'Main Deck'
-  //     },
-  //   ],
-  //   pricePerRoom: [
-  //     {
-  //       price: '18,500,000',
-  //       currency: 'IDR',
-  //       roomType: 'Main Deck',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '18,500,000',
-  //       currency: 'IDR',
-  //       roomType: 'Main Deck',
-  //       category: 'foreigner',
-  //     },
-  //   ],
-  //   schedule: [
-  //     {
-  //       time: '',
-  //       descList: []
-  //     },
-  //   ],
-  //   include: [
-  //     'Airport Transfer in Labuan Bajo.',
-  //     '4 Nights in AC Cabins Aboard on Sharing Basis.',
-  //     'Full Onboard Meals.',
-  //     'Unlimited tea, coffee, softdrinks and mineral water.',
-  //     '10+ Dives with Tanks, Weight, & Belt.',
-  //     'English Speaking Cruise Director.',
-  //     'Divemaster & Local Dive Guide.',
-  //     'Underwater Documentation.',
-  //   ],
-  //   notes: [
-  //     'Port Clearance Fee (IDR 1jt / pax).',
-  //     'Dive equipment rental is available',
-  //     'Alocolic beverages are available.',
-  //     'Boat crew tip gratuities IDR 200rb / day / pax',
-  //     'The price excludes airflight tickets.',
-  //   ],
-  //   roomGallery: [
-  //     {
-  //       roomType: 'Main Deck',
-  //       include: [
-  //         'Ocean View',
-  //         'Double Bed',
-  //         'Private Bathroom',
-  //       ],
-  //       roomImages: [
-  //         {
-  //           img: KaiaLiveaboardCabinOne.src,
-  //           imgAlt: '',
-  //           blurDataUrl: KaiaLiveaboardCabinOne.blurDataURL,
-  //         },
-  //         {
-  //           img: KaiaLiveaboardCabinTwo.src,
-  //           imgAlt: '',
-  //           blurDataUrl: KaiaLiveaboardCabinTwo.blurDataURL,
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   gallery: [
-  //     {
-  //       img: ImageLabuanBajoFour.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageLabuanBajoFour.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaTwo.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaTwo.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaThree.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaThree.blurDataURL,
-  //     },
-  //     {
-  //       img: KaiaLiveaboardMain.src,
-  //       imgAlt: '',
-  //       blurDataUrl: KaiaLiveaboardMain.blurDataURL,
-  //     },
-  //   ],
-  // },
-  // {
-  //   img: ImageBandarNeiraOne.src,
-  //   imgAlt: 'Banda Neira Trip',
-  //   blurDataUrl: ImageBandarNeiraOne.blurDataURL,
-  //   title: 'Banda Neira Dive Trip with Majestic Voyager - September',
-  //   location: 'Maluku, Indonesia',
-  //   date: 'Sep 25th - Oct 1st, 2024',
-  //   endDate: {
-  //     day: 1,
-  //     month: 10,
-  //     year: 2024
-  //   },
-  //   url: 'banda-neira-majestic-voyager-september',
-  //   price: '28,5jt',
-  //   priceNum: '28500000',
-  //   currency: 'IDR',
-  //   duration: '4 days',
-  //   highlight: {
-  //     diveCount: '17 dives',
-  //     type: 'LOB'
-  //   },
-  //   available: false,
-  //   multiCurrencies: true,
-  //   category: 'diving-trips',
-  //   metaDescription: 'Embark on an extraordinary underwater journey with our curated collection of luxury dive trips. Explore pristine dive sites, encounter incredible marine life, and indulge in unparalleled comfort aboard our hand-picked liveaboard vessels. Discover your perfect dive vacation today.',
-  //   metaKeywords: 'luxury dive trips, liveaboard diving, dive vacations, curated dive experiences, dive destinations, diving holidays, premium dive trips, exclusive dive travel, dive trip planner, best dive trips, diving adventures, underwater exploration',
-  //   overview: 'Embark on an extraordinary journey through time and tide with a liveaboard diving trip to Banda Neira. This captivating Indonesian archipelago, steeped in colonial history and volcanic allure, offers a unique blend of topside exploration and breathtaking underwater adventures.',
-  //   categoryListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Category'
-  //     },
-  //     {
-  //       value: 'Domestic / KITAS',
-  //       label: 'Domestic / KITAS Holder'
-  //     },
-  //     {
-  //       value: 'foreigner',
-  //       label: 'Foreigner'
-  //     },
-  //   ],
-  //   roomTypeListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Cabin Type'
-  //     },
-  //     {
-  //       value: 'Suite - Main Deck',
-  //       label: 'Suite - Main Deck'
-  //     },
-  //     {
-  //       value: 'Executive - Upper Deck',
-  //       label: 'Executive - Upper Deck'
-  //     },
-  //     {
-  //       value: 'Deluxe - Lower Deck',
-  //       label: 'Deluxe - Lower Deck'
-  //     },
-  //   ],
-  //   pricePerRoom: [
-  //     {
-  //       price: '19,000,000',
-  //       currency: 'IDR',
-  //       roomType: 'Deluxe - Lower Deck',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '22,000,000',
-  //       currency: 'IDR',
-  //       roomType: 'Executive - Upper Deck',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '25,000,000',
-  //       currency: 'IDR',
-  //       roomType: 'Suite - Main Deck',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '1,500',
-  //       currency: 'USD',
-  //       roomType: 'Deluxe - Lower Deck',
-  //       category: 'foreigner',
-  //     },
-  //     {
-  //       price: '1,700',
-  //       currency: 'USD',
-  //       roomType: 'Executive - Upper Deck',
-  //       category: 'foreigner',
-  //     },
-  //     {
-  //       price: '1,900',
-  //       currency: 'USD',
-  //       roomType: 'Suite - Main Deck',
-  //       category: 'foreigner',
-  //     },
-  //   ],
-  //   schedule: [
-  //     {
-  //       time: '',
-  //       descList: []
-  //     },
-  //   ],
-  //   include: [
-  //     'Airport Transfer.',
-  //     '4 Nights in AC Cabin on Twin Share Basis.',
-  //     'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
-  //     '11 Dives with Tanks, Weight, & Belt.',
-  //     'English Speaking Cruise Director.',
-  //     'Divemaster with 1:4 Ratio.',
-  //     'Underwater Documentation.',
-  //     'Free Nitrox for whom certified (earlybird).',
-  //   ],
-  //   notes: [
-  //     'Port Clearance Fee (IDR 400rb / day for domestic).',
-  //     'Port Clearance Fee (USD 25 / day for foreigner).',
-  //     'Dive equipment rental is available for IDR 400,000 / day.',
-  //     'Boat Crew Tips IDR 200rb / day',
-  //     'The price excludes airflight tickets.',
-  //   ],
-  //   roomGallery: [
-  //     {
-  //       roomType: 'Suite - Main Deck',
-  //       include: [
-  //         'Private Jacuzzi',
-  //         'Sea View Balcony',
-  //         'Twin Bed',
-  //         'Air Conditioner',
-  //         'Water Heater',
-  //         'Private Bathroom',
-  //       ],
-  //       roomImages: [
-  //         {
-  //           img: MajesticVoyagerSuiteOne.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteTwo.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteThree.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteFour.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteFive.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       roomType: 'Executive - Upper Deck',
-  //       include: [
-  //         'Sea View Balcony',
-  //         'Twin Bed',
-  //         'Air Conditioner',
-  //         'Water Heater',
-  //         'Private Bathroom',
-  //       ],
-  //       roomImages: [
-  //         {
-  //           img: MajesticVoyagerExecutiveOne.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveTwo.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveThree.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveFour.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveFive.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveSix.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveSeven.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       roomType: 'Deluxe - Lower Deck',
-  //       include: [
-  //         'Twin Bed',
-  //         'Air Conditioner',
-  //         'Water Heater',
-  //         'Private Bathroom',
-  //       ],
-  //       roomImages: [
-  //         {
-  //           img: MajesticVoyagerDeluxeOne.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeTwo.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeThree.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeFour.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeFive.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeSix.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeSeven.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeEight.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeNine.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   gallery: [
-  //     {
-  //       img: ImageBandarNeiraOne.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBandarNeiraOne.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaTwo.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaTwo.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaThree.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaThree.blurDataURL,
-  //     },
-  //     {
-  //       img: MajesticVoyageMain.src,
-  //       imgAlt: '',
-  //       blurDataUrl: MajesticVoyageMain.blurDataURL,
-  //     },
-  //   ],
-  // },
-  // {
-  //   img: ImageBandarNeiraTwo.src,
-  //   imgAlt: 'Banda Neira Trip',
-  //   blurDataUrl: ImageBandarNeiraTwo.blurDataURL,
-  //   title: 'Banda Neira Dive Trip with Majestic Voyager - October',
-  //   location: 'Maluku, Indonesia',
-  //   date: 'Oct 26th - Nov 1st, 2024',
-  //   endDate: {
-  //     day: 1,
-  //     month: 11,
-  //     year: 2024
-  //   },
-  //   url: 'banda-neira-majestic-voyager-october',
-  //   price: '28,5jt',
-  //   priceNum: '28500000',
-  //   currency: 'IDR',
-  //   duration: '4 days',
-  //   highlight: {
-  //     diveCount: '17 dives',
-  //     type: 'LOB'
-  //   },
-  //   available: true,
-  //   multiCurrencies: true,
-  //   category: 'diving-trips',
-  //   metaDescription: 'Embark on an extraordinary underwater journey with our curated collection of luxury dive trips. Explore pristine dive sites, encounter incredible marine life, and indulge in unparalleled comfort aboard our hand-picked liveaboard vessels. Discover your perfect dive vacation today.',
-  //   metaKeywords: 'luxury dive trips, liveaboard diving, dive vacations, curated dive experiences, dive destinations, diving holidays, premium dive trips, exclusive dive travel, dive trip planner, best dive trips, diving adventures, underwater exploration',
-  //   overview: 'Experience the magic of Komodo with our exclusive liveaboard cruises. Discover pristine dive sites teeming with marine life, encounter iconic Komodo dragons, and indulge in luxury. Our carefully curated itineraries offer the ultimate Komodo adventure.',
-  //   categoryListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Category'
-  //     },
-  //     {
-  //       value: 'Domestic / KITAS',
-  //       label: 'Domestic / KITAS Holder'
-  //     },
-  //     {
-  //       value: 'foreigner',
-  //       label: 'Foreigner'
-  //     },
-  //   ],
-  //   roomTypeListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Cabin Type'
-  //     },
-  //     {
-  //       value: 'Suite - Main Deck',
-  //       label: 'Suite - Main Deck'
-  //     },
-  //     {
-  //       value: 'Executive - Upper Deck',
-  //       label: 'Executive - Upper Deck'
-  //     },
-  //     {
-  //       value: 'Deluxe - Lower Deck',
-  //       label: 'Deluxe - Lower Deck'
-  //     },
-  //   ],
-  //   pricePerRoom: [
-  //     {
-  //       price: '28,500,000',
-  //       currency: 'IDR',
-  //       roomType: 'Deluxe - Lower Deck',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '31,000,000',
-  //       currency: 'IDR',
-  //       roomType: 'Executive - Upper Deck',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '35,000,000',
-  //       currency: 'IDR',
-  //       roomType: 'Suite - Main Deck',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '2,290',
-  //       currency: 'USD',
-  //       roomType: 'Deluxe - Lower Deck',
-  //       category: 'foreigner',
-  //     },
-  //     {
-  //       price: '2,490',
-  //       currency: 'USD',
-  //       roomType: 'Executive - Upper Deck',
-  //       category: 'foreigner',
-  //     },
-  //     {
-  //       price: '2,690',
-  //       currency: 'USD',
-  //       roomType: 'Suite - Main Deck',
-  //       category: 'foreigner',
-  //     },
-  //   ],
-  //   schedule: [
-  //     {
-  //       time: 'Day 1 - Check In',
-  //       descList: [
-  //         'Check Dive at Ambon Bay'
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 2 - Suanggi',
-  //       descList: [
-  //         '4 Dives',
-  //         'Hammerhead Hunting'
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 3 - Manuk',
-  //       descList: [
-  //         '4 Dives',
-  //         'Coconut Reef',
-  //         'Bubble Reef',
-  //         'Sea Snake',
-  //         'Lunch.',
-  //         'Manuk Corner',
-  //         'Chance to see Hammie and many sea snakes',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 4 - Karang Hatta & Banda Neira',
-  //       descList: [
-  //         '4 Dives',
-  //         'Karang Hatta',
-  //         'Lava Flow',
-  //         'Batu Kapal',
-  //         'Visit Banda Neira /or/ dive Mandarin',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 5 - Ai & Run',
-  //       descList: [
-  //         '3 Dives',
-  //         'Batu Udang',
-  //         'Batu Payong',
-  //         'Run',
-  //         'Chance to see hammie'
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 6 - Suanggi',
-  //       descList: [
-  //         '2 Dives',
-  //         'Hammerhead Hunting',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 7 - Checkout',
-  //       descList: [
-  //         'Checkout'
-  //       ]
-  //     },
-  //   ],
-  //   include: [
-  //     'Airport Transfer.',
-  //     '4 Nights in AC Cabin on Twin Share Basis.',
-  //     'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
-  //     '11 Dives with Tanks, Weight, & Belt.',
-  //     'English Speaking Cruise Director.',
-  //     'Divemaster with 1:4 Ratio.',
-  //     'Underwater Documentation.',
-  //     'Free Nitrox for whom certified (earlybird).',
-  //   ],
-  //   notes: [
-  //     'Port Clearance Fee (IDR 400rb / day for domestic).',
-  //     'Port Clearance Fee (USD 25 / day for foreigner).',
-  //     'Dive equipment rental is available for IDR 400,000 / day.',
-  //     'Boat Crew Tips IDR 200rb / day',
-  //     'The price excludes airflight tickets.',
-  //   ],
-  //   roomGallery: [
-  //     {
-  //       roomType: 'Suite - Main Deck',
-  //       include: [
-  //         'Private Jacuzzi',
-  //         'Sea View Balcony',
-  //         'Twin Bed',
-  //         'Air Conditioner',
-  //         'Water Heater',
-  //         'Private Bathroom',
-  //       ],
-  //       roomImages: [
-  //         {
-  //           img: MajesticVoyagerSuiteOne.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteTwo.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteThree.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteFour.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerSuiteFive.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       roomType: 'Executive - Upper Deck',
-  //       include: [
-  //         'Sea View Balcony',
-  //         'Twin Bed',
-  //         'Air Conditioner',
-  //         'Water Heater',
-  //         'Private Bathroom',
-  //       ],
-  //       roomImages: [
-  //         {
-  //           img: MajesticVoyagerExecutiveOne.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveTwo.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveThree.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveFour.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveFive.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveSix.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerExecutiveSeven.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       roomType: 'Deluxe - Lower Deck',
-  //       include: [
-  //         'Twin Bed',
-  //         'Air Conditioner',
-  //         'Water Heater',
-  //         'Private Bathroom',
-  //       ],
-  //       roomImages: [
-  //         {
-  //           img: MajesticVoyagerDeluxeOne.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeTwo.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeThree.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeFour.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeFive.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeSix.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeSeven.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeEight.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
-  //         },
-  //         {
-  //           img: MajesticVoyagerDeluxeNine.src,
-  //           imgAlt: '',
-  //           blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   gallery: [
-  //     {
-  //       img: ImageBandarNeiraTwo.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBandarNeiraTwo.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaTwo.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaTwo.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaThree.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaThree.blurDataURL,
-  //     },
-  //     {
-  //       img: MajesticVoyageMain.src,
-  //       imgAlt: '',
-  //       blurDataUrl: MajesticVoyageMain.blurDataURL,
-  //     },
-  //   ],
-  // },
-  // {
-  //   img: ImageTimorLesteOne.src,
-  //   imgAlt: 'Timor Leste Diving Trip',
-  //   blurDataUrl: ImageTimorLesteOne.blurDataURL,
-  //   title: 'Timor Leste Diving Trip, Batch 1',
-  //   location: 'Timor Leste, Indonesia',
-  //   date: 'Nov 10th - 14th, 2024',
-  //   endDate: {
-  //     day: 16,
-  //     month: 12,
-  //     year: 2024
-  //   },
-  //   url: 'timor-leste-diving-trip-batch-one',
-  //   price: '1,400',
-  //   priceNum: '1400',
-  //   currency: 'USD',
-  //   duration: '5 days',
-  //   highlight: {
-  //     diveCount: '3 Dives',
-  //     type: 'Land Based'
-  //   },
-  //   available: true,
-  //   multiCurrencies: false,
-  //   category: 'diving-trips',
-  //   metaDescription: 'Discover the hidden gem of Timor Leste with our exclusive land based diving trip. Explore pristine dive sites teeming with vibrant marine life, encounter unique species, and indulge in luxury. Our carefully curated itineraries offer the ultimate Timor Leste adventure.',
-  //   metaKeywords: 'Timor Leste dive trips, Timor Leste liveaboard, Timor Leste diving, luxury Timor Leste cruises, Timor Leste dive vacation, Timor Leste dive sites, Timor Leste dive itinerary, Timor Leste diving holidays, Timor Leste dive travel, Timor Leste dive packages, Timor Leste underwater, Timor Leste marine life',
-  //   overview: 'Discover the hidden gem of Timor Leste with our exclusive land based diving trip. Explore pristine dive sites teeming with vibrant marine life, encounter unique species, and indulge in luxury. Our carefully curated itineraries offer the ultimate Timor Leste adventure.',
-  //   categoryListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Category'
-  //     },
-  //     {
-  //       value: 'Domestic / KITAS',
-  //       label: 'Domestic / KITAS Holder'
-  //     },
-  //     {
-  //       value: 'foreigner',
-  //       label: 'Foreigner'
-  //     },
-  //   ],
-  //   roomTypeListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Room Type'
-  //     },
-  //     {
-  //       value: 'Esplanada Hotel, Twin Share',
-  //       label: 'Esplanada Hotel, Twin Share'
-  //     },
-  //   ],
-  //   pricePerRoom: [
-  //     {
-  //       price: '1,400',
-  //       currency: 'USD',
-  //       roomType: 'Esplanada Hotel, Twin Share',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '1,400',
-  //       currency: 'USD',
-  //       roomType: 'Esplanada Hotel, Twin Share',
-  //       category: 'foreigner',
-  //     },
-  //   ],
-  //   schedule: [
-  //     {
-  //       time: 'Day 1',
-  //       descList: [
-  //         'Arrive at Dili Airport',
-  //         'Hotel Check-In',
-  //         'Free Time',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 2',
-  //       descList: [
-  //         'Early Breakfast',
-  //         'Whale Hunting',
-  //         'Lunch',
-  //         'Dive 1',
-  //         'Back to Hotel',
-  //         'Free Time',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 3',
-  //       descList: [
-  //         'Early Breakfast',
-  //         'Whale Hunting',
-  //         'Lunch',
-  //         'Dive 2',
-  //         'Back to Hotel',
-  //         'Free Time',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 4',
-  //       descList: [
-  //         'Early Breakfast',
-  //         'Whale Hunting',
-  //         'Lunch',
-  //         'Dive 3',
-  //         'Back to Hotel',
-  //         'Free Time',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 5',
-  //       descList: [
-  //         'Hotel Check-Out',
-  //         'Airport Transfer',
-  //       ]
-  //     },
-  //   ],
-  //   include: [
-  //     'Airport Transfer',
-  //     'Boat & coast dive transport',
-  //     'Breakfast and lunch',
-  //     '4 nights stay at Esplanada hotel with twin sharing basis',
-  //     '3x swim/freedive with a whales',
-  //     '3x dives with tank and weight',
-  //     'Dive guide ratio 4:1',
-  //   ],
-  //   notes: [
-  //     'Exclude any personal expenditure such as laundry, tipping, personal medicine, etc',
-  //     'VOA $30,-',
-  //     'Exclude Dinner & Airfare',
-  //     'Dive equipment rental is available',
-  //     'Exclude tip for local guide',
-  //   ],
-  //   roomGallery: [
-  //     {
-  //       roomType: '',
-  //       include: [''],
-  //       roomImages: [
-  //         {
-  //           img: '',
-  //           imgAlt: '',
-  //           blurDataUrl: '',
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   gallery: [
-  //     {
-  //       img: ImageTimorLesteOne.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageTimorLesteOne.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageTimorLesteTwo.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageTimorLesteTwo.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageTimorLesteThree.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageTimorLesteThree.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaThree.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaThree.blurDataURL,
-  //     },
-  //   ],
-  // },
-  // {
-  //   img: ImageTimorLesteThree.src,
-  //   imgAlt: 'Timor Leste Diving Trip',
-  //   blurDataUrl: ImageTimorLesteThree.blurDataURL,
-  //   title: 'Timor Leste Diving Trip, Batch 2',
-  //   location: 'Timor Leste, Indonesia',
-  //   date: 'Nov 14th - 18th, 2024',
-  //   endDate: {
-  //     day: 16,
-  //     month: 12,
-  //     year: 2024
-  //   },
-  //   url: 'timor-leste-diving-trip-batch-two',
-  //   price: '1,400',
-  //   priceNum: '1400',
-  //   currency: 'USD',
-  //   duration: '5 days',
-  //   highlight: {
-  //     diveCount: '3 Dives',
-  //     type: 'Land Based'
-  //   },
-  //   available: true,
-  //   multiCurrencies: false,
-  //   category: 'diving-trips',
-  //   metaDescription: 'Discover the hidden gem of Timor Leste with our exclusive land based diving trip. Explore pristine dive sites teeming with vibrant marine life, encounter unique species, and indulge in luxury. Our carefully curated itineraries offer the ultimate Timor Leste adventure.',
-  //   metaKeywords: 'Timor Leste dive trips, Timor Leste liveaboard, Timor Leste diving, luxury Timor Leste cruises, Timor Leste dive vacation, Timor Leste dive sites, Timor Leste dive itinerary, Timor Leste diving holidays, Timor Leste dive travel, Timor Leste dive packages, Timor Leste underwater, Timor Leste marine life',
-  //   overview: 'Discover the hidden gem of Timor Leste with our exclusive land based diving trip. Explore pristine dive sites teeming with vibrant marine life, encounter unique species, and indulge in luxury. Our carefully curated itineraries offer the ultimate Timor Leste adventure.',
-  //   categoryListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Category'
-  //     },
-  //     {
-  //       value: 'Domestic / KITAS',
-  //       label: 'Domestic / KITAS Holder'
-  //     },
-  //     {
-  //       value: 'foreigner',
-  //       label: 'Foreigner'
-  //     },
-  //   ],
-  //   roomTypeListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Room Type'
-  //     },
-  //     {
-  //       value: 'Esplanada Hotel, Twin Share',
-  //       label: 'Esplanada Hotel, Twin Share'
-  //     },
-  //   ],
-  //   pricePerRoom: [
-  //     {
-  //       price: '1,400',
-  //       currency: 'USD',
-  //       roomType: 'Esplanada Hotel, Twin Share',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '1,400',
-  //       currency: 'USD',
-  //       roomType: 'Esplanada Hotel, Twin Share',
-  //       category: 'foreigner',
-  //     },
-  //   ],
-  //   schedule: [
-  //     {
-  //       time: 'Day 1',
-  //       descList: [
-  //         'Arrive at Dili Airport',
-  //         'Hotel Check-In',
-  //         'Free Time',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 2',
-  //       descList: [
-  //         'Early Breakfast',
-  //         'Whale Hunting',
-  //         'Lunch',
-  //         'Dive 1',
-  //         'Back to Hotel',
-  //         'Free Time',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 3',
-  //       descList: [
-  //         'Early Breakfast',
-  //         'Whale Hunting',
-  //         'Lunch',
-  //         'Dive 2',
-  //         'Back to Hotel',
-  //         'Free Time',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 4',
-  //       descList: [
-  //         'Early Breakfast',
-  //         'Whale Hunting',
-  //         'Lunch',
-  //         'Dive 3',
-  //         'Back to Hotel',
-  //         'Free Time',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 5',
-  //       descList: [
-  //         'Hotel Check-Out',
-  //         'Airport Transfer',
-  //       ]
-  //     },
-  //   ],
-  //   include: [
-  //     'Airport Transfer',
-  //     'Boat & coast dive transport',
-  //     'Breakfast and lunch',
-  //     '4 nights stay at Esplanada hotel with twin sharing basis',
-  //     '3x swim/freedive with a whales',
-  //     '3x dives with tank and weight',
-  //     'Dive guide ratio 4:1',
-  //   ],
-  //   notes: [
-  //     'Exclude any personal expenditure such as laundry, tipping, personal medicine, etc',
-  //     'VOA $30,-',
-  //     'Exclude Dinner & Airfare',
-  //     'Dive equipment rental is available',
-  //     'Exclude tip for local guide',
-  //   ],
-  //   roomGallery: [
-  //     {
-  //       roomType: '',
-  //       include: [''],
-  //       roomImages: [
-  //         {
-  //           img: '',
-  //           imgAlt: '',
-  //           blurDataUrl: '',
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   gallery: [
-  //     {
-  //       img: ImageTimorLesteThree.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageTimorLesteThree.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageTimorLesteTwo.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageTimorLesteTwo.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageTimorLesteOne.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageTimorLesteOne.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaThree.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaThree.blurDataURL,
-  //     },
-  //   ],
-  // },
-  // {
-  //   img: ImageBimaFive.src,
-  //   imgAlt: 'Donggala Diving Trip',
-  //   blurDataUrl: ImageBimaFive.blurDataURL,
-  //   title: 'Donggala Diving Trip',
-  //   location: 'Donggala, Indonesia',
-  //   date: 'Nov 28th - Dec 1st, 2024',
-  //   endDate: {
-  //     day: 16,
-  //     month: 12,
-  //     year: 2024
-  //   },
-  //   url: 'donggala-diving-trip',
-  //   price: '9,5jt',
-  //   priceNum: '9500000',
-  //   currency: 'IDR',
-  //   duration: '4 days',
-  //   highlight: {
-  //     diveCount: '7 Dives',
-  //     type: 'Land Based'
-  //   },
-  //   available: true,
-  //   multiCurrencies: false,
-  //   category: 'diving-trips',
-  //   metaDescription: 'Explore the hidden gems of Donggala with our land-based dive packages. Experience pristine dive sites, encounter unique marine life, and enjoy the comfort of our carefully selected accommodations. Discover the best of Donggala`s underwater world.',
-  //   metaKeywords: 'Donggala dive trips, Donggala diving, Donggala dive packages, land-based Donggala diving, Donggala dive sites, Donggala dive resorts, Donggala dive holidays, Donggala dive adventures, Donggala underwater world, Donggala dive travel, Donggala dive experiences, Donggala dive destinations',
-  //   overview: 'Explore the hidden gems of Donggala with our land-based dive packages. Experience pristine dive sites, encounter unique marine life, and enjoy the comfort of our carefully selected accommodations. Discover the best of Donggala`s underwater world.',
-  //   categoryListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Category'
-  //     },
-  //     {
-  //       value: 'Domestic / KITAS',
-  //       label: 'Domestic / KITAS Holder'
-  //     },
-  //     {
-  //       value: 'foreigner',
-  //       label: 'Foreigner'
-  //     },
-  //   ],
-  //   roomTypeListOption: [
-  //     {
-  //       value: '',
-  //       label: 'Select Room Type'
-  //     },
-  //     {
-  //       value: 'Donggala Villa, Twin Share',
-  //       label: 'Donggala Villa, Twin Share'
-  //     },
-  //   ],
-  //   pricePerRoom: [
-  //     {
-  //       price: '9,500,000',
-  //       currency: 'IDR',
-  //       roomType: 'Donggala Villa, Twin Share',
-  //       category: 'Domestic / KITAS',
-  //     },
-  //     {
-  //       price: '9,500,000',
-  //       currency: 'IDR',
-  //       roomType: 'Donggala Villa, Twin Share',
-  //       category: 'foreigner',
-  //     },
-  //   ],
-  //   schedule: [
-  //     {
-  //       time: 'Day 1',
-  //       descList: [
-  //         'Sis AlJufri airport pickup and drop to Villa',
-  //         'Hotel Check-In',
-  //         'Dive 1',
-  //         'Dive 2',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 2',
-  //       descList: [
-  //         'Dive 3',
-  //         'Dive 4',
-  //         'Dive 5',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 3',
-  //       descList: [
-  //         'Dive 6',
-  //         'Dive 7',
-  //       ]
-  //     },
-  //     {
-  //       time: 'Day 4',
-  //       descList: [
-  //         'Free Time',
-  //         'Hotel Check-Out',
-  //         'Airport Transfer',
-  //       ]
-  //     },
-  //   ],
-  //   include: [
-  //     'Airport Transfer',
-  //     'Breakfast, lunch, & dinner',
-  //     '3 nights stay at Donggala Villa with twin sharing basis',
-  //     '7 dives with tanks & weight',
-  //     'Land & sea transportation in Donggala-Palu',
-  //     'Dive guide ratio 4:1',
-  //   ],
-  //   notes: [
-  //     'Exclude any personal expenditure such as laundry, tipping, personal medicine, etc',
-  //     'Exclude Airfare',
-  //     'Dive equipment rental is available for IDR 400k per day',
-  //     'Exclude tip for local guide IDR 150k per day',
-  //   ],
-  //   roomGallery: [
-  //     {
-  //       roomType: '',
-  //       include: [''],
-  //       roomImages: [
-  //         {
-  //           img: '',
-  //           imgAlt: '',
-  //           blurDataUrl: '',
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   gallery: [
-  //     {
-  //       img: ImageBimaFive.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaFive.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaTwo.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaTwo.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageLombokTwo.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageLombokTwo.blurDataURL,
-  //     },
-  //     {
-  //       img: ImageBimaThree.src,
-  //       imgAlt: '',
-  //       blurDataUrl: ImageBimaThree.blurDataURL,
-  //     },
-  //   ],
-  // },
   {
-    img: ImageMisoolRajaAmpatOne.src,
-    imgAlt: 'Velocean raja ampat liveaboard',
-    blurDataUrl: ImageMisoolRajaAmpatOne.blurDataURL,
-    title: 'Misool Dive Trip with Velocean',
-    location: 'Raja Ampat, Indonesia',
-    date: 'Dec 8th - 16th, 2024',
+    img: ImageMalapascuaMain.src,
+    imgAlt: 'Malapascua Dive Trip',
+    blurDataUrl: ImageMalapascuaMain.blurDataURL,
+    title: 'Malapascua Dive Trip',
+    location: 'Philippines',
+    date: 'May 3rd - 6th, 2025',
     endDate: {
-      day: 16,
-      month: 12,
-      year: 2024
-    },
-    url: 'raja-ampat-misool-velocean',
-    price: '5,500',
-    priceNum: '5500',
-    currency: 'USD',
-    duration: '8 days',
-    highlight: {
-      diveCount: 'TBA',
-      type: 'LOB'
-    },
-    available: false,
-    multiCurrencies: false,
-    category: 'diving-trips',
-    metaDescription: 'Experience the pinnacle of diving luxury with Velocean Raja Ampat. Immerse yourself in the breathtaking beauty of this underwater wonderland, teeming with vibrant coral reefs and extraordinary marine life. Our curated liveaboard adventure offers unparalleled comfort, world-class diving, and personalized service.',
-    metaKeywords: 'Velocean Raja Ampat, Raja Ampat diving, luxury dive trip, liveaboard Raja Ampat, dive vacation Indonesia, Raja Ampat liveaboard, premium dive experience, underwater paradise, marine biodiversity, luxury diving, dive travel, curated dive vacations, dive into perfection',
-    overview: 'With VELOCEAN, Sightsea Expeditions is crafting a personalized itinerary that whisks you away to hidden reefs teeming with life, pristine beaches where time slows down, and luxurious liveaboards that put comfort at the forefront. Dive into paradise and create memories that will leave you breathless.',
-    categoryListOption: [
-      {
-        value: '',
-        label: 'Select Category'
-      },
-      {
-        value: 'Domestic / KITAS',
-        label: 'Domestic / KITAS Holder'
-      },
-      {
-        value: 'foreigner',
-        label: 'Foreigner'
-      },
-    ],
-    roomTypeListOption: [
-      {
-        value: '',
-        label: 'Select Cabin Type'
-      },
-      {
-        value: 'Platinum Oceanfront Suites',
-        label: 'Platinum Oceanfront Suites'
-      },
-      {
-        value: 'Elite Ocean Suites',
-        label: 'Elite Ocean Suites'
-      },
-      {
-        value: 'Signature Single Suites',
-        label: 'Signature Single Suites'
-      },
-    ],
-    pricePerRoom: [
-      {
-        price: '5,900',
-        currency: 'USD',
-        roomType: 'Platinum Oceanfront Suites',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '5,190',
-        currency: 'USD',
-        roomType: 'Elite Ocean Suites',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '4,950',
-        currency: 'USD',
-        roomType: 'Signature Single Suites',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '5,900',
-        currency: 'USD',
-        roomType: 'Platinum Oceanfront Suites',
-        category: 'foreigner',
-      },
-      {
-        price: '5,190',
-        currency: 'USD',
-        roomType: 'Elite Ocean Suites',
-        category: 'foreigner',
-      },
-      {
-        price: '4,950',
-        currency: 'USD',
-        roomType: 'Signature Single Suites',
-        category: 'foreigner',
-      },
-    ],
-    schedule: [
-      {
-        time: '',
-        descList: []
-      },
-    ],
-    include: [
-      'All meals (5x daily), & beverages onboard, except alcohol.',
-      'Coffee, tea, juices, snacks available for 24hrs',
-      '24hrs simple food service (eg. indomie, fried rice, fried noodle, etc).',
-      'Nitrox for whom certified.',
-      'Inhouse satellite wifi',
-      'Transport from and to the Velocean',
-      'Hygiene and sanitary kits.',
-      'Limited laundry service.',
-      'All taxes and Marine Park Fee.'
-    ],
-    notes: [
-      'The price excludes airflight tickets.',
-      'Alcoholic beverages is available for extra charge.',
-      'Scuba diving gear is available for rental.',
-      'Personal Insurance is not covered.',
-      'Crew tip gratitude is suggested.',
-    ],
-    roomGallery: [
-      {
-        roomType: 'Platinum Oceanfront Suites',
-        include: [
-          'Spacious Cabin Area',
-          'Sea View',
-          'Double Bed',
-          'Sofas',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: VeloceanSuiteOne.src,
-            imgAlt: '',
-            blurDataUrl: VeloceanSuiteOne.blurDataURL,
-          },
-        ],
-      },
-      {
-        roomType: 'Elite Ocean Suites',
-        include: [
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: VeloceanExecutiveOne.src,
-            imgAlt: '',
-            blurDataUrl: VeloceanExecutiveOne.blurDataURL,
-          },
-        ],
-      },
-      {
-        roomType: 'Signature Single Suites',
-        include: [
-          'Single Bed',
-          'Private Working Space',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: VeloceanDeluxeOne.src,
-            imgAlt: '',
-            blurDataUrl: VeloceanDeluxeOne.blurDataURL,
-          },
-        ],
-      },
-    ],
-    gallery: [
-      {
-        img: ImageMisoolRajaAmpatOne.src,
-        imgAlt: '',
-        blurDataUrl: ImageMisoolRajaAmpatOne.blurDataURL,
-      },
-      {
-        img: VeloceanMain.src,
-        imgAlt: '',
-        blurDataUrl: VeloceanMain.blurDataURL,
-      },
-      {
-        img: VeloceanGalleryFive.src,
-        imgAlt: '',
-        blurDataUrl: VeloceanGalleryFive.blurDataURL,
-      },
-      {
-        img: VeloceanGalleryThree.src,
-        imgAlt: '',
-        blurDataUrl: VeloceanGalleryThree.blurDataURL,
-      },
-    ],
-  },
-  {
-    img: ImageMisoolRajaAmpatOne.src,
-    imgAlt: 'Misool Trip',
-    blurDataUrl: ImageMisoolRajaAmpatOne.blurDataURL,
-    title: 'Misool Dive Trip with Majestic Voyager',
-    location: 'Raja Ampat, Indonesia',
-    date: 'Dec 18th - 24th, 2024',
-    endDate: {
-      day: 24,
-      month: 12,
-      year: 2024
-    },
-    url: 'raja-ampat-misool-majestic-voyager',
-    price: '29,5jt',
-    priceNum: '29500000',
-    currency: 'IDR',
-    duration: '4 days',
-    highlight: {
-      diveCount: '17 dives',
-      type: 'LOB'
-    },
-    available: true,
-    multiCurrencies: true,
-    category: 'diving-trips',
-    metaDescription: 'Embark on an extraordinary underwater journey with our curated collection of luxury dive trips. Explore pristine dive sites, encounter incredible marine life, and indulge in unparalleled comfort aboard our hand-picked liveaboard vessels. Discover your perfect dive vacation today.',
-    metaKeywords: 'luxury dive trips, liveaboard diving, dive vacations, curated dive experiences, dive destinations, diving holidays, premium dive trips, exclusive dive travel, dive trip planner, best dive trips, diving adventures, underwater exploration',
-    overview: 'Embark on a voyage of discovery to Misool, the heart of Raja Ampat and a crown jewel of Indonesian diving. A Misool liveaboard adventure unlocks a world of unparalleled biodiversity, breathtaking underwater landscapes, and encounters that will leave you speechless.',
-    categoryListOption: [
-      {
-        value: '',
-        label: 'Select Category'
-      },
-      {
-        value: 'Domestic / KITAS',
-        label: 'Domestic / KITAS Holder'
-      },
-      {
-        value: 'foreigner',
-        label: 'Foreigner'
-      },
-    ],
-    roomTypeListOption: [
-      {
-        value: '',
-        label: 'Select Cabin Type'
-      },
-      {
-        value: 'Suite - Main Deck',
-        label: 'Suite - Main Deck'
-      },
-      {
-        value: 'Executive - Upper Deck',
-        label: 'Executive - Upper Deck'
-      },
-      {
-        value: 'Deluxe - Lower Deck',
-        label: 'Deluxe - Lower Deck'
-      },
-    ],
-    pricePerRoom: [
-      {
-        price: '29,500,000',
-        currency: 'IDR',
-        roomType: 'Deluxe - Lower Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '31,000,000',
-        currency: 'IDR',
-        roomType: 'Executive - Upper Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '35,000,000',
-        currency: 'IDR',
-        roomType: 'Suite - Main Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '2,290',
-        currency: 'USD',
-        roomType: 'Deluxe - Lower Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '2,490',
-        currency: 'USD',
-        roomType: 'Executive - Upper Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '2,690',
-        currency: 'USD',
-        roomType: 'Suite - Main Deck',
-        category: 'foreigner',
-      },
-    ],
-    schedule: [
-      {
-        time: '',
-        descList: []
-      },
-    ],
-    include: [
-      'Airport Transfer in Sorong.',
-      '6 Nights in AC Cabin on Twin Share Basis.',
-      'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
-      '17 Dives with Tanks, Weight, & Belt.',
-      'English Speaking Cruise Director.',
-      'Divemaster with 1:4 Ratio.',
-      'Underwater Documentation.',
-      'Free Nitrox for whom certified (earlybird).',
-    ],
-    notes: [
-      'Port Clearance Fee (IDR 200rb / day for domestic).',
-      'Port Clearance Fee (USD 25 / day for foreigner).',
-      'Dive equipment rental is available for IDR 400,000 / day.',
-      'R4 PIN IDR 500rb for domestic.',
-      'R4 PIN USD 75 for foreigner.',
-      'Boat Crew Tips IDR 200rb / day',
-      'The price excludes airflight tickets.',
-    ],
-    roomGallery: [
-      {
-        roomType: 'Suite - Main Deck',
-        include: [
-          'Private Jacuzzi',
-          'Sea View Balcony',
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerSuiteOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
-          },
-        ],
-      },
-      {
-        roomType: 'Executive - Upper Deck',
-        include: [
-          'Sea View Balcony',
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerExecutiveOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveSix.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveSeven.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
-          },
-        ],
-      },
-      {
-        roomType: 'Deluxe - Lower Deck',
-        include: [
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerDeluxeOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeSix.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeSeven.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeEight.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeNine.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
-          },
-        ],
-      },
-    ],
-    gallery: [
-      {
-        img: ImageMisoolRajaAmpatOne.src,
-        imgAlt: '',
-        blurDataUrl: ImageMisoolRajaAmpatOne.blurDataURL,
-      },
-      {
-        img: ImageBimaTwo.src,
-        imgAlt: '',
-        blurDataUrl: ImageBimaTwo.blurDataURL,
-      },
-      {
-        img: ImageBimaThree.src,
-        imgAlt: '',
-        blurDataUrl: ImageBimaThree.blurDataURL,
-      },
-      {
-        img: MajesticVoyageMain.src,
-        imgAlt: '',
-        blurDataUrl: MajesticVoyageMain.blurDataURL,
-      },
-    ],
-  },
-  {
-    img: ImageWayagMain.src,
-    imgAlt: 'Wayag Trip',
-    blurDataUrl: ImageWayagMain.blurDataURL,
-    title: 'Wayag Dive Trip with Majestic Voyager',
-    location: 'Raja Ampat, Indonesia',
-    date: 'Dec 28th, 2024 - Jan 2nd, 2025',
-    endDate: {
-      day: 2,
-      month: 1,
+      day: 1,
+      month: 11,
       year: 2025
     },
-    url: 'raja-ampat-wayag-majestic-voyager',
-    price: '26jt',
-    priceNum: '26000000',
+    url: 'malapascua-dive-trip',
+    price: '7,9jt',
+    priceNum: '7900000',
     currency: 'IDR',
-    duration: '4 days',
+    duration: '6 days',
     highlight: {
-      diveCount: '14 dives',
-      type: 'LOB'
+      diveCount: '6 dives',
+      type: 'Land Based'
     },
-    available: false,
-    multiCurrencies: true,
+    available: true,
+    multiCurrencies: false,
     category: 'diving-trips',
-    metaDescription: 'Embark on a voyage of unparalleled beauty on a liveaboard diving trip to Wayag, nestled within the heart of Raja Ampat, Indonesia. This remote archipelago boasts some of the world`s most breathtaking scenery and a kaleidoscope of marine life, promising an unforgettable diving adventure.',
-    metaKeywords: 'luxury dive trips, liveaboard diving, dive vacations, curated dive experiences, dive destinations, diving holidays, premium dive trips, exclusive dive travel, dive trip planner, best dive trips, diving adventures, underwater exploration',
-    overview: 'Embark on a voyage of unparalleled beauty on a liveaboard diving trip to Wayag, nestled within the heart of Raja Ampat, Indonesia. This remote archipelago boasts some of the world`s most breathtaking scenery and a kaleidoscope of marine life, promising an unforgettable diving adventure.',
+    metaDescription: 'Experience an unforgettable land-based diving trip in Malapascua, home to the famous thresher sharks, vibrant coral reefs, and diverse marine life. Explore world-class dive sites and enjoy the beauty of this tropical paradise.',
+    metaKeywords: 'Malapascua diving, land-based diving Malapascua, thresher shark diving, Philippines scuba diving, Malapascua dive sites, best diving in Malapascua, coral reef diving, underwater adventure, diving trips Philippines, Malapascua marine life.',
+    overview: 'Experience an unforgettable land-based diving trip in Malapascua, home to the famous thresher sharks, vibrant coral reefs, and diverse marine life. Explore world-class dive sites and enjoy the beauty of this tropical paradise.',
     categoryListOption: [
       {
         value: '',
@@ -2173,526 +109,90 @@ export const divingTripsData = [
     roomTypeListOption: [
       {
         value: '',
-        label: 'Select Cabin Type'
+        label: 'Select Room Type'
       },
       {
-        value: 'Suite - Main Deck',
-        label: 'Suite - Main Deck'
+        value: 'Gardern View Room',
+        label: 'Gardern View Room'
       },
       {
-        value: 'Executive - Upper Deck',
-        label: 'Executive - Upper Deck'
-      },
-      {
-        value: 'Deluxe - Lower Deck',
-        label: 'Deluxe - Lower Deck'
+        value: 'Beach View Room',
+        label: 'Beach View Room'
       },
     ],
     pricePerRoom: [
       {
-        price: '26,000,000',
+        price: '7,900,000',
         currency: 'IDR',
-        roomType: 'Deluxe - Lower Deck',
+        roomType: 'Gardern View Room',
         category: 'Domestic / KITAS',
       },
       {
-        price: '28,000,000',
+        price: '9,500,000',
         currency: 'IDR',
-        roomType: 'Executive - Upper Deck',
+        roomType: 'Beach View Room',
         category: 'Domestic / KITAS',
       },
       {
-        price: '32,000,000',
+        price: '7,900,000',
         currency: 'IDR',
-        roomType: 'Suite - Main Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,950',
-        currency: 'USD',
-        roomType: 'Deluxe - Lower Deck',
+        roomType: 'Gardern View Room',
         category: 'foreigner',
       },
       {
-        price: '2,150',
-        currency: 'USD',
-        roomType: 'Executive - Upper Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '2,350',
-        currency: 'USD',
-        roomType: 'Suite - Main Deck',
+        price: '9,500,000',
+        currency: 'IDR',
+        roomType: 'Beach View Room',
         category: 'foreigner',
       },
     ],
     schedule: [
       {
-        time: '',
-        descList: []
+        time: 'Day 1',
+        descList: [
+          '⁠Depart from Cebu before 11am',
+          '⁠Transfer by car to Bantanyan',
+          '⁠Transfer by boat to Malap',
+          '⁠Arrive in Malapascua Island',
+          '⁠Hotel check in',
+        ]
+      },
+      {
+        time: 'Day 2',
+        descList: [
+          '⁠3x boat dives for thresher & tiger shark',
+        ]
+      },
+      {
+        time: 'Day 3',
+        descList: [
+          '3x boat dives for thresher & tiger shark',
+        ]
+      },
+      {
+        time: 'Day 4',
+        descList: [
+          'Hotel check out',
+          '⁠Transfer by boat to Bantanyan',
+          '⁠Transfer by car to Cebu Airport',
+        ]
       },
     ],
     include: [
-      'Airport Transfer in Labuan Bajo.',
-      '4 Nights in AC Cabins Aboard on Sharing Basis.',
-      'Full Onboard Meals.',
-      'Unlimited tea, coffee, softdrinks and mineral water.',
-      '10+ Dives with Tanks, Weight, & Belt.',
-      'English Speaking Cruise Director.',
-      'Divemaster & Local Dive Guide.',
-      'Underwater Documentation.',
+      '6x thresher & tiger shark dives',
+      '⁠4D3N stay at Dive Resort with breakdast.',
+      'Weight, tanks & local dive guide',
+      '⁠Underwater documentation',
+      '⁠Marine and environmental fee',
+      '⁠Private airport van transfer',
+      '⁠Private  boat transfer',
     ],
     notes: [
-      'Port Clearance Fee (IDR 1jt / pax).',
+      'Exclude ⁠Any personal expenditure such as laundry, personal medicine, etc',
+      'Exclude lunch & dinner',
+      'Exclude ⁠Airfare to/from Cebu',
       'Dive equipment rental is available',
-      'Alocolic beverages are available.',
-      'Boat crew tip gratuities IDR 200rb / day / pax',
-      'The price excludes airflight tickets.',
-    ],
-    roomGallery: [
-      {
-        roomType: 'Suite - Main Deck',
-        include: [
-          'Private Jacuzzi',
-          'Sea View Balcony',
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerSuiteOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
-          },
-        ],
-      },
-      {
-        roomType: 'Executive - Upper Deck',
-        include: [
-          'Sea View Balcony',
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerExecutiveOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveSix.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveSeven.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
-          },
-        ],
-      },
-      {
-        roomType: 'Deluxe - Lower Deck',
-        include: [
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerDeluxeOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeSix.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeSeven.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeEight.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeNine.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
-          },
-        ],
-      },
-    ],
-    gallery: [
-      {
-        img: ImageWayagMain.src,
-        imgAlt: '',
-        blurDataUrl: ImageWayagMain.blurDataURL,
-      },
-      {
-        img: ImageBimaTwo.src,
-        imgAlt: '',
-        blurDataUrl: ImageBimaTwo.blurDataURL,
-      },
-      {
-        img: ImageBimaThree.src,
-        imgAlt: '',
-        blurDataUrl: ImageBimaThree.blurDataURL,
-      },
-      {
-        img: MajesticVoyageMain.src,
-        imgAlt: '',
-        blurDataUrl: MajesticVoyageMain.blurDataURL,
-      },
-    ],
-  },
-  {
-    img: ImageMaldivesTwo.src,
-    imgAlt: 'Maldives Trip',
-    blurDataUrl: ImageMaldivesTwo.blurDataURL,
-    title: 'Best of Maldives Dive Trip with Maldives Mosaique',
-    location: 'Maldives',
-    date: 'Jan 26th - Feb 2nd, 2025',
-    endDate: {
-      day: 2,
-      month: 2,
-      year: 2025
-    },
-    url: 'best-of-maldives-dive-trip',
-    price: '1,450',
-    priceNum: '1450',
-    currency: 'USD',
-    duration: '4 days',
-    highlight: {
-      diveCount: '17 dives',
-      type: 'LOB'
-    },
-    available: true,
-    multiCurrencies: false,
-    category: 'diving-trips',
-    metaDescription: 'Embark on an extraordinary underwater journey with our curated collection of luxury dive trips. Explore pristine dive sites, encounter incredible marine life, and indulge in unparalleled comfort aboard our hand-picked liveaboard vessels. Discover your perfect dive vacation today.',
-    metaKeywords: 'luxury dive trips, liveaboard diving, dive vacations, curated dive experiences, dive destinations, diving holidays, premium dive trips, exclusive dive travel, dive trip planner, best dive trips, diving adventures, underwater exploration',
-    overview: 'Embark on a voyage of discovery unlike any other on a liveaboard diving trip to the Maldives.  This island paradise, famed for its turquoise waters and pristine coral reefs, offers an unparalleled underwater experience from the comfort and luxury of a liveaboard vessel.',
-    categoryListOption: [
-      {
-        value: '',
-        label: 'Select Category'
-      },
-      {
-        value: 'Domestic / KITAS',
-        label: 'Domestic / KITAS Holder'
-      },
-      {
-        value: 'foreigner',
-        label: 'Foreigner'
-      },
-    ],
-    roomTypeListOption: [
-      {
-        value: '',
-        label: 'Select Cabin Type'
-      },
-      {
-        value: 'R6 (Triple Bed) - Lower Deck',
-        label: 'R6 (Triple Bed) - Lower Deck'
-      },
-      {
-        value: 'R5 (Triple Bed) - Lower Deck',
-        label: 'R5 (Triple Bed) - Lower Deck'
-      },
-      {
-        value: 'R4 (Double Bed) - Lower Deck',
-        label: 'R4 (Double Bed) - Lower Deck'
-      },
-      {
-        value: 'R3 (Bunk Bed) - Lower Deck',
-        label: 'R3 (Bunk Bed) - Lower Deck'
-      },
-      {
-        value: 'R2 (Bunk Bed) - Lower Deck',
-        label: 'R2 (Bunk Bed) - Lower Deck'
-      },
-      {
-        value: 'R1 (Double Bed) - Lower Deck',
-        label: 'R1 (Double Bed) - Lower Deck'
-      },
-      {
-        value: 'R7 (Double Bed) - Upper Deck with Balcony',
-        label: 'R7 (Double Bed) - Upper Deck with Balcony'
-      },
-      {
-        value: 'R8 (Double Bed) - Upper Deck with Balcony',
-        label: 'R8 (Double Bed) - Upper Deck with Balcony'
-      },
-      {
-        value: 'R9 (Twin Bed) - Upper Deck with Balcony',
-        label: 'R9 (Twin Bed) - Upper Deck with Balcony'
-      },
-      {
-        value: 'R10 (Twin Bed) - Upper Deck with Balcony',
-        label: 'R10 (Twin Bed) - Upper Deck with Balcony'
-      },
-      {
-        value: 'R11 (Sky Light Suite) - Upper Deck with Balcony',
-        label: 'R11 (Sky Light Suite) - Upper Deck with Balcony'
-      },
-      {
-        value: 'R12 - Upper Deck without Balcony',
-        label: 'R12 - Upper Deck without Balcony'
-      },
-    ],
-    pricePerRoom: [
-      {
-        price: '1,450',
-        currency: 'USD',
-        roomType: 'R6 (Triple Bed) - Lower Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,450',
-        currency: 'USD',
-        roomType: 'R5 (Triple Bed) - Lower Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,650',
-        currency: 'USD',
-        roomType: 'R4 (Double Bed) - Lower Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,450',
-        currency: 'USD',
-        roomType: 'R3 (Bunk Bed) - Lower Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,450',
-        currency: 'USD',
-        roomType: 'R2 (Bunk Bed) - Lower Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,650',
-        currency: 'USD',
-        roomType: 'R1 (Double Bed) - Lower Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,950',
-        currency: 'USD',
-        roomType: 'R7 (Double Bed) - Upper Deck with Balcony',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,950',
-        currency: 'USD',
-        roomType: 'R8 (Double Bed) - Upper Deck with Balcony',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,950',
-        currency: 'USD',
-        roomType: 'R9 (Twin Bed) - Upper Deck with Balcony',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,950',
-        currency: 'USD',
-        roomType: 'R10 (Twin Bed) - Upper Deck with Balcony',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '2,150',
-        currency: 'USD',
-        roomType: 'R11 (Sky Light Suite) - Upper Deck with Balcony',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,950',
-        currency: 'USD',
-        roomType: 'R12 - Upper Deck without Balcony',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,450',
-        currency: 'USD',
-        roomType: 'R6 (Triple Bed) - Lower Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '1,450',
-        currency: 'USD',
-        roomType: 'R5 (Triple Bed) - Lower Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '1,650',
-        currency: 'USD',
-        roomType: 'R4 (Double Bed) - Lower Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '1,450',
-        currency: 'USD',
-        roomType: 'R3 (Bunk Bed) - Lower Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '1,450',
-        currency: 'USD',
-        roomType: 'R2 (Bunk Bed) - Lower Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '1,650',
-        currency: 'USD',
-        roomType: 'R1 (Double Bed) - Lower Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '1,950',
-        currency: 'USD',
-        roomType: 'R7 (Double Bed) - Upper Deck with Balcony',
-        category: 'foreigner',
-      },
-      {
-        price: '1,950',
-        currency: 'USD',
-        roomType: 'R8 (Double Bed) - Upper Deck with Balcony',
-        category: 'foreigner',
-      },
-      {
-        price: '1,950',
-        currency: 'USD',
-        roomType: 'R9 (Twin Bed) - Upper Deck with Balcony',
-        category: 'foreigner',
-      },
-      {
-        price: '1,950',
-        currency: 'USD',
-        roomType: 'R10 (Twin Bed) - Upper Deck with Balcony',
-        category: 'foreigner',
-      },
-      {
-        price: '2,150',
-        currency: 'USD',
-        roomType: 'R11 (Sky Light Suite) - Upper Deck with Balcony',
-        category: 'foreigner',
-      },
-      {
-        price: '1,950',
-        currency: 'USD',
-        roomType: 'R12 - Upper Deck without Balcony',
-        category: 'foreigner',
-      },
-    ],
-    schedule: [
-      {
-        time: '',
-        descList: []
-      },
-    ],
-    include: [
-      'Daily Breakfast, Lunch and Dinner on board.',
-      'Free Coffee, Tea & Snack on board.',
-      'Up to 17 dives with experience local guide (tanks, weights & belts).',
-      'Male Airport Transfer.',
-      'GST 12% Taxes.',
-      'Underwater & aerial (drone) documentation.',
-    ],
-    notes: [
-      'Exclude All flight and taxes',
-      'Green Tax - USD 42,-',
-      'BBQ Dinner at Desert Island - USD 10,- /pax.',
-      'Deep South Fuel surcharge USD 100,-.',
-      'Tiger shark zoo fee USD 35,- (optional)',
-      'Equipment Rental.',
-      'Exclude dive guide ratio 1:6',
-      'BCD USD$8 / day',
-      'REG USD$10 / day',
-      'Wetsuit USD$6 / day',
-      'Fin USD$6 / day',
-      'Mask & Snorkel USD$6 / day',
-      'Reef Hook USD$5 / day',
-      'Dive Computer USD$12 / day',
-      'Upgrade to 15 ltr tank USD$105 / trip',
-      'Torch USD$10 per day',
-      'Travel and dive insurance (recommended)',
-      'Porter services',
-      'Tips for boat crew (USD 100,- / pax Mandatory)',
-      'Private dive guide USD 100,- / day.',
-      'Exclude drink from the bar',
-      'For Nitrox Air usage 12ltr tank(certified Nitrox Diver only) ADD another USD 90,- / trip',
+      '⁠Tip for local guide',
     ],
     roomGallery: [
       {
@@ -2709,24 +209,24 @@ export const divingTripsData = [
     ],
     gallery: [
       {
-        img: ImageMaldivesTwo.src,
+        img: ImageMalapascuaMain.src,
         imgAlt: '',
-        blurDataUrl: ImageMaldivesTwo.blurDataURL,
+        blurDataUrl: ImageMalapascuaMain.blurDataURL,
       },
       {
-        img: ImageBimaTwo.src,
+        img: ImageBandarNeiraFour.src,
         imgAlt: '',
-        blurDataUrl: ImageBimaTwo.blurDataURL,
+        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
       },
       {
-        img: ImageBimaThree.src,
+        img: ImageBandarNeiraThree.src,
         imgAlt: '',
-        blurDataUrl: ImageBimaThree.blurDataURL,
+        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
       },
       {
-        img: ImageMaldivesOne.src,
+        img: ImageBandarNeiraFive.src,
         imgAlt: '',
-        blurDataUrl: ImageMaldivesOne.blurDataURL,
+        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
       },
     ],
   },
@@ -3198,10 +698,10 @@ export const divingTripsData = [
       year: 2025
     },
     url: 'lebaran-escape-misool-dive-trip',
-    price: '29,5jt',
-    priceNum: '29500000',
+    price: '28,5jt',
+    priceNum: '28500000',
     currency: 'IDR',
-    duration: '4 days',
+    duration: '7 days',
     highlight: {
       diveCount: '17 dives',
       type: 'LOB'
@@ -3246,7 +746,7 @@ export const divingTripsData = [
     ],
     pricePerRoom: [
       {
-        price: '29,500,000',
+        price: '28,500,000',
         currency: 'IDR',
         roomType: 'Deluxe - Lower Deck',
         category: 'Domestic / KITAS',
@@ -3474,6 +974,192 @@ export const divingTripsData = [
     ],
   },
   {
+    img: ImageBimaTwo.src,
+    imgAlt: 'Coron Dive Trip',
+    blurDataUrl: ImageBimaTwo.blurDataURL,
+    title: 'Coron Dive Trip',
+    location: 'Philippines',
+    date: 'Apr 27th - May 1st, 2025',
+    endDate: {
+      day: 1,
+      month: 11,
+      year: 2025
+    },
+    url: 'coron-dive-trip',
+    price: '9,9jt',
+    priceNum: '9900000',
+    currency: 'IDR',
+    duration: '4 days',
+    highlight: {
+      diveCount: '6 dives',
+      type: 'Land Based'
+    },
+    available: true,
+    multiCurrencies: false,
+    category: 'diving-trips',
+    metaDescription: 'Explore the breathtaking underwater world of Coron with our land-based diving trips. Discover vibrant coral reefs, stunning WWII wrecks, and diverse marine life while enjoying comfortable accommodations on land. Book your adventure today!',
+    metaKeywords: 'Coron diving trip, land-based diving Coron, scuba diving Coron, wreck diving Philippines, Coron dive sites, reef diving Coron, underwater adventure, diving vacation, dive travel Coron, best diving spots in Coron',
+    overview: 'Explore the breathtaking underwater world of Coron with our land-based diving trips. Discover vibrant coral reefs, stunning WWII wrecks, and diverse marine life while enjoying comfortable accommodations on land. Book your adventure today!',
+    categoryListOption: [
+      {
+        value: '',
+        label: 'Select Category'
+      },
+      {
+        value: 'Domestic / KITAS',
+        label: 'Domestic / KITAS Holder'
+      },
+      {
+        value: 'foreigner',
+        label: 'Foreigner'
+      },
+    ],
+    roomTypeListOption: [
+      {
+        value: '',
+        label: 'Select Package Type'
+      },
+      {
+        value: '4D3N',
+        label: '4D3N'
+      },
+      {
+        value: '5D4N - Island Hopping',
+        label: '5D4N - Island Hopping'
+      },
+      {
+        value: '5D4N - Dugong dive',
+        label: '5D4N - Dugong dive'
+      },
+    ],
+    pricePerRoom: [
+      {
+        price: '9,900,000',
+        currency: 'IDR',
+        roomType: '4D3N',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '11,000,000',
+        currency: 'IDR',
+        roomType: '5D4N - Island Hopping',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '13,000,000',
+        currency: 'IDR',
+        roomType: '5D4N - Dugong dive',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '9,900,000',
+        currency: 'IDR',
+        roomType: '4D3N',
+        category: 'foreigner',
+      },
+      {
+        price: '11,000,000',
+        currency: 'IDR',
+        roomType: '5D4N - Island Hopping',
+        category: 'foreigner',
+      },
+      {
+        price: '13,000,000',
+        currency: 'IDR',
+        roomType: '5D4N - Dugong dive',
+        category: 'foreigner',
+      },
+    ],
+    schedule: [
+      {
+        time: 'Day 1',
+        descList: [
+          'Arrive at Coron Island',
+          '⁠Trasfer from airport to the hotel',
+          '⁠Free time',
+        ]
+      },
+      {
+        time: 'Day 2, 3x dives',
+        descList: [
+          '⁠Olympia Maru wreck, ⁠Kogyo Maru Wreck, ⁠Murazan Maru Wreck',
+        ]
+      },
+      {
+        time: 'Day 3, 3x dives',
+        descList: [
+          '⁠Akishushima Maru Wreck, ⁠Akikawa  Maru Wreck, ⁠Lusong Gunboat Wreck',
+        ]
+      },
+      {
+        time: 'Day 4, (2 options, Beach & Lake Hopping)',
+        descList: [
+          '⁠Barracuda Lake',
+          '⁠Twin Lagoon',
+          '⁠Turtle point',
+        ]
+      },
+      {
+        time: 'Day 5, SEA YOU NEXT TRIP',
+        descList: [
+          '⁠Breakfast',
+          '⁠Transfer to Coron Airport',
+        ]
+      },
+    ],
+    include: [
+      '⁠Exclusive tour with private boat',
+      '⁠3-4 nights at Venus Royal hotel on twin sharing basis',
+      'Weight, tanks & local dive guide',
+      '⁠Breakfast & Lunch during activities',
+      '⁠Marine and environmental fee',
+      '⁠Private airport transfer',
+    ],
+    notes: [
+      'Exclude ⁠Any personal expenditure such as laundry, personal medicine, etc',
+      'Exclude dinner',
+      'Exclude ⁠Airfare to/from Coron',
+      'Dive equipment rental is available',
+      '⁠Single supplement 750k / night',
+      '⁠⁠Tip for local guide 125k / day',
+    ],
+    roomGallery: [
+      {
+        roomType: '',
+        include: [''],
+        roomImages: [
+          {
+            img: '',
+            imgAlt: '',
+            blurDataUrl: '',
+          },
+        ],
+      },
+    ],
+    gallery: [
+      {
+        img: ImageMalapascuaMain.src,
+        imgAlt: '',
+        blurDataUrl: ImageMalapascuaMain.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFour.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFive.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+      },
+    ],
+  },
+  {
     img: ImagePalawanTwo.src,
     imgAlt: 'Tubbataha Trip',
     blurDataUrl: ImagePalawanTwo.blurDataURL,
@@ -3610,6 +1296,603 @@ export const divingTripsData = [
         img: ImagePalawanOne.src,
         imgAlt: '',
         blurDataUrl: ImagePalawanOne.blurDataURL,
+      },
+    ],
+  },
+  {
+    img: ImageMaldivesTwo.src,
+    imgAlt: 'Maldives Trip',
+    blurDataUrl: ImageMaldivesTwo.blurDataURL,
+    title: 'Maldives Dive Trip with Maldives Legend Odyssey',
+    location: 'Maldives',
+    date: 'May 24th - 31st, 2025',
+    endDate: {
+      day: 2,
+      month: 2,
+      year: 2025
+    },
+    url: 'maldives-dive-trip-legend-odyssey',
+    price: '1,750',
+    priceNum: '1750',
+    currency: 'USD',
+    duration: '4 days',
+    highlight: {
+      diveCount: '17 dives',
+      type: 'LOB'
+    },
+    available: true,
+    multiCurrencies: false,
+    category: 'diving-trips',
+    metaDescription: 'Embark on an extraordinary underwater journey with our curated collection of luxury dive trips. Explore pristine dive sites, encounter incredible marine life, and indulge in unparalleled comfort aboard our hand-picked liveaboard vessels. Discover your perfect dive vacation today.',
+    metaKeywords: 'luxury dive trips, liveaboard diving, dive vacations, curated dive experiences, dive destinations, diving holidays, premium dive trips, exclusive dive travel, dive trip planner, best dive trips, diving adventures, underwater exploration',
+    overview: 'Embark on a voyage of discovery unlike any other on a liveaboard diving trip to the Maldives.  This island paradise, famed for its turquoise waters and pristine coral reefs, offers an unparalleled underwater experience from the comfort and luxury of a liveaboard vessel.',
+    categoryListOption: [
+      {
+        value: '',
+        label: 'Select Category'
+      },
+      {
+        value: 'Domestic / KITAS',
+        label: 'Domestic / KITAS Holder'
+      },
+      {
+        value: 'foreigner',
+        label: 'Foreigner'
+      },
+    ],
+    roomTypeListOption: [
+      {
+        value: '',
+        label: 'Select Cabin Type'
+      },
+      {
+        value: 'Room 4 & 5 - Lower Deck',
+        label: 'Room 4 & 5 - Lower Deck'
+      },
+      {
+        value: 'Room 1, 2, 3, 6, 7, 8 - Lower Deck',
+        label: 'Room 1, 2, 3, 6, 7, 8 - Lower Deck'
+      },
+      {
+        value: 'Room 9 - 11 - Upper Deck',
+        label: 'Room 9 - 11 - Upper Deck'
+      },
+    ],
+    pricePerRoom: [
+      {
+        price: '1,750',
+        currency: 'USD',
+        roomType: 'Room 4 & 5 - Lower Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '1,850',
+        currency: 'USD',
+        roomType: 'Room 1, 2, 3, 6, 7, 8 - Lower Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '2,050',
+        currency: 'USD',
+        roomType: 'Room 9 - 11 - Upper Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '1,750',
+        currency: 'USD',
+        roomType: 'Room 4 & 5 - Lower Deck',
+        category: 'foreigner',
+      },
+      {
+        price: '1,850',
+        currency: 'USD',
+        roomType: 'Room 1, 2, 3, 6, 7, 8 - Lower Deck',
+        category: 'foreigner',
+      },
+      {
+        price: '2,050',
+        currency: 'USD',
+        roomType: 'Room 9 - 11 - Upper Deck',
+        category: 'foreigner',
+      },
+    ],
+    schedule: [
+      {
+        time: '',
+        descList: []
+      },
+    ],
+    include: [
+      '⁠Meals – Daily Breakfast, Lunch and Dinner on board.',
+      'Free Coffee, Tea & Snack on board.',
+      '⁠Up to 17 dives with experience local guide (1:6)',
+      'Male Airport Transfer.',
+      'GST 12% Taxes.',
+      'Underwater documentation.',
+    ],
+    notes: [
+      'Exclude All flight and taxes',
+      'Green Tax - USD 42,-',
+      'BBQ Dinner at Desert Island - USD 10,- /pax.',
+      'Deep South Fuel surcharge USD 100,-.',
+      'Equipment Rental.',
+      'Exclude dive guide ratio 1:6',
+      'BCD USD$8 / day',
+      'REG USD$8 / day',
+      'Wetsuit USD$8 / day',
+      'Fin USD$5 / day',
+      'Mask & Snorkel USD$8 / day',
+      'Reef Hook USD$5 / day',
+      'Dive Computer USD$5 / dive',
+      'Upgrade to 15 ltr tank USD$5 / dive',
+      'Torch USD$10 per day',
+      'Travel and dive insurance (recommended)',
+      'Exclude Porter services',
+      'Tips for boat crew (USD 100,- / pax Mandatory)',
+      'Exclude drink from the bar',
+      'For Nitrox Air usage 12ltr tank (certified Nitrox Diver only) ADD another USD 10 per dive/tank',
+    ],
+    roomGallery: [
+      {
+        roomType: '',
+        include: [''],
+        roomImages: [
+          {
+            img: '',
+            imgAlt: '',
+            blurDataUrl: '',
+          },
+        ],
+      },
+    ],
+    gallery: [
+      {
+        img: ImageMaldivesTwo.src,
+        imgAlt: '',
+        blurDataUrl: ImageMaldivesTwo.blurDataURL,
+      },
+      {
+        img: ImageBimaTwo.src,
+        imgAlt: '',
+        blurDataUrl: ImageBimaTwo.blurDataURL,
+      },
+      {
+        img: ImageBimaThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBimaThree.blurDataURL,
+      },
+      {
+        img: ImageMaldivesOne.src,
+        imgAlt: '',
+        blurDataUrl: ImageMaldivesOne.blurDataURL,
+      },
+    ],
+  },
+  {
+    img: ImageBandarNeiraThree.src,
+    imgAlt: 'Luwuk - Tompotika Dive Trip',
+    blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+    title: 'Luwuk - Tompotika Dive Trip',
+    location: 'Indonesia',
+    date: 'Jun 6th - 10th, 2025',
+    endDate: {
+      day: 1,
+      month: 11,
+      year: 2025
+    },
+    url: 'luwuk-tompotika-dive-trip',
+    price: '12jt',
+    priceNum: '12000000',
+    currency: 'IDR',
+    duration: '4 days',
+    highlight: {
+      diveCount: '5 dives',
+      type: 'Land Based'
+    },
+    available: true,
+    multiCurrencies: false,
+    category: 'diving-trips',
+    metaDescription: 'Explore the breathtaking underwater world of Luwuk - Tompotika on a land-based diving trip. Discover pristine coral reefs, diverse marine life, and crystal-clear waters in one of Indonesia’s hidden diving paradises. Book your adventure today!',
+    metaKeywords: 'Luwuk diving, Tompotika diving, land-based diving Indonesia, dive trip Luwuk, best dive sites Sulawesi, scuba diving Luwuk Tompotika, underwater paradise Indonesia, coral reefs Luwuk, diving tour Indonesia, marine biodiversity Sulawesi',
+    overview: 'Explore the breathtaking underwater world of Luwuk - Tompotika on a land-based diving trip. Discover pristine coral reefs, diverse marine life, and crystal-clear waters in one of Indonesia’s hidden diving paradises. Book your adventure today!',
+    categoryListOption: [
+      {
+        value: '',
+        label: 'Select Category'
+      },
+      {
+        value: 'Domestic / KITAS',
+        label: 'Domestic / KITAS Holder'
+      },
+      {
+        value: 'foreigner',
+        label: 'Foreigner'
+      },
+    ],
+    roomTypeListOption: [
+      {
+        value: '',
+        label: 'Select Package Type'
+      },
+      {
+        value: '4D3N',
+        label: '4D3N'
+      },
+      {
+        value: '5D4N',
+        label: '5D4N'
+      },
+    ],
+    pricePerRoom: [
+      {
+        price: '12,000,000',
+        currency: 'IDR',
+        roomType: '4D3N',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '14,500,000',
+        currency: 'IDR',
+        roomType: '5D4N',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '12,000,000',
+        currency: 'IDR',
+        roomType: '4D3N',
+        category: 'foreigner',
+      },
+      {
+        price: '14,500,000',
+        currency: 'IDR',
+        roomType: '5D4N',
+        category: 'foreigner',
+      },
+    ],
+    schedule: [
+      {
+        time: '',
+        descList: []
+      },
+    ],
+    include: [
+      'Airport transfer',
+      'Breakfast,lunch dinner',
+      'Weight, tanks & local dive guide',
+      '5 boat dives with tanks & weight',
+      'Unlimited dive at Tompotika house reef (non guided)',
+      'Kayaks and bicycle use in the limit of availability',
+      '4D3N stay at Tompotika Dive Lodge (twin share basis)',
+      '2D1N stay at hotel in Luwuk for Paisupok trip',
+      'Private land & sea transportation during the trip',
+      'Underwater & aerial documentation',
+    ],
+    notes: [
+      'Exclude ⁠Any personal expenditure such as laundry, personal medicine, etc',
+      'Exclude domestic flight',
+      'Additional dive or night dive 650k / dive',
+      'Dive equipment rental 650k / day',
+      'Nitrox use 75k / tank',
+      '⁠⁠Tip for local guide 150k / day',
+    ],
+    roomGallery: [
+      {
+        roomType: '',
+        include: [''],
+        roomImages: [
+          {
+            img: '',
+            imgAlt: '',
+            blurDataUrl: '',
+          },
+        ],
+      },
+    ],
+    gallery: [
+      {
+        img: ImageBandarNeiraThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFour.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFive.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+      },
+    ],
+  },
+  {
+    img: ImageBimaMain.src,
+    imgAlt: 'BIMA -  KOMODO LOB Trip',
+    blurDataUrl: ImageBimaMain.blurDataURL,
+    title: 'Bima - Komodo Dive Trip with Majestic Voyager',
+    location: 'West Komodo, Indonesia',
+    date: 'Jun 24th - 29th, 2024',
+    endDate: {
+      day: 21,
+      month: 8,
+      year: 2024
+    },
+    url: 'bima-komodo-majestic-voyager',
+    price: '21jt',
+    priceNum: '21000000',
+    currency: 'IDR',
+    duration: '4 days',
+    highlight: {
+      diveCount: '14 dives',
+      type: 'LOB'
+    },
+    available: true,
+    multiCurrencies: true,
+    category: 'diving-trips',
+    metaDescription: 'Embark on an extraordinary underwater journey with our curated collection of luxury dive trips. Explore pristine dive sites, encounter incredible marine life, and indulge in unparalleled comfort aboard our hand-picked liveaboard vessels. Discover your perfect dive vacation today.',
+    metaKeywords: 'luxury dive trips, liveaboard diving, dive vacations, curated dive experiences, dive destinations, diving holidays, premium dive trips, exclusive dive travel, dive trip planner, best dive trips, diving adventures, underwater exploration',
+    overview: 'Bima, One of the Indonesia`s hidden gem. Sightsea Expeditions offers a liveaboard diving experience unlike any other. Venture beyond the crowds and discover a world teeming with fascinating critters and unique marine life on a luxurious liveaboard vessel.',
+    categoryListOption: [
+      {
+        value: '',
+        label: 'Select Category'
+      },
+      {
+        value: 'Domestic / KITAS',
+        label: 'Domestic / KITAS Holder'
+      },
+      {
+        value: 'foreigner',
+        label: 'Foreigner'
+      },
+    ],
+    roomTypeListOption: [
+      {
+        value: '',
+        label: 'Select Cabin Type'
+      },
+      {
+        value: 'Suite - Main Deck',
+        label: 'Suite - Main Deck'
+      },
+      {
+        value: 'Executive - Upper Deck',
+        label: 'Executive - Upper Deck'
+      },
+      {
+        value: 'Deluxe - Lower Deck',
+        label: 'Deluxe - Lower Deck'
+      },
+    ],
+    pricePerRoom: [
+      {
+        price: '21,000,000',
+        currency: 'IDR',
+        roomType: 'Deluxe - Lower Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '24,000,000',
+        currency: 'IDR',
+        roomType: 'Executive - Upper Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '26,000,000',
+        currency: 'IDR',
+        roomType: 'Suite - Main Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '1,700',
+        currency: 'USD',
+        roomType: 'Deluxe - Lower Deck',
+        category: 'foreigner',
+      },
+      {
+        price: '1,900',
+        currency: 'USD',
+        roomType: 'Executive - Upper Deck',
+        category: 'foreigner',
+      },
+      {
+        price: '2,100',
+        currency: 'USD',
+        roomType: 'Suite - Main Deck',
+        category: 'foreigner',
+      },
+    ],
+    schedule: [
+      {
+        time: '',
+        descList: []
+      },
+    ],
+    include: [
+      '⁠return airport transfers in Bajo',
+      '⁠5 nights in AC cabin on twin share basis',
+      'Full Onboard Meals, Tea, Coffee, & Softdrinks.',
+      '14 Dives with Tanks, Weight, & Belt.',
+      'English Speaking Cruise Director.',
+      'Divemaster with 1:4 Ratio.',
+      'Underwater Documentation.',
+    ],
+    notes: [
+      'Port Clearance Fee (IDR 400rb / day for domestic).',
+      'Port Clearance Fee (USD 25 / day for foreigner).',
+      'Dive equipment rental is available for IDR 400,000 / day.',
+      'Boat Crew Tips IDR 200rb / day',
+      'The price excludes airflight tickets to Komodo.',
+    ],
+    roomGallery: [
+      {
+        roomType: 'Suite - Main Deck',
+        include: [
+          'Private Jacuzzi',
+          'Sea View Balcony',
+          'Twin Bed',
+          'Air Conditioner',
+          'Water Heater',
+          'Private Bathroom',
+        ],
+        roomImages: [
+          {
+            img: MajesticVoyagerSuiteOne.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteTwo.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteThree.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteFour.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteFive.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
+          },
+        ],
+      },
+      {
+        roomType: 'Executive - Upper Deck',
+        include: [
+          'Sea View Balcony',
+          'Twin Bed',
+          'Air Conditioner',
+          'Water Heater',
+          'Private Bathroom',
+        ],
+        roomImages: [
+          {
+            img: MajesticVoyagerExecutiveOne.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveTwo.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveThree.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveFour.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveFive.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveSix.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveSeven.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
+          },
+        ],
+      },
+      {
+        roomType: 'Deluxe - Lower Deck',
+        include: [
+          'Twin Bed',
+          'Air Conditioner',
+          'Water Heater',
+          'Private Bathroom',
+        ],
+        roomImages: [
+          {
+            img: MajesticVoyagerDeluxeOne.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeTwo.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeThree.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeFour.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeFive.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeSix.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeSeven.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeEight.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeNine.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
+          },
+        ],
+      },
+    ],
+    gallery: [
+      {
+        img: ImageBimaMain.src,
+        imgAlt: '',
+        blurDataUrl: ImageBimaMain.blurDataURL,
+      },
+      {
+        img: ImageBimaTwo.src,
+        imgAlt: '',
+        blurDataUrl: ImageBimaTwo.blurDataURL,
+      },
+      {
+        img: ImageBimaThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBimaThree.blurDataURL,
+      },
+      {
+        img: ImageBimaFour.src,
+        imgAlt: '',
+        blurDataUrl: ImageBimaFour.blurDataURL,
       },
     ],
   },
@@ -4041,6 +2324,341 @@ export const divingTripsData = [
         img: ImageBandarNeiraTwo.src,
         imgAlt: '',
         blurDataUrl: ImageBandarNeiraTwo.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFour.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFive.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+      },
+    ],
+  },
+  {
+    img: ImageBimaThree.src,
+    imgAlt: 'Ambon, Suanggi, Banda Dive Trip with Majestic Voyager',
+    blurDataUrl: ImageBimaThree.blurDataURL,
+    title: 'Ambon, Suanggi, Banda Dive Trip with Majestic Voyager',
+    location: 'Ambon, Indonesia',
+    date: 'Oct 12th - 17th, 2025',
+    endDate: {
+      day: 1,
+      month: 11,
+      year: 2025
+    },
+    url: 'ambon-suanggi-banda-dive-majestic-voyager',
+    price: '1,975',
+    priceNum: '1975',
+    currency: 'USD',
+    duration: '6 days',
+    highlight: {
+      diveCount: '12 dives',
+      type: 'LOB'
+    },
+    available: true,
+    multiCurrencies: true,
+    category: 'diving-trips',
+    metaDescription: 'Experience an unforgettable liveaboard diving adventure in Ambon, Suanggi, and Banda. Explore vibrant coral reefs, encounter rare marine life, and dive into the rich history of the Banda Sea. Join us for an extraordinary underwater journey!',
+    metaKeywords: 'liveaboard diving, Ambon diving, Suanggi diving, Banda diving, Banda Sea diving, Indonesia liveaboard, coral reefs, underwater adventure, scuba diving trip, dive Banda Islands, Ambon liveaboard, Suanggi dive sites',
+    overview: 'Experience an unforgettable liveaboard diving adventure in Ambon, Suanggi, and Banda. Explore vibrant coral reefs, encounter rare marine life, and dive into the rich history of the Banda Sea. Join us for an extraordinary underwater journey!',
+    categoryListOption: [
+      {
+        value: '',
+        label: 'Select Category'
+      },
+      {
+        value: 'Domestic / KITAS',
+        label: 'Domestic / KITAS Holder'
+      },
+      {
+        value: 'foreigner',
+        label: 'Foreigner'
+      },
+    ],
+    roomTypeListOption: [
+      {
+        value: '',
+        label: 'Select Cabin Type'
+      },
+      {
+        value: 'Suite - Main Deck',
+        label: 'Suite - Main Deck'
+      },
+      {
+        value: 'Executive - Upper Deck',
+        label: 'Executive - Upper Deck'
+      },
+      {
+        value: 'Deluxe - Lower Deck',
+        label: 'Deluxe - Lower Deck'
+      },
+    ],
+    pricePerRoom: [
+      {
+        price: '26,500,000',
+        currency: 'IDR',
+        roomType: 'Deluxe - Lower Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '29,000,000',
+        currency: 'IDR',
+        roomType: 'Executive - Upper Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '32,000,000',
+        currency: 'IDR',
+        roomType: 'Suite - Main Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '1,975',
+        currency: 'USD',
+        roomType: 'Deluxe - Lower Deck',
+        category: 'foreigner',
+      },
+      {
+        price: '2,275',
+        currency: 'USD',
+        roomType: 'Executive - Upper Deck',
+        category: 'foreigner',
+      },
+      {
+        price: '2,475',
+        currency: 'USD',
+        roomType: 'Suite - Main Deck',
+        category: 'foreigner',
+      },
+    ],
+    schedule: [
+      {
+        time: 'Day 1, Ambon Island',
+        descList: [
+          'Ambon Island, 1-2 dives',
+          'Our staff will meet you at Pattimura Airport and take you to Majestic Voyager, Partimura airport is very close to where the boat is anchored. Arrivals before midday are appreciated for check dive potential.',
+          '⁠Divesite usually Laha jetty for a check dive',
+          '⁠Muck diving, many unusual critters similar to Lembeh.',
+          '⁠Sail overnight to Banda Islands. '
+        ]
+      },
+      {
+        time: 'Day 2, Banda Island',
+        descList: [
+          '⁠⁠Dive sites around Soangi Island including: Soangi drop-off, Jackpot reef, & Ping-Pong. - Early chance to see schooling hammerhead sharks in action.',
+          '',
+          '⁠Moor up at Tanjung Burung, Banda Islands',
+        ]
+      },
+      {
+        time: 'Day 3, Banda Island',
+        descList: [
+          '⁠Dive sites around Hatta Island including Tanjung Buton, Hole in the Wall, and Karang Hatta',
+          '⁠Next good chances to see schooling hammerhead sharks.',
+          '⁠Anchor overnight in a Banda-Neira, a secluded bay at the foot of Gunung Api.',
+        ]
+      },
+      {
+        time: 'Day 4, Banda Island',
+        descList: [
+          '⁠⁠Dive sites in Banda Islands include Pohon Miring, Batu Kapal, Pulau Pisang, & Jackpot',
+          '⁠⁠Return to Soangi Island for last dive for last schooling hammerhead action potential & shorter overnight sail to Nusalaut Island.',
+          '⁠an early morning land tour to the colonial town of Banda Neira and it`s Fort Belgica is a possible alternative to Pohon Miring',
+          '⁠Sail overnight to Ameth village, Nusalaut Island.',
+        ]
+      },
+      {
+        time: 'Day 5, Nusalaut Island & Saparua Island.',
+        descList: [
+          '⁠⁠⁠Dive sites include Ameth & Pombo Booi.',
+          '⁠⁠⁠Afternoon & evening sail to Ambon Island, Laha village.',
+        ]
+      },
+      {
+        time: 'Day 6, Ambon Island - Laha',
+        descList: [
+          '⁠⁠⁠Dive sites include Ameth & Pombo Booi.',
+          '⁠⁠Check-out, check-in & fly away.',
+        ]
+      },
+    ],
+    include: [
+      'Return airport transfers in Ambon.',
+      '⁠5 nights in AC Cabins aboard on sharing basis.',
+      '⁠Full onboard meals, tea, coffee, softdrink & water.',
+      '⁠Historical & Heritage land tour at Banda Neira.',
+      '⁠Unlimited tea, coffee, softdrink and mineral water.',
+      '12 dives with tanks, weight & weight belt.',
+      'English speaking cruise director.',
+      'Dive master & local dive guide.',
+      'Underwater photo/video documentation.',
+    ],
+    notes: [
+      '⁠Exclude airflight tickets to Ambon.',
+      'Port Clearance Fee (USD 25 / day for foreigner).',
+      'Dive equipment rental is available for IDR 400,000 / day.',
+      'Crew gratitudes min. IDR 200rb / day / pax.',
+      '⁠Port clearance fee IDR 250k / day / pax (domestic).',
+      '⁠Port clearance fee  USD 25,- / day / pax (foreigner).',
+      '⁠Banda Sea trips can be tailored.',
+      'Diving days: 5 days (at least 12 dives depending on plan, maybe possible to squeeze a night dive in if desired, number of check dives on first day depends on guest arrival & clearance).'
+    ],
+    roomGallery: [
+      {
+        roomType: 'Suite - Main Deck',
+        include: [
+          'Private Jacuzzi',
+          'Sea View Balcony',
+          'Twin Bed',
+          'Air Conditioner',
+          'Water Heater',
+          'Private Bathroom',
+        ],
+        roomImages: [
+          {
+            img: MajesticVoyagerSuiteOne.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteTwo.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteThree.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteFour.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteFive.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
+          },
+        ],
+      },
+      {
+        roomType: 'Executive - Upper Deck',
+        include: [
+          'Sea View Balcony',
+          'Twin Bed',
+          'Air Conditioner',
+          'Water Heater',
+          'Private Bathroom',
+        ],
+        roomImages: [
+          {
+            img: MajesticVoyagerExecutiveOne.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveTwo.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveThree.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveFour.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveFive.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveSix.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveSeven.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
+          },
+        ],
+      },
+      {
+        roomType: 'Deluxe - Lower Deck',
+        include: [
+          'Twin Bed',
+          'Air Conditioner',
+          'Water Heater',
+          'Private Bathroom',
+        ],
+        roomImages: [
+          {
+            img: MajesticVoyagerDeluxeOne.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeTwo.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeThree.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeFour.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeFive.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeSix.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeSeven.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeEight.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeNine.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
+          },
+        ],
+      },
+    ],
+    gallery: [
+      {
+        img: ImageBimaThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBimaThree.blurDataURL,
       },
       {
         img: ImageBandarNeiraFour.src,
