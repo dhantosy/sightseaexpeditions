@@ -184,9 +184,9 @@ export default function PageDivingTrips({ project }: PageDivingTripsProps) {
                     return (
                       <div key={time} className='relative after:content[""] after:absolute after:z-10 after:-left-[29px] after:top-[6px] after:w-3 after:h-3 after:bg-sky-600 after:rounded-full mb-4'>
                         <div className='opacity-70 flex flex-col lg:flex-row gap-1 lg:gap-4'>
-                          <div className='font-bold basis-0 lg:basis-[180px]'>{time}</div>
-                          <div className='hidden lg:block'>-</div>
-                          <div className='flex flex-col gap-1'>
+                          <div className='font-bold shrink-0 basis-0 lg:basis-[180px]'>{time}</div>
+                          <div className='hidden grow-0 lg:block'>-</div>
+                          <div className='flex grow-0 flex-col gap-1'>
                             {descList?.map((item) => {
                               return (
                                 <div key={item}>{item}</div>

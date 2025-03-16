@@ -22,6 +22,7 @@ import {
   ImageTimorLesteThree,
   ImageLombokTwo,
   ImageMalapascuaMain,
+  ImageSipadanMain,
 } from './images/locations';
 
 import {
@@ -86,7 +87,7 @@ export const divingTripsData = [
       diveCount: '6 dives',
       type: 'Land Based'
     },
-    available: true,
+    available: false,
     multiCurrencies: false,
     category: 'diving-trips',
     metaDescription: 'Experience an unforgettable land-based diving trip in Malapascua, home to the famous thresher sharks, vibrant coral reefs, and diverse marine life. Explore world-class dive sites and enjoy the beauty of this tropical paradise.',
@@ -974,6 +975,324 @@ export const divingTripsData = [
     ],
   },
   {
+    img: ImageSipadanMain.src,
+    imgAlt: 'Sipadan Dive Trip',
+    blurDataUrl: ImageSipadanMain.blurDataURL,
+    title: 'Sipadan Diving Trip',
+    location: 'Malaysia',
+    date: 'Apr 4th - 7th, 2025',
+    endDate: {
+      day: 1,
+      month: 11,
+      year: 2025
+    },
+    url: 'sipadan-diving-trip',
+    price: '12,5jt',
+    priceNum: '12500000',
+    currency: 'IDR',
+    duration: '4 days',
+    highlight: {
+      diveCount: '6 dives',
+      type: 'Land Based'
+    },
+    available: true,
+    multiCurrencies: false,
+    category: 'diving-trips',
+    metaDescription: 'Explore the world-class diving destination of Sipadan, Malaysia. Encounter vibrant coral reefs, majestic sea turtles, schools of barracuda, and hammerhead sharks in crystal-clear waters. Book your Sipadan diving trip today for an unforgettable underwater adventure!',
+    metaKeywords: 'Sipadan diving, Malaysia dive trips, scuba diving Sipadan, Sipadan Island diving, best dive sites Malaysia, barracuda point, turtle cavern, Sipadan liveaboard, dive packages Sipadan, Sipadan marine life',
+    overview: 'Sipadan Island, located off the coast of Sabah, Malaysia, is one of the world’s top dive destinations, renowned for its crystal-clear waters, abundant marine life, and dramatic coral walls. A protected marine park, Sipadan offers encounters with barracuda tornadoes, reef sharks, sea turtles, and mesmerizing underwater caves. Due to conservation efforts, daily dive permits are limited, ensuring an exclusive and pristine experience for certified divers. Our Sipadan dive trips include guided dives, permit arrangements, and accommodation options ranging from budget-friendly lodges to luxury resorts. Whether you`re an experienced diver or looking for an unforgettable adventure, Sipadan promises a once-in -a - lifetime diving experience.',
+    categoryListOption: [
+      {
+        value: '',
+        label: 'Select Category'
+      },
+      {
+        value: 'Domestic / KITAS',
+        label: 'Domestic / KITAS Holder'
+      },
+      {
+        value: 'foreigner',
+        label: 'Foreigner'
+      },
+    ],
+    roomTypeListOption: [
+      {
+        value: '',
+        label: 'Select Package Type'
+      },
+      {
+        value: '4D3N - Uncle Chang Homestay',
+        label: '4D3N - Uncle Chang Homestay'
+      },
+      {
+        value: '4D3N - Light House Hotel',
+        label: '4D3N - Light House Hotel'
+      },
+    ],
+    pricePerRoom: [
+      {
+        price: '12,500,000',
+        currency: 'IDR',
+        roomType: '4D3N - Uncle Chang Homestay',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '14,000,000',
+        currency: 'IDR',
+        roomType: '4D3N - Light House Hotel',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '12,500,000',
+        currency: 'IDR',
+        roomType: '4D3N - Uncle Chang Homestay',
+        category: 'foreigner',
+      },
+      {
+        price: '14,000,000',
+        currency: 'IDR',
+        roomType: '4D3N - Light House Hotel',
+        category: 'foreigner',
+      },
+    ],
+    schedule: [
+      {
+        time: 'Day 1',
+        descList: [
+          '⁠Depart from Tawau before 6pm',
+          '⁠Transfer by van to Semporna',
+          '⁠Hotel c/i',
+          '⁠Free time',
+        ]
+      },
+      {
+        time: 'Day 2',
+        descList: [
+          '⁠2x boat dives tp Sipadan & 1x to Mabul',
+        ]
+      },
+      {
+        time: 'Day 3',
+        descList: [
+          '⁠⁠2x boat dives tp Sipadan & 1x to Mabul',
+        ]
+      },
+      {
+        time: 'Day 4',
+        descList: [
+          '⁠Hotel c/o',
+          '⁠Transfer by van to Tawau Airport',
+          'SEA YOU NEXT TRIP!',
+        ]
+      },
+    ],
+    include: [
+      '⁠4x boat dive in Sipadan Island',
+      '⁠⁠2x boat dive in Mabul Island',
+      '⁠4D3N stay base on twin share + breakfast',
+      '⁠Lunch during diving activity',
+      '⁠Weight, tanks & local dive guide',
+      '⁠Marine and environmental fee',
+      '⁠Private airport van transfer',
+    ],
+    notes: [
+      'Exclude ⁠Any personal expenditure such as laundry, personal medicine, etc',
+      'Exclude dinner',
+      'Exclude ⁠Airfare to/from Tawau',
+      'Dive equipment rental is available',
+      '⁠⁠Tip for local guide 125k / day',
+    ],
+    roomGallery: [
+      {
+        roomType: '',
+        include: [''],
+        roomImages: [
+          {
+            img: '',
+            imgAlt: '',
+            blurDataUrl: '',
+          },
+        ],
+      },
+    ],
+    gallery: [
+      {
+        img: ImageSipadanMain.src,
+        imgAlt: '',
+        blurDataUrl: ImageSipadanMain.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFour.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFive.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+      },
+    ],
+  },
+  {
+    img: ImageBandarNeiraFour.src,
+    imgAlt: 'Maratua Dive Trip',
+    blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+    title: 'Maratua Diving Trip',
+    location: 'Kalimantan',
+    date: 'Apr 17th - 21st, 2025',
+    endDate: {
+      day: 1,
+      month: 11,
+      year: 2025
+    },
+    url: 'maratua-diving-trip',
+    price: '11jt',
+    priceNum: '11000000',
+    currency: 'IDR',
+    duration: '5 days',
+    highlight: {
+      diveCount: '9 dives',
+      type: 'Land Based'
+    },
+    available: true,
+    multiCurrencies: false,
+    category: 'diving-trips',
+    metaDescription: 'Explore the breathtaking underwater world of Maratua with our exclusive dive trips. Encounter vibrant coral reefs, majestic manta rays, and thrilling drift dives in one of Indonesia’s top diving destinations. Book your Maratua diving adventure today!',
+    metaKeywords: 'Maratua diving, Maratua dive trips, Indonesia diving, best dive sites Maratua, manta ray diving, drift diving Indonesia, coral reef diving, scuba diving Maratua, dive resorts Maratua, Maratua Island underwater',
+    overview: 'Maratua Island, located in the heart of the Coral Triangle, offers some of Indonesia`s most spectacular diving experiences.Known for its rich marine biodiversity, crystal- clear waters, and dramatic underwater landscapes, Maratua is a paradise for divers seeking adventure.Highlights include thrilling drift dives at The Channel, encounters with manta rays at Sangalaki, and the vibrant coral gardens of Kakaban.Whether you`re an experienced diver or a beginner, Maratua provides unforgettable underwater encounters. Our dive trips offer expert guides, comfortable accommodations, and seamless logistics to ensure a stress-free and exhilarating experience. Join us for a world-class dive adventure in Maratua!',
+    categoryListOption: [
+      {
+        value: '',
+        label: 'Select Category'
+      },
+      {
+        value: 'Domestic / KITAS',
+        label: 'Domestic / KITAS Holder'
+      },
+      {
+        value: 'foreigner',
+        label: 'Foreigner'
+      },
+    ],
+    roomTypeListOption: [
+      {
+        value: '',
+        label: 'Select Package Type'
+      },
+      {
+        value: 'Ocean View Villa',
+        label: 'Ocean View Villa'
+      },
+      {
+        value: 'Deluxe Forest',
+        label: 'Deluxe Forest'
+      },
+      {
+        value: 'Standard Garden',
+        label: 'Standard Garden'
+      },
+    ],
+    pricePerRoom: [
+      {
+        price: '17,500,000',
+        currency: 'IDR',
+        roomType: 'Ocean View Villa',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '15,000,000',
+        currency: 'IDR',
+        roomType: 'Deluxe Forest',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '11,000,000',
+        currency: 'IDR',
+        roomType: 'Standard Garden',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '17,500,000',
+        currency: 'IDR',
+        roomType: 'Ocean View Villa',
+        category: 'foreigner',
+      },
+      {
+        price: '15,000,000',
+        currency: 'IDR',
+        roomType: 'Deluxe Forest',
+        category: 'foreigner',
+      },
+      {
+        price: '11,000,000',
+        currency: 'IDR',
+        roomType: 'Standard Garden',
+        category: 'foreigner',
+      },
+    ],
+    schedule: [
+      {
+        time: '',
+        descList: []
+      },
+    ],
+    include: [
+      '⁠Berau / Maratua Airport transfer',
+      '⁠4 nights at GNMR on twin sharing basis',
+      'Full meals (breakfast, lunch, snack & dinner)',
+      '9x dives for 5D4N package with tanks & weight',
+      'Land & sea transportation',
+      'Entrance fee Maratua, Kakaban & Sangkalaki',
+    ],
+    notes: [
+      'Exclude ⁠Any personal expenditure such as laundry, personal medicine, etc',
+      'Travel insurance',
+      'Exclude ⁠Airfare',
+      'Dive equipment rental is available',
+      'Crew gratitude / tip IDR 150k/day/pax',
+    ],
+    roomGallery: [
+      {
+        roomType: '',
+        include: [''],
+        roomImages: [
+          {
+            img: '',
+            imgAlt: '',
+            blurDataUrl: '',
+          },
+        ],
+      },
+    ],
+    gallery: [
+      {
+        img: ImageBandarNeiraFour.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFour.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFive.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+      },
+    ],
+  },
+  {
     img: ImageBimaTwo.src,
     imgAlt: 'Coron Dive Trip',
     blurDataUrl: ImageBimaTwo.blurDataURL,
@@ -1080,30 +1399,34 @@ export const divingTripsData = [
         ]
       },
       {
-        time: 'Day 2, 3x dives',
+        time: 'Day 2',
         descList: [
+          '3x dives',
           '⁠Olympia Maru wreck, ⁠Kogyo Maru Wreck, ⁠Murazan Maru Wreck',
         ]
       },
       {
-        time: 'Day 3, 3x dives',
+        time: 'Day 3',
         descList: [
+          '3x dives',
           '⁠Akishushima Maru Wreck, ⁠Akikawa  Maru Wreck, ⁠Lusong Gunboat Wreck',
         ]
       },
       {
-        time: 'Day 4, (2 options, Beach & Lake Hopping)',
+        time: 'Day 4',
         descList: [
+          '2 options, Beach or Lake Hopping',
           '⁠Barracuda Lake',
           '⁠Twin Lagoon',
           '⁠Turtle point',
         ]
       },
       {
-        time: 'Day 5, SEA YOU NEXT TRIP',
+        time: 'Day 5',
         descList: [
           '⁠Breakfast',
           '⁠Transfer to Coron Airport',
+          'SEA YOU NEXT TRIP',
         ]
       },
     ],
@@ -2441,7 +2764,7 @@ export const divingTripsData = [
     ],
     schedule: [
       {
-        time: 'Day 1, Ambon Island',
+        time: 'Day 1 - Ambon Island',
         descList: [
           'Ambon Island, 1-2 dives',
           'Our staff will meet you at Pattimura Airport and take you to Majestic Voyager, Partimura airport is very close to where the boat is anchored. Arrivals before midday are appreciated for check dive potential.',
@@ -2451,7 +2774,7 @@ export const divingTripsData = [
         ]
       },
       {
-        time: 'Day 2, Banda Island',
+        time: 'Day 2 - Banda Island',
         descList: [
           '⁠⁠Dive sites around Soangi Island including: Soangi drop-off, Jackpot reef, & Ping-Pong. - Early chance to see schooling hammerhead sharks in action.',
           '',
@@ -2459,7 +2782,7 @@ export const divingTripsData = [
         ]
       },
       {
-        time: 'Day 3, Banda Island',
+        time: 'Day 3 - Banda Island',
         descList: [
           '⁠Dive sites around Hatta Island including Tanjung Buton, Hole in the Wall, and Karang Hatta',
           '⁠Next good chances to see schooling hammerhead sharks.',
@@ -2467,7 +2790,7 @@ export const divingTripsData = [
         ]
       },
       {
-        time: 'Day 4, Banda Island',
+        time: 'Day 4 - Banda Island',
         descList: [
           '⁠⁠Dive sites in Banda Islands include Pohon Miring, Batu Kapal, Pulau Pisang, & Jackpot',
           '⁠⁠Return to Soangi Island for last dive for last schooling hammerhead action potential & shorter overnight sail to Nusalaut Island.',
@@ -2476,14 +2799,14 @@ export const divingTripsData = [
         ]
       },
       {
-        time: 'Day 5, Nusalaut Island & Saparua Island.',
+        time: 'Day 5 - Nusalaut Island & Saparua Island.',
         descList: [
           '⁠⁠⁠Dive sites include Ameth & Pombo Booi.',
           '⁠⁠⁠Afternoon & evening sail to Ambon Island, Laha village.',
         ]
       },
       {
-        time: 'Day 6, Ambon Island - Laha',
+        time: 'Day 6 - Ambon Island - Laha',
         descList: [
           '⁠⁠⁠Dive sites include Ameth & Pombo Booi.',
           '⁠⁠Check-out, check-in & fly away.',
@@ -2659,6 +2982,296 @@ export const divingTripsData = [
         img: ImageBimaThree.src,
         imgAlt: '',
         blurDataUrl: ImageBimaThree.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFour.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFive.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+      },
+    ],
+  },
+  {
+    img: ImageTimorLesteOne.src,
+    imgAlt: 'Timor Leste - Atauro Island Diving Trip',
+    blurDataUrl: ImageTimorLesteOne.blurDataURL,
+    title: 'Timor Leste - Atauro Island Diving Trip',
+    location: 'Indonesia',
+    date: 'Oct 22nd - 25th, 2025',
+    endDate: {
+      day: 1,
+      month: 11,
+      year: 2025
+    },
+    url: 'timor-leste-atauro-island-diving-trip',
+    price: '950',
+    priceNum: '950',
+    currency: 'USD',
+    duration: '4 days',
+    highlight: {
+      diveCount: '4 dives',
+      type: 'Land Based'
+    },
+    available: true,
+    multiCurrencies: false,
+    category: 'diving-trips',
+    metaDescription: 'Discover the pristine waters of Atauro Island, Timor-Leste—one of the world`s best diving destinations. Experience vibrant coral reefs, incredible marine biodiversity, and crystal- clear waters on unforgettable dive trips.',
+    metaKeywords: 'Atauro Island diving, Timor-Leste diving, scuba diving Atauro, coral reefs Timor-Leste, best dive sites Timor, marine biodiversity, Atauro snorkeling, dive trips Timor-Leste, diving tours, eco-diving Timor',
+    overview: 'Atauro Island, located just off the coast of Timor-Leste, is a hidden gem for divers seeking untouched marine ecosystems. Known for its world-class coral reefs, abundant marine life, and exceptional visibility, Atauro boasts some of the highest recorded biodiversity in the world. Divers can explore vibrant coral gardens, steep drop-offs, and drift dives teeming with tropical fish, sharks, and rays.',
+    categoryListOption: [
+      {
+        value: '',
+        label: 'Select Category'
+      },
+      {
+        value: 'Domestic / KITAS',
+        label: 'Domestic / KITAS Holder'
+      },
+      {
+        value: 'foreigner',
+        label: 'Foreigner'
+      },
+    ],
+    roomTypeListOption: [
+      {
+        value: '',
+        label: 'Select Package Type'
+      },
+      {
+        value: 'Timor Hotel Plaza',
+        label: 'Timor Hotel Plaza'
+      },
+    ],
+    pricePerRoom: [
+      {
+        price: '950',
+        currency: 'USD',
+        roomType: 'Timor Hotel Plaza',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '950',
+        currency: 'USD',
+        roomType: 'Timor Hotel Plaza',
+        category: 'foreigner',
+      },
+    ],
+    schedule: [
+      {
+        time: '',
+        descList: []
+      },
+    ],
+    include: [
+      'Airport transfer',
+      'Hotel - DC - Hotel transfer',
+      'Breakfast and lunch during scuba activity',
+      '3 nights stay at Timor Plaza Hotel with twin share basis',
+      '4x boat dives with tank & weight',
+    ],
+    notes: [
+      'Exclude ⁠Any personal expenditure such as laundry, personal medicine, etc',
+      'Exclude Dinner',
+      'Exclude ⁠Airfare',
+      'Dive equipment rental is available',
+      'Tip for local guide USD 15,- / day dive',
+    ],
+    roomGallery: [
+      {
+        roomType: '',
+        include: [''],
+        roomImages: [
+          {
+            img: '',
+            imgAlt: '',
+            blurDataUrl: '',
+          },
+        ],
+      },
+    ],
+    gallery: [
+      {
+        img: ImageTimorLesteOne.src,
+        imgAlt: '',
+        blurDataUrl: ImageTimorLesteOne.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFour.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFive.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+      },
+    ],
+  },
+  {
+    img: ImageTimorLesteTwo.src,
+    imgAlt: 'Timor Leste - Whale Watching Trip',
+    blurDataUrl: ImageTimorLesteTwo.blurDataURL,
+    title: 'Timor Leste - Whale Watching Trip',
+    location: 'Indonesia',
+    date: 'Oct 24nd - 28th, 2025',
+    endDate: {
+      day: 1,
+      month: 11,
+      year: 2025
+    },
+    url: 'timor-leste-whale-watching-diving-trip',
+    price: '1,500',
+    priceNum: '1500',
+    currency: 'USD',
+    duration: '5 days',
+    highlight: {
+      diveCount: '3 dives',
+      type: 'Land Based'
+    },
+    available: true,
+    multiCurrencies: false,
+    category: 'diving-trips',
+    metaDescription: 'Experience world-class diving and breathtaking whale watching in Timor-Leste, one of the last untouched marine paradises. Encounter vibrant coral reefs, diverse marine life, and seasonal whale migrations in crystal-clear waters. Book your adventure today!',
+    metaKeywords: 'Timor-Leste diving, Timor-Leste whale watching, dive trips Timor-Leste, best diving Asia, scuba diving Timor, marine life Timor-Leste, whale migration Timor, coral reefs Timor, snorkeling Timor-Leste, dive travel Timor.',
+    overview: 'Timor-Leste offers some of the most pristine and biodiverse waters in the world, making it a top destination for both diving enthusiasts and whale watchers. Located in the heart of the Coral Triangle, its reefs are teeming with vibrant marine life, including turtles, reef sharks, and countless fish species.',
+    categoryListOption: [
+      {
+        value: '',
+        label: 'Select Category'
+      },
+      {
+        value: 'Domestic / KITAS',
+        label: 'Domestic / KITAS Holder'
+      },
+      {
+        value: 'foreigner',
+        label: 'Foreigner'
+      },
+    ],
+    roomTypeListOption: [
+      {
+        value: '',
+        label: 'Select Package Type'
+      },
+      {
+        value: 'Timor Hotel Plaza',
+        label: 'Timor Hotel Plaza'
+      },
+    ],
+    pricePerRoom: [
+      {
+        price: '1500',
+        currency: 'USD',
+        roomType: 'Timor Hotel Plaza',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '1500',
+        currency: 'USD',
+        roomType: 'Timor Hotel Plaza',
+        category: 'foreigner',
+      },
+    ],
+    schedule: [
+      {
+        time: 'Day 1',
+        descList: [
+          '⁠arrive at Dili Airport',
+          '⁠hotel checkin',
+          '⁠free time',
+        ]
+      },
+      {
+        time: 'Day 2',
+        descList: [
+          '⁠early bfast',
+          '⁠whale hunting/searching',
+          '⁠lunch',
+          '⁠dive-1',
+          '⁠back to hotel',
+          '⁠free time'
+        ]
+      },
+      {
+        time: 'Day 3',
+        descList: [
+          '⁠early bfast',
+          '⁠whale hunting/searching',
+          '⁠lunch',
+          '⁠dive-2',
+          '⁠back to hotel',
+          '⁠free time',
+        ]
+      },
+      {
+        time: 'Day 4',
+        descList: [
+          '⁠early bfast',
+          '⁠dive-3',
+          '⁠lunch',
+          '⁠whale hunting/searching',
+          '⁠back to hotel',
+          '⁠free time',
+        ]
+      },
+      {
+        time: 'Day 5',
+        descList: [
+          '⁠Airport transfer',
+          '⁠Sea you next trip',
+        ]
+      },
+    ],
+    include: [
+      'Snorkeling gear (mask, snorkel & scuba fins)',
+      'Airport transfer',
+      'Hotel - DC - Hotel transfer',
+      'Breakfast and lunch during activity',
+      '4 nights stay at Timor Plaza Hotel with twin share basis',
+      '3 days swim/freedive activity',
+      'Dive guide ratio 5:1',
+    ],
+    notes: [
+      'Exclude ⁠Any personal expenditure such as laundry, personal medicine, etc',
+      'VOA $30,- for non Indo citizen',
+      'scuba activity $125/dive',
+      'Exclude Dinner',
+      'Exclude ⁠Airfare',
+      'Dive equipment rental is available',
+      'Tip for local guide',
+    ],
+    roomGallery: [
+      {
+        roomType: '',
+        include: [''],
+        roomImages: [
+          {
+            img: '',
+            imgAlt: '',
+            blurDataUrl: '',
+          },
+        ],
+      },
+    ],
+    gallery: [
+      {
+        img: ImageTimorLesteTwo.src,
+        imgAlt: '',
+        blurDataUrl: ImageTimorLesteTwo.blurDataURL,
       },
       {
         img: ImageBandarNeiraFour.src,

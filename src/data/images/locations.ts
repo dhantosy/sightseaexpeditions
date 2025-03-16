@@ -1,4 +1,7 @@
-//BIMA
+//SIPADAN
+import ImageSipadanMain from '@public/assets/images/gallery/sipadan-1.jpg';
+
+//MALAPASCUA
 import ImageMalapascuaMain from '@public/assets/images/gallery/malapascua-1.jpg';
 
 //BIMA
@@ -71,4 +74,5 @@ export {
   ImageTimorLesteThree,
   ImageLombokTwo,
   ImageMalapascuaMain,
+  ImageSipadanMain,
 };
