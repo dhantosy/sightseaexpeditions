@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
           <div className='mt-10 3sm:mt-28 border-t border-creamPrimary'>
             <div className='mt-10 flex flex-col-reverse items-start lg:flex-row lg:items-center text-sm sm:text-base lg:gap-12'>
-              <span>Sightsea Expeditions © 2024. All Rights Reserved.</span>
+              <span>Sightsea Expeditions © 2025. All Rights Reserved.</span>
               <div className='flex flex-col 2xs:flex-row gap-4 2xs:gap-10 lg:gap-12 mb-4 lg:mb-0'>
                 <Link href='/terms-conditions'>Terms & Conditions</Link>
                 <Link href='/privacy-policy'>Privacy Policy</Link>
