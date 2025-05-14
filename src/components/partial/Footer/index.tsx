@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaInstagram, FaEnvelope, FaPhone } from 'react-icons/fa6';
+import { IoLogoWhatsapp } from "react-icons/io";
 import LogoBlue from '@public/assets/images/sightsea-expeditions-logo-blue.jpg';
 import { footerMenu } from '@/data/menus';
 
@@ -54,6 +55,14 @@ export default function Footer() {
                     <a href='tel:+62811301031' className='opacity-80 flex items-center gap-2'>
                       <FaPhone className='flex-shrink-0 w-4' />
                       <span>+62 811 301 031</span>
+                    </a>
+                    <a
+                      href='https://wa.me/62817654111?text=Hi%20Sightsea%20Expeditions!%20I%20would%20like%20to%20make%20an%20enquiry'
+                      target='_blank'
+                      className='opacity-80 flex items-center gap-2'
+                    >
+                      <IoLogoWhatsapp className='flex-shrink-0 w-4' />
+                      <span>+62 817 654 111</span>
                     </a>
                   </div>
                 </div>
