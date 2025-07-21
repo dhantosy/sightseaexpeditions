@@ -1,3 +1,6 @@
+//GALAPAGOS
+import ImageGalapagosMain from '@public/assets/images/gallery/galapagos-1.jpg';
+
 //SIPADAN
 import ImageSipadanMain from '@public/assets/images/gallery/sipadan-1.jpg';
 
@@ -75,4 +78,5 @@ export {
   ImageLombokTwo,
   ImageMalapascuaMain,
   ImageSipadanMain,
+  ImageGalapagosMain,
 };
