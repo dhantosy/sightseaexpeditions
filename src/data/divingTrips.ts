@@ -2585,11 +2585,11 @@ export const divingTripsData = [
   },
   {
     img: ImageGalapagosMain.src,
-    imgAlt: 'Galapagos LOB Dive Trip with MV Humboldt Explorer',
+    imgAlt: 'Galapagos LOB Dive Trip with MV Tiburon Explorer',
     blurDataUrl: ImageGalapagosMain.blurDataURL,
-    title: 'Galapagos LOB Dive Trip with MV Humboldt Explorer',
+    title: 'Galapagos LOB Dive Trip with MV Tiburon Explorer',
     location: 'Indonesia',
-    date: 'Jun 15th - 22th, 2026',
+    date: 'May 2nd - 9th, 2026',
     endDate: {
       day: 1,
       month: 11,
@@ -2604,7 +2604,7 @@ export const divingTripsData = [
       diveCount: '',
       type: 'LOB'
     },
-    available: true,
+    available: false,
     multiCurrencies: false,
     category: 'diving-trips',
     metaDescription: 'Explore the world-famous Galapagos Islands on a once-in-a-lifetime diving trip. Discover pristine reefs, swim with hammerhead sharks, sea lions, and marine iguanas. Book your unforgettable Galapagos diving adventure now—perfect for both beginner and experienced divers!',
@@ -2688,6 +2688,132 @@ export const divingTripsData = [
       'Crew tip gratitude',
       'Fuel Surcharge $150 PP',
       'Travel and medical insurance',
+    ],
+    roomGallery: [
+      {
+        roomType: '',
+        include: [''],
+        roomImages: [
+          {
+            img: '',
+            imgAlt: '',
+            blurDataUrl: '',
+          },
+        ],
+      },
+    ],
+    gallery: [
+      {
+        img: ImageGalapagosMain.src,
+        imgAlt: '',
+        blurDataUrl: ImageGalapagosMain.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFour.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFive.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+      },
+    ],
+  },
+  {
+    img: ImageGalapagosMain.src,
+    imgAlt: 'Galapagos LOB Dive Trip with MV Tiburon Explorer',
+    blurDataUrl: ImageGalapagosMain.blurDataURL,
+    title: 'Galapagos LOB Dive Trip with MV Tiburon Explorer',
+    location: 'Indonesia',
+    date: 'May 23rd - 30th, 2026',
+    endDate: {
+      day: 1,
+      month: 11,
+      year: 2025
+    },
+    url: 'galapagos-diving-trip-batch-two',
+    price: '6,995',
+    priceNum: '6995',
+    currency: 'USD',
+    duration: '8 days',
+    highlight: {
+      diveCount: '20 Dives',
+      type: 'LOB'
+    },
+    available: true,
+    multiCurrencies: false,
+    category: 'diving-trips',
+    metaDescription: 'Explore the world-famous Galapagos Islands on a once-in-a-lifetime diving trip. Discover pristine reefs, swim with hammerhead sharks, sea lions, and marine iguanas. Book your unforgettable Galapagos diving adventure now—perfect for both beginner and experienced divers!',
+    metaKeywords: 'galapagos diving, galapagos diving trip, galapagos islands dive, liveaboard galapagos, galapagos scuba diving, galapagos underwater, galapagos sharks, galapagos marine life, diving holidays galapagos, scuba diving tours, best diving destinations, adventure travel, eco diving, wildlife encounters, pacific ocean diving, bucket list diving',
+    overview: 'Explore the world-famous Galapagos Islands on a once-in-a-lifetime diving trip. Discover pristine reefs, swim with hammerhead sharks, sea lions, and marine iguanas. Book your unforgettable Galapagos diving adventure now—perfect for both beginner and experienced divers!',
+    categoryListOption: [
+      {
+        value: '',
+        label: 'Select Category'
+      },
+      {
+        value: 'Domestic / KITAS',
+        label: 'Domestic / KITAS Holder'
+      },
+      {
+        value: 'foreigner',
+        label: 'Foreigner'
+      },
+    ],
+    roomTypeListOption: [
+      {
+        value: '',
+        label: 'Select Package Type'
+      },
+      {
+        value: '8D7N',
+        label: '8D7N'
+      },
+    ],
+    pricePerRoom: [
+      {
+        price: '6995',
+        currency: 'USD',
+        roomType: '8D7N',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '6995',
+        currency: 'USD',
+        roomType: '8D7N',
+        category: 'foreigner',
+      },
+    ],
+    schedule: [
+      {
+        time: '',
+        descList: []
+      },
+    ],
+    include: [
+      'All meals through cruise',
+      'Transfers in the islands.',
+      'All diving excursions',
+      'Bilingual dive master and assistant',
+      'AIR tank',
+      'Weights',
+      'Coffee, tea , beer, spirit, wine and soft drinks.',
+    ],
+    notes: [
+      'Full dive equipment available for rental',
+      'NITROX optional $150 modation on board 8 days 7 night',
+      'Air tickets mainland GYE/UIO - BALTRA roundtrip',
+      'Galapagos national park tax $200 in cash only at Airport.',
+      'Ingala tax $20 in cash only at Airport.',
+      'Crew tip gratitude',
+      'Fuel Surcharge $150 PP',
+      'Exclude Travel and medical insurance',
     ],
     roomGallery: [
       {
