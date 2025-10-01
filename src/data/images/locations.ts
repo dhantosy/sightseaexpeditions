@@ -1,3 +1,6 @@
+//MOALBOAL
+import ImageMoalBoalMain from '@public/assets/images/gallery/moalboal-1.jpg';
+
 //GALAPAGOS
 import ImageGalapagosMain from '@public/assets/images/gallery/galapagos-1.jpg';
 
@@ -79,4 +82,5 @@ export {
   ImageMalapascuaMain,
   ImageSipadanMain,
   ImageGalapagosMain,
+  ImageMoalBoalMain,
 };
