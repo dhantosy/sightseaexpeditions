@@ -57,12 +57,12 @@ export default function Footer() {
                       <span>+62 811 301 031</span>
                     </a>
                     <a
-                      href='https://wa.me/62817654111?text=Hi%20Sightsea%20Expeditions!%20I%20would%20like%20to%20make%20an%20enquiry'
+                      href='https://wa.me/62817554111?text=Hi%20Sightsea%20Expeditions!%20I%20would%20like%20to%20make%20an%20enquiry'
                       target='_blank'
                       className='opacity-80 flex items-center gap-2'
                     >
                       <IoLogoWhatsapp className='flex-shrink-0 w-4' />
-                      <span>+62 817 654 111</span>
+                      <span>+62 817 554 111</span>
                     </a>
                   </div>
                 </div>
