@@ -1,0 +1,14 @@
+{
+  // treat files matching pattern as plain text to disable language servers
+  "files.associations": {
+    "divingTrips.*": "plaintext",
+    "*.bigdata": "plaintext" // or name your DB file with .bigdata
+  },
+  // reduce file watching and searching cost for large files
+  "files.watcherExclude": {
+    "**/divingTrips.*": true
+  },
+  "search.exclude": {
+    "**/divingTrips.*": true
+  },
+}
