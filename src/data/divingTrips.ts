@@ -514,593 +514,593 @@ export const divingTripsData = [
   //     },
   //   ],
   // },
-  {
-    img: ImageBimaThree.src,
-    imgAlt: 'Ambon, Suanggi, Banda Dive Trip with Majestic Voyager',
-    blurDataUrl: ImageBimaThree.blurDataURL,
-    title: 'Ambon, Suanggi, Banda Dive Trip with Majestic Voyager',
-    location: 'Ambon, Indonesia',
-    date: 'Oct 12th - 17th, 2025',
-    endDate: {
-      day: 1,
-      month: 11,
-      year: 2025
-    },
-    url: 'ambon-suanggi-banda-dive-majestic-voyager',
-    price: '1,975',
-    priceNum: '1975',
-    currency: 'USD',
-    duration: '6 days',
-    highlight: {
-      diveCount: '12 dives',
-      type: 'LOB'
-    },
-    available: true,
-    multiCurrencies: true,
-    category: 'diving-trips',
-    metaDescription: 'Experience an unforgettable liveaboard diving adventure in Ambon, Suanggi, and Banda. Explore vibrant coral reefs, encounter rare marine life, and dive into the rich history of the Banda Sea. Join us for an extraordinary underwater journey!',
-    metaKeywords: 'liveaboard diving, Ambon diving, Suanggi diving, Banda diving, Banda Sea diving, Indonesia liveaboard, coral reefs, underwater adventure, scuba diving trip, dive Banda Islands, Ambon liveaboard, Suanggi dive sites',
-    overview: 'Experience an unforgettable liveaboard diving adventure in Ambon, Suanggi, and Banda. Explore vibrant coral reefs, encounter rare marine life, and dive into the rich history of the Banda Sea. Join us for an extraordinary underwater journey!',
-    categoryListOption: [
-      {
-        value: '',
-        label: 'Select Category'
-      },
-      {
-        value: 'Domestic / KITAS',
-        label: 'Domestic / KITAS Holder'
-      },
-      {
-        value: 'foreigner',
-        label: 'Foreigner'
-      },
-    ],
-    roomTypeListOption: [
-      {
-        value: '',
-        label: 'Select Cabin Type'
-      },
-      {
-        value: 'Suite - Main Deck',
-        label: 'Suite - Main Deck'
-      },
-      {
-        value: 'Executive - Upper Deck',
-        label: 'Executive - Upper Deck'
-      },
-      {
-        value: 'Deluxe - Lower Deck',
-        label: 'Deluxe - Lower Deck'
-      },
-    ],
-    pricePerRoom: [
-      {
-        price: '26,500,000',
-        currency: 'IDR',
-        roomType: 'Deluxe - Lower Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '29,000,000',
-        currency: 'IDR',
-        roomType: 'Executive - Upper Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '32,000,000',
-        currency: 'IDR',
-        roomType: 'Suite - Main Deck',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1,975',
-        currency: 'USD',
-        roomType: 'Deluxe - Lower Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '2,275',
-        currency: 'USD',
-        roomType: 'Executive - Upper Deck',
-        category: 'foreigner',
-      },
-      {
-        price: '2,475',
-        currency: 'USD',
-        roomType: 'Suite - Main Deck',
-        category: 'foreigner',
-      },
-    ],
-    schedule: [
-      {
-        time: 'Day 1 - Ambon Island',
-        descList: [
-          'Ambon Island, 1-2 dives',
-          'Our staff will meet you at Pattimura Airport and take you to Majestic Voyager, Partimura airport is very close to where the boat is anchored. Arrivals before midday are appreciated for check dive potential.',
-          '⁠Divesite usually Laha jetty for a check dive',
-          '⁠Muck diving, many unusual critters similar to Lembeh.',
-          '⁠Sail overnight to Banda Islands. '
-        ]
-      },
-      {
-        time: 'Day 2 - Banda Island',
-        descList: [
-          '⁠⁠Dive sites around Soangi Island including: Soangi drop-off, Jackpot reef, & Ping-Pong. - Early chance to see schooling hammerhead sharks in action.',
-          '',
-          '⁠Moor up at Tanjung Burung, Banda Islands',
-        ]
-      },
-      {
-        time: 'Day 3 - Banda Island',
-        descList: [
-          '⁠Dive sites around Hatta Island including Tanjung Buton, Hole in the Wall, and Karang Hatta',
-          '⁠Next good chances to see schooling hammerhead sharks.',
-          '⁠Anchor overnight in a Banda-Neira, a secluded bay at the foot of Gunung Api.',
-        ]
-      },
-      {
-        time: 'Day 4 - Banda Island',
-        descList: [
-          '⁠⁠Dive sites in Banda Islands include Pohon Miring, Batu Kapal, Pulau Pisang, & Jackpot',
-          '⁠⁠Return to Soangi Island for last dive for last schooling hammerhead action potential & shorter overnight sail to Nusalaut Island.',
-          '⁠an early morning land tour to the colonial town of Banda Neira and it`s Fort Belgica is a possible alternative to Pohon Miring',
-          '⁠Sail overnight to Ameth village, Nusalaut Island.',
-        ]
-      },
-      {
-        time: 'Day 5 - Nusalaut Island & Saparua Island.',
-        descList: [
-          '⁠⁠⁠Dive sites include Ameth & Pombo Booi.',
-          '⁠⁠⁠Afternoon & evening sail to Ambon Island, Laha village.',
-        ]
-      },
-      {
-        time: 'Day 6 - Ambon Island - Laha',
-        descList: [
-          '⁠⁠⁠Dive sites include Ameth & Pombo Booi.',
-          '⁠⁠Check-out, check-in & fly away.',
-        ]
-      },
-    ],
-    include: [
-      'Return airport transfers in Ambon.',
-      '⁠5 nights in AC Cabins aboard on sharing basis.',
-      '⁠Full onboard meals, tea, coffee, softdrink & water.',
-      '⁠Historical & Heritage land tour at Banda Neira.',
-      '⁠Unlimited tea, coffee, softdrink and mineral water.',
-      '12 dives with tanks, weight & weight belt.',
-      'English speaking cruise director.',
-      'Dive master & local dive guide.',
-      'Underwater photo/video documentation.',
-    ],
-    notes: [
-      '⁠Exclude airflight tickets to Ambon.',
-      'Port Clearance Fee (USD 25 / day for foreigner).',
-      'Dive equipment rental is available for IDR 400,000 / day.',
-      'Crew gratitudes min. IDR 200rb / day / pax.',
-      '⁠Port clearance fee IDR 250k / day / pax (domestic).',
-      '⁠Port clearance fee  USD 25,- / day / pax (foreigner).',
-      '⁠Banda Sea trips can be tailored.',
-      'Diving days: 5 days (at least 12 dives depending on plan, maybe possible to squeeze a night dive in if desired, number of check dives on first day depends on guest arrival & clearance).'
-    ],
-    roomGallery: [
-      {
-        roomType: 'Suite - Main Deck',
-        include: [
-          'Private Jacuzzi',
-          'Sea View Balcony',
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerSuiteOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerSuiteFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
-          },
-        ],
-      },
-      {
-        roomType: 'Executive - Upper Deck',
-        include: [
-          'Sea View Balcony',
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerExecutiveOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveSix.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerExecutiveSeven.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
-          },
-        ],
-      },
-      {
-        roomType: 'Deluxe - Lower Deck',
-        include: [
-          'Twin Bed',
-          'Air Conditioner',
-          'Water Heater',
-          'Private Bathroom',
-        ],
-        roomImages: [
-          {
-            img: MajesticVoyagerDeluxeOne.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeTwo.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeThree.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeFour.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeFive.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeSix.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeSeven.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeEight.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
-          },
-          {
-            img: MajesticVoyagerDeluxeNine.src,
-            imgAlt: '',
-            blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
-          },
-        ],
-      },
-    ],
-    gallery: [
-      {
-        img: ImageBimaThree.src,
-        imgAlt: '',
-        blurDataUrl: ImageBimaThree.blurDataURL,
-      },
-      {
-        img: ImageBandarNeiraFour.src,
-        imgAlt: '',
-        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
-      },
-      {
-        img: ImageBandarNeiraThree.src,
-        imgAlt: '',
-        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
-      },
-      {
-        img: ImageBandarNeiraFive.src,
-        imgAlt: '',
-        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
-      },
-    ],
-  },
-  {
-    img: ImageTimorLesteOne.src,
-    imgAlt: 'Timor Leste Whale Watching Trip',
-    blurDataUrl: ImageTimorLesteOne.blurDataURL,
-    title: 'Timor Leste Whale Watching Trip',
-    location: 'Indonesia',
-    date: 'Oct 19th - 22th, 2025',
-    endDate: {
-      day: 1,
-      month: 11,
-      year: 2025
-    },
-    url: 'timor-leste-whale-watching-diving-trip-batch-one',
-    price: '1,100',
-    priceNum: '1100',
-    currency: 'USD',
-    duration: '4 days',
-    highlight: {
-      diveCount: '',
-      type: 'Land Based'
-    },
-    available: true,
-    multiCurrencies: false,
-    category: 'diving-trips',
-    metaDescription: 'Discover the pristine waters of Timor-Leste—one of the world`s best diving destinations. Experience vibrant coral reefs, incredible marine biodiversity, and crystal-clear waters on unforgettable dive trips.',
-    metaKeywords: 'Timor-Leste diving, scuba diving Atauro, coral reefs Timor-Leste, best dive sites Timor, marine biodiversity, dive trips Timor-Leste, diving tours, eco-diving Timor',
-    overview: 'located just off the coast of Timor-Leste, is a hidden gem for divers seeking untouched marine ecosystems. Known for its world-class coral reefs, abundant marine life, and exceptional visibility, Atauro boasts some of the highest recorded biodiversity in the world. Divers can explore vibrant coral gardens, steep drop-offs, and drift dives teeming with tropical fish, sharks, and rays.',
-    categoryListOption: [
-      {
-        value: '',
-        label: 'Select Category'
-      },
-      {
-        value: 'Domestic / KITAS',
-        label: 'Domestic / KITAS Holder'
-      },
-      {
-        value: 'foreigner',
-        label: 'Foreigner'
-      },
-    ],
-    roomTypeListOption: [
-      {
-        value: '',
-        label: 'Select Package Type'
-      },
-      {
-        value: 'Timor Hotel Plaza 4D3N',
-        label: 'Timor Hotel Plaza 4D3N'
-      },
-      {
-        value: 'Timor Hotel Plaza 5D4N',
-        label: 'Timor Hotel Plaza 5D4N'
-      },
-    ],
-    pricePerRoom: [
-      {
-        price: '1100',
-        currency: 'USD',
-        roomType: 'Timor Hotel Plaza 4D3N',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1400',
-        currency: 'USD',
-        roomType: 'Timor Hotel Plaza 5D4N',
-        category: 'foreigner',
-      },
-    ],
-    schedule: [
-      {
-        time: '',
-        descList: []
-      },
-    ],
-    include: [
-      'Airport transfer',
-      'Hotel - DC - Hotel transfer',
-      'Breakfast and lunch during scuba activity',
-      '3 nights stay at Timor Plaza Hotel with twin share basis',
-      'Snorkeling gear (mask, snorkel & scuba fins)',
-      '2 full days swim / snorkeling / free diving activity',
-      'Dive guide ratio 5:1',
-    ],
-    notes: [
-      'Exclude ⁠Any personal expenditure such as laundry, personal medicine, etc',
-      'Exclude Dinner',
-      'Exclude ⁠Airfare',
-      'Dive equipment rental is available',
-      'Tip for local guide USD 15,- / day dive',
-    ],
-    roomGallery: [
-      {
-        roomType: '',
-        include: [''],
-        roomImages: [
-          {
-            img: '',
-            imgAlt: '',
-            blurDataUrl: '',
-          },
-        ],
-      },
-    ],
-    gallery: [
-      {
-        img: ImageTimorLesteOne.src,
-        imgAlt: '',
-        blurDataUrl: ImageTimorLesteOne.blurDataURL,
-      },
-      {
-        img: ImageBandarNeiraFour.src,
-        imgAlt: '',
-        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
-      },
-      {
-        img: ImageBandarNeiraThree.src,
-        imgAlt: '',
-        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
-      },
-      {
-        img: ImageBandarNeiraFive.src,
-        imgAlt: '',
-        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
-      },
-    ],
-  },
-  {
-    img: ImageTimorLesteOne.src,
-    imgAlt: 'Timor Leste Whale Watching Trip',
-    blurDataUrl: ImageTimorLesteOne.blurDataURL,
-    title: 'Timor Leste Whale Watching Trip',
-    location: 'Indonesia',
-    date: 'Oct 21th - 25th, 2025',
-    endDate: {
-      day: 1,
-      month: 11,
-      year: 2025
-    },
-    url: 'timor-leste-whale-watching-diving-trip-batch-two',
-    price: '1,500',
-    priceNum: '1500',
-    currency: 'USD',
-    duration: '5 days',
-    highlight: {
-      diveCount: '',
-      type: 'Land Based'
-    },
-    available: true,
-    multiCurrencies: false,
-    category: 'diving-trips',
-    metaDescription: 'Discover the pristine waters of Timor-Leste—one of the world`s best diving destinations. Experience vibrant coral reefs, incredible marine biodiversity, and crystal-clear waters on unforgettable dive trips.',
-    metaKeywords: 'Timor-Leste diving, scuba diving Atauro, coral reefs Timor-Leste, best dive sites Timor, marine biodiversity, dive trips Timor-Leste, diving tours, eco-diving Timor',
-    overview: 'located just off the coast of Timor-Leste, is a hidden gem for divers seeking untouched marine ecosystems. Known for its world-class coral reefs, abundant marine life, and exceptional visibility, Atauro boasts some of the highest recorded biodiversity in the world. Divers can explore vibrant coral gardens, steep drop-offs, and drift dives teeming with tropical fish, sharks, and rays.',
-    categoryListOption: [
-      {
-        value: '',
-        label: 'Select Category'
-      },
-      {
-        value: 'Domestic / KITAS',
-        label: 'Domestic / KITAS Holder'
-      },
-      {
-        value: 'foreigner',
-        label: 'Foreigner'
-      },
-    ],
-    roomTypeListOption: [
-      {
-        value: '',
-        label: 'Select Package Type'
-      },
-      {
-        value: 'Timor Hotel Plaza 5D4N',
-        label: 'Timor Hotel Plaza 5D4N'
-      },
-    ],
-    pricePerRoom: [
-      {
-        price: '1500',
-        currency: 'USD',
-        roomType: 'Timor Hotel Plaza 5D4N',
-        category: 'Domestic / KITAS',
-      },
-      {
-        price: '1500',
-        currency: 'USD',
-        roomType: 'Timor Hotel Plaza 5D4N',
-        category: 'foreigner',
-      },
-    ],
-    schedule: [
-      {
-        time: '',
-        descList: []
-      },
-    ],
-    include: [
-      'Airport transfer',
-      'Hotel - DC - Hotel transfer',
-      'Breakfast and lunch during scuba activity',
-      '4 nights stay at Timor Plaza Hotel with twin share basis',
-      'Snorkeling gear (mask, snorkel & scuba fins)',
-      '3 full days swim / snorkeling / free diving activity',
-      'Dive guide ratio 5:1',
-    ],
-    notes: [
-      'Exclude ⁠Any personal expenditure such as laundry, personal medicine, etc',
-      'Exclude Dinner',
-      'Exclude ⁠Airfare',
-      'VOA $30,- for non Indo citizen',
-      'Scuba activity $125/dive',
-      'Dive equipment rental is available',
-      'Tip for local guide USD 15,- / day dive',
-    ],
-    roomGallery: [
-      {
-        roomType: '',
-        include: [''],
-        roomImages: [
-          {
-            img: '',
-            imgAlt: '',
-            blurDataUrl: '',
-          },
-        ],
-      },
-    ],
-    gallery: [
-      {
-        img: ImageTimorLesteOne.src,
-        imgAlt: '',
-        blurDataUrl: ImageTimorLesteOne.blurDataURL,
-      },
-      {
-        img: ImageBandarNeiraFour.src,
-        imgAlt: '',
-        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
-      },
-      {
-        img: ImageBandarNeiraThree.src,
-        imgAlt: '',
-        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
-      },
-      {
-        img: ImageBandarNeiraFive.src,
-        imgAlt: '',
-        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
-      },
-    ],
-  },
+  // {
+  //   img: ImageBimaThree.src,
+  //   imgAlt: 'Ambon, Suanggi, Banda Dive Trip with Majestic Voyager',
+  //   blurDataUrl: ImageBimaThree.blurDataURL,
+  //   title: 'Ambon, Suanggi, Banda Dive Trip with Majestic Voyager',
+  //   location: 'Ambon, Indonesia',
+  //   date: 'Oct 12th - 17th, 2025',
+  //   endDate: {
+  //     day: 1,
+  //     month: 11,
+  //     year: 2025
+  //   },
+  //   url: 'ambon-suanggi-banda-dive-majestic-voyager',
+  //   price: '1,975',
+  //   priceNum: '1975',
+  //   currency: 'USD',
+  //   duration: '6 days',
+  //   highlight: {
+  //     diveCount: '12 dives',
+  //     type: 'LOB'
+  //   },
+  //   available: true,
+  //   multiCurrencies: true,
+  //   category: 'diving-trips',
+  //   metaDescription: 'Experience an unforgettable liveaboard diving adventure in Ambon, Suanggi, and Banda. Explore vibrant coral reefs, encounter rare marine life, and dive into the rich history of the Banda Sea. Join us for an extraordinary underwater journey!',
+  //   metaKeywords: 'liveaboard diving, Ambon diving, Suanggi diving, Banda diving, Banda Sea diving, Indonesia liveaboard, coral reefs, underwater adventure, scuba diving trip, dive Banda Islands, Ambon liveaboard, Suanggi dive sites',
+  //   overview: 'Experience an unforgettable liveaboard diving adventure in Ambon, Suanggi, and Banda. Explore vibrant coral reefs, encounter rare marine life, and dive into the rich history of the Banda Sea. Join us for an extraordinary underwater journey!',
+  //   categoryListOption: [
+  //     {
+  //       value: '',
+  //       label: 'Select Category'
+  //     },
+  //     {
+  //       value: 'Domestic / KITAS',
+  //       label: 'Domestic / KITAS Holder'
+  //     },
+  //     {
+  //       value: 'foreigner',
+  //       label: 'Foreigner'
+  //     },
+  //   ],
+  //   roomTypeListOption: [
+  //     {
+  //       value: '',
+  //       label: 'Select Cabin Type'
+  //     },
+  //     {
+  //       value: 'Suite - Main Deck',
+  //       label: 'Suite - Main Deck'
+  //     },
+  //     {
+  //       value: 'Executive - Upper Deck',
+  //       label: 'Executive - Upper Deck'
+  //     },
+  //     {
+  //       value: 'Deluxe - Lower Deck',
+  //       label: 'Deluxe - Lower Deck'
+  //     },
+  //   ],
+  //   pricePerRoom: [
+  //     {
+  //       price: '26,500,000',
+  //       currency: 'IDR',
+  //       roomType: 'Deluxe - Lower Deck',
+  //       category: 'Domestic / KITAS',
+  //     },
+  //     {
+  //       price: '29,000,000',
+  //       currency: 'IDR',
+  //       roomType: 'Executive - Upper Deck',
+  //       category: 'Domestic / KITAS',
+  //     },
+  //     {
+  //       price: '32,000,000',
+  //       currency: 'IDR',
+  //       roomType: 'Suite - Main Deck',
+  //       category: 'Domestic / KITAS',
+  //     },
+  //     {
+  //       price: '1,975',
+  //       currency: 'USD',
+  //       roomType: 'Deluxe - Lower Deck',
+  //       category: 'foreigner',
+  //     },
+  //     {
+  //       price: '2,275',
+  //       currency: 'USD',
+  //       roomType: 'Executive - Upper Deck',
+  //       category: 'foreigner',
+  //     },
+  //     {
+  //       price: '2,475',
+  //       currency: 'USD',
+  //       roomType: 'Suite - Main Deck',
+  //       category: 'foreigner',
+  //     },
+  //   ],
+  //   schedule: [
+  //     {
+  //       time: 'Day 1 - Ambon Island',
+  //       descList: [
+  //         'Ambon Island, 1-2 dives',
+  //         'Our staff will meet you at Pattimura Airport and take you to Majestic Voyager, Partimura airport is very close to where the boat is anchored. Arrivals before midday are appreciated for check dive potential.',
+  //         '⁠Divesite usually Laha jetty for a check dive',
+  //         '⁠Muck diving, many unusual critters similar to Lembeh.',
+  //         '⁠Sail overnight to Banda Islands. '
+  //       ]
+  //     },
+  //     {
+  //       time: 'Day 2 - Banda Island',
+  //       descList: [
+  //         '⁠⁠Dive sites around Soangi Island including: Soangi drop-off, Jackpot reef, & Ping-Pong. - Early chance to see schooling hammerhead sharks in action.',
+  //         '',
+  //         '⁠Moor up at Tanjung Burung, Banda Islands',
+  //       ]
+  //     },
+  //     {
+  //       time: 'Day 3 - Banda Island',
+  //       descList: [
+  //         '⁠Dive sites around Hatta Island including Tanjung Buton, Hole in the Wall, and Karang Hatta',
+  //         '⁠Next good chances to see schooling hammerhead sharks.',
+  //         '⁠Anchor overnight in a Banda-Neira, a secluded bay at the foot of Gunung Api.',
+  //       ]
+  //     },
+  //     {
+  //       time: 'Day 4 - Banda Island',
+  //       descList: [
+  //         '⁠⁠Dive sites in Banda Islands include Pohon Miring, Batu Kapal, Pulau Pisang, & Jackpot',
+  //         '⁠⁠Return to Soangi Island for last dive for last schooling hammerhead action potential & shorter overnight sail to Nusalaut Island.',
+  //         '⁠an early morning land tour to the colonial town of Banda Neira and it`s Fort Belgica is a possible alternative to Pohon Miring',
+  //         '⁠Sail overnight to Ameth village, Nusalaut Island.',
+  //       ]
+  //     },
+  //     {
+  //       time: 'Day 5 - Nusalaut Island & Saparua Island.',
+  //       descList: [
+  //         '⁠⁠⁠Dive sites include Ameth & Pombo Booi.',
+  //         '⁠⁠⁠Afternoon & evening sail to Ambon Island, Laha village.',
+  //       ]
+  //     },
+  //     {
+  //       time: 'Day 6 - Ambon Island - Laha',
+  //       descList: [
+  //         '⁠⁠⁠Dive sites include Ameth & Pombo Booi.',
+  //         '⁠⁠Check-out, check-in & fly away.',
+  //       ]
+  //     },
+  //   ],
+  //   include: [
+  //     'Return airport transfers in Ambon.',
+  //     '⁠5 nights in AC Cabins aboard on sharing basis.',
+  //     '⁠Full onboard meals, tea, coffee, softdrink & water.',
+  //     '⁠Historical & Heritage land tour at Banda Neira.',
+  //     '⁠Unlimited tea, coffee, softdrink and mineral water.',
+  //     '12 dives with tanks, weight & weight belt.',
+  //     'English speaking cruise director.',
+  //     'Dive master & local dive guide.',
+  //     'Underwater photo/video documentation.',
+  //   ],
+  //   notes: [
+  //     '⁠Exclude airflight tickets to Ambon.',
+  //     'Port Clearance Fee (USD 25 / day for foreigner).',
+  //     'Dive equipment rental is available for IDR 400,000 / day.',
+  //     'Crew gratitudes min. IDR 200rb / day / pax.',
+  //     '⁠Port clearance fee IDR 250k / day / pax (domestic).',
+  //     '⁠Port clearance fee  USD 25,- / day / pax (foreigner).',
+  //     '⁠Banda Sea trips can be tailored.',
+  //     'Diving days: 5 days (at least 12 dives depending on plan, maybe possible to squeeze a night dive in if desired, number of check dives on first day depends on guest arrival & clearance).'
+  //   ],
+  //   roomGallery: [
+  //     {
+  //       roomType: 'Suite - Main Deck',
+  //       include: [
+  //         'Private Jacuzzi',
+  //         'Sea View Balcony',
+  //         'Twin Bed',
+  //         'Air Conditioner',
+  //         'Water Heater',
+  //         'Private Bathroom',
+  //       ],
+  //       roomImages: [
+  //         {
+  //           img: MajesticVoyagerSuiteOne.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerSuiteTwo.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerSuiteThree.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerSuiteFour.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerSuiteFive.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       roomType: 'Executive - Upper Deck',
+  //       include: [
+  //         'Sea View Balcony',
+  //         'Twin Bed',
+  //         'Air Conditioner',
+  //         'Water Heater',
+  //         'Private Bathroom',
+  //       ],
+  //       roomImages: [
+  //         {
+  //           img: MajesticVoyagerExecutiveOne.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveTwo.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveThree.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveFour.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveFive.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveSix.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerExecutiveSeven.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       roomType: 'Deluxe - Lower Deck',
+  //       include: [
+  //         'Twin Bed',
+  //         'Air Conditioner',
+  //         'Water Heater',
+  //         'Private Bathroom',
+  //       ],
+  //       roomImages: [
+  //         {
+  //           img: MajesticVoyagerDeluxeOne.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeTwo.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeThree.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeFour.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeFive.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeSix.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeSeven.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeEight.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
+  //         },
+  //         {
+  //           img: MajesticVoyagerDeluxeNine.src,
+  //           imgAlt: '',
+  //           blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  //   gallery: [
+  //     {
+  //       img: ImageBimaThree.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBimaThree.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBandarNeiraFour.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBandarNeiraThree.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBandarNeiraFive.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+  //     },
+  //   ],
+  // },
+  // {
+  //   img: ImageTimorLesteOne.src,
+  //   imgAlt: 'Timor Leste Whale Watching Trip',
+  //   blurDataUrl: ImageTimorLesteOne.blurDataURL,
+  //   title: 'Timor Leste Whale Watching Trip',
+  //   location: 'Indonesia',
+  //   date: 'Oct 19th - 22th, 2025',
+  //   endDate: {
+  //     day: 1,
+  //     month: 11,
+  //     year: 2025
+  //   },
+  //   url: 'timor-leste-whale-watching-diving-trip-batch-one',
+  //   price: '1,100',
+  //   priceNum: '1100',
+  //   currency: 'USD',
+  //   duration: '4 days',
+  //   highlight: {
+  //     diveCount: '',
+  //     type: 'Land Based'
+  //   },
+  //   available: true,
+  //   multiCurrencies: false,
+  //   category: 'diving-trips',
+  //   metaDescription: 'Discover the pristine waters of Timor-Leste—one of the world`s best diving destinations. Experience vibrant coral reefs, incredible marine biodiversity, and crystal-clear waters on unforgettable dive trips.',
+  //   metaKeywords: 'Timor-Leste diving, scuba diving Atauro, coral reefs Timor-Leste, best dive sites Timor, marine biodiversity, dive trips Timor-Leste, diving tours, eco-diving Timor',
+  //   overview: 'located just off the coast of Timor-Leste, is a hidden gem for divers seeking untouched marine ecosystems. Known for its world-class coral reefs, abundant marine life, and exceptional visibility, Atauro boasts some of the highest recorded biodiversity in the world. Divers can explore vibrant coral gardens, steep drop-offs, and drift dives teeming with tropical fish, sharks, and rays.',
+  //   categoryListOption: [
+  //     {
+  //       value: '',
+  //       label: 'Select Category'
+  //     },
+  //     {
+  //       value: 'Domestic / KITAS',
+  //       label: 'Domestic / KITAS Holder'
+  //     },
+  //     {
+  //       value: 'foreigner',
+  //       label: 'Foreigner'
+  //     },
+  //   ],
+  //   roomTypeListOption: [
+  //     {
+  //       value: '',
+  //       label: 'Select Package Type'
+  //     },
+  //     {
+  //       value: 'Timor Hotel Plaza 4D3N',
+  //       label: 'Timor Hotel Plaza 4D3N'
+  //     },
+  //     {
+  //       value: 'Timor Hotel Plaza 5D4N',
+  //       label: 'Timor Hotel Plaza 5D4N'
+  //     },
+  //   ],
+  //   pricePerRoom: [
+  //     {
+  //       price: '1100',
+  //       currency: 'USD',
+  //       roomType: 'Timor Hotel Plaza 4D3N',
+  //       category: 'Domestic / KITAS',
+  //     },
+  //     {
+  //       price: '1400',
+  //       currency: 'USD',
+  //       roomType: 'Timor Hotel Plaza 5D4N',
+  //       category: 'foreigner',
+  //     },
+  //   ],
+  //   schedule: [
+  //     {
+  //       time: '',
+  //       descList: []
+  //     },
+  //   ],
+  //   include: [
+  //     'Airport transfer',
+  //     'Hotel - DC - Hotel transfer',
+  //     'Breakfast and lunch during scuba activity',
+  //     '3 nights stay at Timor Plaza Hotel with twin share basis',
+  //     'Snorkeling gear (mask, snorkel & scuba fins)',
+  //     '2 full days swim / snorkeling / free diving activity',
+  //     'Dive guide ratio 5:1',
+  //   ],
+  //   notes: [
+  //     'Exclude ⁠Any personal expenditure such as laundry, personal medicine, etc',
+  //     'Exclude Dinner',
+  //     'Exclude ⁠Airfare',
+  //     'Dive equipment rental is available',
+  //     'Tip for local guide USD 15,- / day dive',
+  //   ],
+  //   roomGallery: [
+  //     {
+  //       roomType: '',
+  //       include: [''],
+  //       roomImages: [
+  //         {
+  //           img: '',
+  //           imgAlt: '',
+  //           blurDataUrl: '',
+  //         },
+  //       ],
+  //     },
+  //   ],
+  //   gallery: [
+  //     {
+  //       img: ImageTimorLesteOne.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageTimorLesteOne.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBandarNeiraFour.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBandarNeiraThree.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBandarNeiraFive.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+  //     },
+  //   ],
+  // },
+  // {
+  //   img: ImageTimorLesteOne.src,
+  //   imgAlt: 'Timor Leste Whale Watching Trip',
+  //   blurDataUrl: ImageTimorLesteOne.blurDataURL,
+  //   title: 'Timor Leste Whale Watching Trip',
+  //   location: 'Indonesia',
+  //   date: 'Oct 21th - 25th, 2025',
+  //   endDate: {
+  //     day: 1,
+  //     month: 11,
+  //     year: 2025
+  //   },
+  //   url: 'timor-leste-whale-watching-diving-trip-batch-two',
+  //   price: '1,500',
+  //   priceNum: '1500',
+  //   currency: 'USD',
+  //   duration: '5 days',
+  //   highlight: {
+  //     diveCount: '',
+  //     type: 'Land Based'
+  //   },
+  //   available: true,
+  //   multiCurrencies: false,
+  //   category: 'diving-trips',
+  //   metaDescription: 'Discover the pristine waters of Timor-Leste—one of the world`s best diving destinations. Experience vibrant coral reefs, incredible marine biodiversity, and crystal-clear waters on unforgettable dive trips.',
+  //   metaKeywords: 'Timor-Leste diving, scuba diving Atauro, coral reefs Timor-Leste, best dive sites Timor, marine biodiversity, dive trips Timor-Leste, diving tours, eco-diving Timor',
+  //   overview: 'located just off the coast of Timor-Leste, is a hidden gem for divers seeking untouched marine ecosystems. Known for its world-class coral reefs, abundant marine life, and exceptional visibility, Atauro boasts some of the highest recorded biodiversity in the world. Divers can explore vibrant coral gardens, steep drop-offs, and drift dives teeming with tropical fish, sharks, and rays.',
+  //   categoryListOption: [
+  //     {
+  //       value: '',
+  //       label: 'Select Category'
+  //     },
+  //     {
+  //       value: 'Domestic / KITAS',
+  //       label: 'Domestic / KITAS Holder'
+  //     },
+  //     {
+  //       value: 'foreigner',
+  //       label: 'Foreigner'
+  //     },
+  //   ],
+  //   roomTypeListOption: [
+  //     {
+  //       value: '',
+  //       label: 'Select Package Type'
+  //     },
+  //     {
+  //       value: 'Timor Hotel Plaza 5D4N',
+  //       label: 'Timor Hotel Plaza 5D4N'
+  //     },
+  //   ],
+  //   pricePerRoom: [
+  //     {
+  //       price: '1500',
+  //       currency: 'USD',
+  //       roomType: 'Timor Hotel Plaza 5D4N',
+  //       category: 'Domestic / KITAS',
+  //     },
+  //     {
+  //       price: '1500',
+  //       currency: 'USD',
+  //       roomType: 'Timor Hotel Plaza 5D4N',
+  //       category: 'foreigner',
+  //     },
+  //   ],
+  //   schedule: [
+  //     {
+  //       time: '',
+  //       descList: []
+  //     },
+  //   ],
+  //   include: [
+  //     'Airport transfer',
+  //     'Hotel - DC - Hotel transfer',
+  //     'Breakfast and lunch during scuba activity',
+  //     '4 nights stay at Timor Plaza Hotel with twin share basis',
+  //     'Snorkeling gear (mask, snorkel & scuba fins)',
+  //     '3 full days swim / snorkeling / free diving activity',
+  //     'Dive guide ratio 5:1',
+  //   ],
+  //   notes: [
+  //     'Exclude ⁠Any personal expenditure such as laundry, personal medicine, etc',
+  //     'Exclude Dinner',
+  //     'Exclude ⁠Airfare',
+  //     'VOA $30,- for non Indo citizen',
+  //     'Scuba activity $125/dive',
+  //     'Dive equipment rental is available',
+  //     'Tip for local guide USD 15,- / day dive',
+  //   ],
+  //   roomGallery: [
+  //     {
+  //       roomType: '',
+  //       include: [''],
+  //       roomImages: [
+  //         {
+  //           img: '',
+  //           imgAlt: '',
+  //           blurDataUrl: '',
+  //         },
+  //       ],
+  //     },
+  //   ],
+  //   gallery: [
+  //     {
+  //       img: ImageTimorLesteOne.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageTimorLesteOne.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBandarNeiraFour.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBandarNeiraThree.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+  //     },
+  //     {
+  //       img: ImageBandarNeiraFive.src,
+  //       imgAlt: '',
+  //       blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+  //     },
+  //   ],
+  // },
   {
     img: ImageTimorLesteTwo.src,
     imgAlt: 'Timor Leste - Whale Watching Trip',
@@ -2124,6 +2124,293 @@ export const divingTripsData = [
         img: ImageWayagMain.src,
         imgAlt: '',
         blurDataUrl: ImageWayagMain.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFour.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFour.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraThree.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraThree.blurDataURL,
+      },
+      {
+        img: ImageBandarNeiraFive.src,
+        imgAlt: '',
+        blurDataUrl: ImageBandarNeiraFive.blurDataURL,
+      },
+    ],
+  },
+  {
+    img: ImageMisoolRajaAmpatOne.src,
+    imgAlt: 'Misool Trip',
+    blurDataUrl: ImageMisoolRajaAmpatOne.blurDataURL,
+    title: 'Misool Raja Ampat Dive Trip with Majestic Voyager',
+    location: 'Indonesia',
+    date: 'Apr 2nd - 8th, 2026',
+    endDate: {
+      day: 1,
+      month: 11,
+      year: 2025
+    },
+    url: 'raja-ampat-misool-majestic-voyager-april-2026',
+    price: '3,600',
+    priceNum: '3600',
+    currency: 'USD',
+    duration: '6 days',
+    highlight: {
+      diveCount: '16+ dives',
+      type: 'LOB'
+    },
+    available: true,
+    multiCurrencies: true,
+    category: 'diving-trips',
+    metaDescription: 'Explore the underwater paradise of Raja Ampat on an unforgettable liveaboard diving trip. Plan your dream dive adventure with vibrant coral reefs, rare marine life, and world-class dive sites in Indonesia’s most pristine waters.',
+    metaKeywords: 'Raja Ampat liveaboard, diving trip Raja Ampat, Raja Ampat dive planner, Indonesia dive trip, scuba diving Raja Ampat, liveaboard Indonesia, Raja Ampat diving itinerary, best dive sites Raja Ampat, dive vacation Indonesia, luxury liveaboard Raja Ampat',
+    overview: '',
+    categoryListOption: [
+      {
+        value: '',
+        label: 'Select Category'
+      },
+      {
+        value: 'Domestic / KITAS',
+        label: 'Domestic / KITAS Holder'
+      },
+      {
+        value: 'foreigner',
+        label: 'Foreigner'
+      },
+    ],
+    roomTypeListOption: [
+      {
+        value: '',
+        label: 'Select Cabin Type'
+      },
+      {
+        value: 'Suite - Main Deck',
+        label: 'Suite - Main Deck'
+      },
+      {
+        value: 'Executive - Upper Deck',
+        label: 'Executive - Upper Deck'
+      },
+      {
+        value: 'Deluxe - Lower Deck',
+        label: 'Deluxe - Lower Deck'
+      },
+    ],
+    pricePerRoom: [
+      {
+        price: '29,500,000',
+        currency: 'IDR',
+        roomType: 'Deluxe - Lower Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '31,500,000',
+        currency: 'IDR',
+        roomType: 'Executive - Upper Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '33,500,000',
+        currency: 'IDR',
+        roomType: 'Suite - Main Deck',
+        category: 'Domestic / KITAS',
+      },
+      {
+        price: '2,190',
+        currency: 'USD',
+        roomType: 'Deluxe - Lower Deck',
+        category: 'foreigner',
+      },
+      {
+        price: '2,490',
+        currency: 'USD',
+        roomType: 'Executive - Upper Deck',
+        category: 'foreigner',
+      },
+      {
+        price: '2,690',
+        currency: 'USD',
+        roomType: 'Suite - Main Deck',
+        category: 'foreigner',
+      },
+    ],
+    schedule: [
+      {
+        time: '',
+        descList: []
+      },
+    ],
+    include: [
+      '⁠return airport transfers in Sorong',
+      '⁠5 nights in AC cabin on twin share basis',
+      '⁠full onboard meals, tea, coffee, softdrink',
+      '⁠16+ dives with tanks, weight & weight belt.',
+      'English speaking cruise director',
+      '⁠dive master with ratio 1:4',
+      'Underwater photo/video documentation.',
+    ],
+    notes: [
+      '⁠Exclude airflight tickets to Sorong.',
+      'Dive equipment rental is available for IDR 500,000 / day.',
+      '⁠Port clearance fee IDR 250k / day / pax (domestic).',
+      '⁠Port clearance fee  USD 25,- / day / pax (foreigner).',
+      'Raja Ampat PIN IDR 500k (domestic)',
+      'Raja Ampat PIN USD 75 (foreigner)',
+      'Crew gratitudes min. IDR 200rb / day / pax.',
+    ],
+    roomGallery: [
+      {
+        roomType: 'Suite - Main Deck',
+        include: [
+          'Private Jacuzzi',
+          'Sea View Balcony',
+          'Twin Bed',
+          'Air Conditioner',
+          'Water Heater',
+          'Private Bathroom',
+        ],
+        roomImages: [
+          {
+            img: MajesticVoyagerSuiteOne.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteOne.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteTwo.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteTwo.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteThree.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteThree.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteFour.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteFour.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerSuiteFive.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerSuiteFive.blurDataURL,
+          },
+        ],
+      },
+      {
+        roomType: 'Executive - Upper Deck',
+        include: [
+          'Sea View Balcony',
+          'Twin Bed',
+          'Air Conditioner',
+          'Water Heater',
+          'Private Bathroom',
+        ],
+        roomImages: [
+          {
+            img: MajesticVoyagerExecutiveOne.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveOne.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveTwo.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveTwo.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveThree.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveThree.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveFour.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveFour.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveFive.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveFive.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveSix.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveSix.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerExecutiveSeven.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerExecutiveSeven.blurDataURL,
+          },
+        ],
+      },
+      {
+        roomType: 'Deluxe - Lower Deck',
+        include: [
+          'Twin Bed',
+          'Air Conditioner',
+          'Water Heater',
+          'Private Bathroom',
+        ],
+        roomImages: [
+          {
+            img: MajesticVoyagerDeluxeOne.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeOne.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeTwo.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeTwo.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeThree.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeThree.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeFour.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeFour.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeFive.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeFive.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeSix.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeSix.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeSeven.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeSeven.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeEight.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeEight.blurDataURL,
+          },
+          {
+            img: MajesticVoyagerDeluxeNine.src,
+            imgAlt: '',
+            blurDataUrl: MajesticVoyagerDeluxeNine.blurDataURL,
+          },
+        ],
+      },
+    ],
+    gallery: [
+      {
+        img: ImageMisoolRajaAmpatOne.src,
+        imgAlt: '',
+        blurDataUrl: ImageMisoolRajaAmpatOne.blurDataURL,
       },
       {
         img: ImageBandarNeiraFour.src,
